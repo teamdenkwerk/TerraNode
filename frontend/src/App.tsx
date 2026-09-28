@@ -481,7 +481,7 @@ const handleReject = async (id: string) => {
                 {/* Sub-Tab View Content */}
                 <div className="flex-1 overflow-y-auto">
                   {validationSubTab === 'production' ? (
-                    <ProductionValidationView language={language} />
+                    <ProductionValidationView language={language} activeDataset={activeDataset} />
                   ) : (
                     <BeforeAfterView
                       buildings={buildings}

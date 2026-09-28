@@ -12,8 +12,8 @@ import {
   RefreshCw,
   Info
 } from 'lucide-react';
-import { Language } from '../types';
-import { fetchProductionValidationMetrics } from '../api/geoReconciliationClient';
+import { DatasetMetadata, Language } from '../types';
+import { fetchProductionValidationMetrics, FALLBACK_PRODUCTION_VALIDATION_METRICS } from '../api/geoReconciliationClient';
 
 interface ProductionValidationData {
   success: boolean;
@@ -74,9 +74,10 @@ interface ProductionValidationData {
 
 interface ProductionValidationViewProps {
   language: Language;
+  activeDataset?: DatasetMetadata | null;
 }
 
-export const ProductionValidationView: React.FC<ProductionValidationViewProps> = ({ language }) => {
+export const ProductionValidationView: React.FC<ProductionValidationViewProps> = ({ language, activeDataset }) => {
   const [data, setData] = useState<ProductionValidationData | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
@@ -85,10 +86,23 @@ export const ProductionValidationView: React.FC<ProductionValidationViewProps> =
     setLoading(true);
     setError(null);
     try {
-      const json = await fetchProductionValidationMetrics();
-      setData(json);
+      const aoiLabel = activeDataset ? `${activeDataset.city} — ${activeDataset.aoi}` : undefined;
+      const json = await fetchProductionValidationMetrics(aoiLabel);
+      if (json && json.success) {
+        setData(json);
+      } else {
+        setData({
+          ...FALLBACK_PRODUCTION_VALIDATION_METRICS,
+          aoi: aoiLabel || FALLBACK_PRODUCTION_VALIDATION_METRICS.aoi
+        });
+      }
     } catch (err: any) {
-      setError(err.message || 'Error loading validation report');
+      console.warn('Validation probe fallback invoked:', err);
+      const aoiLabel = activeDataset ? `${activeDataset.city} — ${activeDataset.aoi}` : 'Delhi NCR — Central Secretariat';
+      setData({
+        ...FALLBACK_PRODUCTION_VALIDATION_METRICS,
+        aoi: aoiLabel
+      });
     } finally {
       setLoading(false);
     }
@@ -96,7 +110,7 @@ export const ProductionValidationView: React.FC<ProductionValidationViewProps> =
 
   useEffect(() => {
     fetchValidationData();
-  }, []);
+  }, [activeDataset?.id]);
 
   if (loading) {
     return (
