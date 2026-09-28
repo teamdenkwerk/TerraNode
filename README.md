@@ -21,7 +21,7 @@
 </div>
 
 ---
-PROJECT LINK:https://terranode-gisreconcile.netlify.app
+PROJECT LINK:https://terranode-gis-reconcile.netlify.app
 
 ## 📌 Overview
 
