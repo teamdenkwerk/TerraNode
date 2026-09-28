@@ -162,15 +162,15 @@ export function generateClientAuditPdfBlob(summary: ReportSummaryResponse): Blob
   stream.push('/F2 8.5 Tf');
   stream.push('0.25 0.25 0.25 rg');
   stream.push('0 -15 Td');
-  stream.push(`(${escapePdfText('• Layer 1: Authoritative State Cadastral Survey (Revenue Deed Footprints)  [100% Coverage]')}) Tj`);
+  stream.push(`(${escapePdfText('[*] Layer 1: Authoritative State Cadastral Survey (Revenue Deed Footprints)  [100% Coverage]')}) Tj`);
   stream.push('0 -12 Td');
-  stream.push(`(${escapePdfText('• Layer 2: Municipal Corporation Property Tax GIS Registry             [100% Coverage]')}) Tj`);
+  stream.push(`(${escapePdfText('[*] Layer 2: Municipal Corporation Property Tax GIS Registry             [100% Coverage]')}) Tj`);
   stream.push('0 -12 Td');
-  stream.push(`(${escapePdfText('• Layer 3: High-Resolution UAV Drone Orthomosaic (ORI 5cm GSD)           [Active Orthophoto]')}) Tj`);
+  stream.push(`(${escapePdfText('[*] Layer 3: High-Resolution UAV Drone Orthomosaic (ORI 5cm GSD)           [Active Orthophoto]')}) Tj`);
   stream.push('0 -12 Td');
-  stream.push(`(${escapePdfText('• Layer 4: DeepLabV3+ AI Footprint Extraction & Mask Vectorization       [Automated]')}) Tj`);
+  stream.push(`(${escapePdfText('[*] Layer 4: DeepLabV3+ AI Footprint Extraction & Mask Vectorization       [Automated]')}) Tj`);
   stream.push('0 -12 Td');
-  stream.push(`(${escapePdfText('• Layer 5: Survey of India CORS GNSS RTK Ground Control Points          [11 Checkpoints Verified]')}) Tj`);
+  stream.push(`(${escapePdfText('[*] Layer 5: Survey of India CORS GNSS RTK Ground Control Points          [11 Checkpoints Verified]')}) Tj`);
   stream.push('ET');
 
   // Metrology Table

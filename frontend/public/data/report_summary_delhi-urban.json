@@ -1,0 +1,1576 @@
+{
+  "dataset_id": "delhi-urban",
+  "name": "Delhi NCR \u2014 Urban District",
+  "city": "Delhi NCR",
+  "aoi": "Urban District",
+  "version": "v1.2",
+  "upload_date": "2026-09-03",
+  "last_processed": "2026-09-03 10:21:04 UTC",
+  "status": "REVIEW REQUIRED",
+  "raw_status": "ACTIVE",
+  "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+  "reconciliation_status": {
+    "total": 72,
+    "verified": 44,
+    "review": 22,
+    "conflict": 6,
+    "verified_percentage": 61.1,
+    "review_percentage": 30.6,
+    "conflict_percentage": 8.3,
+    "overall_confidence": 88.4
+  },
+  "source_contribution": [
+    {
+      "source_key": "cadastral",
+      "source_name": "Revenue Cadastral (Khasra/FMB)",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "municipal",
+      "source_name": "Municipal Property GIS",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "ori",
+      "source_name": "Drone Orthomosaic (ORI)",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "ai",
+      "source_name": "AI Footprint Extraction",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "rtk",
+      "source_name": "Survey of India CORS RTK Benchmarks",
+      "count": 8,
+      "coverage_percentage": 11.1,
+      "status": "REFERENCE_CHECKPOINT"
+    }
+  ],
+  "spatial_conflict_breakdown": [
+    {
+      "conflict_type": "Boundary Offset",
+      "count": 15,
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge"
+    },
+    {
+      "conflict_type": "Infrastructure Crossing",
+      "count": 7,
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer"
+    },
+    {
+      "conflict_type": "Source Mismatch",
+      "count": 4,
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS"
+    },
+    {
+      "conflict_type": "Geometry Issue",
+      "count": 1,
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly"
+    },
+    {
+      "conflict_type": "Centroid Drift",
+      "count": 1,
+      "description": "Centroid displacement exceeding local authoritative tolerance threshold"
+    }
+  ],
+  "spatial_quality": {
+    "iou": {
+      "name": "IoU",
+      "value": 0.898,
+      "percentage": 89.8,
+      "threshold": 0.85,
+      "threshold_percentage": 85.0,
+      "status": "PASSED",
+      "tooltip": "Measures how closely source boundaries overlap with the reconciled boundary."
+    },
+    "boundary_agreement": {
+      "name": "Boundary Agreement",
+      "value": 0.885,
+      "percentage": 88.5,
+      "threshold": 0.8,
+      "threshold_percentage": 80.0,
+      "status": "PASSED",
+      "tooltip": "Measures consistency between available source boundaries."
+    },
+    "ground_truth_agreement": {
+      "name": "Ground Truth Agreement",
+      "value": 0.881,
+      "percentage": 88.1,
+      "threshold": 0.8,
+      "threshold_percentage": 80.0,
+      "status": "PASSED",
+      "tooltip": "Measures agreement with verified survey or ground-reference data."
+    },
+    "verification_confidence": {
+      "name": "Verification Confidence",
+      "value": 0.884,
+      "percentage": 88.4,
+      "threshold": 0.85,
+      "threshold_percentage": 85.0,
+      "status": "PASSED",
+      "tooltip": "Shows the current confidence assigned to the reconciliation result."
+    }
+  },
+  "evidence_coverage": [
+    {
+      "category": "Geometry Validation",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "All polygon boundaries checked for closure, orientation, and valid topology",
+      "verified_count": 72,
+      "total_count": 72
+    },
+    {
+      "category": "CRS Validation",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "Source geometries transformed to EPSG:32643 (UTM 43N) \u2192 EPSG:4326 with zero angular distortion",
+      "verified_count": 72,
+      "total_count": 72
+    },
+    {
+      "category": "Source Evidence",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "5 authoritative source layers participating with immutable provenance",
+      "verified_count": 5,
+      "total_count": 5
+    },
+    {
+      "category": "Ground Truth",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "8 CORS / RTK GNSS benchmark survey points correlated",
+      "verified_count": 8,
+      "total_count": 8
+    },
+    {
+      "category": "Historical Evidence",
+      "status": "Not Available",
+      "state_code": "not_available",
+      "note": "Prior year cadastral revision snapshots attached for temporal comparison",
+      "verified_count": 0,
+      "total_count": 72
+    },
+    {
+      "category": "Infrastructure Evidence",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "Road Right-of-Way and Stormwater Drainage corridor crossing evaluation active",
+      "verified_count": 72,
+      "total_count": 72
+    }
+  ],
+  "pipeline_stages": [
+    {
+      "stage": "INGEST",
+      "label": "01 Multi-Source Ingestion",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 1,
+      "description": "Cadastral, Municipal & Drone ORI package validation"
+    },
+    {
+      "stage": "AI_02B",
+      "label": "02B Mask R-CNN Inference",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 2,
+      "description": "Drone ORI footprint instance segmentation (ResNet-50-FPN)"
+    },
+    {
+      "stage": "AI_02C",
+      "label": "02C Polygon + CRS",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 3,
+      "description": "Contour vectorization & metric affine georeferencing"
+    },
+    {
+      "stage": "STAGE_03",
+      "label": "03 Schema Normalization",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 4,
+      "description": "Triple-source convergence (Cadastral, Municipal, AI Source)"
+    },
+    {
+      "stage": "MATCH",
+      "label": "07-08 STRtree Matching",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 5,
+      "description": "R-tree candidate filtering & multi-signal matching"
+    },
+    {
+      "stage": "COMPARE",
+      "label": "09 IoU & Drift Evaluation",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 6,
+      "description": "IoU, centroid drift, and area delta comparison"
+    },
+    {
+      "stage": "VERIFY",
+      "label": "10-12 Consensus & Review",
+      "status": "Review",
+      "state_code": "review",
+      "order": 7,
+      "description": "Ground truth and policy threshold verification"
+    },
+    {
+      "stage": "REGISTER",
+      "label": "13-16 Authoritative Register",
+      "status": "Not Started",
+      "state_code": "not_started",
+      "order": 8,
+      "description": "Final legal cadastre registry commit"
+    }
+  ],
+  "audit_history": [
+    {
+      "timestamp": "2026-09-03 10:14:22",
+      "event": "Dataset package imported and validated",
+      "status": "Completed",
+      "actor": "Data Ingestion Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:15:08",
+      "event": "Spatial CRS projected to metric UTM and normalized",
+      "status": "Completed",
+      "actor": "CRS Safety Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:16:45",
+      "event": "8-signal multi-source candidate spatial indexing completed",
+      "status": "Completed",
+      "actor": "STRtree Matcher"
+    },
+    {
+      "timestamp": "2026-09-03 10:18:12",
+      "event": "Autonomous multi-source boundary consensus evaluated",
+      "status": "Completed",
+      "actor": "Consensus Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:19:30",
+      "event": "28 parcels queued for surveyor inspection",
+      "status": "Review Required",
+      "actor": "State Machine"
+    },
+    {
+      "timestamp": "2026-09-03 10:21:04",
+      "event": "Survey of India CORS RTK ground-truth checkpoints attached",
+      "status": "Completed",
+      "actor": "GNSS Verifier"
+    }
+  ],
+  "conflict_ledger": [
+    {
+      "parcel_id": "DEL-101",
+      "survey_number": "DL-NDMC-101/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.97,
+      "confidence_pct": 93.0,
+      "area_m2": 968,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.626132,
+        77.225001
+      ]
+    },
+    {
+      "parcel_id": "DEL-102",
+      "survey_number": "DL-NDMC-118/B",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.62,
+      "iou": 0.82,
+      "confidence_pct": 80.0,
+      "area_m2": 407,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        28.625983,
+        77.209032
+      ]
+    },
+    {
+      "parcel_id": "DEL-103",
+      "survey_number": "DL-NDMC-135/C",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.98,
+      "confidence_pct": 95.0,
+      "area_m2": 532,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.6255,
+        77.214759
+      ]
+    },
+    {
+      "parcel_id": "DEL-104",
+      "survey_number": "DL-NDMC-152/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.92,
+      "confidence_pct": 96.0,
+      "area_m2": 6956,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.625452,
+        77.218249
+      ]
+    },
+    {
+      "parcel_id": "DEL-105",
+      "survey_number": "DL-NDMC-169/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.95,
+      "confidence_pct": 97.0,
+      "area_m2": 4260,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.625433,
+        77.199161
+      ]
+    },
+    {
+      "parcel_id": "DEL-106",
+      "survey_number": "DL-NDMC-186/F",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 3.7,
+      "iou": 0.68,
+      "confidence_pct": 66.0,
+      "area_m2": 5556,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.625257,
+        77.212351
+      ]
+    },
+    {
+      "parcel_id": "DEL-107",
+      "survey_number": "DL-NDMC-203/A",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.38,
+      "iou": 0.87,
+      "confidence_pct": 79.0,
+      "area_m2": 4358,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.625085,
+        77.200436
+      ]
+    },
+    {
+      "parcel_id": "DEL-108",
+      "survey_number": "DL-NDMC-220/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.97,
+      "confidence_pct": 95.0,
+      "area_m2": 264,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.625069,
+        77.211336
+      ]
+    },
+    {
+      "parcel_id": "DEL-109",
+      "survey_number": "DL-NDMC-237/C",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.22,
+      "iou": 0.87,
+      "confidence_pct": 81.0,
+      "area_m2": 4223,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.625046,
+        77.220233
+      ]
+    },
+    {
+      "parcel_id": "DEL-110",
+      "survey_number": "DL-NDMC-254/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.97,
+      "confidence_pct": 97.0,
+      "area_m2": 4558,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.624899,
+        77.212865
+      ]
+    },
+    {
+      "parcel_id": "DEL-111",
+      "survey_number": "DL-NDMC-271/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.96,
+      "confidence_pct": 93.0,
+      "area_m2": 383,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.624464,
+        77.219647
+      ]
+    },
+    {
+      "parcel_id": "DEL-112",
+      "survey_number": "DL-NDMC-288/F",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.38,
+      "iou": 0.87,
+      "confidence_pct": 84.0,
+      "area_m2": 2994,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.624247,
+        77.212585
+      ]
+    },
+    {
+      "parcel_id": "DEL-113",
+      "survey_number": "DL-NDMC-305/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.98,
+      "confidence_pct": 95.0,
+      "area_m2": 997,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.623732,
+        77.20521
+      ]
+    },
+    {
+      "parcel_id": "DEL-114",
+      "survey_number": "DL-NDMC-322/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 96.0,
+      "area_m2": 5673,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.623608,
+        77.213748
+      ]
+    },
+    {
+      "parcel_id": "DEL-115",
+      "survey_number": "DL-NDMC-339/C",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.9,
+      "iou": 0.83,
+      "confidence_pct": 81.0,
+      "area_m2": 766,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.623605,
+        77.202021
+      ]
+    },
+    {
+      "parcel_id": "DEL-116",
+      "survey_number": "DL-NDMC-356/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 585,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.623367,
+        77.214491
+      ]
+    },
+    {
+      "parcel_id": "DEL-117",
+      "survey_number": "DL-NDMC-373/E",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.88,
+      "confidence_pct": 83.0,
+      "area_m2": 999,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.623329,
+        77.204555
+      ]
+    },
+    {
+      "parcel_id": "DEL-118",
+      "survey_number": "DL-NDMC-390/F",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 3.8,
+      "iou": 0.69,
+      "confidence_pct": 62.0,
+      "area_m2": 13194,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        28.623294,
+        77.220011
+      ]
+    },
+    {
+      "parcel_id": "DEL-119",
+      "survey_number": "DL-NDMC-407/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.96,
+      "confidence_pct": 96.0,
+      "area_m2": 1000,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.623147,
+        77.203771
+      ]
+    },
+    {
+      "parcel_id": "DEL-120",
+      "survey_number": "DL-NDMC-424/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.95,
+      "confidence_pct": 97.0,
+      "area_m2": 812,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.622732,
+        77.201423
+      ]
+    },
+    {
+      "parcel_id": "DEL-121",
+      "survey_number": "DL-NDMC-441/C",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.92,
+      "confidence_pct": 93.0,
+      "area_m2": 4248,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.622618,
+        77.213024
+      ]
+    },
+    {
+      "parcel_id": "DEL-122",
+      "survey_number": "DL-NDMC-458/D",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.84,
+      "confidence_pct": 82.0,
+      "area_m2": 4542,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.621911,
+        77.212323
+      ]
+    },
+    {
+      "parcel_id": "DEL-123",
+      "survey_number": "DL-NDMC-475/E",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.84,
+      "confidence_pct": 83.0,
+      "area_m2": 5524,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.621665,
+        77.21055
+      ]
+    },
+    {
+      "parcel_id": "DEL-124",
+      "survey_number": "DL-NDMC-492/F",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.92,
+      "confidence_pct": 96.0,
+      "area_m2": 5137,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.621515,
+        77.21741
+      ]
+    },
+    {
+      "parcel_id": "DEL-125",
+      "survey_number": "DL-NDMC-109/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.92,
+      "confidence_pct": 97.0,
+      "area_m2": 1378,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.621503,
+        77.223851
+      ]
+    },
+    {
+      "parcel_id": "DEL-126",
+      "survey_number": "DL-NDMC-126/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.96,
+      "confidence_pct": 93.0,
+      "area_m2": 7085,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.621029,
+        77.211861
+      ]
+    },
+    {
+      "parcel_id": "DEL-127",
+      "survey_number": "DL-NDMC-143/C",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.14,
+      "iou": 0.82,
+      "confidence_pct": 81.0,
+      "area_m2": 8156,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.620611,
+        77.208122
+      ]
+    },
+    {
+      "parcel_id": "DEL-128",
+      "survey_number": "DL-NDMC-160/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.98,
+      "confidence_pct": 95.0,
+      "area_m2": 6869,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.620178,
+        77.213467
+      ]
+    },
+    {
+      "parcel_id": "DEL-129",
+      "survey_number": "DL-NDMC-177/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.92,
+      "confidence_pct": 96.0,
+      "area_m2": 4401,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.620103,
+        77.209142
+      ]
+    },
+    {
+      "parcel_id": "DEL-130",
+      "survey_number": "DL-NDMC-194/F",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.6,
+      "iou": 0.65,
+      "confidence_pct": 66.0,
+      "area_m2": 2725,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        28.619931,
+        77.210805
+      ]
+    },
+    {
+      "parcel_id": "DEL-131",
+      "survey_number": "DL-NDMC-211/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.97,
+      "confidence_pct": 93.0,
+      "area_m2": 3297,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.619623,
+        77.205466
+      ]
+    },
+    {
+      "parcel_id": "DEL-132",
+      "survey_number": "DL-NDMC-228/B",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.54,
+      "iou": 0.83,
+      "confidence_pct": 80.0,
+      "area_m2": 2720,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.619401,
+        77.211647
+      ]
+    },
+    {
+      "parcel_id": "DEL-133",
+      "survey_number": "DL-NDMC-245/C",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.93,
+      "confidence_pct": 95.0,
+      "area_m2": 3041,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.619128,
+        77.21038
+      ]
+    },
+    {
+      "parcel_id": "DEL-134",
+      "survey_number": "DL-NDMC-262/D",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.62,
+      "iou": 0.88,
+      "confidence_pct": 82.0,
+      "area_m2": 3947,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.619041,
+        77.204692
+      ]
+    },
+    {
+      "parcel_id": "DEL-135",
+      "survey_number": "DL-NDMC-279/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.94,
+      "confidence_pct": 97.0,
+      "area_m2": 16090,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.618856,
+        77.207179
+      ]
+    },
+    {
+      "parcel_id": "DEL-136",
+      "survey_number": "DL-NDMC-296/F",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.97,
+      "confidence_pct": 93.0,
+      "area_m2": 5118,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.618824,
+        77.217756
+      ]
+    },
+    {
+      "parcel_id": "DEL-137",
+      "survey_number": "DL-NDMC-313/A",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.38,
+      "iou": 0.83,
+      "confidence_pct": 79.0,
+      "area_m2": 454,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.618733,
+        77.20726
+      ]
+    },
+    {
+      "parcel_id": "DEL-138",
+      "survey_number": "DL-NDMC-330/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.96,
+      "confidence_pct": 95.0,
+      "area_m2": 526,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.618716,
+        77.210149
+      ]
+    },
+    {
+      "parcel_id": "DEL-139",
+      "survey_number": "DL-NDMC-347/C",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 96.0,
+      "area_m2": 763,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.618491,
+        77.21198
+      ]
+    },
+    {
+      "parcel_id": "DEL-140",
+      "survey_number": "DL-NDMC-364/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.98,
+      "confidence_pct": 97.0,
+      "area_m2": 477,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.618232,
+        77.204871
+      ]
+    },
+    {
+      "parcel_id": "DEL-141",
+      "survey_number": "DL-NDMC-381/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 394,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.61813,
+        77.219375
+      ]
+    },
+    {
+      "parcel_id": "DEL-142",
+      "survey_number": "DL-NDMC-398/F",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 3.7,
+      "iou": 0.64,
+      "confidence_pct": 62.0,
+      "area_m2": 4344,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.617608,
+        77.217841
+      ]
+    },
+    {
+      "parcel_id": "DEL-143",
+      "survey_number": "DL-NDMC-415/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.97,
+      "confidence_pct": 95.0,
+      "area_m2": 466,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.617556,
+        77.214485
+      ]
+    },
+    {
+      "parcel_id": "DEL-144",
+      "survey_number": "DL-NDMC-432/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.95,
+      "confidence_pct": 96.0,
+      "area_m2": 24543,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.617161,
+        77.208048
+      ]
+    },
+    {
+      "parcel_id": "DEL-145",
+      "survey_number": "DL-NDMC-449/C",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.9,
+      "iou": 0.81,
+      "confidence_pct": 81.0,
+      "area_m2": 22192,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.617136,
+        77.210189
+      ]
+    },
+    {
+      "parcel_id": "DEL-146",
+      "survey_number": "DL-NDMC-466/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 16207,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.616158,
+        77.215224
+      ]
+    },
+    {
+      "parcel_id": "DEL-147",
+      "survey_number": "DL-NDMC-483/E",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 83.0,
+      "area_m2": 4750,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.616064,
+        77.215418
+      ]
+    },
+    {
+      "parcel_id": "DEL-148",
+      "survey_number": "DL-NDMC-500/F",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.95,
+      "confidence_pct": 95.0,
+      "area_m2": 7531,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.616057,
+        77.213458
+      ]
+    },
+    {
+      "parcel_id": "DEL-149",
+      "survey_number": "DL-NDMC-117/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.93,
+      "confidence_pct": 96.0,
+      "area_m2": 7849,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.615942,
+        77.211346
+      ]
+    },
+    {
+      "parcel_id": "DEL-150",
+      "survey_number": "DL-NDMC-134/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.96,
+      "confidence_pct": 97.0,
+      "area_m2": 17328,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.615787,
+        77.219965
+      ]
+    },
+    {
+      "parcel_id": "DEL-151",
+      "survey_number": "DL-NDMC-151/C",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 81.0,
+      "area_m2": 17322,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.615684,
+        77.221784
+      ]
+    },
+    {
+      "parcel_id": "DEL-152",
+      "survey_number": "DL-NDMC-168/D",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 82.0,
+      "area_m2": 17330,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.615595,
+        77.223616
+      ]
+    },
+    {
+      "parcel_id": "DEL-153",
+      "survey_number": "DL-NDMC-185/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.92,
+      "confidence_pct": 95.0,
+      "area_m2": 32639,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.615387,
+        77.20587
+      ]
+    },
+    {
+      "parcel_id": "DEL-154",
+      "survey_number": "DL-NDMC-202/F",
+      "conflict_type": "Geometry Issue",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 4.0,
+      "iou": 0.71,
+      "confidence_pct": 66.0,
+      "area_m2": 7347,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly",
+      "centroid": [
+        28.615253,
+        77.217411
+      ]
+    },
+    {
+      "parcel_id": "DEL-155",
+      "survey_number": "DL-NDMC-219/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.95,
+      "confidence_pct": 97.0,
+      "area_m2": 32959,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.612712,
+        77.205734
+      ]
+    },
+    {
+      "parcel_id": "DEL-156",
+      "survey_number": "DL-NDMC-236/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 9074,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.611771,
+        77.219111
+      ]
+    },
+    {
+      "parcel_id": "DEL-157",
+      "survey_number": "DL-NDMC-253/C",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.06,
+      "iou": 0.85,
+      "confidence_pct": 81.0,
+      "area_m2": 8024,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.611696,
+        77.211072
+      ]
+    },
+    {
+      "parcel_id": "DEL-158",
+      "survey_number": "DL-NDMC-270/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.96,
+      "confidence_pct": 95.0,
+      "area_m2": 1183,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.611655,
+        77.215817
+      ]
+    },
+    {
+      "parcel_id": "DEL-159",
+      "survey_number": "DL-NDMC-287/E",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.82,
+      "confidence_pct": 83.0,
+      "area_m2": 10569,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        28.611451,
+        77.216996
+      ]
+    },
+    {
+      "parcel_id": "DEL-160",
+      "survey_number": "DL-NDMC-304/F",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.96,
+      "confidence_pct": 97.0,
+      "area_m2": 8383,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.611376,
+        77.213134
+      ]
+    },
+    {
+      "parcel_id": "DEL-161",
+      "survey_number": "DL-NDMC-321/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.92,
+      "confidence_pct": 93.0,
+      "area_m2": 4207,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.611201,
+        77.209614
+      ]
+    },
+    {
+      "parcel_id": "DEL-162",
+      "survey_number": "DL-NDMC-338/B",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.38,
+      "iou": 0.81,
+      "confidence_pct": 80.0,
+      "area_m2": 6644,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.611174,
+        77.225572
+      ]
+    },
+    {
+      "parcel_id": "DEL-163",
+      "survey_number": "DL-NDMC-355/C",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.84,
+      "confidence_pct": 81.0,
+      "area_m2": 15337,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.611001,
+        77.215114
+      ]
+    },
+    {
+      "parcel_id": "DEL-164",
+      "survey_number": "DL-NDMC-372/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 96.0,
+      "area_m2": 1144,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.610967,
+        77.223608
+      ]
+    },
+    {
+      "parcel_id": "DEL-165",
+      "survey_number": "DL-NDMC-389/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 97.0,
+      "area_m2": 7415,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.610954,
+        77.220627
+      ]
+    },
+    {
+      "parcel_id": "DEL-166",
+      "survey_number": "DL-NDMC-406/F",
+      "conflict_type": "Centroid Drift",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.3,
+      "iou": 0.74,
+      "confidence_pct": 62.0,
+      "area_m2": 6498,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Centroid displacement exceeding local authoritative tolerance threshold",
+      "centroid": [
+        28.610772,
+        77.221698
+      ]
+    },
+    {
+      "parcel_id": "DEL-167",
+      "survey_number": "DL-NDMC-423/A",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.62,
+      "iou": 0.84,
+      "confidence_pct": 79.0,
+      "area_m2": 7555,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        28.610724,
+        77.208139
+      ]
+    },
+    {
+      "parcel_id": "DEL-168",
+      "survey_number": "DL-NDMC-440/B",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.97,
+      "confidence_pct": 95.0,
+      "area_m2": 3963,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.610191,
+        77.202608
+      ]
+    },
+    {
+      "parcel_id": "DEL-169",
+      "survey_number": "DL-NDMC-457/C",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.93,
+      "confidence_pct": 96.0,
+      "area_m2": 4288,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.610114,
+        77.203173
+      ]
+    },
+    {
+      "parcel_id": "DEL-170",
+      "survey_number": "DL-NDMC-474/D",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.95,
+      "confidence_pct": 97.0,
+      "area_m2": 6766,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.610026,
+        77.204547
+      ]
+    },
+    {
+      "parcel_id": "DEL-171",
+      "survey_number": "DL-NDMC-491/E",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 93.0,
+      "area_m2": 517,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        28.609846,
+        77.216771
+      ]
+    },
+    {
+      "parcel_id": "DEL-172",
+      "survey_number": "DL-NDMC-108/F",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 84.0,
+      "area_m2": 2613,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        28.608146,
+        77.222615
+      ]
+    }
+  ]
+}

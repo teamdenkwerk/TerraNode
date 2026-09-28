@@ -1,0 +1,218 @@
+[
+  {
+    "dataset_id": "delhi-urban",
+    "name": "Delhi NCR \u2014 Urban District",
+    "city": "Delhi NCR",
+    "city_id": "del",
+    "aoi": "Urban District",
+    "aoi_id": "del-urban",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      77.198161,
+      28.607146,
+      77.226572,
+      28.627132
+    ],
+    "center": [
+      28.6139,
+      77.209
+    ],
+    "default_zoom": 17,
+    "features_count": 72,
+    "is_reference": false,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ACTIVE",
+    "processing_status": "READY",
+    "coverage": "Urban District, Delhi NCR Metropolitan Area",
+    "layers_count": 8,
+    "is_active": true
+  },
+  {
+    "dataset_id": "delhi-urban",
+    "name": "Delhi NCR \u2014 Urban District",
+    "city": "Delhi NCR",
+    "city_id": "del",
+    "aoi": "Urban District",
+    "aoi_id": "del-urban",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      77.198161,
+      28.607146,
+      77.226572,
+      28.627132
+    ],
+    "center": [
+      28.6139,
+      77.209
+    ],
+    "default_zoom": 17,
+    "features_count": 72,
+    "is_reference": false,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ACTIVE",
+    "processing_status": "READY",
+    "coverage": "Urban District, Delhi NCR Metropolitan Area",
+    "layers_count": 8,
+    "is_active": true
+  },
+  {
+    "dataset_id": "bengaluru-ward112",
+    "name": "Bengaluru \u2014 Ward 112 (Reference Dataset)",
+    "city": "Bengaluru",
+    "city_id": "blr",
+    "aoi": "Ward 112 / Domlur",
+    "aoi_id": "blr-w112",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:7760 / EPSG:32643 \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      77.638887,
+      12.976408000000001,
+      77.642722,
+      12.980335
+    ],
+    "center": [
+      12.9784,
+      77.6408
+    ],
+    "default_zoom": 17,
+    "features_count": 64,
+    "is_reference": true,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ARCHIVED",
+    "processing_status": "READY",
+    "coverage": "Ward 112 / Domlur, Bengaluru Metropolitan Area",
+    "layers_count": 8,
+    "is_active": false
+  },
+  {
+    "dataset_id": "mumbai-andheri",
+    "name": "Mumbai \u2014 Andheri East",
+    "city": "Mumbai",
+    "city_id": "bom",
+    "aoi": "Andheri East",
+    "aoi_id": "bom-andheri-e",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      72.864271,
+      19.109955,
+      72.877134,
+      19.119435000000003
+    ],
+    "center": [
+      19.1136,
+      72.8697
+    ],
+    "default_zoom": 17,
+    "features_count": 72,
+    "is_reference": false,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ARCHIVED",
+    "processing_status": "READY",
+    "coverage": "Andheri East, Mumbai Metropolitan Area",
+    "layers_count": 8,
+    "is_active": false
+  },
+  {
+    "dataset_id": "chennai-tnagar",
+    "name": "Chennai \u2014 T. Nagar AOI",
+    "city": "Chennai",
+    "city_id": "maa",
+    "aoi": "T. Nagar AOI",
+    "aoi_id": "maa-tnagar",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:32644 (UTM 44N) \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      80.23183499999999,
+      13.039454000000001,
+      80.23664600000001,
+      13.044343
+    ],
+    "center": [
+      13.0418,
+      80.2341
+    ],
+    "default_zoom": 17,
+    "features_count": 64,
+    "is_reference": false,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ARCHIVED",
+    "processing_status": "READY",
+    "coverage": "T. Nagar AOI, Chennai Metropolitan Area",
+    "layers_count": 8,
+    "is_active": false
+  },
+  {
+    "dataset_id": "bengaluru-ward112",
+    "name": "Bengaluru \u2014 Ward 112 (Reference Dataset)",
+    "city": "Bengaluru",
+    "city_id": "blr",
+    "aoi": "Ward 112 / Domlur",
+    "aoi_id": "blr-w112",
+    "sources": [
+      "Cadastral",
+      "Drone / ORI",
+      "Municipal GIS",
+      "AI Segmentation"
+    ],
+    "crs": "EPSG:7760 / EPSG:32643 \u2192 EPSG:4326",
+    "crs_status": "validated",
+    "bbox": [
+      77.638887,
+      12.976408000000001,
+      77.642722,
+      12.980335
+    ],
+    "center": [
+      12.9784,
+      77.6408
+    ],
+    "default_zoom": 17,
+    "features_count": 64,
+    "is_reference": true,
+    "upload_date": "2026-09-03",
+    "version": "v1.2",
+    "dataset_status": "ARCHIVED",
+    "processing_status": "READY",
+    "coverage": "Ward 112 / Domlur, Bengaluru Metropolitan Area",
+    "layers_count": 8,
+    "is_active": false
+  }
+]

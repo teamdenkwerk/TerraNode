@@ -1,0 +1,1576 @@
+{
+  "dataset_id": "mumbai-andheri",
+  "name": "Mumbai \u2014 Andheri East",
+  "city": "Mumbai",
+  "aoi": "Andheri East",
+  "version": "v1.2",
+  "upload_date": "2026-09-03",
+  "last_processed": "2026-09-03 10:21:04 UTC",
+  "status": "REVIEW REQUIRED",
+  "raw_status": "ARCHIVED",
+  "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+  "reconciliation_status": {
+    "total": 72,
+    "verified": 52,
+    "review": 14,
+    "conflict": 6,
+    "verified_percentage": 72.2,
+    "review_percentage": 19.4,
+    "conflict_percentage": 8.3,
+    "overall_confidence": 89.6
+  },
+  "source_contribution": [
+    {
+      "source_key": "cadastral",
+      "source_name": "City Survey Cadastre (CTS)",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "municipal",
+      "source_name": "BMC Property Tax Directorate",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "ori",
+      "source_name": "High-Res Aerial Orthophoto",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "ai",
+      "source_name": "LOD2 Segmentation Model",
+      "count": 72,
+      "coverage_percentage": 100.0,
+      "status": "VERIFIED"
+    },
+    {
+      "source_key": "rtk",
+      "source_name": "Survey of India CORS RTK Benchmarks",
+      "count": 8,
+      "coverage_percentage": 11.1,
+      "status": "REFERENCE_CHECKPOINT"
+    }
+  ],
+  "spatial_conflict_breakdown": [
+    {
+      "conflict_type": "Boundary Offset",
+      "count": 7,
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge"
+    },
+    {
+      "conflict_type": "Infrastructure Crossing",
+      "count": 6,
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer"
+    },
+    {
+      "conflict_type": "Source Mismatch",
+      "count": 3,
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS"
+    },
+    {
+      "conflict_type": "Geometry Issue",
+      "count": 3,
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly"
+    },
+    {
+      "conflict_type": "Centroid Drift",
+      "count": 1,
+      "description": "Centroid displacement exceeding local authoritative tolerance threshold"
+    }
+  ],
+  "spatial_quality": {
+    "iou": {
+      "name": "IoU",
+      "value": 0.909,
+      "percentage": 90.9,
+      "threshold": 0.85,
+      "threshold_percentage": 85.0,
+      "status": "PASSED",
+      "tooltip": "Measures how closely source boundaries overlap with the reconciled boundary."
+    },
+    "boundary_agreement": {
+      "name": "Boundary Agreement",
+      "value": 0.899,
+      "percentage": 89.9,
+      "threshold": 0.8,
+      "threshold_percentage": 80.0,
+      "status": "PASSED",
+      "tooltip": "Measures consistency between available source boundaries."
+    },
+    "ground_truth_agreement": {
+      "name": "Ground Truth Agreement",
+      "value": 0.895,
+      "percentage": 89.5,
+      "threshold": 0.8,
+      "threshold_percentage": 80.0,
+      "status": "PASSED",
+      "tooltip": "Measures agreement with verified survey or ground-reference data."
+    },
+    "verification_confidence": {
+      "name": "Verification Confidence",
+      "value": 0.896,
+      "percentage": 89.6,
+      "threshold": 0.85,
+      "threshold_percentage": 85.0,
+      "status": "PASSED",
+      "tooltip": "Shows the current confidence assigned to the reconciliation result."
+    }
+  },
+  "evidence_coverage": [
+    {
+      "category": "Geometry Validation",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "All polygon boundaries checked for closure, orientation, and valid topology",
+      "verified_count": 72,
+      "total_count": 72
+    },
+    {
+      "category": "CRS Validation",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "Source geometries transformed to EPSG:32643 (UTM 43N) \u2192 EPSG:4326 with zero angular distortion",
+      "verified_count": 72,
+      "total_count": 72
+    },
+    {
+      "category": "Source Evidence",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "5 authoritative source layers participating with immutable provenance",
+      "verified_count": 5,
+      "total_count": 5
+    },
+    {
+      "category": "Ground Truth",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "8 CORS / RTK GNSS benchmark survey points correlated",
+      "verified_count": 8,
+      "total_count": 8
+    },
+    {
+      "category": "Historical Evidence",
+      "status": "Not Available",
+      "state_code": "not_available",
+      "note": "Prior year cadastral revision snapshots attached for temporal comparison",
+      "verified_count": 0,
+      "total_count": 72
+    },
+    {
+      "category": "Infrastructure Evidence",
+      "status": "Complete",
+      "state_code": "complete",
+      "note": "Road Right-of-Way and Stormwater Drainage corridor crossing evaluation active",
+      "verified_count": 72,
+      "total_count": 72
+    }
+  ],
+  "pipeline_stages": [
+    {
+      "stage": "INGEST",
+      "label": "01 Multi-Source Ingestion",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 1,
+      "description": "Cadastral, Municipal & Drone ORI package validation"
+    },
+    {
+      "stage": "AI_02B",
+      "label": "02B Mask R-CNN Inference",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 2,
+      "description": "Drone ORI footprint instance segmentation (ResNet-50-FPN)"
+    },
+    {
+      "stage": "AI_02C",
+      "label": "02C Polygon + CRS",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 3,
+      "description": "Contour vectorization & metric affine georeferencing"
+    },
+    {
+      "stage": "STAGE_03",
+      "label": "03 Schema Normalization",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 4,
+      "description": "Triple-source convergence (Cadastral, Municipal, AI Source)"
+    },
+    {
+      "stage": "MATCH",
+      "label": "07-08 STRtree Matching",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 5,
+      "description": "R-tree candidate filtering & multi-signal matching"
+    },
+    {
+      "stage": "COMPARE",
+      "label": "09 IoU & Drift Evaluation",
+      "status": "Completed",
+      "state_code": "completed",
+      "order": 6,
+      "description": "IoU, centroid drift, and area delta comparison"
+    },
+    {
+      "stage": "VERIFY",
+      "label": "10-12 Consensus & Review",
+      "status": "Review",
+      "state_code": "review",
+      "order": 7,
+      "description": "Ground truth and policy threshold verification"
+    },
+    {
+      "stage": "REGISTER",
+      "label": "13-16 Authoritative Register",
+      "status": "Not Started",
+      "state_code": "not_started",
+      "order": 8,
+      "description": "Final legal cadastre registry commit"
+    }
+  ],
+  "audit_history": [
+    {
+      "timestamp": "2026-09-03 10:14:22",
+      "event": "Dataset package imported and validated",
+      "status": "Completed",
+      "actor": "Data Ingestion Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:15:08",
+      "event": "Spatial CRS projected to metric UTM and normalized",
+      "status": "Completed",
+      "actor": "CRS Safety Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:16:45",
+      "event": "8-signal multi-source candidate spatial indexing completed",
+      "status": "Completed",
+      "actor": "STRtree Matcher"
+    },
+    {
+      "timestamp": "2026-09-03 10:18:12",
+      "event": "Autonomous multi-source boundary consensus evaluated",
+      "status": "Completed",
+      "actor": "Consensus Engine"
+    },
+    {
+      "timestamp": "2026-09-03 10:19:30",
+      "event": "20 parcels queued for surveyor inspection",
+      "status": "Review Required",
+      "actor": "State Machine"
+    },
+    {
+      "timestamp": "2026-09-03 10:21:04",
+      "event": "Survey of India CORS RTK ground-truth checkpoints attached",
+      "status": "Completed",
+      "actor": "GNSS Verifier"
+    }
+  ],
+  "conflict_ledger": [
+    {
+      "parcel_id": "MUM-201",
+      "survey_number": "CTS-1400/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.95,
+      "confidence_pct": 92.0,
+      "area_m2": 5520,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112924,
+        72.868028
+      ]
+    },
+    {
+      "parcel_id": "MUM-202",
+      "survey_number": "CTS-1401/1",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.22,
+      "iou": 0.87,
+      "confidence_pct": 77.0,
+      "area_m2": 600,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.11246,
+        72.868045
+      ]
+    },
+    {
+      "parcel_id": "MUM-203",
+      "survey_number": "CTS-1402",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.94,
+      "confidence_pct": 94.0,
+      "area_m2": 720,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.11268,
+        72.87286
+      ]
+    },
+    {
+      "parcel_id": "MUM-204",
+      "survey_number": "CTS-1403/A",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.6,
+      "iou": 0.73,
+      "confidence_pct": 61.0,
+      "area_m2": 2520,
+      "status": "conflict",
+      "land_use": "Residential",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        19.111689,
+        72.872673
+      ]
+    },
+    {
+      "parcel_id": "MUM-205",
+      "survey_number": "CTS-1404/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.92,
+      "confidence_pct": 96.0,
+      "area_m2": 3120,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112853,
+        72.872986
+      ]
+    },
+    {
+      "parcel_id": "MUM-206",
+      "survey_number": "CTS-1405",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.93,
+      "confidence_pct": 97.0,
+      "area_m2": 840,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113575,
+        72.873557
+      ]
+    },
+    {
+      "parcel_id": "MUM-207",
+      "survey_number": "CTS-1406/A",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.84,
+      "confidence_pct": 82.0,
+      "area_m2": 1080,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.113507,
+        72.873388
+      ]
+    },
+    {
+      "parcel_id": "MUM-208",
+      "survey_number": "CTS-1407/1",
+      "conflict_type": "Geometry Issue",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 3.2,
+      "iou": 0.75,
+      "confidence_pct": 65.0,
+      "area_m2": 600,
+      "status": "conflict",
+      "land_use": "Commercial",
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly",
+      "centroid": [
+        19.114216,
+        72.865271
+      ]
+    },
+    {
+      "parcel_id": "MUM-209",
+      "survey_number": "CTS-1408",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.94,
+      "confidence_pct": 93.0,
+      "area_m2": 720,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.118435,
+        72.87031
+      ]
+    },
+    {
+      "parcel_id": "MUM-210",
+      "survey_number": "CTS-1409/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.97,
+      "confidence_pct": 94.0,
+      "area_m2": 600,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.110996,
+        72.873437
+      ]
+    },
+    {
+      "parcel_id": "MUM-211",
+      "survey_number": "CTS-1410/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.92,
+      "confidence_pct": 95.0,
+      "area_m2": 1560,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.11464,
+        72.875807
+      ]
+    },
+    {
+      "parcel_id": "MUM-212",
+      "survey_number": "CTS-1411",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.86,
+      "confidence_pct": 87.0,
+      "area_m2": 1560,
+      "status": "review",
+      "land_use": "Residential",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.114813,
+        72.876134
+      ]
+    },
+    {
+      "parcel_id": "MUM-213",
+      "survey_number": "CTS-1412/A",
+      "conflict_type": "Geometry Issue",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.8,
+      "iou": 0.71,
+      "confidence_pct": 59.0,
+      "area_m2": 720,
+      "status": "conflict",
+      "land_use": "Mixed Use",
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly",
+      "centroid": [
+        19.112058,
+        72.867543
+      ]
+    },
+    {
+      "parcel_id": "MUM-214",
+      "survey_number": "CTS-1413/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.96,
+      "confidence_pct": 98.0,
+      "area_m2": 2040,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113297,
+        72.874838
+      ]
+    },
+    {
+      "parcel_id": "MUM-215",
+      "survey_number": "CTS-1414",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.92,
+      "confidence_pct": 92.0,
+      "area_m2": 2280,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113654,
+        72.875014
+      ]
+    },
+    {
+      "parcel_id": "MUM-216",
+      "survey_number": "CTS-1415/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.95,
+      "confidence_pct": 93.0,
+      "area_m2": 2703,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113381,
+        72.86947
+      ]
+    },
+    {
+      "parcel_id": "MUM-217",
+      "survey_number": "CTS-1416/1",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.06,
+      "iou": 0.83,
+      "confidence_pct": 80.0,
+      "area_m2": 1108,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.112637,
+        72.870081
+      ]
+    },
+    {
+      "parcel_id": "MUM-218",
+      "survey_number": "CTS-1417",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.95,
+      "confidence_pct": 95.0,
+      "area_m2": 680,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113831,
+        72.870746
+      ]
+    },
+    {
+      "parcel_id": "MUM-219",
+      "survey_number": "CTS-1418/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.96,
+      "confidence_pct": 96.0,
+      "area_m2": 464,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.114738,
+        72.869622
+      ]
+    },
+    {
+      "parcel_id": "MUM-220",
+      "survey_number": "CTS-1419/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.97,
+      "confidence_pct": 97.0,
+      "area_m2": 792,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.114125,
+        72.870718
+      ]
+    },
+    {
+      "parcel_id": "MUM-221",
+      "survey_number": "CTS-1420",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.93,
+      "confidence_pct": 98.0,
+      "area_m2": 4690,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112464,
+        72.869358
+      ]
+    },
+    {
+      "parcel_id": "MUM-222",
+      "survey_number": "CTS-1421/A",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 85.0,
+      "area_m2": 1334,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.112911,
+        72.868653
+      ]
+    },
+    {
+      "parcel_id": "MUM-223",
+      "survey_number": "CTS-1422/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 2480,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113572,
+        72.868433
+      ]
+    },
+    {
+      "parcel_id": "MUM-224",
+      "survey_number": "CTS-1423",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 94.0,
+      "area_m2": 792,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112966,
+        72.870853
+      ]
+    },
+    {
+      "parcel_id": "MUM-225",
+      "survey_number": "CTS-1424/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.96,
+      "confidence_pct": 95.0,
+      "area_m2": 1635,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112146,
+        72.870225
+      ]
+    },
+    {
+      "parcel_id": "MUM-226",
+      "survey_number": "CTS-1425/1",
+      "conflict_type": "Centroid Drift",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.7,
+      "iou": 0.7,
+      "confidence_pct": 61.0,
+      "area_m2": 1470,
+      "status": "conflict",
+      "land_use": "Residential",
+      "description": "Centroid displacement exceeding local authoritative tolerance threshold",
+      "centroid": [
+        19.115154,
+        72.870146
+      ]
+    },
+    {
+      "parcel_id": "MUM-227",
+      "survey_number": "CTS-1426",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.62,
+      "iou": 0.84,
+      "confidence_pct": 78.0,
+      "area_m2": 748,
+      "status": "review",
+      "land_use": "Mixed Use",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.113413,
+        72.871356
+      ]
+    },
+    {
+      "parcel_id": "MUM-228",
+      "survey_number": "CTS-1427/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.95,
+      "confidence_pct": 98.0,
+      "area_m2": 1161,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112299,
+        72.870816
+      ]
+    },
+    {
+      "parcel_id": "MUM-229",
+      "survey_number": "CTS-1428/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.98,
+      "confidence_pct": 92.0,
+      "area_m2": 1201,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112269,
+        72.868519
+      ]
+    },
+    {
+      "parcel_id": "MUM-230",
+      "survey_number": "CTS-1429",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 93.0,
+      "area_m2": 1321,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115384,
+        72.869736
+      ]
+    },
+    {
+      "parcel_id": "MUM-231",
+      "survey_number": "CTS-1430/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.98,
+      "confidence_pct": 94.0,
+      "area_m2": 527,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113974,
+        72.87145
+      ]
+    },
+    {
+      "parcel_id": "MUM-232",
+      "survey_number": "CTS-1431/1",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.54,
+      "iou": 0.83,
+      "confidence_pct": 83.0,
+      "area_m2": 506,
+      "status": "review",
+      "land_use": "Residential",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.112881,
+        72.87138
+      ]
+    },
+    {
+      "parcel_id": "MUM-233",
+      "survey_number": "CTS-1432",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.96,
+      "confidence_pct": 96.0,
+      "area_m2": 176,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.11195,
+        72.868882
+      ]
+    },
+    {
+      "parcel_id": "MUM-234",
+      "survey_number": "CTS-1433/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.98,
+      "confidence_pct": 97.0,
+      "area_m2": 706,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115116,
+        72.870761
+      ]
+    },
+    {
+      "parcel_id": "MUM-235",
+      "survey_number": "CTS-1434/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.97,
+      "confidence_pct": 98.0,
+      "area_m2": 2378,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111751,
+        72.870352
+      ]
+    },
+    {
+      "parcel_id": "MUM-236",
+      "survey_number": "CTS-1435",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 92.0,
+      "area_m2": 1727,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113391,
+        72.871828
+      ]
+    },
+    {
+      "parcel_id": "MUM-237",
+      "survey_number": "CTS-1436/A",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.14,
+      "iou": 0.88,
+      "confidence_pct": 76.0,
+      "area_m2": 238,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        19.114914,
+        72.871402
+      ]
+    },
+    {
+      "parcel_id": "MUM-238",
+      "survey_number": "CTS-1437/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.92,
+      "confidence_pct": 94.0,
+      "area_m2": 540,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115747,
+        72.870055
+      ]
+    },
+    {
+      "parcel_id": "MUM-239",
+      "survey_number": "CTS-1438",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.92,
+      "confidence_pct": 95.0,
+      "area_m2": 361,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.114112,
+        72.867564
+      ]
+    },
+    {
+      "parcel_id": "MUM-240",
+      "survey_number": "CTS-1439/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.94,
+      "confidence_pct": 96.0,
+      "area_m2": 178,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115402,
+        72.870978
+      ]
+    },
+    {
+      "parcel_id": "MUM-241",
+      "survey_number": "CTS-1440/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.97,
+      "confidence_pct": 97.0,
+      "area_m2": 1725,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113318,
+        72.867493
+      ]
+    },
+    {
+      "parcel_id": "MUM-242",
+      "survey_number": "CTS-1441",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.9,
+      "iou": 0.68,
+      "confidence_pct": 66.0,
+      "area_m2": 3577,
+      "status": "conflict",
+      "land_use": "Commercial",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.112289,
+        72.871525
+      ]
+    },
+    {
+      "parcel_id": "MUM-243",
+      "survey_number": "CTS-1442/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.92,
+      "confidence_pct": 92.0,
+      "area_m2": 1733,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.114608,
+        72.86767
+      ]
+    },
+    {
+      "parcel_id": "MUM-244",
+      "survey_number": "CTS-1443/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.93,
+      "confidence_pct": 93.0,
+      "area_m2": 1251,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112534,
+        72.867668
+      ]
+    },
+    {
+      "parcel_id": "MUM-245",
+      "survey_number": "CTS-1444",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.98,
+      "confidence_pct": 94.0,
+      "area_m2": 462,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111339,
+        72.869271
+      ]
+    },
+    {
+      "parcel_id": "MUM-246",
+      "survey_number": "CTS-1445/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.93,
+      "confidence_pct": 95.0,
+      "area_m2": 64,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115799,
+        72.870399
+      ]
+    },
+    {
+      "parcel_id": "MUM-247",
+      "survey_number": "CTS-1446/1",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.98,
+      "iou": 0.82,
+      "confidence_pct": 86.0,
+      "area_m2": 615,
+      "status": "review",
+      "land_use": "Residential",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.115603,
+        72.868504
+      ]
+    },
+    {
+      "parcel_id": "MUM-248",
+      "survey_number": "CTS-1447",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.94,
+      "confidence_pct": 97.0,
+      "area_m2": 210,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115893,
+        72.869248
+      ]
+    },
+    {
+      "parcel_id": "MUM-249",
+      "survey_number": "CTS-1448/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.97,
+      "confidence_pct": 98.0,
+      "area_m2": 258,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115893,
+        72.869035
+      ]
+    },
+    {
+      "parcel_id": "MUM-250",
+      "survey_number": "CTS-1449/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.93,
+      "confidence_pct": 92.0,
+      "area_m2": 452,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.114804,
+        72.871772
+      ]
+    },
+    {
+      "parcel_id": "MUM-251",
+      "survey_number": "CTS-1450",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.93,
+      "confidence_pct": 93.0,
+      "area_m2": 142,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115427,
+        72.871274
+      ]
+    },
+    {
+      "parcel_id": "MUM-252",
+      "survey_number": "CTS-1451/A",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.88,
+      "confidence_pct": 79.0,
+      "area_m2": 266,
+      "status": "review",
+      "land_use": "Institutional",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.115909,
+        72.868837
+      ]
+    },
+    {
+      "parcel_id": "MUM-253",
+      "survey_number": "CTS-1452/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.93,
+      "confidence_pct": 95.0,
+      "area_m2": 677,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.112994,
+        72.872125
+      ]
+    },
+    {
+      "parcel_id": "MUM-254",
+      "survey_number": "CTS-1453",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.92,
+      "confidence_pct": 96.0,
+      "area_m2": 307,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111248,
+        72.868839
+      ]
+    },
+    {
+      "parcel_id": "MUM-255",
+      "survey_number": "CTS-1454/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.97,
+      "confidence_pct": 97.0,
+      "area_m2": 245,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115879,
+        72.868631
+      ]
+    },
+    {
+      "parcel_id": "MUM-256",
+      "survey_number": "CTS-1455/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.96,
+      "confidence_pct": 98.0,
+      "area_m2": 360,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111133,
+        72.869165
+      ]
+    },
+    {
+      "parcel_id": "MUM-257",
+      "survey_number": "CTS-1456",
+      "conflict_type": "Source Mismatch",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.46,
+      "iou": 0.82,
+      "confidence_pct": 84.0,
+      "area_m2": 2455,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Area or geometry shape disagreement between revenue deeds and municipal GIS",
+      "centroid": [
+        19.111724,
+        72.871399
+      ]
+    },
+    {
+      "parcel_id": "MUM-258",
+      "survey_number": "CTS-1457/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.32,
+      "iou": 0.95,
+      "confidence_pct": 93.0,
+      "area_m2": 63,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.116129,
+        72.870092
+      ]
+    },
+    {
+      "parcel_id": "MUM-259",
+      "survey_number": "CTS-1458/1",
+      "conflict_type": "Geometry Issue",
+      "sources_text": "3 Sources (Cadastral, Municipal, ORI)",
+      "sources_count": 3,
+      "boundary_drift_m": 2.4,
+      "iou": 0.67,
+      "confidence_pct": 61.0,
+      "area_m2": 814,
+      "status": "conflict",
+      "land_use": "Institutional",
+      "description": "Self-intersection, sliver polygon, or vertex collinearity anomaly",
+      "centroid": [
+        19.112617,
+        72.86732
+      ]
+    },
+    {
+      "parcel_id": "MUM-260",
+      "survey_number": "CTS-1459",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.97,
+      "confidence_pct": 95.0,
+      "area_m2": 988,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111393,
+        72.86836
+      ]
+    },
+    {
+      "parcel_id": "MUM-261",
+      "survey_number": "CTS-1460/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.97,
+      "confidence_pct": 96.0,
+      "area_m2": 274,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115917,
+        72.868462
+      ]
+    },
+    {
+      "parcel_id": "MUM-262",
+      "survey_number": "CTS-1461/1",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.22,
+      "iou": 0.81,
+      "confidence_pct": 77.0,
+      "area_m2": 782,
+      "status": "review",
+      "land_use": "Mixed Use",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.11138,
+        72.871163
+      ]
+    },
+    {
+      "parcel_id": "MUM-263",
+      "survey_number": "CTS-1462",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.92,
+      "confidence_pct": 98.0,
+      "area_m2": 332,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.11485,
+        72.872066
+      ]
+    },
+    {
+      "parcel_id": "MUM-264",
+      "survey_number": "CTS-1463/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.98,
+      "confidence_pct": 92.0,
+      "area_m2": 1099,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115055,
+        72.867451
+      ]
+    },
+    {
+      "parcel_id": "MUM-265",
+      "survey_number": "CTS-1464/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.95,
+      "confidence_pct": 93.0,
+      "area_m2": 660,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111542,
+        72.867972
+      ]
+    },
+    {
+      "parcel_id": "MUM-266",
+      "survey_number": "CTS-1465",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.44,
+      "iou": 0.93,
+      "confidence_pct": 94.0,
+      "area_m2": 399,
+      "status": "reconciled",
+      "land_use": "Institutional",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.111055,
+        72.868787
+      ]
+    },
+    {
+      "parcel_id": "MUM-267",
+      "survey_number": "CTS-1466/A",
+      "conflict_type": "Infrastructure Crossing",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 1.62,
+      "iou": 0.84,
+      "confidence_pct": 82.0,
+      "area_m2": 339,
+      "status": "review",
+      "land_use": "Residential",
+      "description": "Proximity or spatial overlap with designated road ROW or SWD buffer",
+      "centroid": [
+        19.110955,
+        72.869101
+      ]
+    },
+    {
+      "parcel_id": "MUM-268",
+      "survey_number": "CTS-1467/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.93,
+      "confidence_pct": 96.0,
+      "area_m2": 1655,
+      "status": "reconciled",
+      "land_use": "Residential",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113379,
+        72.872411
+      ]
+    },
+    {
+      "parcel_id": "MUM-269",
+      "survey_number": "CTS-1468",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.2,
+      "iou": 0.97,
+      "confidence_pct": 97.0,
+      "area_m2": 341,
+      "status": "reconciled",
+      "land_use": "Mixed Use",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.116305,
+        72.869258
+      ]
+    },
+    {
+      "parcel_id": "MUM-270",
+      "survey_number": "CTS-1469/A",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.26,
+      "iou": 0.96,
+      "confidence_pct": 98.0,
+      "area_m2": 1323,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.115609,
+        72.867829
+      ]
+    },
+    {
+      "parcel_id": "MUM-271",
+      "survey_number": "CTS-1470/1",
+      "conflict_type": "None (Consensus Verified)",
+      "sources_text": "4 Sources (Cadastral, Municipal, ORI, AI)",
+      "sources_count": 4,
+      "boundary_drift_m": 0.38,
+      "iou": 0.96,
+      "confidence_pct": 92.0,
+      "area_m2": 632,
+      "status": "reconciled",
+      "land_use": "Commercial",
+      "description": "Spatial consensus verified within tolerance",
+      "centroid": [
+        19.113181,
+        72.866982
+      ]
+    },
+    {
+      "parcel_id": "MUM-272",
+      "survey_number": "CTS-1471",
+      "conflict_type": "Boundary Offset",
+      "sources_text": "3 Sources (Cadastral, Municipal, AI)",
+      "sources_count": 3,
+      "boundary_drift_m": 0.9,
+      "iou": 0.83,
+      "confidence_pct": 87.0,
+      "area_m2": 353,
+      "status": "review",
+      "land_use": "Commercial",
+      "description": "Lateral coordinate discrepancy between cadastral boundary and building edge",
+      "centroid": [
+        19.116299,
+        72.869074
+      ]
+    }
+  ]
+}

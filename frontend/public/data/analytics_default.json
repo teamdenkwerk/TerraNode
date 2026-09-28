@@ -1,0 +1,2213 @@
+{
+  "dataset": {
+    "id": "delhi-urban",
+    "name": "Delhi NCR \u2014 Urban District",
+    "city": "Delhi NCR",
+    "aoi": "Urban District",
+    "version": "v1.2",
+    "last_updated": "2026-09-03 10:21:04 UTC",
+    "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "upload_date": "2026-09-03"
+  },
+  "snapshot": {
+    "parcels_analyzed": 72,
+    "records_agree": 44,
+    "needs_checking": 22,
+    "conflicts": 6,
+    "labels": {
+      "parcels_analyzed": "Parcels analyzed",
+      "records_agree": "Records currently agree",
+      "needs_checking": "Need additional checking",
+      "conflicts": "Require closer review"
+    }
+  },
+  "agreement_status": {
+    "total": 72,
+    "verified": {
+      "count": 44,
+      "percentage": 61.1,
+      "label": "Verified"
+    },
+    "needs_review": {
+      "count": 22,
+      "percentage": 30.6,
+      "label": "Needs Review"
+    },
+    "conflict": {
+      "count": 6,
+      "percentage": 8.3,
+      "label": "Conflict"
+    },
+    "is_mutually_exclusive": true,
+    "note": "Verified + Needs Review + Conflict equals total parcels analyzed."
+  },
+  "source_comparison": {
+    "active_sources": [
+      {
+        "id": "ori",
+        "name": "Drone Orthorectified Imagery (5cm GSD)",
+        "short_name": "Drone ORI",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "cadastral",
+        "name": "Revenue Cadastral (Khasra)",
+        "short_name": "Cadastral",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "municipal",
+        "name": "BBMP Municipal GIS",
+        "short_name": "Municipal GIS",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "ai",
+        "name": "Mask R-CNN Footprint Model",
+        "short_name": "Drone AI",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "rtk",
+        "name": "Survey of India CORS RTK Benchmarks",
+        "short_name": "Ground Survey",
+        "count": 8,
+        "coverage_pct": 11.1,
+        "status": "PARTIAL"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "ori-cadastral",
+        "source_a": "Drone ORI",
+        "source_b": "Cadastral",
+        "agreement_pct": 94.2,
+        "mean_iou": 0.942,
+        "centroid_diff_m": 0.31,
+        "hausdorff_diff_m": 0.38,
+        "parcels_compared": 72,
+        "largest_diff_m": 3.05,
+        "parcels_needing_review": 22,
+        "source_crs": "EPSG:4326 (WGS84)",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Polygon IoU & Affine Metric Transform"
+      },
+      {
+        "id": "ori-municipal",
+        "source_a": "Drone ORI",
+        "source_b": "Municipal GIS",
+        "agreement_pct": 89.8,
+        "mean_iou": 0.898,
+        "centroid_diff_m": 0.48,
+        "hausdorff_diff_m": 0.54,
+        "parcels_compared": 72,
+        "largest_diff_m": 1.62,
+        "parcels_needing_review": 26,
+        "source_crs": "Municipal Property Grid",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Civic Parcel Boundary Conflation"
+      },
+      {
+        "id": "cadastral-municipal",
+        "source_a": "Cadastral",
+        "source_b": "Municipal GIS",
+        "agreement_pct": 81.4,
+        "mean_iou": 0.814,
+        "centroid_diff_m": 0.85,
+        "hausdorff_diff_m": 0.92,
+        "parcels_compared": 72,
+        "largest_diff_m": 2.14,
+        "parcels_needing_review": 28,
+        "source_crs": "Revenue Survey Deeds",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Cross-Authority Register Re-alignment"
+      },
+      {
+        "id": "ai-ori",
+        "source_a": "Drone AI",
+        "source_b": "Drone ORI",
+        "agreement_pct": 96.1,
+        "mean_iou": 0.961,
+        "centroid_diff_m": 0.22,
+        "hausdorff_diff_m": 0.28,
+        "parcels_compared": 72,
+        "largest_diff_m": 0.82,
+        "parcels_needing_review": 7,
+        "source_crs": "5cm Sub-decimeter Orthomosaic",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Mask R-CNN ResNet-50-FPN Segmentation"
+      }
+    ]
+  },
+  "difference_categories": {
+    "categories": [
+      {
+        "id": "boundary",
+        "name": "Boundary Difference",
+        "count": 3,
+        "percentage": 10.7,
+        "description": "Physical footprint boundary differs from legal cadastre line"
+      },
+      {
+        "id": "location",
+        "name": "Location Difference",
+        "count": 18,
+        "percentage": 64.3,
+        "description": "Centroid or coordinate alignment offset across records"
+      },
+      {
+        "id": "missing",
+        "name": "Missing Record",
+        "count": 5,
+        "percentage": 17.9,
+        "description": "Physical structure lacks corresponding civic tax ID"
+      },
+      {
+        "id": "subdivision",
+        "name": "Subdivision Difference",
+        "count": 2,
+        "percentage": 7.1,
+        "description": "Internal plot division without formal updated survey record"
+      }
+    ],
+    "total_with_differences": 28,
+    "note": "Categories describe the primary nature of discrepancy found in non-reconciled records."
+  },
+  "difference_distribution": {
+    "buckets": [
+      {
+        "range": "< 0.5 m",
+        "label": "Under 0.5 m",
+        "count": 44,
+        "percentage": 61.1,
+        "description": "Minimal boundary difference within standard surveyor tolerance"
+      },
+      {
+        "range": "0.5\u20131 m",
+        "label": "0.5 to 1.0 m",
+        "count": 7,
+        "percentage": 9.7,
+        "description": "Moderate variance; typically resolved via orthophoto verification"
+      },
+      {
+        "range": "1\u20132 m",
+        "label": "1.0 to 2.0 m",
+        "count": 15,
+        "percentage": 20.8,
+        "description": "Substantial difference flagged for administrative check"
+      },
+      {
+        "range": "> 2 m",
+        "label": "Over 2.0 m",
+        "count": 6,
+        "percentage": 8.3,
+        "description": "Significant discrepancy requiring priority surveyor inspection"
+      }
+    ],
+    "total": 72,
+    "unit": "metres"
+  },
+  "agreement_by_source": [
+    {
+      "pair_id": "ori-cadastral",
+      "source_a": "Drone ORI",
+      "source_b": "Cadastral",
+      "label": "Drone ORI vs Cadastral",
+      "agreement_pct": 94.2
+    },
+    {
+      "pair_id": "ori-municipal",
+      "source_a": "Drone ORI",
+      "source_b": "Municipal GIS",
+      "label": "Drone ORI vs Municipal GIS",
+      "agreement_pct": 89.8
+    },
+    {
+      "pair_id": "cadastral-municipal",
+      "source_a": "Cadastral",
+      "source_b": "Municipal GIS",
+      "label": "Cadastral vs Municipal GIS",
+      "agreement_pct": 81.4
+    },
+    {
+      "pair_id": "ai-ori",
+      "source_a": "Drone AI",
+      "source_b": "Drone ORI",
+      "label": "Drone AI vs Drone ORI",
+      "agreement_pct": 96.1
+    }
+  ],
+  "difference_vs_agreement": [
+    {
+      "parcel_id": "DEL-101",
+      "survey_number": "DL-NDMC-101/A",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-102",
+      "survey_number": "DL-NDMC-118/B",
+      "difference_m": 1.12,
+      "agreement_pct": 84.3,
+      "confidence_pct": 80.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-103",
+      "survey_number": "DL-NDMC-135/C",
+      "difference_m": 0.27,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-104",
+      "survey_number": "DL-NDMC-152/D",
+      "difference_m": 0.12,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-105",
+      "survey_number": "DL-NDMC-169/E",
+      "difference_m": 0.42,
+      "agreement_pct": 96.5,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-106",
+      "survey_number": "DL-NDMC-186/F",
+      "difference_m": 2.15,
+      "agreement_pct": 68.8,
+      "confidence_pct": 66.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-107",
+      "survey_number": "DL-NDMC-203/A",
+      "difference_m": 1.2,
+      "agreement_pct": 80.8,
+      "confidence_pct": 79.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-108",
+      "survey_number": "DL-NDMC-220/B",
+      "difference_m": 0.32,
+      "agreement_pct": 98.3,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-109",
+      "survey_number": "DL-NDMC-237/C",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-110",
+      "survey_number": "DL-NDMC-254/D",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-111",
+      "survey_number": "DL-NDMC-271/E",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-112",
+      "survey_number": "DL-NDMC-288/F",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 84.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-113",
+      "survey_number": "DL-NDMC-305/A",
+      "difference_m": 0.42,
+      "agreement_pct": 94.7,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-114",
+      "survey_number": "DL-NDMC-322/B",
+      "difference_m": 0.27,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-115",
+      "survey_number": "DL-NDMC-339/C",
+      "difference_m": 1.2,
+      "agreement_pct": 78.0,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-116",
+      "survey_number": "DL-NDMC-356/D",
+      "difference_m": 0.27,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-117",
+      "survey_number": "DL-NDMC-373/E",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-118",
+      "survey_number": "DL-NDMC-390/F",
+      "difference_m": 2.25,
+      "agreement_pct": 69.6,
+      "confidence_pct": 62.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-119",
+      "survey_number": "DL-NDMC-407/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-120",
+      "survey_number": "DL-NDMC-424/B",
+      "difference_m": 0.42,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-121",
+      "survey_number": "DL-NDMC-441/C",
+      "difference_m": 0.12,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-122",
+      "survey_number": "DL-NDMC-458/D",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 82.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-123",
+      "survey_number": "DL-NDMC-475/E",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-124",
+      "survey_number": "DL-NDMC-492/F",
+      "difference_m": 0.12,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-125",
+      "survey_number": "DL-NDMC-109/A",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-126",
+      "survey_number": "DL-NDMC-126/B",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-127",
+      "survey_number": "DL-NDMC-143/C",
+      "difference_m": 1.28,
+      "agreement_pct": 82.9,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-128",
+      "survey_number": "DL-NDMC-160/D",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-129",
+      "survey_number": "DL-NDMC-177/E",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-130",
+      "survey_number": "DL-NDMC-194/F",
+      "difference_m": 3.05,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-131",
+      "survey_number": "DL-NDMC-211/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.9,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-132",
+      "survey_number": "DL-NDMC-228/B",
+      "difference_m": 1.2,
+      "agreement_pct": 79.4,
+      "confidence_pct": 80.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-133",
+      "survey_number": "DL-NDMC-245/C",
+      "difference_m": 0.17,
+      "agreement_pct": 92.0,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-134",
+      "survey_number": "DL-NDMC-262/D",
+      "difference_m": 0.96,
+      "agreement_pct": 84.3,
+      "confidence_pct": 82.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-135",
+      "survey_number": "DL-NDMC-279/E",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-136",
+      "survey_number": "DL-NDMC-296/F",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-137",
+      "survey_number": "DL-NDMC-313/A",
+      "difference_m": 1.2,
+      "agreement_pct": 82.2,
+      "confidence_pct": 79.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-138",
+      "survey_number": "DL-NDMC-330/B",
+      "difference_m": 0.32,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-139",
+      "survey_number": "DL-NDMC-347/C",
+      "difference_m": 0.32,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-140",
+      "survey_number": "DL-NDMC-364/D",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-141",
+      "survey_number": "DL-NDMC-381/E",
+      "difference_m": 0.27,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-142",
+      "survey_number": "DL-NDMC-398/F",
+      "difference_m": 2.65,
+      "agreement_pct": 70.4,
+      "confidence_pct": 62.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-143",
+      "survey_number": "DL-NDMC-415/A",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-144",
+      "survey_number": "DL-NDMC-432/B",
+      "difference_m": 0.42,
+      "agreement_pct": 92.9,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-145",
+      "survey_number": "DL-NDMC-449/C",
+      "difference_m": 0.72,
+      "agreement_pct": 78.0,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-146",
+      "survey_number": "DL-NDMC-466/D",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-147",
+      "survey_number": "DL-NDMC-483/E",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 83.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-148",
+      "survey_number": "DL-NDMC-500/F",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-149",
+      "survey_number": "DL-NDMC-117/A",
+      "difference_m": 0.17,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-150",
+      "survey_number": "DL-NDMC-134/B",
+      "difference_m": 0.32,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-151",
+      "survey_number": "DL-NDMC-151/C",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-152",
+      "survey_number": "DL-NDMC-168/D",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 82.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-153",
+      "survey_number": "DL-NDMC-185/E",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-154",
+      "survey_number": "DL-NDMC-202/F",
+      "difference_m": 2.65,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-155",
+      "survey_number": "DL-NDMC-219/A",
+      "difference_m": 0.42,
+      "agreement_pct": 94.7,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-156",
+      "survey_number": "DL-NDMC-236/B",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-157",
+      "survey_number": "DL-NDMC-253/C",
+      "difference_m": 0.72,
+      "agreement_pct": 79.4,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-158",
+      "survey_number": "DL-NDMC-270/D",
+      "difference_m": 0.37,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-159",
+      "survey_number": "DL-NDMC-287/E",
+      "difference_m": 1.12,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-160",
+      "survey_number": "DL-NDMC-304/F",
+      "difference_m": 0.37,
+      "agreement_pct": 94.7,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-161",
+      "survey_number": "DL-NDMC-321/A",
+      "difference_m": 0.22,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-162",
+      "survey_number": "DL-NDMC-338/B",
+      "difference_m": 0.72,
+      "agreement_pct": 82.2,
+      "confidence_pct": 80.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-163",
+      "survey_number": "DL-NDMC-355/C",
+      "difference_m": 1.28,
+      "agreement_pct": 78.7,
+      "confidence_pct": 81.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-164",
+      "survey_number": "DL-NDMC-372/D",
+      "difference_m": 0.37,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-165",
+      "survey_number": "DL-NDMC-389/E",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-166",
+      "survey_number": "DL-NDMC-406/F",
+      "difference_m": 2.35,
+      "agreement_pct": 67.2,
+      "confidence_pct": 62.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "DEL-167",
+      "survey_number": "DL-NDMC-423/A",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 79.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "DEL-168",
+      "survey_number": "DL-NDMC-440/B",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-169",
+      "survey_number": "DL-NDMC-457/C",
+      "difference_m": 0.17,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-170",
+      "survey_number": "DL-NDMC-474/D",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-171",
+      "survey_number": "DL-NDMC-491/E",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "DEL-172",
+      "survey_number": "DL-NDMC-108/F",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 84.0,
+      "status": "review"
+    }
+  ],
+  "largest_observed_differences": [
+    {
+      "parcel_id": "DEL-130",
+      "record_id": "PID-2029",
+      "survey_number": "DL-NDMC-194/F",
+      "difference_m": 3.05,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619931,
+        77.210805
+      ]
+    },
+    {
+      "parcel_id": "DEL-142",
+      "record_id": "PID-2041",
+      "survey_number": "DL-NDMC-398/F",
+      "difference_m": 2.65,
+      "agreement_pct": 70.4,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.617608,
+        77.217841
+      ]
+    },
+    {
+      "parcel_id": "DEL-154",
+      "record_id": "PID-2053",
+      "survey_number": "DL-NDMC-202/F",
+      "difference_m": 2.65,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615253,
+        77.217411
+      ]
+    },
+    {
+      "parcel_id": "DEL-166",
+      "record_id": "PID-2065",
+      "survey_number": "DL-NDMC-406/F",
+      "difference_m": 2.35,
+      "agreement_pct": 67.2,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610772,
+        77.221698
+      ]
+    },
+    {
+      "parcel_id": "DEL-118",
+      "record_id": "PID-2017",
+      "survey_number": "DL-NDMC-390/F",
+      "difference_m": 2.25,
+      "agreement_pct": 69.6,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623294,
+        77.220011
+      ]
+    },
+    {
+      "parcel_id": "DEL-106",
+      "record_id": "PID-2005",
+      "survey_number": "DL-NDMC-186/F",
+      "difference_m": 2.15,
+      "agreement_pct": 68.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625257,
+        77.212351
+      ]
+    }
+  ],
+  "parcels_to_check": [
+    {
+      "parcel_id": "DEL-101",
+      "record_id": "PID-2000",
+      "survey_number": "DL-NDMC-101/A",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.626132,
+        77.225001
+      ]
+    },
+    {
+      "parcel_id": "DEL-102",
+      "record_id": "PID-2001",
+      "survey_number": "DL-NDMC-118/B",
+      "difference_m": 1.12,
+      "agreement_pct": 84.3,
+      "confidence_pct": 80.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Subdivision Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625983,
+        77.209032
+      ]
+    },
+    {
+      "parcel_id": "DEL-103",
+      "record_id": "PID-2002",
+      "survey_number": "DL-NDMC-135/C",
+      "difference_m": 0.27,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.6255,
+        77.214759
+      ]
+    },
+    {
+      "parcel_id": "DEL-104",
+      "record_id": "PID-2003",
+      "survey_number": "DL-NDMC-152/D",
+      "difference_m": 0.12,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625452,
+        77.218249
+      ]
+    },
+    {
+      "parcel_id": "DEL-105",
+      "record_id": "PID-2004",
+      "survey_number": "DL-NDMC-169/E",
+      "difference_m": 0.42,
+      "agreement_pct": 96.5,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625433,
+        77.199161
+      ]
+    },
+    {
+      "parcel_id": "DEL-106",
+      "record_id": "PID-2005",
+      "survey_number": "DL-NDMC-186/F",
+      "difference_m": 2.15,
+      "agreement_pct": 68.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625257,
+        77.212351
+      ]
+    },
+    {
+      "parcel_id": "DEL-107",
+      "record_id": "PID-2006",
+      "survey_number": "DL-NDMC-203/A",
+      "difference_m": 1.2,
+      "agreement_pct": 80.8,
+      "confidence_pct": 79.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625085,
+        77.200436
+      ]
+    },
+    {
+      "parcel_id": "DEL-108",
+      "record_id": "PID-2007",
+      "survey_number": "DL-NDMC-220/B",
+      "difference_m": 0.32,
+      "agreement_pct": 98.3,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625069,
+        77.211336
+      ]
+    },
+    {
+      "parcel_id": "DEL-109",
+      "record_id": "PID-2008",
+      "survey_number": "DL-NDMC-237/C",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.625046,
+        77.220233
+      ]
+    },
+    {
+      "parcel_id": "DEL-110",
+      "record_id": "PID-2009",
+      "survey_number": "DL-NDMC-254/D",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.624899,
+        77.212865
+      ]
+    },
+    {
+      "parcel_id": "DEL-111",
+      "record_id": "PID-2010",
+      "survey_number": "DL-NDMC-271/E",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.624464,
+        77.219647
+      ]
+    },
+    {
+      "parcel_id": "DEL-112",
+      "record_id": "PID-2011",
+      "survey_number": "DL-NDMC-288/F",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 84.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.624247,
+        77.212585
+      ]
+    },
+    {
+      "parcel_id": "DEL-113",
+      "record_id": "PID-2012",
+      "survey_number": "DL-NDMC-305/A",
+      "difference_m": 0.42,
+      "agreement_pct": 94.7,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623732,
+        77.20521
+      ]
+    },
+    {
+      "parcel_id": "DEL-114",
+      "record_id": "PID-2013",
+      "survey_number": "DL-NDMC-322/B",
+      "difference_m": 0.27,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623608,
+        77.213748
+      ]
+    },
+    {
+      "parcel_id": "DEL-115",
+      "record_id": "PID-2014",
+      "survey_number": "DL-NDMC-339/C",
+      "difference_m": 1.2,
+      "agreement_pct": 78.0,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623605,
+        77.202021
+      ]
+    },
+    {
+      "parcel_id": "DEL-116",
+      "record_id": "PID-2015",
+      "survey_number": "DL-NDMC-356/D",
+      "difference_m": 0.27,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623367,
+        77.214491
+      ]
+    },
+    {
+      "parcel_id": "DEL-117",
+      "record_id": "PID-2016",
+      "survey_number": "DL-NDMC-373/E",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623329,
+        77.204555
+      ]
+    },
+    {
+      "parcel_id": "DEL-118",
+      "record_id": "PID-2017",
+      "survey_number": "DL-NDMC-390/F",
+      "difference_m": 2.25,
+      "agreement_pct": 69.6,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623294,
+        77.220011
+      ]
+    },
+    {
+      "parcel_id": "DEL-119",
+      "record_id": "PID-2018",
+      "survey_number": "DL-NDMC-407/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.623147,
+        77.203771
+      ]
+    },
+    {
+      "parcel_id": "DEL-120",
+      "record_id": "PID-2019",
+      "survey_number": "DL-NDMC-424/B",
+      "difference_m": 0.42,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.622732,
+        77.201423
+      ]
+    },
+    {
+      "parcel_id": "DEL-121",
+      "record_id": "PID-2020",
+      "survey_number": "DL-NDMC-441/C",
+      "difference_m": 0.12,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.622618,
+        77.213024
+      ]
+    },
+    {
+      "parcel_id": "DEL-122",
+      "record_id": "PID-2021",
+      "survey_number": "DL-NDMC-458/D",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 82.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.621911,
+        77.212323
+      ]
+    },
+    {
+      "parcel_id": "DEL-123",
+      "record_id": "PID-2022",
+      "survey_number": "DL-NDMC-475/E",
+      "difference_m": 0.96,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.621665,
+        77.21055
+      ]
+    },
+    {
+      "parcel_id": "DEL-124",
+      "record_id": "PID-2023",
+      "survey_number": "DL-NDMC-492/F",
+      "difference_m": 0.12,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.621515,
+        77.21741
+      ]
+    },
+    {
+      "parcel_id": "DEL-125",
+      "record_id": "PID-2024",
+      "survey_number": "DL-NDMC-109/A",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        28.621503,
+        77.223851
+      ]
+    },
+    {
+      "parcel_id": "DEL-126",
+      "record_id": "PID-2025",
+      "survey_number": "DL-NDMC-126/B",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.621029,
+        77.211861
+      ]
+    },
+    {
+      "parcel_id": "DEL-127",
+      "record_id": "PID-2026",
+      "survey_number": "DL-NDMC-143/C",
+      "difference_m": 1.28,
+      "agreement_pct": 82.9,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.620611,
+        77.208122
+      ]
+    },
+    {
+      "parcel_id": "DEL-128",
+      "record_id": "PID-2027",
+      "survey_number": "DL-NDMC-160/D",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.620178,
+        77.213467
+      ]
+    },
+    {
+      "parcel_id": "DEL-129",
+      "record_id": "PID-2028",
+      "survey_number": "DL-NDMC-177/E",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.620103,
+        77.209142
+      ]
+    },
+    {
+      "parcel_id": "DEL-130",
+      "record_id": "PID-2029",
+      "survey_number": "DL-NDMC-194/F",
+      "difference_m": 3.05,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619931,
+        77.210805
+      ]
+    },
+    {
+      "parcel_id": "DEL-131",
+      "record_id": "PID-2030",
+      "survey_number": "DL-NDMC-211/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.9,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619623,
+        77.205466
+      ]
+    },
+    {
+      "parcel_id": "DEL-132",
+      "record_id": "PID-2031",
+      "survey_number": "DL-NDMC-228/B",
+      "difference_m": 1.2,
+      "agreement_pct": 79.4,
+      "confidence_pct": 80.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619401,
+        77.211647
+      ]
+    },
+    {
+      "parcel_id": "DEL-133",
+      "record_id": "PID-2032",
+      "survey_number": "DL-NDMC-245/C",
+      "difference_m": 0.17,
+      "agreement_pct": 92.0,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619128,
+        77.21038
+      ]
+    },
+    {
+      "parcel_id": "DEL-134",
+      "record_id": "PID-2033",
+      "survey_number": "DL-NDMC-262/D",
+      "difference_m": 0.96,
+      "agreement_pct": 84.3,
+      "confidence_pct": 82.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.619041,
+        77.204692
+      ]
+    },
+    {
+      "parcel_id": "DEL-135",
+      "record_id": "PID-2034",
+      "survey_number": "DL-NDMC-279/E",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618856,
+        77.207179
+      ]
+    },
+    {
+      "parcel_id": "DEL-136",
+      "record_id": "PID-2035",
+      "survey_number": "DL-NDMC-296/F",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618824,
+        77.217756
+      ]
+    },
+    {
+      "parcel_id": "DEL-137",
+      "record_id": "PID-2036",
+      "survey_number": "DL-NDMC-313/A",
+      "difference_m": 1.2,
+      "agreement_pct": 82.2,
+      "confidence_pct": 79.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618733,
+        77.20726
+      ]
+    },
+    {
+      "parcel_id": "DEL-138",
+      "record_id": "PID-2037",
+      "survey_number": "DL-NDMC-330/B",
+      "difference_m": 0.32,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618716,
+        77.210149
+      ]
+    },
+    {
+      "parcel_id": "DEL-139",
+      "record_id": "PID-2038",
+      "survey_number": "DL-NDMC-347/C",
+      "difference_m": 0.32,
+      "agreement_pct": 96.5,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618491,
+        77.21198
+      ]
+    },
+    {
+      "parcel_id": "DEL-140",
+      "record_id": "PID-2039",
+      "survey_number": "DL-NDMC-364/D",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.618232,
+        77.204871
+      ]
+    },
+    {
+      "parcel_id": "DEL-141",
+      "record_id": "PID-2040",
+      "survey_number": "DL-NDMC-381/E",
+      "difference_m": 0.27,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        28.61813,
+        77.219375
+      ]
+    },
+    {
+      "parcel_id": "DEL-142",
+      "record_id": "PID-2041",
+      "survey_number": "DL-NDMC-398/F",
+      "difference_m": 2.65,
+      "agreement_pct": 70.4,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.617608,
+        77.217841
+      ]
+    },
+    {
+      "parcel_id": "DEL-143",
+      "record_id": "PID-2042",
+      "survey_number": "DL-NDMC-415/A",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.617556,
+        77.214485
+      ]
+    },
+    {
+      "parcel_id": "DEL-144",
+      "record_id": "PID-2043",
+      "survey_number": "DL-NDMC-432/B",
+      "difference_m": 0.42,
+      "agreement_pct": 92.9,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.617161,
+        77.208048
+      ]
+    },
+    {
+      "parcel_id": "DEL-145",
+      "record_id": "PID-2044",
+      "survey_number": "DL-NDMC-449/C",
+      "difference_m": 0.72,
+      "agreement_pct": 78.0,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.617136,
+        77.210189
+      ]
+    },
+    {
+      "parcel_id": "DEL-146",
+      "record_id": "PID-2045",
+      "survey_number": "DL-NDMC-466/D",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.616158,
+        77.215224
+      ]
+    },
+    {
+      "parcel_id": "DEL-147",
+      "record_id": "PID-2046",
+      "survey_number": "DL-NDMC-483/E",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 83.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.616064,
+        77.215418
+      ]
+    },
+    {
+      "parcel_id": "DEL-148",
+      "record_id": "PID-2047",
+      "survey_number": "DL-NDMC-500/F",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.616057,
+        77.213458
+      ]
+    },
+    {
+      "parcel_id": "DEL-149",
+      "record_id": "PID-2048",
+      "survey_number": "DL-NDMC-117/A",
+      "difference_m": 0.17,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615942,
+        77.211346
+      ]
+    },
+    {
+      "parcel_id": "DEL-150",
+      "record_id": "PID-2049",
+      "survey_number": "DL-NDMC-134/B",
+      "difference_m": 0.32,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615787,
+        77.219965
+      ]
+    },
+    {
+      "parcel_id": "DEL-151",
+      "record_id": "PID-2050",
+      "survey_number": "DL-NDMC-151/C",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615684,
+        77.221784
+      ]
+    },
+    {
+      "parcel_id": "DEL-152",
+      "record_id": "PID-2051",
+      "survey_number": "DL-NDMC-168/D",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 82.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615595,
+        77.223616
+      ]
+    },
+    {
+      "parcel_id": "DEL-153",
+      "record_id": "PID-2052",
+      "survey_number": "DL-NDMC-185/E",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615387,
+        77.20587
+      ]
+    },
+    {
+      "parcel_id": "DEL-154",
+      "record_id": "PID-2053",
+      "survey_number": "DL-NDMC-202/F",
+      "difference_m": 2.65,
+      "agreement_pct": 72.8,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.615253,
+        77.217411
+      ]
+    },
+    {
+      "parcel_id": "DEL-155",
+      "record_id": "PID-2054",
+      "survey_number": "DL-NDMC-219/A",
+      "difference_m": 0.42,
+      "agreement_pct": 94.7,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.612712,
+        77.205734
+      ]
+    },
+    {
+      "parcel_id": "DEL-156",
+      "record_id": "PID-2055",
+      "survey_number": "DL-NDMC-236/B",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611771,
+        77.219111
+      ]
+    },
+    {
+      "parcel_id": "DEL-157",
+      "record_id": "PID-2056",
+      "survey_number": "DL-NDMC-253/C",
+      "difference_m": 0.72,
+      "agreement_pct": 79.4,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611696,
+        77.211072
+      ]
+    },
+    {
+      "parcel_id": "DEL-158",
+      "record_id": "PID-2057",
+      "survey_number": "DL-NDMC-270/D",
+      "difference_m": 0.37,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611655,
+        77.215817
+      ]
+    },
+    {
+      "parcel_id": "DEL-159",
+      "record_id": "PID-2058",
+      "survey_number": "DL-NDMC-287/E",
+      "difference_m": 1.12,
+      "agreement_pct": 82.9,
+      "confidence_pct": 83.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Subdivision Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        28.611451,
+        77.216996
+      ]
+    },
+    {
+      "parcel_id": "DEL-160",
+      "record_id": "PID-2059",
+      "survey_number": "DL-NDMC-304/F",
+      "difference_m": 0.37,
+      "agreement_pct": 94.7,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611376,
+        77.213134
+      ]
+    },
+    {
+      "parcel_id": "DEL-161",
+      "record_id": "PID-2060",
+      "survey_number": "DL-NDMC-321/A",
+      "difference_m": 0.22,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        28.611201,
+        77.209614
+      ]
+    },
+    {
+      "parcel_id": "DEL-162",
+      "record_id": "PID-2061",
+      "survey_number": "DL-NDMC-338/B",
+      "difference_m": 0.72,
+      "agreement_pct": 82.2,
+      "confidence_pct": 80.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611174,
+        77.225572
+      ]
+    },
+    {
+      "parcel_id": "DEL-163",
+      "record_id": "PID-2062",
+      "survey_number": "DL-NDMC-355/C",
+      "difference_m": 1.28,
+      "agreement_pct": 78.7,
+      "confidence_pct": 81.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.611001,
+        77.215114
+      ]
+    },
+    {
+      "parcel_id": "DEL-164",
+      "record_id": "PID-2063",
+      "survey_number": "DL-NDMC-372/D",
+      "difference_m": 0.37,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610967,
+        77.223608
+      ]
+    },
+    {
+      "parcel_id": "DEL-165",
+      "record_id": "PID-2064",
+      "survey_number": "DL-NDMC-389/E",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610954,
+        77.220627
+      ]
+    },
+    {
+      "parcel_id": "DEL-166",
+      "record_id": "PID-2065",
+      "survey_number": "DL-NDMC-406/F",
+      "difference_m": 2.35,
+      "agreement_pct": 67.2,
+      "confidence_pct": 62.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610772,
+        77.221698
+      ]
+    },
+    {
+      "parcel_id": "DEL-167",
+      "record_id": "PID-2066",
+      "survey_number": "DL-NDMC-423/A",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 79.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610724,
+        77.208139
+      ]
+    },
+    {
+      "parcel_id": "DEL-168",
+      "record_id": "PID-2067",
+      "survey_number": "DL-NDMC-440/B",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610191,
+        77.202608
+      ]
+    },
+    {
+      "parcel_id": "DEL-169",
+      "record_id": "PID-2068",
+      "survey_number": "DL-NDMC-457/C",
+      "difference_m": 0.17,
+      "agreement_pct": 98.3,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610114,
+        77.203173
+      ]
+    },
+    {
+      "parcel_id": "DEL-170",
+      "record_id": "PID-2069",
+      "survey_number": "DL-NDMC-474/D",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.610026,
+        77.204547
+      ]
+    },
+    {
+      "parcel_id": "DEL-171",
+      "record_id": "PID-2070",
+      "survey_number": "DL-NDMC-491/E",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.609846,
+        77.216771
+      ]
+    },
+    {
+      "parcel_id": "DEL-172",
+      "record_id": "PID-2071",
+      "survey_number": "DL-NDMC-108/F",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 84.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        28.608146,
+        77.222615
+      ]
+    }
+  ],
+  "evidence_summary": [
+    {
+      "name": "Cadastral Record",
+      "status": "AVAILABLE",
+      "description": "Revenue Cadastral (Khasra) verified for all parcels"
+    },
+    {
+      "name": "Municipal Record",
+      "status": "AVAILABLE",
+      "description": "BBMP Municipal GIS tax registry IDs linked"
+    },
+    {
+      "name": "Drone Image",
+      "status": "AVAILABLE",
+      "description": "5cm Orthorectified surface imagery covering 100% AOI"
+    },
+    {
+      "name": "Ground Survey",
+      "status": "PARTIAL",
+      "description": "Survey of India CORS RTK ground-truth benchmark stations"
+    },
+    {
+      "name": "Historical Record",
+      "status": "NOT AVAILABLE",
+      "description": "Prior year digitized revenue maps not loaded"
+    },
+    {
+      "name": "Infrastructure Data",
+      "status": "AVAILABLE",
+      "description": "Road Right-of-Way and SWD buffer corridor layers active"
+    }
+  ],
+  "drone_ai_insights": {
+    "available": true,
+    "buildings_detected": 72,
+    "detection_confidence_pct": 92,
+    "extraction_status": "Complete",
+    "model_architecture": "Mask R-CNN (ResNet-50-FPN Backbone)",
+    "vector_format": "LOD2 Polygon Regularized"
+  },
+  "key_finding": "Most parcels (61.1%) currently agree across the available records. 28 parcels need additional checking, and 70.8% of all observed differences are under 1 metre. The largest observed difference is 3.05 metres.",
+  "technical_details": {
+    "iou": "0.924",
+    "centroid_difference": "0.75 m",
+    "hausdorff_difference": "0.48 m",
+    "average_confidence": "88.4%",
+    "average_agreement": "88.5%",
+    "source_crs": "EPSG:4326 (WGS 84)",
+    "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "extraction_score": "94.6%",
+    "model_version": "v2.4-production",
+    "processing_timestamp": "2026-09-03 10:21:04 UTC"
+  }
+}

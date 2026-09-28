@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "execution_time_ms": 105.54,
+  "aoi": "Bengaluru \u2014 Domlur Sector",
+  "data_quality": {
+    "total_records": 75,
+    "valid_records": 75,
+    "invalid_records": 0,
+    "missing_crs": 0,
+    "invalid_geometries": 0,
+    "duplicate_ids_count": 0,
+    "detected_crs": "EPSG:4326",
+    "target_crs": "EPSG:32644",
+    "validation_status": "PASSED"
+  },
+  "reconciliation_quality": {
+    "parcels_processed": 37,
+    "matched_parcels": 37,
+    "unmatched_parcels": 0,
+    "auto_reconciled": 3,
+    "review_required": 29,
+    "conflicts": 6,
+    "auto_reconciled_percent": 7.9,
+    "review_percent": 76.3,
+    "conflict_percent": 15.8
+  },
+  "geometric_quality": {
+    "mean_iou": 0.7657,
+    "median_iou": 0.8166,
+    "mean_centroid_drift_meters": 1.532,
+    "p95_centroid_drift_meters": 3.847,
+    "mean_area_variance_percent": 1.03,
+    "within_2m_drift_percent": 84.2
+  },
+  "ground_truth_validation": {
+    "reference_dataset": "Field GNSS RTK Survey Checkpoints",
+    "reference_checkpoints_count": 11,
+    "validated_parcels": 37,
+    "mean_iou": 0.824,
+    "median_iou": 0.835,
+    "mean_centroid_drift_meters": 0.742,
+    "within_2m_percentage": 100.0,
+    "agreement_with_reference": 88.0,
+    "field_accuracy_m": 0.81
+  },
+  "model_validation": {
+    "ml_available": false,
+    "status_message": "ML validation unavailable \u2014 insufficient verified labelled data",
+    "verified_labeled_samples": 22,
+    "minimum_samples_required": 500,
+    "feature_schema": [
+      "iou",
+      "centroid_drift_m",
+      "area_difference_pct",
+      "perimeter_difference_pct",
+      "shape_compactness_a",
+      "shape_compactness_b",
+      "vertex_count_a",
+      "vertex_count_b",
+      "overlap_ratio_a",
+      "overlap_ratio_b",
+      "source_count",
+      "extraction_quality"
+    ],
+    "pipeline_ready": true,
+    "recommendations": [
+      "Current verified reference checkpoints: 22 (minimum threshold for statistical defensibility: 500).",
+      "Deterministic geometric reconciliation engine is active and serving authoritative decisions.",
+      "Feature extraction pipeline is initialized and logging candidate vectors for future model training.",
+      "Conduct structured GNSS RTK field campaign across remaining sectors to compile required training corpus."
+    ],
+    "disclaimer": "ML validation unavailable \u2014 insufficient verified labelled data"
+  }
+}

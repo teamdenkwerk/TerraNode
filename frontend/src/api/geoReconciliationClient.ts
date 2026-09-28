@@ -1067,19 +1067,34 @@ export async function fetchReportSummary(datasetId?: string): Promise<ReportSumm
     ? `/api/datasets/${encodeURIComponent(datasetId)}/reports/summary`
     : `/api/reports/summary`;
 
+  // 1. Live backend query
   try {
-    const res = await fetch(path);
-    if (res.ok) return await res.json();
+    const url = createApiUrl(path);
+    const res = await fetch(url.toString());
+    if (res.ok) {
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('application/json')) return await res.json();
+    }
   } catch {
-    // Relative fetch failed, attempt fallback to API_BASE_URL
+    // Backend offline, fallback to static dataset package
   }
 
-  const url = datasetId 
-    ? new URL(`/api/datasets/${encodeURIComponent(datasetId)}/reports/summary`, API_BASE_URL)
-    : new URL('/api/reports/summary', API_BASE_URL);
-  const res = await fetch(url.toString());
-  if (!res.ok) throw new Error(`Fetch report summary failed (${res.status})`);
-  return res.json();
+  // 2. Pre-bundled static dataset summary (Netlify / offline)
+  try {
+    const staticPath = datasetId ? `/data/report_summary_${datasetId}.json` : '/data/report_summary_default.json';
+    const res = await fetch(staticPath);
+    if (res.ok) {
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('application/json')) return await res.json();
+    }
+  } catch {}
+
+  try {
+    const res = await fetch('/data/report_summary_default.json');
+    if (res.ok) return await res.json();
+  } catch {}
+
+  throw new Error(`Fetch report summary failed for ${datasetId}`);
 }
 
 export function getAuditPdfUrl(datasetId?: string): string {
@@ -1315,16 +1330,35 @@ export async function fetchDatasetAnalytics(datasetId?: string): Promise<Analyti
   const path = datasetId
     ? `/api/datasets/${encodeURIComponent(datasetId)}/analytics`
     : '/api/analytics';
+
+  // 1. Live backend query
   try {
-    const res = await fetch(path);
-    if (res.ok) return await res.json();
+    const url = createApiUrl(path);
+    const res = await fetch(url.toString());
+    if (res.ok) {
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('application/json')) return await res.json();
+    }
   } catch {
-    // Relative fetch failed, fall through to API_BASE_URL
+    // Backend offline, fallback to static dataset package
   }
-  const url = new URL(path, API_BASE_URL);
-  const res = await fetch(url.toString());
-  if (!res.ok) throw new Error(`Fetch analytics failed (${res.status})`);
-  return res.json();
+
+  // 2. Pre-bundled static analytics package (Netlify / offline)
+  try {
+    const staticPath = datasetId ? `/data/analytics_${datasetId}.json` : '/data/analytics_default.json';
+    const res = await fetch(staticPath);
+    if (res.ok) {
+      const ct = res.headers.get('content-type') || '';
+      if (ct.includes('application/json')) return await res.json();
+    }
+  } catch {}
+
+  try {
+    const res = await fetch('/data/analytics_default.json');
+    if (res.ok) return await res.json();
+  } catch {}
+
+  throw new Error(`Analytics data unavailable for ${datasetId}`);
 }
 
 // ---------------------------------------------------------------------------

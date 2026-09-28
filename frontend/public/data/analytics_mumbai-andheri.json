@@ -1,0 +1,2213 @@
+{
+  "dataset": {
+    "id": "mumbai-andheri",
+    "name": "Mumbai \u2014 Andheri East",
+    "city": "Mumbai",
+    "aoi": "Andheri East",
+    "version": "v1.2",
+    "last_updated": "2026-09-03 10:21:04 UTC",
+    "crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "upload_date": "2026-09-03"
+  },
+  "snapshot": {
+    "parcels_analyzed": 72,
+    "records_agree": 52,
+    "needs_checking": 14,
+    "conflicts": 6,
+    "labels": {
+      "parcels_analyzed": "Parcels analyzed",
+      "records_agree": "Records currently agree",
+      "needs_checking": "Need additional checking",
+      "conflicts": "Require closer review"
+    }
+  },
+  "agreement_status": {
+    "total": 72,
+    "verified": {
+      "count": 52,
+      "percentage": 72.2,
+      "label": "Verified"
+    },
+    "needs_review": {
+      "count": 14,
+      "percentage": 19.4,
+      "label": "Needs Review"
+    },
+    "conflict": {
+      "count": 6,
+      "percentage": 8.3,
+      "label": "Conflict"
+    },
+    "is_mutually_exclusive": true,
+    "note": "Verified + Needs Review + Conflict equals total parcels analyzed."
+  },
+  "source_comparison": {
+    "active_sources": [
+      {
+        "id": "ori",
+        "name": "Drone Orthorectified Imagery (5cm GSD)",
+        "short_name": "Drone ORI",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "cadastral",
+        "name": "City Survey Cadastre (CTS)",
+        "short_name": "Cadastral",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "municipal",
+        "name": "BMC Property Tax Directorate",
+        "short_name": "Municipal GIS",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "ai",
+        "name": "LOD2 Segmentation Model",
+        "short_name": "Drone AI",
+        "count": 72,
+        "coverage_pct": 100.0,
+        "status": "AVAILABLE"
+      },
+      {
+        "id": "rtk",
+        "name": "Survey of India CORS RTK Benchmarks",
+        "short_name": "Ground Survey",
+        "count": 8,
+        "coverage_pct": 11.1,
+        "status": "PARTIAL"
+      }
+    ],
+    "relationships": [
+      {
+        "id": "ori-cadastral",
+        "source_a": "Drone ORI",
+        "source_b": "Cadastral",
+        "agreement_pct": 94.2,
+        "mean_iou": 0.942,
+        "centroid_diff_m": 0.31,
+        "hausdorff_diff_m": 0.38,
+        "parcels_compared": 72,
+        "largest_diff_m": 3.45,
+        "parcels_needing_review": 14,
+        "source_crs": "EPSG:4326 (WGS84)",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Polygon IoU & Affine Metric Transform"
+      },
+      {
+        "id": "ori-municipal",
+        "source_a": "Drone ORI",
+        "source_b": "Municipal GIS",
+        "agreement_pct": 89.8,
+        "mean_iou": 0.898,
+        "centroid_diff_m": 0.48,
+        "hausdorff_diff_m": 0.54,
+        "parcels_compared": 72,
+        "largest_diff_m": 1.62,
+        "parcels_needing_review": 18,
+        "source_crs": "Municipal Property Grid",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Civic Parcel Boundary Conflation"
+      },
+      {
+        "id": "cadastral-municipal",
+        "source_a": "Cadastral",
+        "source_b": "Municipal GIS",
+        "agreement_pct": 81.4,
+        "mean_iou": 0.814,
+        "centroid_diff_m": 0.85,
+        "hausdorff_diff_m": 0.92,
+        "parcels_compared": 72,
+        "largest_diff_m": 2.14,
+        "parcels_needing_review": 20,
+        "source_crs": "Revenue Survey Deeds",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Cross-Authority Register Re-alignment"
+      },
+      {
+        "id": "ai-ori",
+        "source_a": "Drone AI",
+        "source_b": "Drone ORI",
+        "agreement_pct": 96.1,
+        "mean_iou": 0.961,
+        "centroid_diff_m": 0.22,
+        "hausdorff_diff_m": 0.28,
+        "parcels_compared": 72,
+        "largest_diff_m": 0.82,
+        "parcels_needing_review": 4,
+        "source_crs": "5cm Sub-decimeter Orthomosaic",
+        "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+        "processing_date": "2026-09-03",
+        "algorithm": "Mask R-CNN ResNet-50-FPN Segmentation"
+      }
+    ]
+  },
+  "difference_categories": {
+    "categories": [
+      {
+        "id": "boundary",
+        "name": "Boundary Difference",
+        "count": 2,
+        "percentage": 10.0,
+        "description": "Physical footprint boundary differs from legal cadastre line"
+      },
+      {
+        "id": "location",
+        "name": "Location Difference",
+        "count": 12,
+        "percentage": 60.0,
+        "description": "Centroid or coordinate alignment offset across records"
+      },
+      {
+        "id": "missing",
+        "name": "Missing Record",
+        "count": 4,
+        "percentage": 20.0,
+        "description": "Physical structure lacks corresponding civic tax ID"
+      },
+      {
+        "id": "subdivision",
+        "name": "Subdivision Difference",
+        "count": 2,
+        "percentage": 10.0,
+        "description": "Internal plot division without formal updated survey record"
+      }
+    ],
+    "total_with_differences": 20,
+    "note": "Categories describe the primary nature of discrepancy found in non-reconciled records."
+  },
+  "difference_distribution": {
+    "buckets": [
+      {
+        "range": "< 0.5 m",
+        "label": "Under 0.5 m",
+        "count": 52,
+        "percentage": 72.2,
+        "description": "Minimal boundary difference within standard surveyor tolerance"
+      },
+      {
+        "range": "0.5\u20131 m",
+        "label": "0.5 to 1.0 m",
+        "count": 2,
+        "percentage": 2.8,
+        "description": "Moderate variance; typically resolved via orthophoto verification"
+      },
+      {
+        "range": "1\u20132 m",
+        "label": "1.0 to 2.0 m",
+        "count": 12,
+        "percentage": 16.7,
+        "description": "Substantial difference flagged for administrative check"
+      },
+      {
+        "range": "> 2 m",
+        "label": "Over 2.0 m",
+        "count": 6,
+        "percentage": 8.3,
+        "description": "Significant discrepancy requiring priority surveyor inspection"
+      }
+    ],
+    "total": 72,
+    "unit": "metres"
+  },
+  "agreement_by_source": [
+    {
+      "pair_id": "ori-cadastral",
+      "source_a": "Drone ORI",
+      "source_b": "Cadastral",
+      "label": "Drone ORI vs Cadastral",
+      "agreement_pct": 94.2
+    },
+    {
+      "pair_id": "ori-municipal",
+      "source_a": "Drone ORI",
+      "source_b": "Municipal GIS",
+      "label": "Drone ORI vs Municipal GIS",
+      "agreement_pct": 89.8
+    },
+    {
+      "pair_id": "cadastral-municipal",
+      "source_a": "Cadastral",
+      "source_b": "Municipal GIS",
+      "label": "Cadastral vs Municipal GIS",
+      "agreement_pct": 81.4
+    },
+    {
+      "pair_id": "ai-ori",
+      "source_a": "Drone AI",
+      "source_b": "Drone ORI",
+      "label": "Drone AI vs Drone ORI",
+      "agreement_pct": 96.1
+    }
+  ],
+  "difference_vs_agreement": [
+    {
+      "parcel_id": "MUM-201",
+      "survey_number": "CTS-1400/A",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-202",
+      "survey_number": "CTS-1401/1",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 77.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-203",
+      "survey_number": "CTS-1402",
+      "difference_m": 0.12,
+      "agreement_pct": 98.3,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-204",
+      "survey_number": "CTS-1403/A",
+      "difference_m": 2.05,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-205",
+      "survey_number": "CTS-1404/1",
+      "difference_m": 0.12,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-206",
+      "survey_number": "CTS-1405",
+      "difference_m": 0.17,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-207",
+      "survey_number": "CTS-1406/A",
+      "difference_m": 1.28,
+      "agreement_pct": 82.9,
+      "confidence_pct": 82.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-208",
+      "survey_number": "CTS-1407/1",
+      "difference_m": 3.45,
+      "agreement_pct": 68.0,
+      "confidence_pct": 65.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-209",
+      "survey_number": "CTS-1408",
+      "difference_m": 0.22,
+      "agreement_pct": 96.5,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-210",
+      "survey_number": "CTS-1409/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-211",
+      "survey_number": "CTS-1410/1",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-212",
+      "survey_number": "CTS-1411",
+      "difference_m": 0.96,
+      "agreement_pct": 84.3,
+      "confidence_pct": 87.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-213",
+      "survey_number": "CTS-1412/A",
+      "difference_m": 2.75,
+      "agreement_pct": 69.6,
+      "confidence_pct": 59.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-214",
+      "survey_number": "CTS-1413/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-215",
+      "survey_number": "CTS-1414",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-216",
+      "survey_number": "CTS-1415/A",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-217",
+      "survey_number": "CTS-1416/1",
+      "difference_m": 1.2,
+      "agreement_pct": 79.4,
+      "confidence_pct": 80.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-218",
+      "survey_number": "CTS-1417",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-219",
+      "survey_number": "CTS-1418/A",
+      "difference_m": 0.37,
+      "agreement_pct": 94.7,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-220",
+      "survey_number": "CTS-1419/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-221",
+      "survey_number": "CTS-1420",
+      "difference_m": 0.17,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-222",
+      "survey_number": "CTS-1421/A",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 85.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-223",
+      "survey_number": "CTS-1422/1",
+      "difference_m": 0.42,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-224",
+      "survey_number": "CTS-1423",
+      "difference_m": 0.32,
+      "agreement_pct": 92.0,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-225",
+      "survey_number": "CTS-1424/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-226",
+      "survey_number": "CTS-1425/1",
+      "difference_m": 2.45,
+      "agreement_pct": 68.8,
+      "confidence_pct": 61.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-227",
+      "survey_number": "CTS-1426",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 78.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-228",
+      "survey_number": "CTS-1427/A",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-229",
+      "survey_number": "CTS-1428/1",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-230",
+      "survey_number": "CTS-1429",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-231",
+      "survey_number": "CTS-1430/A",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-232",
+      "survey_number": "CTS-1431/1",
+      "difference_m": 1.2,
+      "agreement_pct": 83.6,
+      "confidence_pct": 83.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-233",
+      "survey_number": "CTS-1432",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-234",
+      "survey_number": "CTS-1433/A",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-235",
+      "survey_number": "CTS-1434/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-236",
+      "survey_number": "CTS-1435",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-237",
+      "survey_number": "CTS-1436/A",
+      "difference_m": 1.6,
+      "agreement_pct": 80.1,
+      "confidence_pct": 76.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-238",
+      "survey_number": "CTS-1437/1",
+      "difference_m": 0.22,
+      "agreement_pct": 97.4,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-239",
+      "survey_number": "CTS-1438",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-240",
+      "survey_number": "CTS-1439/A",
+      "difference_m": 0.12,
+      "agreement_pct": 94.7,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-241",
+      "survey_number": "CTS-1440/1",
+      "difference_m": 0.37,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-242",
+      "survey_number": "CTS-1441",
+      "difference_m": 3.25,
+      "agreement_pct": 65.6,
+      "confidence_pct": 66.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-243",
+      "survey_number": "CTS-1442/A",
+      "difference_m": 0.22,
+      "agreement_pct": 92.0,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-244",
+      "survey_number": "CTS-1443/1",
+      "difference_m": 0.17,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-245",
+      "survey_number": "CTS-1444",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-246",
+      "survey_number": "CTS-1445/A",
+      "difference_m": 0.17,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-247",
+      "survey_number": "CTS-1446/1",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 86.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-248",
+      "survey_number": "CTS-1447",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-249",
+      "survey_number": "CTS-1448/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-250",
+      "survey_number": "CTS-1449/1",
+      "difference_m": 0.17,
+      "agreement_pct": 92.9,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-251",
+      "survey_number": "CTS-1450",
+      "difference_m": 0.17,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-252",
+      "survey_number": "CTS-1451/A",
+      "difference_m": 1.44,
+      "agreement_pct": 80.1,
+      "confidence_pct": 79.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-253",
+      "survey_number": "CTS-1452/1",
+      "difference_m": 0.17,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-254",
+      "survey_number": "CTS-1453",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-255",
+      "survey_number": "CTS-1454/A",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-256",
+      "survey_number": "CTS-1455/1",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-257",
+      "survey_number": "CTS-1456",
+      "difference_m": 1.12,
+      "agreement_pct": 82.9,
+      "confidence_pct": 84.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-258",
+      "survey_number": "CTS-1457/A",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-259",
+      "survey_number": "CTS-1458/1",
+      "difference_m": 2.35,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict"
+    },
+    {
+      "parcel_id": "MUM-260",
+      "survey_number": "CTS-1459",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-261",
+      "survey_number": "CTS-1460/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.9,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-262",
+      "survey_number": "CTS-1461/1",
+      "difference_m": 0.72,
+      "agreement_pct": 82.2,
+      "confidence_pct": 77.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-263",
+      "survey_number": "CTS-1462",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-264",
+      "survey_number": "CTS-1463/A",
+      "difference_m": 0.42,
+      "agreement_pct": 96.5,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-265",
+      "survey_number": "CTS-1464/1",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-266",
+      "survey_number": "CTS-1465",
+      "difference_m": 0.17,
+      "agreement_pct": 96.5,
+      "confidence_pct": 94.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-267",
+      "survey_number": "CTS-1466/A",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 82.0,
+      "status": "review"
+    },
+    {
+      "parcel_id": "MUM-268",
+      "survey_number": "CTS-1467/1",
+      "difference_m": 0.17,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-269",
+      "survey_number": "CTS-1468",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-270",
+      "survey_number": "CTS-1469/A",
+      "difference_m": 0.32,
+      "agreement_pct": 97.4,
+      "confidence_pct": 98.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-271",
+      "survey_number": "CTS-1470/1",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled"
+    },
+    {
+      "parcel_id": "MUM-272",
+      "survey_number": "CTS-1471",
+      "difference_m": 1.2,
+      "agreement_pct": 78.0,
+      "confidence_pct": 87.0,
+      "status": "review"
+    }
+  ],
+  "largest_observed_differences": [
+    {
+      "parcel_id": "MUM-208",
+      "record_id": "PID-2007",
+      "survey_number": "CTS-1407/1",
+      "difference_m": 3.45,
+      "agreement_pct": 68.0,
+      "confidence_pct": 65.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.114216,
+        72.865271
+      ]
+    },
+    {
+      "parcel_id": "MUM-242",
+      "record_id": "PID-2041",
+      "survey_number": "CTS-1441",
+      "difference_m": 3.25,
+      "agreement_pct": 65.6,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112289,
+        72.871525
+      ]
+    },
+    {
+      "parcel_id": "MUM-213",
+      "record_id": "PID-2012",
+      "survey_number": "CTS-1412/A",
+      "difference_m": 2.75,
+      "agreement_pct": 69.6,
+      "confidence_pct": 59.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.112058,
+        72.867543
+      ]
+    },
+    {
+      "parcel_id": "MUM-226",
+      "record_id": "PID-2025",
+      "survey_number": "CTS-1425/1",
+      "difference_m": 2.45,
+      "agreement_pct": 68.8,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115154,
+        72.870146
+      ]
+    },
+    {
+      "parcel_id": "MUM-259",
+      "record_id": "PID-2058",
+      "survey_number": "CTS-1458/1",
+      "difference_m": 2.35,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.112617,
+        72.86732
+      ]
+    },
+    {
+      "parcel_id": "MUM-204",
+      "record_id": "PID-2003",
+      "survey_number": "CTS-1403/A",
+      "difference_m": 2.05,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.111689,
+        72.872673
+      ]
+    }
+  ],
+  "parcels_to_check": [
+    {
+      "parcel_id": "MUM-201",
+      "record_id": "PID-2000",
+      "survey_number": "CTS-1400/A",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112924,
+        72.868028
+      ]
+    },
+    {
+      "parcel_id": "MUM-202",
+      "record_id": "PID-2001",
+      "survey_number": "CTS-1401/1",
+      "difference_m": 1.52,
+      "agreement_pct": 82.2,
+      "confidence_pct": 77.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.11246,
+        72.868045
+      ]
+    },
+    {
+      "parcel_id": "MUM-203",
+      "record_id": "PID-2002",
+      "survey_number": "CTS-1402",
+      "difference_m": 0.12,
+      "agreement_pct": 98.3,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.11268,
+        72.87286
+      ]
+    },
+    {
+      "parcel_id": "MUM-204",
+      "record_id": "PID-2003",
+      "survey_number": "CTS-1403/A",
+      "difference_m": 2.05,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.111689,
+        72.872673
+      ]
+    },
+    {
+      "parcel_id": "MUM-205",
+      "record_id": "PID-2004",
+      "survey_number": "CTS-1404/1",
+      "difference_m": 0.12,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.112853,
+        72.872986
+      ]
+    },
+    {
+      "parcel_id": "MUM-206",
+      "record_id": "PID-2005",
+      "survey_number": "CTS-1405",
+      "difference_m": 0.17,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.113575,
+        72.873557
+      ]
+    },
+    {
+      "parcel_id": "MUM-207",
+      "record_id": "PID-2006",
+      "survey_number": "CTS-1406/A",
+      "difference_m": 1.28,
+      "agreement_pct": 82.9,
+      "confidence_pct": 82.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113507,
+        72.873388
+      ]
+    },
+    {
+      "parcel_id": "MUM-208",
+      "record_id": "PID-2007",
+      "survey_number": "CTS-1407/1",
+      "difference_m": 3.45,
+      "agreement_pct": 68.0,
+      "confidence_pct": 65.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.114216,
+        72.865271
+      ]
+    },
+    {
+      "parcel_id": "MUM-209",
+      "record_id": "PID-2008",
+      "survey_number": "CTS-1408",
+      "difference_m": 0.22,
+      "agreement_pct": 96.5,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.118435,
+        72.87031
+      ]
+    },
+    {
+      "parcel_id": "MUM-210",
+      "record_id": "PID-2009",
+      "survey_number": "CTS-1409/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.110996,
+        72.873437
+      ]
+    },
+    {
+      "parcel_id": "MUM-211",
+      "record_id": "PID-2010",
+      "survey_number": "CTS-1410/1",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.11464,
+        72.875807
+      ]
+    },
+    {
+      "parcel_id": "MUM-212",
+      "record_id": "PID-2011",
+      "survey_number": "CTS-1411",
+      "difference_m": 0.96,
+      "agreement_pct": 84.3,
+      "confidence_pct": 87.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.114813,
+        72.876134
+      ]
+    },
+    {
+      "parcel_id": "MUM-213",
+      "record_id": "PID-2012",
+      "survey_number": "CTS-1412/A",
+      "difference_m": 2.75,
+      "agreement_pct": 69.6,
+      "confidence_pct": 59.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.112058,
+        72.867543
+      ]
+    },
+    {
+      "parcel_id": "MUM-214",
+      "record_id": "PID-2013",
+      "survey_number": "CTS-1413/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113297,
+        72.874838
+      ]
+    },
+    {
+      "parcel_id": "MUM-215",
+      "record_id": "PID-2014",
+      "survey_number": "CTS-1414",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113654,
+        72.875014
+      ]
+    },
+    {
+      "parcel_id": "MUM-216",
+      "record_id": "PID-2015",
+      "survey_number": "CTS-1415/A",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113381,
+        72.86947
+      ]
+    },
+    {
+      "parcel_id": "MUM-217",
+      "record_id": "PID-2016",
+      "survey_number": "CTS-1416/1",
+      "difference_m": 1.2,
+      "agreement_pct": 79.4,
+      "confidence_pct": 80.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.112637,
+        72.870081
+      ]
+    },
+    {
+      "parcel_id": "MUM-218",
+      "record_id": "PID-2017",
+      "survey_number": "CTS-1417",
+      "difference_m": 0.27,
+      "agreement_pct": 97.4,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.113831,
+        72.870746
+      ]
+    },
+    {
+      "parcel_id": "MUM-219",
+      "record_id": "PID-2018",
+      "survey_number": "CTS-1418/A",
+      "difference_m": 0.37,
+      "agreement_pct": 94.7,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.114738,
+        72.869622
+      ]
+    },
+    {
+      "parcel_id": "MUM-220",
+      "record_id": "PID-2019",
+      "survey_number": "CTS-1419/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.114125,
+        72.870718
+      ]
+    },
+    {
+      "parcel_id": "MUM-221",
+      "record_id": "PID-2020",
+      "survey_number": "CTS-1420",
+      "difference_m": 0.17,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112464,
+        72.869358
+      ]
+    },
+    {
+      "parcel_id": "MUM-222",
+      "record_id": "PID-2021",
+      "survey_number": "CTS-1421/A",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 85.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112911,
+        72.868653
+      ]
+    },
+    {
+      "parcel_id": "MUM-223",
+      "record_id": "PID-2022",
+      "survey_number": "CTS-1422/1",
+      "difference_m": 0.42,
+      "agreement_pct": 98.3,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113572,
+        72.868433
+      ]
+    },
+    {
+      "parcel_id": "MUM-224",
+      "record_id": "PID-2023",
+      "survey_number": "CTS-1423",
+      "difference_m": 0.32,
+      "agreement_pct": 92.0,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.112966,
+        72.870853
+      ]
+    },
+    {
+      "parcel_id": "MUM-225",
+      "record_id": "PID-2024",
+      "survey_number": "CTS-1424/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.112146,
+        72.870225
+      ]
+    },
+    {
+      "parcel_id": "MUM-226",
+      "record_id": "PID-2025",
+      "survey_number": "CTS-1425/1",
+      "difference_m": 2.45,
+      "agreement_pct": 68.8,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115154,
+        72.870146
+      ]
+    },
+    {
+      "parcel_id": "MUM-227",
+      "record_id": "PID-2026",
+      "survey_number": "CTS-1426",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 78.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.113413,
+        72.871356
+      ]
+    },
+    {
+      "parcel_id": "MUM-228",
+      "record_id": "PID-2027",
+      "survey_number": "CTS-1427/A",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112299,
+        72.870816
+      ]
+    },
+    {
+      "parcel_id": "MUM-229",
+      "record_id": "PID-2028",
+      "survey_number": "CTS-1428/1",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112269,
+        72.868519
+      ]
+    },
+    {
+      "parcel_id": "MUM-230",
+      "record_id": "PID-2029",
+      "survey_number": "CTS-1429",
+      "difference_m": 0.42,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.115384,
+        72.869736
+      ]
+    },
+    {
+      "parcel_id": "MUM-231",
+      "record_id": "PID-2030",
+      "survey_number": "CTS-1430/A",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.113974,
+        72.87145
+      ]
+    },
+    {
+      "parcel_id": "MUM-232",
+      "record_id": "PID-2031",
+      "survey_number": "CTS-1431/1",
+      "difference_m": 1.2,
+      "agreement_pct": 83.6,
+      "confidence_pct": 83.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.112881,
+        72.87138
+      ]
+    },
+    {
+      "parcel_id": "MUM-233",
+      "record_id": "PID-2032",
+      "survey_number": "CTS-1432",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.11195,
+        72.868882
+      ]
+    },
+    {
+      "parcel_id": "MUM-234",
+      "record_id": "PID-2033",
+      "survey_number": "CTS-1433/A",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.115116,
+        72.870761
+      ]
+    },
+    {
+      "parcel_id": "MUM-235",
+      "record_id": "PID-2034",
+      "survey_number": "CTS-1434/1",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.111751,
+        72.870352
+      ]
+    },
+    {
+      "parcel_id": "MUM-236",
+      "record_id": "PID-2035",
+      "survey_number": "CTS-1435",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113391,
+        72.871828
+      ]
+    },
+    {
+      "parcel_id": "MUM-237",
+      "record_id": "PID-2036",
+      "survey_number": "CTS-1436/A",
+      "difference_m": 1.6,
+      "agreement_pct": 80.1,
+      "confidence_pct": 76.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Subdivision Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.114914,
+        72.871402
+      ]
+    },
+    {
+      "parcel_id": "MUM-238",
+      "record_id": "PID-2037",
+      "survey_number": "CTS-1437/1",
+      "difference_m": 0.22,
+      "agreement_pct": 97.4,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.115747,
+        72.870055
+      ]
+    },
+    {
+      "parcel_id": "MUM-239",
+      "record_id": "PID-2038",
+      "survey_number": "CTS-1438",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.114112,
+        72.867564
+      ]
+    },
+    {
+      "parcel_id": "MUM-240",
+      "record_id": "PID-2039",
+      "survey_number": "CTS-1439/A",
+      "difference_m": 0.12,
+      "agreement_pct": 94.7,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115402,
+        72.870978
+      ]
+    },
+    {
+      "parcel_id": "MUM-241",
+      "record_id": "PID-2040",
+      "survey_number": "CTS-1440/1",
+      "difference_m": 0.37,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.113318,
+        72.867493
+      ]
+    },
+    {
+      "parcel_id": "MUM-242",
+      "record_id": "PID-2041",
+      "survey_number": "CTS-1441",
+      "difference_m": 3.25,
+      "agreement_pct": 65.6,
+      "confidence_pct": 66.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Boundary Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112289,
+        72.871525
+      ]
+    },
+    {
+      "parcel_id": "MUM-243",
+      "record_id": "PID-2042",
+      "survey_number": "CTS-1442/A",
+      "difference_m": 0.22,
+      "agreement_pct": 92.0,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.114608,
+        72.86767
+      ]
+    },
+    {
+      "parcel_id": "MUM-244",
+      "record_id": "PID-2043",
+      "survey_number": "CTS-1443/1",
+      "difference_m": 0.17,
+      "agreement_pct": 93.8,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.112534,
+        72.867668
+      ]
+    },
+    {
+      "parcel_id": "MUM-245",
+      "record_id": "PID-2044",
+      "survey_number": "CTS-1444",
+      "difference_m": 0.42,
+      "agreement_pct": 93.8,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.111339,
+        72.869271
+      ]
+    },
+    {
+      "parcel_id": "MUM-246",
+      "record_id": "PID-2045",
+      "survey_number": "CTS-1445/A",
+      "difference_m": 0.17,
+      "agreement_pct": 96.5,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115799,
+        72.870399
+      ]
+    },
+    {
+      "parcel_id": "MUM-247",
+      "record_id": "PID-2046",
+      "survey_number": "CTS-1446/1",
+      "difference_m": 1.44,
+      "agreement_pct": 78.7,
+      "confidence_pct": 86.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115603,
+        72.868504
+      ]
+    },
+    {
+      "parcel_id": "MUM-248",
+      "record_id": "PID-2047",
+      "survey_number": "CTS-1447",
+      "difference_m": 0.12,
+      "agreement_pct": 95.6,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.115893,
+        72.869248
+      ]
+    },
+    {
+      "parcel_id": "MUM-249",
+      "record_id": "PID-2048",
+      "survey_number": "CTS-1448/A",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.115893,
+        72.869035
+      ]
+    },
+    {
+      "parcel_id": "MUM-250",
+      "record_id": "PID-2049",
+      "survey_number": "CTS-1449/1",
+      "difference_m": 0.17,
+      "agreement_pct": 92.9,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.114804,
+        72.871772
+      ]
+    },
+    {
+      "parcel_id": "MUM-251",
+      "record_id": "PID-2050",
+      "survey_number": "CTS-1450",
+      "difference_m": 0.17,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.115427,
+        72.871274
+      ]
+    },
+    {
+      "parcel_id": "MUM-252",
+      "record_id": "PID-2051",
+      "survey_number": "CTS-1451/A",
+      "difference_m": 1.44,
+      "agreement_pct": 80.1,
+      "confidence_pct": 79.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.115909,
+        72.868837
+      ]
+    },
+    {
+      "parcel_id": "MUM-253",
+      "record_id": "PID-2052",
+      "survey_number": "CTS-1452/1",
+      "difference_m": 0.17,
+      "agreement_pct": 92.9,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.112994,
+        72.872125
+      ]
+    },
+    {
+      "parcel_id": "MUM-254",
+      "record_id": "PID-2053",
+      "survey_number": "CTS-1453",
+      "difference_m": 0.12,
+      "agreement_pct": 92.0,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.111248,
+        72.868839
+      ]
+    },
+    {
+      "parcel_id": "MUM-255",
+      "record_id": "PID-2054",
+      "survey_number": "CTS-1454/A",
+      "difference_m": 0.37,
+      "agreement_pct": 93.8,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.115879,
+        72.868631
+      ]
+    },
+    {
+      "parcel_id": "MUM-256",
+      "record_id": "PID-2055",
+      "survey_number": "CTS-1455/1",
+      "difference_m": 0.32,
+      "agreement_pct": 94.7,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.111133,
+        72.869165
+      ]
+    },
+    {
+      "parcel_id": "MUM-257",
+      "record_id": "PID-2056",
+      "survey_number": "CTS-1456",
+      "difference_m": 1.12,
+      "agreement_pct": 82.9,
+      "confidence_pct": 84.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Subdivision Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.111724,
+        72.871399
+      ]
+    },
+    {
+      "parcel_id": "MUM-258",
+      "record_id": "PID-2057",
+      "survey_number": "CTS-1457/A",
+      "difference_m": 0.27,
+      "agreement_pct": 95.6,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.116129,
+        72.870092
+      ]
+    },
+    {
+      "parcel_id": "MUM-259",
+      "record_id": "PID-2058",
+      "survey_number": "CTS-1458/1",
+      "difference_m": 2.35,
+      "agreement_pct": 66.4,
+      "confidence_pct": 61.0,
+      "status": "conflict",
+      "status_label": "Conflict",
+      "difference_category": "Location Difference",
+      "difference_bucket": "> 2 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.112617,
+        72.86732
+      ]
+    },
+    {
+      "parcel_id": "MUM-260",
+      "record_id": "PID-2059",
+      "survey_number": "CTS-1459",
+      "difference_m": 0.32,
+      "agreement_pct": 95.6,
+      "confidence_pct": 95.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.111393,
+        72.86836
+      ]
+    },
+    {
+      "parcel_id": "MUM-261",
+      "record_id": "PID-2060",
+      "survey_number": "CTS-1460/A",
+      "difference_m": 0.37,
+      "agreement_pct": 92.9,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.115917,
+        72.868462
+      ]
+    },
+    {
+      "parcel_id": "MUM-262",
+      "record_id": "PID-2061",
+      "survey_number": "CTS-1461/1",
+      "difference_m": 0.72,
+      "agreement_pct": 82.2,
+      "confidence_pct": 77.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "0.5\u20131 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.11138,
+        72.871163
+      ]
+    },
+    {
+      "parcel_id": "MUM-263",
+      "record_id": "PID-2062",
+      "survey_number": "CTS-1462",
+      "difference_m": 0.22,
+      "agreement_pct": 92.9,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.11485,
+        72.872066
+      ]
+    },
+    {
+      "parcel_id": "MUM-264",
+      "record_id": "PID-2063",
+      "survey_number": "CTS-1463/A",
+      "difference_m": 0.42,
+      "agreement_pct": 96.5,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.115055,
+        72.867451
+      ]
+    },
+    {
+      "parcel_id": "MUM-265",
+      "record_id": "PID-2064",
+      "survey_number": "CTS-1464/1",
+      "difference_m": 0.27,
+      "agreement_pct": 92.0,
+      "confidence_pct": 93.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.111542,
+        72.867972
+      ]
+    },
+    {
+      "parcel_id": "MUM-266",
+      "record_id": "PID-2065",
+      "survey_number": "CTS-1465",
+      "difference_m": 0.17,
+      "agreement_pct": 96.5,
+      "confidence_pct": 94.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Institutional",
+      "centroid": [
+        19.111055,
+        72.868787
+      ]
+    },
+    {
+      "parcel_id": "MUM-267",
+      "record_id": "PID-2066",
+      "survey_number": "CTS-1466/A",
+      "difference_m": 1.28,
+      "agreement_pct": 84.3,
+      "confidence_pct": 82.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Missing Record",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.110955,
+        72.869101
+      ]
+    },
+    {
+      "parcel_id": "MUM-268",
+      "record_id": "PID-2067",
+      "survey_number": "CTS-1467/1",
+      "difference_m": 0.17,
+      "agreement_pct": 93.8,
+      "confidence_pct": 96.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Residential",
+      "centroid": [
+        19.113379,
+        72.872411
+      ]
+    },
+    {
+      "parcel_id": "MUM-269",
+      "record_id": "PID-2068",
+      "survey_number": "CTS-1468",
+      "difference_m": 0.37,
+      "agreement_pct": 92.0,
+      "confidence_pct": 97.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Mixed Use",
+      "centroid": [
+        19.116305,
+        72.869258
+      ]
+    },
+    {
+      "parcel_id": "MUM-270",
+      "record_id": "PID-2069",
+      "survey_number": "CTS-1469/A",
+      "difference_m": 0.32,
+      "agreement_pct": 97.4,
+      "confidence_pct": 98.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.115609,
+        72.867829
+      ]
+    },
+    {
+      "parcel_id": "MUM-271",
+      "record_id": "PID-2070",
+      "survey_number": "CTS-1470/1",
+      "difference_m": 0.32,
+      "agreement_pct": 93.8,
+      "confidence_pct": 92.0,
+      "status": "reconciled",
+      "status_label": "Verified",
+      "difference_category": "No Discrepancy",
+      "difference_bucket": "< 0.5 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.113181,
+        72.866982
+      ]
+    },
+    {
+      "parcel_id": "MUM-272",
+      "record_id": "PID-2071",
+      "survey_number": "CTS-1471",
+      "difference_m": 1.2,
+      "agreement_pct": 78.0,
+      "confidence_pct": 87.0,
+      "status": "review",
+      "status_label": "Needs Review",
+      "difference_category": "Location Difference",
+      "difference_bucket": "1\u20132 m",
+      "land_use": "Commercial",
+      "centroid": [
+        19.116299,
+        72.869074
+      ]
+    }
+  ],
+  "evidence_summary": [
+    {
+      "name": "Cadastral Record",
+      "status": "AVAILABLE",
+      "description": "City Survey Cadastre (CTS) verified for all parcels"
+    },
+    {
+      "name": "Municipal Record",
+      "status": "AVAILABLE",
+      "description": "BMC Property Tax Directorate tax registry IDs linked"
+    },
+    {
+      "name": "Drone Image",
+      "status": "AVAILABLE",
+      "description": "5cm Orthorectified surface imagery covering 100% AOI"
+    },
+    {
+      "name": "Ground Survey",
+      "status": "PARTIAL",
+      "description": "Survey of India CORS RTK ground-truth benchmark stations"
+    },
+    {
+      "name": "Historical Record",
+      "status": "NOT AVAILABLE",
+      "description": "Prior year digitized revenue maps not loaded"
+    },
+    {
+      "name": "Infrastructure Data",
+      "status": "AVAILABLE",
+      "description": "Road Right-of-Way and SWD buffer corridor layers active"
+    }
+  ],
+  "drone_ai_insights": {
+    "available": true,
+    "buildings_detected": 72,
+    "detection_confidence_pct": 92,
+    "extraction_status": "Complete",
+    "model_architecture": "Mask R-CNN (ResNet-50-FPN Backbone)",
+    "vector_format": "LOD2 Polygon Regularized"
+  },
+  "key_finding": "Most parcels (72.2%) currently agree across the available records. 20 parcels need additional checking, and 75.0% of all observed differences are under 1 metre. The largest observed difference is 3.45 metres.",
+  "technical_details": {
+    "iou": "0.924",
+    "centroid_difference": "0.67 m",
+    "hausdorff_difference": "0.48 m",
+    "average_confidence": "89.6%",
+    "average_agreement": "89.8%",
+    "source_crs": "EPSG:4326 (WGS 84)",
+    "processing_crs": "EPSG:32643 (UTM 43N) \u2192 EPSG:4326",
+    "extraction_score": "94.6%",
+    "model_version": "v2.4-production",
+    "processing_timestamp": "2026-09-03 10:21:04 UTC"
+  }
+}

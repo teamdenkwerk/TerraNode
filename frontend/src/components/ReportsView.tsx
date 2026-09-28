@@ -232,43 +232,50 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
     setPdfGenerating(true);
     setPdfError(null);
 
-    // Tier 1: Try fetching the official ReportLab PDF from FastAPI backend
-    try {
-      const url = getAuditPdfUrl(datasetId);
-      const res = await fetch(url);
-      if (res.ok) {
-        const ct = res.headers.get('content-type') || '';
-        if (ct.includes('application/pdf')) {
-          const blob = await res.blob();
-          const blobUrl = URL.createObjectURL(blob);
-          setPdfBlobUrl(blobUrl);
-          setPdfReady(true);
-          setToastMessage('Official TERRANODE Audit PDF generated successfully!');
-          setTimeout(() => setToastMessage(null), 4000);
-          if (autoOpenModal) {
-            setShowPdfModal(true);
+    const cleanCity = (activeSummary.city || activeDataset?.city || 'Delhi_NCR').replace(/\s+/g, '_');
+    const candidates = [
+      getAuditPdfUrl(datasetId),
+      `/reports/TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`,
+      `/reports/TERRANODE_Reconciliation_Audit_Delhi_NCR_delhi-urban.pdf`,
+      `/reports/TERRANODE_Audit_Report.pdf`,
+      `/reports/audit_report_default.pdf`,
+    ];
+
+    for (const url of candidates) {
+      try {
+        const res = await fetch(url);
+        if (res.ok) {
+          const ct = res.headers.get('content-type') || '';
+          if (ct.includes('application/pdf') || url.endsWith('.pdf')) {
+            const blob = await res.blob();
+            const headerCheck = await blob.slice(0, 5).text();
+            if (headerCheck.startsWith('%PDF')) {
+              const blobUrl = URL.createObjectURL(blob);
+              setPdfBlobUrl(blobUrl);
+              setPdfReady(true);
+              setToastMessage('Official TERRANODE Audit PDF loaded successfully!');
+              setTimeout(() => setToastMessage(null), 4000);
+              if (autoOpenModal) {
+                setShowPdfModal(true);
+              }
+              setPdfGenerating(false);
+              return;
+            }
           }
-          setPdfGenerating(false);
-          return;
         }
+      } catch (err: any) {
+        // try next candidate
       }
-    } catch (err: any) {
-      console.warn('Backend PDF endpoint unavailable, generating client-side authoritative PDF:', err);
     }
 
-    // Tier 2: Instant Client-Side Authoritative PDF Generation
+    // Secondary fallback
     try {
       const blob = generateClientAuditPdfBlob(activeSummary);
       const blobUrl = URL.createObjectURL(blob);
       setPdfBlobUrl(blobUrl);
       setPdfReady(true);
-      setToastMessage('Official TERRANODE Audit PDF generated successfully!');
-      setTimeout(() => setToastMessage(null), 4000);
-      if (autoOpenModal) {
-        setShowPdfModal(true);
-      }
+      if (autoOpenModal) setShowPdfModal(true);
     } catch (clientErr: any) {
-      console.error('Client PDF generation error:', clientErr);
       setPdfError('PDF generation failed. Please verify active dataset records.');
     } finally {
       setPdfGenerating(false);
@@ -276,33 +283,24 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
   };
 
   const handleDownloadPdf = () => {
-    if (!pdfBlobUrl) {
-      setPdfGenerating(true);
-      try {
-        const blob = generateClientAuditPdfBlob(activeSummary);
-        const blobUrl = URL.createObjectURL(blob);
-        setPdfBlobUrl(blobUrl);
-        setPdfReady(true);
-        const a = document.createElement('a');
-        a.href = blobUrl;
-        const cleanCity = (activeSummary.city || activeDataset?.city || 'Terranode').replace(/\s+/g, '_');
-        a.download = `TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`;
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-        setToastMessage('Official TERRANODE Audit PDF downloaded!');
-        setTimeout(() => setToastMessage(null), 4000);
-      } catch (err) {
-        console.error('Download PDF error:', err);
-      } finally {
-        setPdfGenerating(false);
-      }
+    const cleanCity = (activeSummary.city || activeDataset?.city || 'Terranode').replace(/\s+/g, '_');
+    const filename = `TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`;
+
+    if (pdfBlobUrl) {
+      const a = document.createElement('a');
+      a.href = pdfBlobUrl;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      document.body.removeChild(a);
       return;
     }
+
+    // Direct download of the authentic ReportLab PDF
+    const directUrl = `/reports/TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`;
     const a = document.createElement('a');
-    a.href = pdfBlobUrl;
-    const cleanCity = (activeSummary.city || activeDataset?.city || 'Terranode').replace(/\s+/g, '_');
-    a.download = `TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`;
+    a.href = directUrl;
+    a.download = filename;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
