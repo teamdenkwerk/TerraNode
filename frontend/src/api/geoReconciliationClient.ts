@@ -1083,9 +1083,10 @@ export async function fetchReportSummary(datasetId?: string): Promise<ReportSumm
 }
 
 export function getAuditPdfUrl(datasetId?: string): string {
-  return datasetId
+  const path = datasetId
     ? `/api/datasets/${encodeURIComponent(datasetId)}/reports/audit-pdf`
     : `/api/reports/audit-pdf`;
+  return createApiUrl(path).toString();
 }
 
 export function getReconciledGeoJsonUrl(datasetId?: string): string {

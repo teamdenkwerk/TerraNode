@@ -38,8 +38,10 @@ import {
   ArrowRight,
   Clock,
   Layers,
-  Sparkles
+  Sparkles,
+  Printer
 } from 'lucide-react';
+import { generateClientAuditPdfBlob } from '../utils/clientPdfGenerator';
 
 interface SourceMetaInfo {
   shortName: string;
@@ -225,18 +227,38 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
     };
   }, [datasetId]);
 
-  // Handle PDF Generation
+  // Handle PDF Generation (with automatic client fallback for Netlify & offline operation)
   const handleGeneratePdf = async (autoOpenModal: boolean = false) => {
     setPdfGenerating(true);
     setPdfError(null);
 
+    // Tier 1: Try fetching the official ReportLab PDF from FastAPI backend
     try {
       const url = getAuditPdfUrl(datasetId);
       const res = await fetch(url);
-      if (!res.ok) {
-        throw new Error(`PDF generation returned status ${res.status}`);
+      if (res.ok) {
+        const ct = res.headers.get('content-type') || '';
+        if (ct.includes('application/pdf')) {
+          const blob = await res.blob();
+          const blobUrl = URL.createObjectURL(blob);
+          setPdfBlobUrl(blobUrl);
+          setPdfReady(true);
+          setToastMessage('Official TERRANODE Audit PDF generated successfully!');
+          setTimeout(() => setToastMessage(null), 4000);
+          if (autoOpenModal) {
+            setShowPdfModal(true);
+          }
+          setPdfGenerating(false);
+          return;
+        }
       }
-      const blob = await res.blob();
+    } catch (err: any) {
+      console.warn('Backend PDF endpoint unavailable, generating client-side authoritative PDF:', err);
+    }
+
+    // Tier 2: Instant Client-Side Authoritative PDF Generation
+    try {
+      const blob = generateClientAuditPdfBlob(activeSummary);
       const blobUrl = URL.createObjectURL(blob);
       setPdfBlobUrl(blobUrl);
       setPdfReady(true);
@@ -245,8 +267,8 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
       if (autoOpenModal) {
         setShowPdfModal(true);
       }
-    } catch (err: any) {
-      console.error('PDF generation error:', err);
+    } catch (clientErr: any) {
+      console.error('Client PDF generation error:', clientErr);
       setPdfError('PDF generation failed. Please verify active dataset records.');
     } finally {
       setPdfGenerating(false);
@@ -255,7 +277,26 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
 
   const handleDownloadPdf = () => {
     if (!pdfBlobUrl) {
-      handleGeneratePdf(false);
+      setPdfGenerating(true);
+      try {
+        const blob = generateClientAuditPdfBlob(activeSummary);
+        const blobUrl = URL.createObjectURL(blob);
+        setPdfBlobUrl(blobUrl);
+        setPdfReady(true);
+        const a = document.createElement('a');
+        a.href = blobUrl;
+        const cleanCity = (activeSummary.city || activeDataset?.city || 'Terranode').replace(/\s+/g, '_');
+        a.download = `TERRANODE_Reconciliation_Audit_${cleanCity}_${datasetId}.pdf`;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+        setToastMessage('Official TERRANODE Audit PDF downloaded!');
+        setTimeout(() => setToastMessage(null), 4000);
+      } catch (err) {
+        console.error('Download PDF error:', err);
+      } finally {
+        setPdfGenerating(false);
+      }
       return;
     }
     const a = document.createElement('a');
@@ -494,13 +535,28 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
                   <span>Download</span>
                 </button>
                 {pdfBlobUrl && (
-                  <button
-                    onClick={() => window.open(pdfBlobUrl, '_blank')}
-                    className="px-3 py-1.5 rounded-lg bg-white border border-[#E7DFD3] hover:bg-[#FAF8F5] text-[#0F172A] text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-xs"
-                  >
-                    <ExternalLink className="w-3.5 h-3.5" />
-                    <span>Open in Tab</span>
-                  </button>
+                  <>
+                    <button
+                      onClick={() => {
+                        const win = window.open(pdfBlobUrl, '_blank');
+                        if (win) {
+                          setTimeout(() => win.print(), 400);
+                        }
+                      }}
+                      className="px-3 py-1.5 rounded-lg bg-white border border-[#E7DFD3] hover:bg-[#FAF8F5] text-[#0F172A] text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-xs"
+                      title="Print official PDF report"
+                    >
+                      <Printer className="w-3.5 h-3.5" />
+                      <span>Print</span>
+                    </button>
+                    <button
+                      onClick={() => window.open(pdfBlobUrl, '_blank')}
+                      className="px-3 py-1.5 rounded-lg bg-white border border-[#E7DFD3] hover:bg-[#FAF8F5] text-[#0F172A] text-xs font-bold transition flex items-center gap-1.5 cursor-pointer shadow-xs"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>Open in Tab</span>
+                    </button>
+                  </>
                 )}
                 <button
                   onClick={() => setShowPdfModal(false)}
@@ -516,7 +572,7 @@ export const ReportsView: React.FC<ReportsViewProps> = ({
             <div className="flex-1 bg-[#525659] relative">
               {pdfBlobUrl ? (
                 <iframe
-                  src={pdfBlobUrl}
+                  src={`${pdfBlobUrl}#toolbar=1&navpanes=0`}
                   className="w-full h-full border-0"
                   title="Official Audit PDF Preview"
                 />
