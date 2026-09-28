@@ -1,0 +1,36 @@
+{
+  "certificate_id": "CERT-TN-3B49247FC384",
+  "timestamp_utc": "2026-09-27 05:28:16 UTC",
+  "authority": "TERRANODE Geospatial Reconciliation Engine (v2026.1)",
+  "datasets": {
+    "cadastral": {
+      "filename": "d61deb54-ea55-4bbc-a888-2d57a018fee3.geojson",
+      "sha256": "786d87a66f150dfed274ef9a249eea418716077fcdbdd54aa83d6a21fde7bc87",
+      "features": 37
+    },
+    "municipal": {
+      "filename": "85f02bb7-ec7a-4285-ae1f-450c5f9c2768.geojson",
+      "sha256": "381464f4db07dc55a8529b4e048938cf7aa26d7092e8ce8d1eee231100f871eb",
+      "features": 38
+    },
+    "gnss_rtk": {
+      "filename": "ebb5420e-5662-4d0a-b09a-f1f114054ee8.geojson",
+      "checkpoints": 11
+    }
+  },
+  "reconciliation_summary": {
+    "total_pairs_matched": 37,
+    "auto_reconciled": 31,
+    "review_required": 0,
+    "conflicts": 6,
+    "mean_confidence": 0.8951,
+    "mean_iou": 0.7839,
+    "mean_centroid_drift_m": 1.301,
+    "ground_truth_compliance_2m": "100.0%"
+  },
+  "cryptographic_verification": {
+    "algorithm": "SHA-256",
+    "audit_hash": "3b49247fc384adf45f466777ae189bda8d8fe9eafd55e84dc8d088a56473cd1b",
+    "verification_status": "AUTHENTIC_DEFENSIBLE"
+  }
+}

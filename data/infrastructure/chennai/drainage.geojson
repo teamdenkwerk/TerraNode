@@ -1,0 +1,259 @@
+{
+  "type": "FeatureCollection",
+  "name": "drainage_chennai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "DRAIN-MAA-001",
+        "infrastructure_type": "drainage",
+        "name": "Mambalam Canal Primary Stormwater Channel",
+        "drain_name": "Mambalam Canal Primary Stormwater Channel",
+        "category": "Primary Open Stormwater Canal",
+        "jurisdiction": "Water Resources Department (WRD) & GCC",
+        "source_dataset_id": "chennai_swd_master",
+        "source_feature_id": "WRD-CANAL-01",
+        "source_name": "WRD Macro Drainage Alignment Survey",
+        "source_date": "2026-02-01",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 15.0,
+        "buffer_radius_meters": 15.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Mambalam Canal Primary Stormwater Channel",
+          "width_m": 15.0,
+          "buffer_m": 15.0,
+          "category": "Primary Open Stormwater Canal",
+          "authority": "WRD & GCC SWD Wing"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2268,
+            13.0305
+          ],
+          [
+            80.2271,
+            13.0332
+          ],
+          [
+            80.2274,
+            13.036
+          ],
+          [
+            80.2278,
+            13.0392
+          ],
+          [
+            80.2282,
+            13.0418
+          ],
+          [
+            80.2286,
+            13.0442
+          ],
+          [
+            80.2291,
+            13.0475
+          ],
+          [
+            80.2295,
+            13.0505
+          ],
+          [
+            80.2298,
+            13.053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "DRAIN-MAA-002",
+        "infrastructure_type": "drainage",
+        "name": "Bazullah Road SWD Trunk Lateral",
+        "drain_name": "Bazullah Road SWD Trunk Lateral",
+        "category": "Underground Secondary Stormwater Box Drain",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "source_dataset_id": "chennai_swd_master",
+        "source_feature_id": "GCC-SWD-204",
+        "source_name": "GCC Storm Water Drain Project",
+        "source_date": "2026-02-15",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 6.0,
+        "buffer_radius_meters": 5.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Bazullah Road SWD Trunk Lateral",
+          "width_m": 6.0,
+          "buffer_m": 5.0,
+          "category": "Underground Box Drain",
+          "authority": "GCC Storm Water Drain Project"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2325,
+            13.0441
+          ],
+          [
+            80.2345,
+            13.0443
+          ],
+          [
+            80.237,
+            13.0446
+          ],
+          [
+            80.2395,
+            13.0449
+          ],
+          [
+            80.2418,
+            13.0452
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "DRAIN-MAA-003",
+        "infrastructure_type": "drainage",
+        "drain_id": "MAA-SWD-USMAN",
+        "name": "North Usman Road Underground SWD Box Drain",
+        "drain_name": "North Usman Road Underground SWD Box Drain",
+        "drain_type": "Underground Box Drain",
+        "width": 4.5,
+        "depth": 2.2,
+        "material": "Reinforced Cement Concrete (RCC)",
+        "condition": "Good",
+        "authority": "Greater Chennai Corporation (GCC)",
+        "source": "GCC Storm Water Drain Project & GIS Centre",
+        "source_type": "OFFICIAL_MUNICIPAL_GIS",
+        "source_url": "https://chennaicorporation.gov.in/gcc/department/storm-water-drain/",
+        "source_date": "2026-01-20",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "Government Open Data License - Tamil Nadu (GODL-TN)",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "original_crs": "EPSG:32644",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "width_meters": 4.5,
+        "buffer_radius_meters": 4.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "North Usman Road Underground SWD Box Drain",
+          "drain_type": "Underground Box Drain",
+          "width_m": 4.5,
+          "depth_m": 2.2,
+          "authority": "Greater Chennai Corporation (GCC)",
+          "material": "Reinforced Cement Concrete (RCC)"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2343,
+            13.053
+          ],
+          [
+            80.2335,
+            13.0496
+          ],
+          [
+            80.2327,
+            13.0456
+          ],
+          [
+            80.2324,
+            13.0429
+          ],
+          [
+            80.2321,
+            13.0409
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "DRAIN-MAA-004",
+        "infrastructure_type": "drainage",
+        "drain_id": "MAA-SWD-VENKAT",
+        "name": "Venkatanarayana Road Secondary Stormwater Lateral",
+        "drain_name": "Venkatanarayana Road Secondary Stormwater Lateral",
+        "drain_type": "Covered Lateral Drain",
+        "width": 3.5,
+        "depth": 1.8,
+        "material": "Precast RCC Slab Drain",
+        "condition": "Operational",
+        "authority": "Greater Chennai Corporation (GCC)",
+        "source": "GCC Storm Water Drain Project & GIS Centre",
+        "source_type": "OFFICIAL_MUNICIPAL_GIS",
+        "source_url": "https://chennaicorporation.gov.in/gcc/department/storm-water-drain/",
+        "source_date": "2026-01-20",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "GODL-TN",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "original_crs": "EPSG:32644",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "width_meters": 3.5,
+        "buffer_radius_meters": 3.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Venkatanarayana Road Secondary Stormwater Lateral",
+          "drain_type": "Covered Lateral Drain",
+          "width_m": 3.5,
+          "depth_m": 1.8,
+          "authority": "Greater Chennai Corporation (GCC)"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2341,
+            13.0418
+          ],
+          [
+            80.236,
+            13.039
+          ],
+          [
+            80.238,
+            13.0365
+          ],
+          [
+            80.2395,
+            13.035
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "type": "FeatureCollection",
+  "name": "railway_domlur",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-BLR-001",
+        "infrastructure_type": "railway",
+        "transit_id": "BMRCL-PURPLE-VIADUCT",
+        "name": "Namma Metro Purple Line Elevated Viaduct Alignment",
+        "type": "METRO",
+        "operator": "Bangalore Metro Rail Corporation Limited (BMRCL)",
+        "authority": "BMRCL / Government of Karnataka",
+        "status": "Operational Metro Line",
+        "source": "BMRCL Alignment GIS & OpenStreetMap Transit",
+        "source_type": "OFFICIAL_METRO_GIS",
+        "source_url": "https://english.bmrc.co.in/",
+        "source_date": "2026-01-15",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "BMRCL Statutory Corridor Notification",
+        "dataset_id": "bengaluru-ward112",
+        "dataset_version": "2026.1-BMRCL",
+        "original_crs": "EPSG:4326",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "Namma Metro Purple Line Elevated Viaduct",
+          "transit_type": "METRO",
+          "tracks": 2,
+          "traction": "750V DC Third Rail",
+          "authority": "BMRCL"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.636,
+            12.9785
+          ],
+          [
+            77.6385,
+            12.9785
+          ],
+          [
+            77.641,
+            12.9786
+          ],
+          [
+            77.644,
+            12.9787
+          ],
+          [
+            77.6465,
+            12.9788
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-BLR-002",
+        "infrastructure_type": "railway",
+        "transit_id": "BMRCL-STA-INDIRANAGAR",
+        "name": "Indiranagar Elevated Metro Station",
+        "type": "TRANSIT_STATION",
+        "operator": "BMRCL",
+        "authority": "BMRCL",
+        "status": "Operational Station",
+        "source": "BMRCL Alignment GIS",
+        "source_type": "OFFICIAL_METRO_GIS",
+        "source_url": "https://english.bmrc.co.in/",
+        "source_date": "2026-01-15",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "BMRCL Public Transit Schedule",
+        "dataset_id": "bengaluru-ward112",
+        "dataset_version": "2026.1-BMRCL",
+        "original_crs": "EPSG:4326",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "Indiranagar Elevated Metro Station",
+          "transit_type": "TRANSIT_STATION",
+          "station_code": "INDR",
+          "authority": "BMRCL"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.638,
+            12.9785
+          ],
+          [
+            77.6385,
+            12.9785
+          ],
+          [
+            77.639,
+            12.9785
+          ]
+        ]
+      }
+    }
+  ]
+}

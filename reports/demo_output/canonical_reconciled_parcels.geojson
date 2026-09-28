@@ -1,0 +1,1640 @@
+{
+  "type": "FeatureCollection",
+  "name": "terranode_harmonized_canonical_parcels",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.8937060386418,
+              12.933051268008517
+            ],
+            [
+              79.89381989147917,
+              12.933061763458488
+            ],
+            [
+              79.89382676321634,
+              12.933209831082866
+            ],
+            [
+              79.8937064146567,
+              12.93319911679812
+            ],
+            [
+              79.8937060386418,
+              12.933051268008517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "068f3adf-6a9e-5ea6-b569-807fd5a85d16",
+        "canonical_uid": "CANONICAL-CAD-01-001",
+        "cadastral_ref": "CAD-01-001",
+        "municipal_ref": "MUN-5001",
+        "survey_number": "1001",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.8575,
+        "status": "conflict",
+        "centroid_drift_m": 2.417,
+        "iou_agreement": 0.6571,
+        "reconciliation_reason": "Spatial drift (2.42m) exceeds maximum allowable tolerance (2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89383511455054,
+              12.93305016189389
+            ],
+            [
+              79.89395603218253,
+              12.933058184514282
+            ],
+            [
+              79.89394826565284,
+              12.933203773176679
+            ],
+            [
+              79.89384748483755,
+              12.933190700560296
+            ],
+            [
+              79.89383511455054,
+              12.93305016189389
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "53309fcb-39ee-5891-ac76-f4c0a7aaf450",
+        "canonical_uid": "CANONICAL-CAD-01-002",
+        "cadastral_ref": "CAD-01-002",
+        "municipal_ref": "MUN-5002",
+        "survey_number": "1002",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9123,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.963,
+        "iou_agreement": 0.8138,
+        "reconciliation_reason": "High agreement (Confidence 91.2% >= 85%, Centroid Drift 0.96m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89396723596701,
+              12.93306297436719
+            ],
+            [
+              79.89407600466973,
+              12.933055112339598
+            ],
+            [
+              79.89407963104554,
+              12.933199006958196
+            ],
+            [
+              79.89396748394746,
+              12.9331920110043
+            ],
+            [
+              79.89396723596701,
+              12.93306297436719
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "655ba2a8-62e7-5406-8717-4e0c014293cc",
+        "canonical_uid": "CANONICAL-CAD-01-003",
+        "cadastral_ref": "CAD-01-003",
+        "municipal_ref": "MUN-5003",
+        "survey_number": "1003",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9162,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.919,
+        "iou_agreement": 0.825,
+        "reconciliation_reason": "High agreement (Confidence 91.6% >= 85%, Centroid Drift 0.92m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.8937062122592,
+              12.933214404810695
+            ],
+            [
+              79.8938258868192,
+              12.933227763854168
+            ],
+            [
+              79.89382088578263,
+              12.933357361513458
+            ],
+            [
+              79.89370538626251,
+              12.933367048152135
+            ],
+            [
+              79.8937062122592,
+              12.933214404810695
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "b9d38179-331f-5ffe-ac7b-952a9cd301e4",
+        "canonical_uid": "CANONICAL-CAD-01-004",
+        "cadastral_ref": "CAD-01-004",
+        "municipal_ref": "MUN-5004",
+        "survey_number": "1004",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9184,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.953,
+        "iou_agreement": 0.8311,
+        "reconciliation_reason": "High agreement (Confidence 91.8% >= 85%, Centroid Drift 0.95m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89384023973349,
+              12.933218449841583
+            ],
+            [
+              79.89395840835114,
+              12.933212641608359
+            ],
+            [
+              79.89394977799004,
+              12.933368277501808
+            ],
+            [
+              79.89384491771831,
+              12.933368123198509
+            ],
+            [
+              79.89384023973349,
+              12.933218449841583
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "49a6c873-1404-5d0b-8b4f-d64fd032f46c",
+        "canonical_uid": "CANONICAL-CAD-01-005",
+        "cadastral_ref": "CAD-01-005",
+        "municipal_ref": "MUN-5005",
+        "survey_number": "1005",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.6718,
+        "status": "conflict",
+        "centroid_drift_m": 0.902,
+        "iou_agreement": 0.841,
+        "reconciliation_reason": "Low confidence (Confidence 67.2% < 70%). Significant inter-source discrepancy."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89396703724272,
+              12.93321917932485
+            ],
+            [
+              79.89407801867365,
+              12.933229699149601
+            ],
+            [
+              79.89408438764882,
+              12.93335907132416
+            ],
+            [
+              79.89396768926251,
+              12.933370482920434
+            ],
+            [
+              79.89396703724272,
+              12.93321917932485
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "04aaef6f-b393-570d-8bff-459361ecabb8",
+        "canonical_uid": "CANONICAL-CAD-01-006",
+        "cadastral_ref": "CAD-01-006",
+        "municipal_ref": "MUN-5006",
+        "survey_number": "1006",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9213,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.856,
+        "iou_agreement": 0.8394,
+        "reconciliation_reason": "High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.86m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89503737496308,
+              12.933055518869425
+            ],
+            [
+              79.89515912196323,
+              12.933070472516873
+            ],
+            [
+              79.89514808330348,
+              12.933210291692456
+            ],
+            [
+              79.89503879301297,
+              12.933215451346902
+            ],
+            [
+              79.89503737496308,
+              12.933055518869425
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "ccdd588e-6c44-5528-8f40-f37d29fa4977",
+        "canonical_uid": "CANONICAL-CAD-02-001",
+        "cadastral_ref": "CAD-02-001",
+        "municipal_ref": "MUN-5007",
+        "survey_number": "1007",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9102,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.158,
+        "iou_agreement": 0.8076,
+        "reconciliation_reason": "High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.16m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89517128505658,
+              12.933057208955788
+            ],
+            [
+              79.89528221825366,
+              12.933071459208259
+            ],
+            [
+              79.89527857406532,
+              12.933201380828253
+            ],
+            [
+              79.89517786154828,
+              12.93320725161884
+            ],
+            [
+              79.89517128505658,
+              12.933057208955788
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "0e1eff7f-3fdb-5ebd-a48e-4fee740e1e71",
+        "canonical_uid": "CANONICAL-CAD-02-002",
+        "cadastral_ref": "CAD-02-002",
+        "municipal_ref": "MUN-5008",
+        "survey_number": "1008",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9042,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.202,
+        "iou_agreement": 0.7906,
+        "reconciliation_reason": "High agreement (Confidence 90.4% >= 85%, Centroid Drift 1.20m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.8953013742239,
+              12.933069245774533
+            ],
+            [
+              79.8954086464393,
+              12.933053891034822
+            ],
+            [
+              79.89540724836019,
+              12.933218781301782
+            ],
+            [
+              79.89529908919393,
+              12.933217780047107
+            ],
+            [
+              79.8953013742239,
+              12.933069245774533
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "d901ca38-f068-5d3c-852b-b4888ec1e26b",
+        "canonical_uid": "CANONICAL-CAD-02-003",
+        "cadastral_ref": "CAD-02-003",
+        "municipal_ref": "MUN-5009",
+        "survey_number": "1009",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9099,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.247,
+        "iou_agreement": 0.8068,
+        "reconciliation_reason": "High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.25m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89504112027635,
+              12.933219488768339
+            ],
+            [
+              79.89515346914025,
+              12.93321659519553
+            ],
+            [
+              79.89514937881368,
+              12.933368662491546
+            ],
+            [
+              79.89504734148447,
+              12.933377390226264
+            ],
+            [
+              79.89504112027635,
+              12.933219488768339
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "a62222c0-005f-56e1-be8d-864ea67194c4",
+        "canonical_uid": "CANONICAL-CAD-02-004",
+        "cadastral_ref": "CAD-02-004",
+        "municipal_ref": "MUN-5010",
+        "survey_number": "1010",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.7927,
+        "status": "conflict",
+        "centroid_drift_m": 3.688,
+        "iou_agreement": 0.472,
+        "reconciliation_reason": "Spatial drift (3.69m) exceeds maximum allowable tolerance (2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89516298596824,
+              12.9332277832944
+            ],
+            [
+              79.89528580478917,
+              12.933225750648743
+            ],
+            [
+              79.89527451684947,
+              12.933367460492992
+            ],
+            [
+              79.89516323286779,
+              12.933379565776495
+            ],
+            [
+              79.89516298596824,
+              12.9332277832944
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "9d895be7-718c-5160-b102-1b2a73d2045d",
+        "canonical_uid": "CANONICAL-CAD-02-005",
+        "cadastral_ref": "CAD-02-005",
+        "municipal_ref": "MUN-5011",
+        "survey_number": "1011",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9099,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.232,
+        "iou_agreement": 0.8068,
+        "reconciliation_reason": "High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.23m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89530565471064,
+              12.93323388628037
+            ],
+            [
+              79.89541470139815,
+              12.933221953257503
+            ],
+            [
+              79.89540117313398,
+              12.933378935015647
+            ],
+            [
+              79.89530539010225,
+              12.933361336235167
+            ],
+            [
+              79.89530565471064,
+              12.93323388628037
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "1623024d-eae4-5a22-86da-ff7938785c94",
+        "canonical_uid": "CANONICAL-CAD-02-006",
+        "cadastral_ref": "CAD-02-006",
+        "municipal_ref": "MUN-5012",
+        "survey_number": "1012",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.8215,
+        "status": "conflict",
+        "centroid_drift_m": 2.955,
+        "iou_agreement": 0.5543,
+        "reconciliation_reason": "Spatial drift (2.96m) exceeds maximum allowable tolerance (2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89504421442412,
+              12.933379240316636
+            ],
+            [
+              79.89514996229798,
+              12.933388832277274
+            ],
+            [
+              79.89514580697404,
+              12.933540475252498
+            ],
+            [
+              79.89503788401782,
+              12.933525683187694
+            ],
+            [
+              79.89504421442412,
+              12.933379240316636
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "5a6b46a4-4e5d-5eba-bb00-8b2c6e45d67e",
+        "canonical_uid": "CANONICAL-CAD-02-007",
+        "cadastral_ref": "CAD-02-007",
+        "municipal_ref": "MUN-5013",
+        "survey_number": "1013",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9029,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.226,
+        "iou_agreement": 0.787,
+        "reconciliation_reason": "High agreement (Confidence 90.3% >= 85%, Centroid Drift 1.23m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89517130452931,
+              12.933386498785842
+            ],
+            [
+              79.8952797484989,
+              12.933380077240802
+            ],
+            [
+              79.89527423201271,
+              12.933529424176385
+            ],
+            [
+              79.89516966629223,
+              12.933526638621691
+            ],
+            [
+              79.89517130452931,
+              12.933386498785842
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "1e633604-d66f-525c-8471-9380fbcfb7bc",
+        "canonical_uid": "CANONICAL-CAD-02-008",
+        "cadastral_ref": "CAD-02-008",
+        "municipal_ref": "MUN-5014",
+        "survey_number": "1014",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.8995,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.266,
+        "iou_agreement": 0.7772,
+        "reconciliation_reason": "High agreement (Confidence 90.0% >= 85%, Centroid Drift 1.27m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89529331958126,
+              12.933397155713342
+            ],
+            [
+              79.89541447206145,
+              12.933379559411787
+            ],
+            [
+              79.89540346484286,
+              12.93353715127228
+            ],
+            [
+              79.89529251290982,
+              12.933525036488582
+            ],
+            [
+              79.89529331958126,
+              12.933397155713342
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "b78592a9-5e4a-596a-a30f-0a43eb3b3e26",
+        "canonical_uid": "CANONICAL-CAD-02-009",
+        "cadastral_ref": "CAD-02-009",
+        "municipal_ref": "MUN-5015",
+        "survey_number": "1015",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9038,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.308,
+        "iou_agreement": 0.7895,
+        "reconciliation_reason": "High agreement (Confidence 90.4% >= 85%, Centroid Drift 1.31m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89636175867079,
+              12.933070844420527
+            ],
+            [
+              79.89647670424861,
+              12.933065951765492
+            ],
+            [
+              79.89648455640014,
+              12.933202899830011
+            ],
+            [
+              79.89637040070724,
+              12.933215263054345
+            ],
+            [
+              79.89636175867079,
+              12.933070844420527
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "38742e10-da0c-562a-8415-58c65f55d0e5",
+        "canonical_uid": "CANONICAL-CAD-03-001",
+        "cadastral_ref": "CAD-03-001",
+        "municipal_ref": "MUN-5016",
+        "survey_number": "1016",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9236,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.886,
+        "iou_agreement": 0.846,
+        "reconciliation_reason": "High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.89m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89649109461946,
+              12.933061249426009
+            ],
+            [
+              79.89660879295249,
+              12.93306063161111
+            ],
+            [
+              79.8966022730917,
+              12.933212260697525
+            ],
+            [
+              79.89650316584931,
+              12.933203438839755
+            ],
+            [
+              79.89649109461946,
+              12.933061249426009
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "80e78680-61ce-506d-a91a-0affa2d07c03",
+        "canonical_uid": "CANONICAL-CAD-03-002",
+        "cadastral_ref": "CAD-03-002",
+        "municipal_ref": "MUN-5017",
+        "survey_number": "1017",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9252,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.859,
+        "iou_agreement": 0.8507,
+        "reconciliation_reason": "High agreement (Confidence 92.5% >= 85%, Centroid Drift 0.86m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89661857937897,
+              12.933059654884104
+            ],
+            [
+              79.89674143218531,
+              12.933063279787703
+            ],
+            [
+              79.8967350134697,
+              12.933213228359111
+            ],
+            [
+              79.89663196731719,
+              12.933221929787054
+            ],
+            [
+              79.89661857937897,
+              12.933059654884104
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "769c2257-90a5-5814-ab31-347d41ec5f04",
+        "canonical_uid": "CANONICAL-CAD-03-003",
+        "cadastral_ref": "CAD-03-003",
+        "municipal_ref": "MUN-5018",
+        "survey_number": "1018",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9241,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.833,
+        "iou_agreement": 0.8475,
+        "reconciliation_reason": "High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.83m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89637483843553,
+              12.933236379374703
+            ],
+            [
+              79.89647481612934,
+              12.933234880997261
+            ],
+            [
+              79.89648155941883,
+              12.933381452235086
+            ],
+            [
+              79.89636984018483,
+              12.93337454189747
+            ],
+            [
+              79.89637483843553,
+              12.933236379374703
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "b69efc5f-0679-5312-ad9c-c20ac3d72532",
+        "canonical_uid": "CANONICAL-CAD-03-004",
+        "cadastral_ref": "CAD-03-004",
+        "municipal_ref": "MUN-5019",
+        "survey_number": "1019",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.92,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.91,
+        "iou_agreement": 0.8357,
+        "reconciliation_reason": "High agreement (Confidence 92.0% >= 85%, Centroid Drift 0.91m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89650078572619,
+              12.933221198204638
+            ],
+            [
+              79.89660439176691,
+              12.933221401622143
+            ],
+            [
+              79.89660638056063,
+              12.933384931667877
+            ],
+            [
+              79.89649675554186,
+              12.933365752575222
+            ],
+            [
+              79.89650078572619,
+              12.933221198204638
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "e9a7219d-96b3-5e35-9623-a8a2d9386fd1",
+        "canonical_uid": "CANONICAL-CAD-03-005",
+        "cadastral_ref": "CAD-03-005",
+        "municipal_ref": "MUN-5020",
+        "survey_number": "1020",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.7943,
+        "status": "conflict",
+        "centroid_drift_m": 3.847,
+        "iou_agreement": 0.4767,
+        "reconciliation_reason": "Spatial drift (3.85m) exceeds maximum allowable tolerance (2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89662880845637,
+              12.933225520510064
+            ],
+            [
+              79.89673014115333,
+              12.933240163591714
+            ],
+            [
+              79.89673162964127,
+              12.933378411926846
+            ],
+            [
+              79.89662722886484,
+              12.93337416680776
+            ],
+            [
+              79.89662880845637,
+              12.933225520510064
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "99835b47-e854-5447-95d5-5963bc19637c",
+        "canonical_uid": "CANONICAL-CAD-03-006",
+        "cadastral_ref": "CAD-03-006",
+        "municipal_ref": "MUN-5021",
+        "survey_number": "1021",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9227,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.859,
+        "iou_agreement": 0.8434,
+        "reconciliation_reason": "High agreement (Confidence 92.3% >= 85%, Centroid Drift 0.86m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89636274816391,
+              12.933390622265907
+            ],
+            [
+              79.89648055022101,
+              12.933389041936936
+            ],
+            [
+              79.89647397286369,
+              12.933543479084964
+            ],
+            [
+              79.89635934977757,
+              12.933536623966088
+            ],
+            [
+              79.89636274816391,
+              12.933390622265907
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "bdf79e52-9728-5688-b658-f06373b9cc9b",
+        "canonical_uid": "CANONICAL-CAD-03-007",
+        "cadastral_ref": "CAD-03-007",
+        "municipal_ref": "MUN-5022",
+        "survey_number": "1022",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9205,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.934,
+        "iou_agreement": 0.8373,
+        "reconciliation_reason": "High agreement (Confidence 92.0% >= 85%, Centroid Drift 0.93m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89371531285575,
+              12.934366391282609
+            ],
+            [
+              79.89382507513002,
+              12.934355761134338
+            ],
+            [
+              79.8938124222707,
+              12.934510440313145
+            ],
+            [
+              79.89371088976388,
+              12.934505191229741
+            ],
+            [
+              79.89371531285575,
+              12.934366391282609
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "c91ef385-a426-53a5-84d9-83c8bd45049d",
+        "canonical_uid": "CANONICAL-CAD-04-001",
+        "cadastral_ref": "CAD-04-001",
+        "municipal_ref": "MUN-5023",
+        "survey_number": "1023",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9155,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.994,
+        "iou_agreement": 0.8228,
+        "reconciliation_reason": "High agreement (Confidence 91.5% >= 85%, Centroid Drift 0.99m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89383987377568,
+              12.934368179324123
+            ],
+            [
+              79.89394178319188,
+              12.934350742194557
+            ],
+            [
+              79.8939406518,
+              12.934504896873621
+            ],
+            [
+              79.89383278041993,
+              12.934505559396927
+            ],
+            [
+              79.89383987377568,
+              12.934368179324123
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "f69c0bf1-6390-524d-aaa3-bb2113a30706",
+        "canonical_uid": "CANONICAL-CAD-04-002",
+        "cadastral_ref": "CAD-04-002",
+        "municipal_ref": "MUN-5024",
+        "survey_number": "1024",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9129,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.051,
+        "iou_agreement": 0.8155,
+        "reconciliation_reason": "High agreement (Confidence 91.3% >= 85%, Centroid Drift 1.05m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89396636243185,
+              12.934353790769729
+            ],
+            [
+              79.89408367289788,
+              12.934349941204577
+            ],
+            [
+              79.89407841726297,
+              12.934511472425704
+            ],
+            [
+              79.89395806325346,
+              12.934500204129247
+            ],
+            [
+              79.89396636243185,
+              12.934353790769729
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "26b9c796-d9cb-590e-abff-aed81b5cea40",
+        "canonical_uid": "CANONICAL-CAD-04-003",
+        "cadastral_ref": "CAD-04-003",
+        "municipal_ref": "MUN-5025",
+        "survey_number": "1025",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9137,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.114,
+        "iou_agreement": 0.8177,
+        "reconciliation_reason": "High agreement (Confidence 91.4% >= 85%, Centroid Drift 1.11m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89370645905441,
+              12.934525294393923
+            ],
+            [
+              79.89381910059511,
+              12.934512887240778
+            ],
+            [
+              79.89382478128906,
+              12.934670137956312
+            ],
+            [
+              79.8937010279576,
+              12.934655400651607
+            ],
+            [
+              79.89370645905441,
+              12.934525294393923
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "7c166363-b636-51c0-97be-f453bf5ef238",
+        "canonical_uid": "CANONICAL-CAD-04-004",
+        "cadastral_ref": "CAD-04-004",
+        "municipal_ref": "MUN-5026",
+        "survey_number": "1026",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9112,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.065,
+        "iou_agreement": 0.8107,
+        "reconciliation_reason": "High agreement (Confidence 91.1% >= 85%, Centroid Drift 1.07m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89382889907345,
+              12.934518413793084
+            ],
+            [
+              79.89395423742317,
+              12.934532128206184
+            ],
+            [
+              79.89393883950274,
+              12.934663391147401
+            ],
+            [
+              79.89383885519653,
+              12.934669674974778
+            ],
+            [
+              79.89382889907345,
+              12.934518413793084
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "eea17fff-9171-51da-b6da-6d1655327541",
+        "canonical_uid": "CANONICAL-CAD-04-005",
+        "cadastral_ref": "CAD-04-005",
+        "municipal_ref": "MUN-5027",
+        "survey_number": "1027",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9069,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.12,
+        "iou_agreement": 0.7982,
+        "reconciliation_reason": "High agreement (Confidence 90.7% >= 85%, Centroid Drift 1.12m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89397336966711,
+              12.934527376539572
+            ],
+            [
+              79.89408323029824,
+              12.934516716256375
+            ],
+            [
+              79.89406987562121,
+              12.934673539201368
+            ],
+            [
+              79.89395954480696,
+              12.934664661187332
+            ],
+            [
+              79.89397336966711,
+              12.934527376539572
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "7ca0d254-8f01-5254-bdd6-99a50708ea1f",
+        "canonical_uid": "CANONICAL-CAD-04-006",
+        "cadastral_ref": "CAD-04-006",
+        "municipal_ref": "MUN-5028",
+        "survey_number": "1028",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.908,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.183,
+        "iou_agreement": 0.8015,
+        "reconciliation_reason": "High agreement (Confidence 90.8% >= 85%, Centroid Drift 1.18m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89370524553422,
+              12.934687255521677
+            ],
+            [
+              79.89382125987136,
+              12.934678596060227
+            ],
+            [
+              79.89381102480391,
+              12.934833044475319
+            ],
+            [
+              79.89370418440421,
+              12.93481821477815
+            ],
+            [
+              79.89370524553422,
+              12.934687255521677
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "07ca4fd9-6a30-5506-8124-934b710fd323",
+        "canonical_uid": "CANONICAL-CAD-04-007",
+        "cadastral_ref": "CAD-04-007",
+        "municipal_ref": "MUN-5029",
+        "survey_number": "1029",
+        "geometry_version": "v3.0",
+        "total_recorded_versions": 3,
+        "confidence_score": 0.9053,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 1.143,
+        "iou_agreement": 0.7937,
+        "reconciliation_reason": "High agreement (Confidence 90.5% >= 85%, Centroid Drift 1.14m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89503221045621,
+              12.934370115562517
+            ],
+            [
+              79.89514160592468,
+              12.934353834105286
+            ],
+            [
+              79.89514036835591,
+              12.934505098148234
+            ],
+            [
+              79.89504083463699,
+              12.93451853422794
+            ],
+            [
+              79.89503221045621,
+              12.934370115562517
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "ab8dce1e-b074-53ff-8757-f173913fc8eb",
+        "canonical_uid": "CANONICAL-CAD-05-001",
+        "cadastral_ref": "CAD-05-001",
+        "municipal_ref": "MUN-5030",
+        "survey_number": "1030",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.8022,
+        "status": "conflict",
+        "centroid_drift_m": 3.222,
+        "iou_agreement": 0.4991,
+        "reconciliation_reason": "Spatial drift (3.22m) exceeds maximum allowable tolerance (2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89517249434586,
+              12.934365086730216
+            ],
+            [
+              79.89528244833879,
+              12.934356419732206
+            ],
+            [
+              79.89528232278123,
+              12.934502450977106
+            ],
+            [
+              79.89517157471678,
+              12.934503867683404
+            ],
+            [
+              79.89517249434586,
+              12.934365086730216
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "677a126b-ffed-56ed-b1c2-2561d3b4842b",
+        "canonical_uid": "CANONICAL-CAD-05-002",
+        "cadastral_ref": "CAD-05-002",
+        "municipal_ref": "MUN-5031",
+        "survey_number": "1031",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9229,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.804,
+        "iou_agreement": 0.8439,
+        "reconciliation_reason": "High agreement (Confidence 92.3% >= 85%, Centroid Drift 0.80m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89529045743426,
+              12.934367104953441
+            ],
+            [
+              79.89540436860841,
+              12.93436279142673
+            ],
+            [
+              79.89540482574719,
+              12.934504622073991
+            ],
+            [
+              79.8952964339846,
+              12.934498672680387
+            ],
+            [
+              79.89529045743426,
+              12.934367104953441
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "dc4bc7c9-f21e-55e2-8d83-2a8b94f8e50b",
+        "canonical_uid": "CANONICAL-CAD-05-003",
+        "cadastral_ref": "CAD-05-003",
+        "municipal_ref": "MUN-5032",
+        "survey_number": "1032",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9251,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.791,
+        "iou_agreement": 0.8502,
+        "reconciliation_reason": "High agreement (Confidence 92.5% >= 85%, Centroid Drift 0.79m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89504172392861,
+              12.934529161803454
+            ],
+            [
+              79.89514811044936,
+              12.934518794702901
+            ],
+            [
+              79.89515136378002,
+              12.934671768103106
+            ],
+            [
+              79.89503690338849,
+              12.934667357214499
+            ],
+            [
+              79.89504172392861,
+              12.934529161803454
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "76d168fb-bf27-53ad-8ab2-1fd23f82d210",
+        "canonical_uid": "CANONICAL-CAD-05-004",
+        "cadastral_ref": "CAD-05-004",
+        "municipal_ref": "MUN-5033",
+        "survey_number": "1033",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9213,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.844,
+        "iou_agreement": 0.8395,
+        "reconciliation_reason": "High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.84m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89517108796595,
+              12.934530884858127
+            ],
+            [
+              79.89528107999176,
+              12.93453000949906
+            ],
+            [
+              79.89527046424136,
+              12.9346731580207
+            ],
+            [
+              79.89515489339612,
+              12.934667004743774
+            ],
+            [
+              79.89517108796595,
+              12.934530884858127
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "262ce46c-fb2f-58fa-8e82-9d54fd1d2767",
+        "canonical_uid": "CANONICAL-CAD-05-005",
+        "cadastral_ref": "CAD-05-005",
+        "municipal_ref": "MUN-5034",
+        "survey_number": "1034",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9213,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.83,
+        "iou_agreement": 0.8396,
+        "reconciliation_reason": "High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.83m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89529226742393,
+              12.934526295235365
+            ],
+            [
+              79.89539870453292,
+              12.934527419079224
+            ],
+            [
+              79.89540944344859,
+              12.934679129646035
+            ],
+            [
+              79.89528676559159,
+              12.934663177337956
+            ],
+            [
+              79.89529226742393,
+              12.934526295235365
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "4d32db5f-83c0-5bc0-9ed0-f99f2c1697d6",
+        "canonical_uid": "CANONICAL-CAD-05-006",
+        "cadastral_ref": "CAD-05-006",
+        "municipal_ref": "MUN-5035",
+        "survey_number": "1035",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9269,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.817,
+        "iou_agreement": 0.8553,
+        "reconciliation_reason": "High agreement (Confidence 92.7% >= 85%, Centroid Drift 0.82m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89503693143179,
+              12.934683236448699
+            ],
+            [
+              79.89513970110278,
+              12.9346793271657
+            ],
+            [
+              79.89513977983209,
+              12.93483376729023
+            ],
+            [
+              79.89503924492487,
+              12.934824611893223
+            ],
+            [
+              79.89503693143179,
+              12.934683236448699
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "ff552f43-6276-54bc-9707-e1fb218170ce",
+        "canonical_uid": "CANONICAL-CAD-05-007",
+        "cadastral_ref": "CAD-05-007",
+        "municipal_ref": "MUN-5036",
+        "survey_number": "1036",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9189,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.868,
+        "iou_agreement": 0.8325,
+        "reconciliation_reason": "High agreement (Confidence 91.9% >= 85%, Centroid Drift 0.87m < 2.0m)."
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              79.89516116705352,
+              12.934687560110445
+            ],
+            [
+              79.89526782656527,
+              12.934694260357853
+            ],
+            [
+              79.89527953554078,
+              12.93484271974045
+            ],
+            [
+              79.8951688146015,
+              12.934840471186318
+            ],
+            [
+              79.89516116705352,
+              12.934687560110445
+            ]
+          ]
+        ]
+      },
+      "properties": {
+        "parcel_uuid": "7f3d6a5f-6edc-5709-b7a0-4c79f2b4df25",
+        "canonical_uid": "CANONICAL-CAD-05-008",
+        "cadastral_ref": "CAD-05-008",
+        "municipal_ref": "MUN-5037",
+        "survey_number": "1037",
+        "geometry_version": "v1.0",
+        "total_recorded_versions": 1,
+        "confidence_score": 0.9237,
+        "status": "auto_reconciled",
+        "centroid_drift_m": 0.856,
+        "iou_agreement": 0.8464,
+        "reconciliation_reason": "High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.86m < 2.0m)."
+      }
+    }
+  ]
+}

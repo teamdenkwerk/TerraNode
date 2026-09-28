@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "gnss_field_points",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "point_id": "GNSS-001", "parcel_id": "CAD-03-005", "accuracy_m": 0.81, "surveyor": "S. Priyanka", "captured_date": "2026-03-27", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.896555886099094, 12.933298418552171 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-002", "parcel_id": "CAD-05-006", "accuracy_m": 1.0, "surveyor": "A. Kannan", "captured_date": "2026-02-21", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.895351273547504, 12.934609028380326 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-003", "parcel_id": "CAD-04-004", "accuracy_m": 0.97, "surveyor": "T. Iyer", "captured_date": "2026-02-25", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.893763407197966, 12.934590795958208 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-004", "parcel_id": "CAD-02-008", "accuracy_m": 1.19, "surveyor": "S. Priyanka", "captured_date": "2026-03-04", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.895233024219152, 12.933459436543284 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-005", "parcel_id": "CAD-05-001", "accuracy_m": 1.17, "surveyor": "S. Priyanka", "captured_date": "2026-03-05", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.895086199843504, 12.934438632806515 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-006", "parcel_id": "CAD-03-002", "accuracy_m": 1.17, "surveyor": "R. Muthu", "captured_date": "2026-03-28", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.896549363909244, 12.933129760266622 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-007", "parcel_id": "CAD-01-001", "accuracy_m": 0.39, "surveyor": "T. Iyer", "captured_date": "2026-02-07", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.893766153238289, 12.9331208043471 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-008", "parcel_id": "CAD-02-006", "accuracy_m": 0.77, "surveyor": "T. Iyer", "captured_date": "2026-02-01", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.89534906187221, 12.933294619367343 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-009", "parcel_id": "CAD-03-003", "accuracy_m": 0.95, "surveyor": "T. Iyer", "captured_date": "2026-03-28", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.896675319367191, 12.933138973020862 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-010", "parcel_id": "CAD-02-004", "accuracy_m": 0.89, "surveyor": "S. Priyanka", "captured_date": "2026-02-05", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.895092462531835, 12.933286634517517 ] } },
+{ "type": "Feature", "properties": { "point_id": "GNSS-011", "parcel_id": "CAD-02-001", "accuracy_m": 0.72, "surveyor": "R. Muthu", "captured_date": "2026-02-22", "notes": "Field verification point for flagged conflict" }, "geometry": { "type": "Point", "coordinates": [ 79.895102743521477, 12.933135275249864 ] } }
+]
+}

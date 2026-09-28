@@ -1,0 +1,1620 @@
+{
+  "North Usman Road": [
+    {
+      "place_id": 251911162,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 27191864,
+      "lat": "13.0495198",
+      "lon": "80.2335010",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "North Usman Road",
+      "display_name": "North Usman Road, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600017, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0460119",
+        "13.0530191",
+        "80.2327276",
+        "80.2343074"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2327276,
+            13.0460119
+          ],
+          [
+            80.2328342,
+            13.0465951
+          ],
+          [
+            80.2329908,
+            13.0474226
+          ],
+          [
+            80.2330031,
+            13.0474767
+          ],
+          [
+            80.2331706,
+            13.0482175
+          ],
+          [
+            80.2333668,
+            13.0490026
+          ],
+          [
+            80.2335306,
+            13.049634
+          ],
+          [
+            80.2336506,
+            13.0502901
+          ],
+          [
+            80.2337797,
+            13.0508943
+          ],
+          [
+            80.2339371,
+            13.0516634
+          ],
+          [
+            80.2339931,
+            13.0518366
+          ],
+          [
+            80.2341499,
+            13.0524634
+          ],
+          [
+            80.2343074,
+            13.0530191
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 248594925,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 843860857,
+      "lat": "13.0460744",
+      "lon": "80.2328040",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "North Usman Road",
+      "display_name": "North Usman Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0447298",
+        "13.0474136",
+        "80.2325552",
+        "80.2330821"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2330821,
+            13.0474136
+          ],
+          [
+            80.2330189,
+            13.0471149
+          ],
+          [
+            80.2329085,
+            13.046593
+          ],
+          [
+            80.2327906,
+            13.0460079
+          ],
+          [
+            80.2327277,
+            13.0456496
+          ],
+          [
+            80.2326794,
+            13.0454068
+          ],
+          [
+            80.232625,
+            13.0450562
+          ],
+          [
+            80.2326199,
+            13.045023
+          ],
+          [
+            80.2325552,
+            13.0447298
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 248587973,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1323862825,
+      "lat": "13.0419646",
+      "lon": "80.2323713",
+      "class": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "North Usman Road",
+      "display_name": "North Usman Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0409814",
+        "13.0429694",
+        "80.2321464",
+        "80.2324250"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.232425,
+            13.0429694
+          ],
+          [
+            80.2324064,
+            13.0426186
+          ],
+          [
+            80.2323858,
+            13.0424232
+          ],
+          [
+            80.2323908,
+            13.0423275
+          ],
+          [
+            80.2323975,
+            13.0422099
+          ],
+          [
+            80.2323926,
+            13.0420851
+          ],
+          [
+            80.2323809,
+            13.0420088
+          ],
+          [
+            80.2322781,
+            13.0415357
+          ],
+          [
+            80.2321464,
+            13.0409814
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 248587195,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1318293477,
+      "lat": "13.0532648",
+      "lon": "80.2343791",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "North Usman Road",
+      "display_name": "North Usman Road, Ward 113, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600034, India",
+      "boundingbox": [
+        "13.0530191",
+        "13.0535116",
+        "80.2343074",
+        "80.2344469"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2343074,
+            13.0530191
+          ],
+          [
+            80.2343517,
+            13.0531649
+          ],
+          [
+            80.2344469,
+            13.0535116
+          ]
+        ]
+      }
+    }
+  ],
+  "South Usman Road": [
+    {
+      "place_id": 251363600,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209535253,
+      "lat": "13.0378322",
+      "lon": "80.2311351",
+      "class": "highway",
+      "type": "tertiary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "South Usman Road",
+      "display_name": "South Usman Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0365063",
+        "13.0391571",
+        "80.2307450",
+        "80.2315278"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2315278,
+            13.0391571
+          ],
+          [
+            80.2314516,
+            13.0388491
+          ],
+          [
+            80.2313909,
+            13.0386419
+          ],
+          [
+            80.2312362,
+            13.0381657
+          ],
+          [
+            80.2310753,
+            13.0376351
+          ],
+          [
+            80.2310304,
+            13.0374869
+          ],
+          [
+            80.2308461,
+            13.0368979
+          ],
+          [
+            80.2308002,
+            13.0367354
+          ],
+          [
+            80.230745,
+            13.0365063
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251448871,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 843860858,
+      "lat": "13.0324742",
+      "lon": "80.2306132",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "South Usman Road",
+      "display_name": "South Usman Road, Kannammapet, Ward 141, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600022, India",
+      "boundingbox": [
+        "13.0307760",
+        "13.0341723",
+        "80.2304674",
+        "80.2307615"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2304674,
+            13.0341723
+          ],
+          [
+            80.2305287,
+            13.0335813
+          ],
+          [
+            80.2305599,
+            13.0330157
+          ],
+          [
+            80.2306329,
+            13.0322737
+          ],
+          [
+            80.2306558,
+            13.0319372
+          ],
+          [
+            80.2306952,
+            13.0314788
+          ],
+          [
+            80.2307615,
+            13.030776
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251293288,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209514721,
+      "lat": "13.0357231",
+      "lon": "80.2304469",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "South Usman Road",
+      "display_name": "South Usman Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0347438",
+        "13.0366856",
+        "80.2302903",
+        "80.2307122"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2303139,
+            13.0347438
+          ],
+          [
+            80.2302903,
+            13.034925
+          ],
+          [
+            80.230298,
+            13.0350766
+          ],
+          [
+            80.23034,
+            13.0353108
+          ],
+          [
+            80.2305146,
+            13.0359841
+          ],
+          [
+            80.2307122,
+            13.0366856
+          ]
+        ]
+      }
+    }
+  ],
+  "Usman Road Flyover": [
+    {
+      "place_id": 249112497,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1288869985,
+      "lat": "13.0438353",
+      "lon": "80.2323743",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Usman road flyover",
+      "display_name": "Usman road flyover, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0431335",
+        "13.0445272",
+        "80.2323510",
+        "80.2324932"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2324932,
+            13.0445272
+          ],
+          [
+            80.23241,
+            13.0441196
+          ],
+          [
+            80.2323644,
+            13.0437563
+          ],
+          [
+            80.232351,
+            13.0431335
+          ]
+        ]
+      }
+    }
+  ],
+  "Sir Thyagaraya Road": [
+    {
+      "place_id": 252721002,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 217860912,
+      "lat": "13.1165511",
+      "lon": "80.2843076",
+      "class": "amenity",
+      "type": "college",
+      "place_rank": 30,
+      "importance": 0.1507975276546128,
+      "addresstype": "amenity",
+      "name": "Sir Theagaraya College",
+      "display_name": "Sir Theagaraya College, Thiruvottriyur High Road, Ward 48, Zone 4 Tondiarpet, Chennai Corporation, Chennai, Tamil Nadu, 600021, India, CMWSSB Division 48",
+      "boundingbox": [
+        "13.1159651",
+        "13.1170692",
+        "80.2838655",
+        "80.2848707"
+      ],
+      "geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2838655,
+              13.1165138
+            ],
+            [
+              80.2841004,
+              13.1164158
+            ],
+            [
+              80.2839393,
+              13.1161708
+            ],
+            [
+              80.2845353,
+              13.1159651
+            ],
+            [
+              80.2848707,
+              13.1170036
+            ],
+            [
+              80.2845902,
+              13.1170692
+            ],
+            [
+              80.284407,
+              13.1165883
+            ],
+            [
+              80.2840064,
+              13.1167229
+            ],
+            [
+              80.2838655,
+              13.1165138
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "G.N. Chetty Road": [
+    {
+      "place_id": 249901790,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 102457949,
+      "lat": "13.0491481",
+      "lon": "80.2469053",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "G N Chetty Road",
+      "display_name": "G N Chetty Road, Gemini, Ward 113, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600086, India",
+      "boundingbox": [
+        "13.0490968",
+        "13.0491993",
+        "80.2468333",
+        "80.2469772"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2468333,
+            13.0490968
+          ],
+          [
+            80.2469772,
+            13.0491993
+          ]
+        ]
+      }
+    }
+  ],
+  "Venkatanarayana Road": [
+    {
+      "place_id": 251293795,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 184720018,
+      "lat": "13.0367813",
+      "lon": "80.2360574",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Venkatanarayana Road",
+      "display_name": "Venkatanarayana Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0343838",
+        "13.0391816",
+        "80.2345288",
+        "80.2375933"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2375933,
+            13.0343838
+          ],
+          [
+            80.237561,
+            13.0344269
+          ],
+          [
+            80.2371939,
+            13.0349886
+          ],
+          [
+            80.2369573,
+            13.0353381
+          ],
+          [
+            80.2363691,
+            13.0362747
+          ],
+          [
+            80.2360711,
+            13.0367601
+          ],
+          [
+            80.2354734,
+            13.0376837
+          ],
+          [
+            80.2348375,
+            13.0386857
+          ],
+          [
+            80.2346846,
+            13.0389288
+          ],
+          [
+            80.2346561,
+            13.0390017
+          ],
+          [
+            80.2346195,
+            13.0390607
+          ],
+          [
+            80.2345921,
+            13.0390996
+          ],
+          [
+            80.2345288,
+            13.0391816
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251204654,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1152310896,
+      "lat": "13.0329499",
+      "lon": "80.2386445",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Venkatanarayana Road",
+      "display_name": "Venkatanarayana Road, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600035, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0323690",
+        "13.0335189",
+        "80.2382686",
+        "80.2390021"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2382686,
+            13.0335189
+          ],
+          [
+            80.2384519,
+            13.0332419
+          ],
+          [
+            80.2385285,
+            13.033121
+          ],
+          [
+            80.238558,
+            13.0330824
+          ],
+          [
+            80.2386457,
+            13.0329481
+          ],
+          [
+            80.2386599,
+            13.0329263
+          ],
+          [
+            80.2386621,
+            13.0329233
+          ],
+          [
+            80.2389184,
+            13.0325055
+          ],
+          [
+            80.2390021,
+            13.032369
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251422058,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1211074479,
+      "lat": "13.0339184",
+      "lon": "80.2378807",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Venkatanarayana Road",
+      "display_name": "Venkatanarayana Road, CIT Nagar, Ward 141, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600035, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0334551",
+        "13.0343838",
+        "80.2375933",
+        "80.2381716"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2381716,
+            13.0334551
+          ],
+          [
+            80.2379467,
+            13.0338116
+          ],
+          [
+            80.2375933,
+            13.0343838
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252306687,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1339450973,
+      "lat": "13.0355353",
+      "lon": "80.2369876",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Venkatanarayana Road",
+      "display_name": "Venkatanarayana Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600035, India",
+      "boundingbox": [
+        "13.0354087",
+        "13.0356608",
+        "80.2369000",
+        "80.2370735"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2370735,
+            13.0354087
+          ],
+          [
+            80.2370562,
+            13.0354314
+          ],
+          [
+            80.2369721,
+            13.0355588
+          ],
+          [
+            80.2369,
+            13.0356608
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251416702,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 102457952,
+      "lat": "13.0320862",
+      "lon": "80.2390504",
+      "class": "highway",
+      "type": "construction",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Venkatanarayana Road",
+      "display_name": "Venkatanarayana Road, Ward 141, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600035, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0319690",
+        "13.0322035",
+        "80.2389793",
+        "80.2391214"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2391214,
+            13.031969
+          ],
+          [
+            80.2389793,
+            13.0322035
+          ]
+        ]
+      }
+    }
+  ],
+  "Mambalam Canal": [
+    {
+      "place_id": 251422657,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 23161547,
+      "lat": "13.0323132",
+      "lon": "80.2402430",
+      "class": "waterway",
+      "type": "canal",
+      "place_rank": 20,
+      "importance": 0.13340613794155792,
+      "addresstype": "canal",
+      "name": "Mambalam Canal",
+      "display_name": "Mambalam Canal, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600035, India",
+      "boundingbox": [
+        "13.0304919",
+        "13.0393161",
+        "80.2308608",
+        "80.2457923"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2457923,
+            13.0393161
+          ],
+          [
+            80.2457251,
+            13.0392112
+          ],
+          [
+            80.2455644,
+            13.0389278
+          ],
+          [
+            80.2454707,
+            13.0388001
+          ],
+          [
+            80.2452475,
+            13.038361
+          ],
+          [
+            80.244866,
+            13.0374469
+          ],
+          [
+            80.2447365,
+            13.0370778
+          ],
+          [
+            80.2446183,
+            13.0364536
+          ],
+          [
+            80.2443592,
+            13.0356762
+          ],
+          [
+            80.2439993,
+            13.0351076
+          ],
+          [
+            80.2437611,
+            13.0349948
+          ],
+          [
+            80.2431687,
+            13.0347143
+          ],
+          [
+            80.2429136,
+            13.0345139
+          ],
+          [
+            80.2427478,
+            13.0342145
+          ],
+          [
+            80.2425721,
+            13.0336457
+          ],
+          [
+            80.2425375,
+            13.0335363
+          ],
+          [
+            80.2424923,
+            13.0334735
+          ],
+          [
+            80.2412929,
+            13.0325883
+          ],
+          [
+            80.2411224,
+            13.0325188
+          ],
+          [
+            80.2410986,
+            13.0325091
+          ],
+          [
+            80.2402135,
+            13.0323064
+          ],
+          [
+            80.2393155,
+            13.0321483
+          ],
+          [
+            80.2389271,
+            13.0320635
+          ],
+          [
+            80.238469,
+            13.0319564
+          ],
+          [
+            80.2371601,
+            13.0316922
+          ],
+          [
+            80.2370083,
+            13.0316973
+          ],
+          [
+            80.2364257,
+            13.0315811
+          ],
+          [
+            80.2352349,
+            13.0313513
+          ],
+          [
+            80.2343667,
+            13.0311923
+          ],
+          [
+            80.2308608,
+            13.0304919
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251209160,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 214162276,
+      "lat": "13.0245072",
+      "lon": "80.2298416",
+      "class": "waterway",
+      "type": "canal",
+      "place_rank": 20,
+      "importance": 0.13340613794155792,
+      "addresstype": "canal",
+      "name": "Mambalam Canal",
+      "display_name": "Mambalam Canal, Zone 13 Adyar, Chennai Corporation, Chennai, Tamil Nadu, 600022, India",
+      "boundingbox": [
+        "13.0210774",
+        "13.0304566",
+        "80.2271678",
+        "80.2371178"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2306314,
+            13.0304566
+          ],
+          [
+            80.2304213,
+            13.0303769
+          ],
+          [
+            80.2302919,
+            13.0303259
+          ],
+          [
+            80.2301918,
+            13.0302795
+          ],
+          [
+            80.2300981,
+            13.0301983
+          ],
+          [
+            80.229999,
+            13.0300975
+          ],
+          [
+            80.2296242,
+            13.0297077
+          ],
+          [
+            80.2293703,
+            13.0293923
+          ],
+          [
+            80.2292004,
+            13.0292167
+          ],
+          [
+            80.2288588,
+            13.0289802
+          ],
+          [
+            80.2286496,
+            13.0288882
+          ],
+          [
+            80.2283972,
+            13.0287814
+          ],
+          [
+            80.2281413,
+            13.0286918
+          ],
+          [
+            80.2279314,
+            13.028573
+          ],
+          [
+            80.2277635,
+            13.0284429
+          ],
+          [
+            80.2276638,
+            13.0281954
+          ],
+          [
+            80.2274652,
+            13.0273348
+          ],
+          [
+            80.2272099,
+            13.0271126
+          ],
+          [
+            80.2271678,
+            13.0269945
+          ],
+          [
+            80.2272069,
+            13.0268792
+          ],
+          [
+            80.2273175,
+            13.0267534
+          ],
+          [
+            80.2276157,
+            13.0266094
+          ],
+          [
+            80.2277477,
+            13.026541
+          ],
+          [
+            80.2281969,
+            13.0260653
+          ],
+          [
+            80.2285812,
+            13.0256695
+          ],
+          [
+            80.228891,
+            13.0253661
+          ],
+          [
+            80.2291217,
+            13.0251859
+          ],
+          [
+            80.2295013,
+            13.0247551
+          ],
+          [
+            80.2296738,
+            13.024603
+          ],
+          [
+            80.2298791,
+            13.0244857
+          ],
+          [
+            80.2301395,
+            13.0243104
+          ],
+          [
+            80.2314544,
+            13.0234538
+          ],
+          [
+            80.2332402,
+            13.0224835
+          ],
+          [
+            80.2333972,
+            13.0223814
+          ],
+          [
+            80.2337006,
+            13.0222078
+          ],
+          [
+            80.2337827,
+            13.0221188
+          ],
+          [
+            80.2340153,
+            13.0219608
+          ],
+          [
+            80.2341225,
+            13.0219338
+          ],
+          [
+            80.2342521,
+            13.0219306
+          ],
+          [
+            80.2346306,
+            13.0220626
+          ],
+          [
+            80.2349249,
+            13.0222432
+          ],
+          [
+            80.2350581,
+            13.0224425
+          ],
+          [
+            80.2355162,
+            13.0224906
+          ],
+          [
+            80.2356436,
+            13.0224765
+          ],
+          [
+            80.235813,
+            13.0223714
+          ],
+          [
+            80.2361934,
+            13.0222105
+          ],
+          [
+            80.2364489,
+            13.0221023
+          ],
+          [
+            80.2368198,
+            13.0218646
+          ],
+          [
+            80.2371178,
+            13.0210774
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251428842,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1272450540,
+      "lat": "13.0477716",
+      "lon": "80.2468931",
+      "class": "waterway",
+      "type": "canal",
+      "place_rank": 20,
+      "importance": 0.13340613794155792,
+      "addresstype": "canal",
+      "name": "Mambalam Canal",
+      "display_name": "Mambalam Canal, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600034, India",
+      "boundingbox": [
+        "13.0430535",
+        "13.0514485",
+        "80.2457470",
+        "80.2472184"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.245747,
+            13.0514485
+          ],
+          [
+            80.2463081,
+            13.0512891
+          ],
+          [
+            80.2466403,
+            13.0511735
+          ],
+          [
+            80.2467992,
+            13.0509929
+          ],
+          [
+            80.2472184,
+            13.050012
+          ],
+          [
+            80.2471976,
+            13.0498216
+          ],
+          [
+            80.2469932,
+            13.0494763
+          ],
+          [
+            80.2470507,
+            13.0493951
+          ],
+          [
+            80.2471327,
+            13.0491891
+          ],
+          [
+            80.2470421,
+            13.049037
+          ],
+          [
+            80.2469658,
+            13.0488741
+          ],
+          [
+            80.2468374,
+            13.048725
+          ],
+          [
+            80.2467208,
+            13.0485566
+          ],
+          [
+            80.2466443,
+            13.0483717
+          ],
+          [
+            80.2467396,
+            13.0481491
+          ],
+          [
+            80.2468931,
+            13.0477715
+          ],
+          [
+            80.2469955,
+            13.0465482
+          ],
+          [
+            80.2471399,
+            13.0451029
+          ],
+          [
+            80.2470395,
+            13.0440574
+          ],
+          [
+            80.2467912,
+            13.0430535
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251299503,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1272450537,
+      "lat": "13.0412182",
+      "lon": "80.2464016",
+      "class": "waterway",
+      "type": "canal",
+      "place_rank": 20,
+      "importance": 0.13340613794155792,
+      "addresstype": "canal",
+      "name": "Mambalam Canal",
+      "display_name": "Mambalam Canal, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600018, India",
+      "boundingbox": [
+        "13.0395267",
+        "13.0429537",
+        "80.2458751",
+        "80.2467588"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2467588,
+            13.0429537
+          ],
+          [
+            80.2464322,
+            13.0413913
+          ],
+          [
+            80.2463936,
+            13.0411727
+          ],
+          [
+            80.2458751,
+            13.0395267
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 251570151,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1267739073,
+      "lat": "13.0520373",
+      "lon": "80.2444730",
+      "class": "waterway",
+      "type": "canal",
+      "place_rank": 20,
+      "importance": 0.13340613794155792,
+      "addresstype": "canal",
+      "name": "Mambalam Canal",
+      "display_name": "Mambalam Canal, Ward 113, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600034, India",
+      "boundingbox": [
+        "13.0514703",
+        "13.0524103",
+        "80.2431930",
+        "80.2456702"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.243193,
+            13.0524103
+          ],
+          [
+            80.2448212,
+            13.0519358
+          ],
+          [
+            80.2450061,
+            13.0518017
+          ],
+          [
+            80.2456702,
+            13.0514703
+          ]
+        ]
+      }
+    }
+  ],
+  "Doraiswamy Road": [
+    {
+      "place_id": 251746127,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209514726,
+      "lat": "13.0408704",
+      "lon": "80.2306730",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Doraiswamy Road",
+      "display_name": "Doraiswamy Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0407899",
+        "13.0409604",
+        "80.2302980",
+        "80.2310502"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.230298,
+            13.0409604
+          ],
+          [
+            80.230665,
+            13.0408721
+          ],
+          [
+            80.2310502,
+            13.0407899
+          ]
+        ]
+      }
+    }
+  ],
+  "Ranganathan Street": [
+    {
+      "place_id": 252196912,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209535291,
+      "lat": "13.0375286",
+      "lon": "80.2297098",
+      "class": "landuse",
+      "type": "retail",
+      "place_rank": 24,
+      "importance": 0.448964384003649,
+      "addresstype": "retail",
+      "name": "Ranganathan Street",
+      "display_name": "Ranganathan Street, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, India",
+      "boundingbox": [
+        "13.0367881",
+        "13.0382599",
+        "80.2285118",
+        "80.2309061"
+      ],
+      "geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2285118,
+              13.0374623
+            ],
+            [
+              80.2306931,
+              13.0367881
+            ],
+            [
+              80.2309061,
+              13.0375948
+            ],
+            [
+              80.2287435,
+              13.0382599
+            ],
+            [
+              80.2285118,
+              13.0374623
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252283669,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 206824299,
+      "lat": "13.0371590",
+      "lon": "80.2293988",
+      "class": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.448964384003649,
+      "addresstype": "road",
+      "name": "Ranganathan Street",
+      "display_name": "Ranganathan Street, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0367354",
+        "13.0375841",
+        "80.2279979",
+        "80.2308002"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2308002,
+            13.0367354
+          ],
+          [
+            80.2306656,
+            13.036775
+          ],
+          [
+            80.2284166,
+            13.0374567
+          ],
+          [
+            80.2279979,
+            13.0375841
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252130881,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 27343604,
+      "lat": "12.9961183",
+      "lon": "80.2114382",
+      "class": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Ranganathan Street",
+      "display_name": "Ranganathan Street, Ward 174, Zone 13 Adyar, Chennai Corporation, Chennai, Tamil Nadu, 600088, India",
+      "boundingbox": [
+        "12.9958942",
+        "12.9963652",
+        "80.2103403",
+        "80.2125411"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2125411,
+            12.9958942
+          ],
+          [
+            80.2121411,
+            12.9959755
+          ],
+          [
+            80.2113726,
+            12.9961316
+          ],
+          [
+            80.2103403,
+            12.9963652
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252175828,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 27470642,
+      "lat": "13.0566015",
+      "lon": "80.2016824",
+      "class": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Ranganathan Street",
+      "display_name": "Ranganathan Street, SBI Colony, Ward 129, Zone 10 Kodambakkam, Maduravoyal, Chennai Corporation, Chennai, Tamil Nadu, 600093, India, CMWSSB Division 129",
+      "boundingbox": [
+        "13.0562736",
+        "13.0569311",
+        "80.2016259",
+        "80.2017443"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2016259,
+            13.0569311
+          ],
+          [
+            80.2017353,
+            13.056293
+          ],
+          [
+            80.2017443,
+            13.0562736
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252346176,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 22991500,
+      "lat": "13.0604343",
+      "lon": "80.2766049",
+      "class": "highway",
+      "type": "residential",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Ranganathan Street",
+      "display_name": "Ranganathan Street, Ward 114, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600005, India",
+      "boundingbox": [
+        "13.0597551",
+        "13.0611134",
+        "80.2766043",
+        "80.2766055"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2766055,
+            13.0597551
+          ],
+          [
+            80.2766043,
+            13.0611134
+          ]
+        ]
+      }
+    }
+  ]
+}

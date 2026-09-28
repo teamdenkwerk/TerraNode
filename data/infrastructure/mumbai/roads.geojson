@@ -1,0 +1,301 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_mumbai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-BOM-001",
+        "infrastructure_id": "ROAD-BOM-001",
+        "road_id": "BOM-RD-AKR",
+        "road_name": "Andheri-Kurla Road (Sir Mathuradas Vasanji Road)",
+        "road_type": "Major Arterial",
+        "hierarchy_level": "Major Arterial",
+        "category": "Arterial Road Corridor",
+        "jurisdiction": "Brihanmumbai Municipal Corporation (MCGM) K/East Ward",
+        "authority": "MCGM Roads & Traffic Directorate",
+        "source_dataset_id": "roads_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "dataset_version": "2026.1-MCGM",
+        "source_feature_id": "MCGM-RD-AKR-01",
+        "source_name": "MCGM Comprehensive Road GIS",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32643",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 30.0,
+        "buffer_radius_meters": 15.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Andheri-Kurla Road (Sir Mathuradas Vasanji Road)",
+          "road_type": "Major Arterial",
+          "hierarchy_level": "Major Arterial",
+          "authority": "MCGM Roads Directorate",
+          "width_m": 30.0,
+          "surface": "Dense Bituminous Macadam",
+          "carriageway_lanes": 6,
+          "jurisdiction": "MCGM K/East Ward (Andheri East)"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.862,
+            19.1122
+          ],
+          [
+            72.8652,
+            19.1127
+          ],
+          [
+            72.868,
+            19.113
+          ],
+          [
+            72.871,
+            19.1133
+          ],
+          [
+            72.8735,
+            19.1136
+          ],
+          [
+            72.8765,
+            19.114
+          ],
+          [
+            72.879,
+            19.1143
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-BOM-002",
+        "infrastructure_id": "ROAD-BOM-002",
+        "road_id": "BOM-RD-WEH",
+        "road_name": "Western Express Highway (WEH) Arterial & Flyover",
+        "road_type": "Major Arterial Flyover",
+        "hierarchy_level": "Flyovers",
+        "category": "High-Speed Arterial Corridor",
+        "jurisdiction": "MMRDA & MCGM Highways Directorate",
+        "authority": "MMRDA Highways Division",
+        "source_dataset_id": "roads_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "dataset_version": "2026.1-MMRDA",
+        "source_feature_id": "MMRDA-WEH-102",
+        "source_name": "MMRDA Regional Transport GIS",
+        "source_date": "2026-01-10",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32643",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 45.0,
+        "buffer_radius_meters": 22.5,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Western Express Highway (WEH) Arterial & Flyover",
+          "road_type": "Major Arterial Flyover",
+          "hierarchy_level": "Flyovers",
+          "authority": "MMRDA Highways Wing",
+          "width_m": 45.0,
+          "surface": "High-Grade Asphalt Concrete",
+          "carriageway_lanes": 8,
+          "jurisdiction": "Western Suburbs Regional Corridor"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8625,
+            19.1085
+          ],
+          [
+            72.8628,
+            19.111
+          ],
+          [
+            72.8631,
+            19.1135
+          ],
+          [
+            72.8633,
+            19.116
+          ],
+          [
+            72.8636,
+            19.119
+          ],
+          [
+            72.8639,
+            19.122
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-BOM-003",
+        "infrastructure_id": "ROAD-BOM-003",
+        "road_id": "BOM-RD-CARDINAL",
+        "road_name": "Cardinal Gracias Road / Chakala Collector Road",
+        "road_type": "Secondary Collector",
+        "hierarchy_level": "Collector Street",
+        "category": "Urban Collector",
+        "jurisdiction": "MCGM K/East Ward",
+        "authority": "MCGM K/East Ward Roads Division",
+        "source_dataset_id": "roads_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MCGM Municipal Road Inventory",
+        "source_date": "2026-01-20",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 18.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Cardinal Gracias Road / Chakala Collector Road",
+          "road_type": "Secondary Collector",
+          "hierarchy_level": "Collector Street",
+          "width_m": 18.0,
+          "surface": "Asphalt",
+          "carriageway_lanes": 2
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.868,
+            19.1105
+          ],
+          [
+            72.8682,
+            19.113
+          ],
+          [
+            72.8684,
+            19.1155
+          ],
+          [
+            72.8687,
+            19.118
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-BOM-004",
+        "infrastructure_id": "ROAD-BOM-004",
+        "road_id": "BOM-RD-MIDC",
+        "road_name": "Marol MIDC Central Road",
+        "road_type": "Industrial Arterial",
+        "hierarchy_level": "Arterial Road Corridor",
+        "category": "Industrial Sub-Arterial",
+        "jurisdiction": "MIDC & MCGM",
+        "authority": "Maharashtra Industrial Development Corp (MIDC)",
+        "source_dataset_id": "roads_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MIDC Infrastructure Cell",
+        "source_date": "2026-01-18",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 24.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Marol MIDC Central Road",
+          "road_type": "Industrial Arterial",
+          "hierarchy_level": "Arterial Road Corridor",
+          "width_m": 24.0,
+          "surface": "Cement Concrete",
+          "carriageway_lanes": 4
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8725,
+            19.111
+          ],
+          [
+            72.8728,
+            19.1135
+          ],
+          [
+            72.8732,
+            19.116
+          ],
+          [
+            72.8735,
+            19.1185
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-BOM-005",
+        "infrastructure_id": "ROAD-BOM-005",
+        "road_id": "BOM-RD-KONDIVITA",
+        "road_name": "Kondivita Industrial Way (Cross Road 16)",
+        "road_type": "Access Road",
+        "hierarchy_level": "Local Street",
+        "category": "Commercial Collector",
+        "jurisdiction": "MCGM K/East Ward",
+        "authority": "MCGM Ward Engineering",
+        "source_dataset_id": "roads_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MCGM Local Roads Registry",
+        "source_date": "2026-01-20",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 14.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Kondivita Industrial Way (Cross Road 16)",
+          "road_type": "Access Road",
+          "hierarchy_level": "Local Street",
+          "width_m": 14.0,
+          "surface": "Asphalt",
+          "carriageway_lanes": 2
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8655,
+            19.115
+          ],
+          [
+            72.869,
+            19.1153
+          ],
+          [
+            72.8725,
+            19.1156
+          ],
+          [
+            72.876,
+            19.1158
+          ]
+        ]
+      }
+    }
+  ]
+}

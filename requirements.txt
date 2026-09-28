@@ -1,0 +1,32 @@
+# Phase 0 + Phase 1 dependencies, plus the backend API — derived
+# directly from the imports actually present in config.py, db/,
+# ingestion/, matching/, reconciliation/, pipeline/, verification/,
+# backend/ (checked with grep, not recalled from memory). Nothing here
+# is for a module that doesn't exist yet — no torch/opencv/
+# segment-anything (AI extraction not written yet).
+
+# Geospatial core — used by ingestion/, matching/normalize.py,
+# matching/similarity.py, matching/match_entities.py
+geopandas>=0.14
+shapely>=2.0
+
+# OSM ingestion — ingestion/fetch_osm_buildings.py
+osmnx>=1.9
+
+# Google Open Buildings ingestion — ingestion/fetch_google_open_buildings.py
+# Requires a one-time `earthengine authenticate` — see README.
+earthengine-api>=0.1.400
+geemap>=0.32
+
+# Database — db/connection.py, and every module that writes to PostGIS
+# [binary] avoids needing local PostgreSQL dev headers/libpq to build from source.
+psycopg[binary]>=3.1
+
+# Backend API — backend/main.py, backend/routers/, backend/schemas.py
+fastapi>=0.110
+uvicorn[standard]>=0.27
+pydantic>=2.6
+
+# Environment Variables
+python-dotenv>=1.0.1
+python-multipart>=0.0.9

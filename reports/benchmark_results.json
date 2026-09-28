@@ -1,0 +1,94 @@
+{
+  "benchmark_timestamp": "2026-09-27 04:29:24 UTC",
+  "system_info": {
+    "os": "Windows",
+    "os_release": "11",
+    "python_version": "3.14.3",
+    "architecture": "AMD64",
+    "processor": "Intel64 Family 6 Model 186 Stepping 2, GenuineIntel"
+  },
+  "scales_tested": [
+    100,
+    500,
+    1000,
+    5000
+  ],
+  "results": [
+    {
+      "parcels": 100,
+      "candidate_pairs_found": 252,
+      "matches_evaluated": 252,
+      "auto_reconciled": 0,
+      "review_required": 0,
+      "conflicts": 252,
+      "timing_seconds": {
+        "ingestion_s": 0.0513,
+        "crs_reprojection_s": 0.1207,
+        "geometry_validation_s": 0.0114,
+        "spatial_indexing_s": 0.0004,
+        "candidate_matching_s": 0.0958,
+        "reconciliation_policy_s": 0.0072,
+        "total_processing_s": 0.2867
+      },
+      "throughput_parcels_per_sec": 348.77,
+      "peak_memory_mb": 0.11
+    },
+    {
+      "parcels": 500,
+      "candidate_pairs_found": 955,
+      "matches_evaluated": 955,
+      "auto_reconciled": 0,
+      "review_required": 0,
+      "conflicts": 955,
+      "timing_seconds": {
+        "ingestion_s": 0.0501,
+        "crs_reprojection_s": 0.5654,
+        "geometry_validation_s": 0.0482,
+        "spatial_indexing_s": 0.0006,
+        "candidate_matching_s": 0.2251,
+        "reconciliation_policy_s": 0.0163,
+        "total_processing_s": 0.9056
+      },
+      "throughput_parcels_per_sec": 552.12,
+      "peak_memory_mb": 0.49
+    },
+    {
+      "parcels": 1000,
+      "candidate_pairs_found": 2843,
+      "matches_evaluated": 2843,
+      "auto_reconciled": 0,
+      "review_required": 0,
+      "conflicts": 2843,
+      "timing_seconds": {
+        "ingestion_s": 0.0926,
+        "crs_reprojection_s": 1.2557,
+        "geometry_validation_s": 0.0924,
+        "spatial_indexing_s": 0.001,
+        "candidate_matching_s": 0.579,
+        "reconciliation_policy_s": 0.0547,
+        "total_processing_s": 2.0755
+      },
+      "throughput_parcels_per_sec": 481.82,
+      "peak_memory_mb": 1.19
+    },
+    {
+      "parcels": 5000,
+      "candidate_pairs_found": 9858,
+      "matches_evaluated": 9858,
+      "auto_reconciled": 0,
+      "review_required": 0,
+      "conflicts": 9858,
+      "timing_seconds": {
+        "ingestion_s": 0.6541,
+        "crs_reprojection_s": 6.2946,
+        "geometry_validation_s": 0.3988,
+        "spatial_indexing_s": 0.0027,
+        "candidate_matching_s": 2.566,
+        "reconciliation_policy_s": 0.1896,
+        "total_processing_s": 10.1058
+      },
+      "throughput_parcels_per_sec": 494.76,
+      "peak_memory_mb": 4.99
+    }
+  ]
+}

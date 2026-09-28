@@ -1,0 +1,271 @@
+{
+  "parcel_uuid": "07ca4fd9-6a30-5506-8124-934b710fd323",
+  "reconciliation_id": "REC-07CA4FD9",
+  "source_dataset_ids": [
+    "cadastral_demo"
+  ],
+  "source_feature_ids": [
+    "CAD-04-007"
+  ],
+  "source_count": 1,
+  "sources": [
+    {
+      "dataset_id": "cadastral_demo",
+      "source_name": "State Cadastral Authority",
+      "source_type": "Official Cadastral",
+      "source_feature_id": "CAD-04-007",
+      "source_date": "2026-09-27",
+      "verification_status": "VERIFIED",
+      "properties": {}
+    }
+  ],
+  "geometry_evidence": {
+    "iou": 1.0,
+    "centroid_drift_m": 0.0,
+    "area_reference_m2": 191.01,
+    "area_candidate_m2": 191.01,
+    "area_difference_m2": 0.0,
+    "area_difference_percentage": 0.0,
+    "perimeter_reference_m": 55.93,
+    "perimeter_candidate_m": 55.93,
+    "perimeter_difference_m": 0.0,
+    "is_valid_geometry": true,
+    "geometry_repair_applied": false,
+    "repair_details": null
+  },
+  "matching_evidence": {
+    "candidate_score": 1.0,
+    "classification": "STRONG_MATCH",
+    "iou_score": 1.0,
+    "centroid_score": 1.0,
+    "area_score": 1.0,
+    "perimeter_score": 1.0,
+    "shape_score": 1.0,
+    "bbox_score": 1.0,
+    "source_agreement_score": 1.0,
+    "identifier_score": 1.0,
+    "weights_used": {
+      "w_iou": 0.3,
+      "w_centroid": 0.25,
+      "w_area": 0.12,
+      "w_shape": 0.1,
+      "w_perimeter": 0.08,
+      "w_bbox": 0.05,
+      "w_identifier": 0.05,
+      "w_source_agreement": 0.05
+    },
+    "raw_metrics": {
+      "iou": 1.0,
+      "centroid_drift_m": 0.0,
+      "area_a_m2": 191.01,
+      "area_b_m2": 191.01,
+      "area_diff_m2": 0.0,
+      "area_diff_ratio": 0.0,
+      "perimeter_a_m": 55.93,
+      "perimeter_b_m": 55.93,
+      "perimeter_diff_m": 0.0,
+      "shape_compactness_a": 0.7672,
+      "shape_compactness_b": 0.7672,
+      "bbox_iou": 1.0,
+      "identifier_a": "1029",
+      "identifier_b": "1029",
+      "identifier_match_method": "EXACT_MATCH",
+      "source_a": "Official Cadastral",
+      "source_b": "Consensus"
+    }
+  },
+  "confidence_evidence": {
+    "confidence_score": 1.0,
+    "auto_reconcile_threshold": 0.85,
+    "review_threshold": 0.7,
+    "max_centroid_drift_threshold_m": 2.0,
+    "decision": "AUTO_RECONCILED",
+    "decision_reason": "High agreement (Confidence 100.0% >= 85%, Centroid Drift 0.00m < 2.0m).",
+    "authoritative_rule_applied": "Confidence >= 85% AND Centroid Drift < 2.0m"
+  },
+  "ground_truth_evidence": {
+    "reference_name": "Survey of India CORS / GNSS RTK Field Network",
+    "is_available": true,
+    "status": "VERIFIED",
+    "checkpoint_id": "RTK-DOM-04",
+    "centroid_drift_m": 0.32,
+    "within_tolerance": true,
+    "details": {
+      "accuracy_standard": "1\u03c3 <= 0.05m RTK Fix",
+      "instrument": "Trimble R12 GNSS Receiver",
+      "survey_authority": "Survey of India State Cadastral Cell"
+    }
+  },
+  "historical_evidence": {
+    "has_history": true,
+    "total_versions": 3,
+    "current_version": 3,
+    "previous_version_date": "2026-09-27",
+    "latest_version_date": "2026-09-27",
+    "area_change_m2": 0.0,
+    "boundary_change": "Not Detected",
+    "summary_text": "Verified historical versions available (2022 Cadastral \u2192 2024 Municipal \u2192 2026 Reconciled)."
+  },
+  "infrastructure_evidence": {
+    "has_intersections": true,
+    "intersections_detected": 1,
+    "categories_checked": 6,
+    "road_intersection": "No Intersection Detected",
+    "drainage_intersection": "Intersection Detected (12.33m affected)",
+    "water_line_status": "Data Unavailable (Requires BWSSB water pipeline GIS dataset)",
+    "summary_text": "Spatial overlap detected with 1 infrastructure layer(s).",
+    "items": [
+      {
+        "infrastructure_type": "road",
+        "infrastructure_id": "INFRA-RD-CAD-001",
+        "intersection_exists": false,
+        "intersection_status": "No Intersection Detected",
+        "intersection_length_m": 0.0,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 0.0,
+        "minimum_distance_m": 90.91,
+        "source_dataset": "pwd_rural_roads_2026",
+        "source_feature_id": "PWD-SH-114-KM4",
+        "source_name": "State Highways & PWD Cadastral Wing",
+        "verification_status": "VERIFIED",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "projected_crs": "EPSG:32644",
+          "proximity_threshold_m": 25.0,
+          "metadata": {
+            "road_name": "District Road MDR-114",
+            "width_m": 10.0,
+            "surface": "Bituminous",
+            "category": "Major District Road"
+          }
+        }
+      },
+      {
+        "infrastructure_type": "drainage",
+        "infrastructure_id": "INFRA-DR-CAD-001",
+        "intersection_exists": true,
+        "intersection_status": "Spatial Intersection Detected",
+        "intersection_length_m": 12.33,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 22.04,
+        "minimum_distance_m": 0.0,
+        "source_dataset": "irrigation_dept_waterways_2025",
+        "source_feature_id": "WRD-CANAL-B4",
+        "source_name": "Water Resources Department",
+        "verification_status": "VERIFIED",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "projected_crs": "EPSG:32644",
+          "intersection_geom_type": "LineString",
+          "metadata": {
+            "canal_name": "Branch Feeder Canal B4",
+            "width_m": 4.5,
+            "type": "Irrigation Distributary Canal",
+            "buffer_zone_m": 10.0
+          }
+        }
+      },
+      {
+        "infrastructure_type": "water",
+        "infrastructure_id": null,
+        "intersection_exists": false,
+        "intersection_status": "Data Unavailable",
+        "intersection_length_m": 0.0,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 0.0,
+        "minimum_distance_m": 0.0,
+        "source_dataset": null,
+        "source_feature_id": null,
+        "source_name": null,
+        "verification_status": "NOT_AVAILABLE",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "is_available": false,
+          "required_dataset": "Requires municipal water pipeline network GIS dataset (BWSSB)"
+        }
+      },
+      {
+        "infrastructure_type": "electricity",
+        "infrastructure_id": null,
+        "intersection_exists": false,
+        "intersection_status": "Data Unavailable",
+        "intersection_length_m": 0.0,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 0.0,
+        "minimum_distance_m": 0.0,
+        "source_dataset": null,
+        "source_feature_id": null,
+        "source_name": null,
+        "verification_status": "NOT_AVAILABLE",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "is_available": false,
+          "required_dataset": "Requires high-voltage power transmission line GIS dataset (BESCOM)"
+        }
+      },
+      {
+        "infrastructure_type": "railway",
+        "infrastructure_id": null,
+        "intersection_exists": false,
+        "intersection_status": "Data Unavailable",
+        "intersection_length_m": 0.0,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 0.0,
+        "minimum_distance_m": 0.0,
+        "source_dataset": null,
+        "source_feature_id": null,
+        "source_name": null,
+        "verification_status": "NOT_AVAILABLE",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "is_available": false,
+          "required_dataset": "Requires railway right-of-way and metro alignment GIS dataset (BMRCL / IR)"
+        }
+      },
+      {
+        "infrastructure_type": "public_utility",
+        "infrastructure_id": null,
+        "intersection_exists": false,
+        "intersection_status": "Data Unavailable",
+        "intersection_length_m": 0.0,
+        "intersection_area_m2": 0.0,
+        "intersection_percentage": 0.0,
+        "minimum_distance_m": 0.0,
+        "source_dataset": null,
+        "source_feature_id": null,
+        "source_name": null,
+        "verification_status": "NOT_AVAILABLE",
+        "calculation_timestamp": "2026-09-27T08:35:20Z",
+        "details": {
+          "is_available": false,
+          "required_dataset": "Requires municipal gas & underground optical utility easement dataset"
+        }
+      }
+    ]
+  },
+  "review_status": "ACTIVE",
+  "reviewer": "Senior Land Records Officer",
+  "review_reason": "High agreement (Confidence 100.0% >= 85%, Centroid Drift 0.00m < 2.0m).",
+  "review_history": [
+    {
+      "timestamp": "2026-09-27T05:28:14Z",
+      "actor": "Automated Spatial Reconciliation Engine",
+      "action": "PARCEL_REGISTERED",
+      "state_from": null,
+      "state_to": "DETECTED",
+      "reason": "Initial multi-source spatial alignment pass"
+    }
+  ],
+  "final_decision": {
+    "status": "AUTO_RECONCILED",
+    "confidence_pct": 100.0,
+    "centroid_drift_m": 0.0,
+    "iou": 1.0,
+    "ground_truth_status": "VERIFIED",
+    "review_requirement": "NOT_REQUIRED",
+    "primary_reason": "High agreement (Confidence 100.0% >= 85%, Centroid Drift 0.00m < 2.0m)."
+  },
+  "consensus_method": "CADASTRE_LEGAL_BOUNDARY_PRIORITIZATION",
+  "created_at": "2026-09-27T05:28:14Z",
+  "updated_at": "2026-09-27T08:35:20Z"
+}

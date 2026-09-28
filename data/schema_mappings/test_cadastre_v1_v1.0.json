@@ -1,0 +1,13 @@
+{
+  "dataset_id": "test_cadastre_v1",
+  "dataset_version": "v1.0",
+  "confirmed_by": "Senior Cadastral Officer",
+  "confirmed_at": "2026-09-27 13:41:35 UTC",
+  "mappings": {
+    "khasra_no": "parcel_id",
+    "plot_number": "survey_number",
+    "unknown_tag": null
+  },
+  "notes": "Verified against state revenue dictionary standards.",
+  "applied_to_dataset": true
+}

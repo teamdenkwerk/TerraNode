@@ -1,0 +1,109 @@
+{
+  "type": "FeatureCollection",
+  "name": "electricity_delhi",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "GRID-DEL-001",
+        "infrastructure_id": "GRID-DEL-001",
+        "grid_id": "DTL-66KV-ASHOKA",
+        "line_name": "NDMC / Delhi Transco 66kV Ashoka Road Transmission Corridor",
+        "infrastructure_type": "electricity",
+        "voltage": "66 kV",
+        "operator": "Delhi Transco Limited (DTL) & NDMC Electricity",
+        "authority": "Delhi Electricity Regulatory Commission (DERC)",
+        "source": "OpenStreetMap Power & DTL Transmission Corridor GIS",
+        "source_dataset_id": "electricity_delhi",
+        "dataset_id": "delhi-urban",
+        "source_name": "OpenStreetMap Power / Delhi Transco",
+        "verification_status": "REFERENCE_ONLY",
+        "is_active": true,
+        "metadata": {
+          "line_name": "NDMC / Delhi Transco 66kV Ashoka Road Transmission Corridor",
+          "voltage": "66 kV",
+          "operator": "Delhi Transco / NDMC",
+          "transmission_type": "Underground XLPE Duct Corridor under Ashoka Road",
+          "corridor_width_m": 5.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.2131,
+            28.6232
+          ],
+          [
+            77.2155,
+            28.6218
+          ],
+          [
+            77.2185,
+            28.6203
+          ],
+          [
+            77.2215,
+            28.6185
+          ],
+          [
+            77.2248,
+            28.6166
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "GRID-DEL-002",
+        "infrastructure_id": "GRID-DEL-002",
+        "grid_id": "NDMC-33KV-JANPATH",
+        "line_name": "NDMC Central Secretariat 33kV Janpath Feeder Trench",
+        "infrastructure_type": "electricity",
+        "voltage": "33 kV",
+        "operator": "NDMC Electricity Department",
+        "authority": "DERC",
+        "source_dataset_id": "electricity_delhi",
+        "dataset_id": "delhi-urban",
+        "source_name": "OpenStreetMap Power / NDMC Power",
+        "verification_status": "REFERENCE_ONLY",
+        "is_active": true,
+        "metadata": {
+          "line_name": "NDMC Central Secretariat 33kV Janpath Feeder Trench",
+          "voltage": "33 kV",
+          "operator": "NDMC Electricity",
+          "transmission_type": "Underground Duct Bank under Janpath",
+          "corridor_width_m": 4.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.219,
+            28.626
+          ],
+          [
+            77.2187,
+            28.62
+          ],
+          [
+            77.2185,
+            28.615
+          ],
+          [
+            77.2182,
+            28.6105
+          ]
+        ]
+      }
+    }
+  ]
+}

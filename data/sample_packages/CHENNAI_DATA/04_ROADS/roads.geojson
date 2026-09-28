@@ -1,0 +1,322 @@
+{
+  "type": "FeatureCollection",
+  "name": "roads_chennai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-001",
+        "infrastructure_id": "ROAD-MAA-001",
+        "road_id": "MAA-RD-USMAN-N",
+        "road_name": "Usman Road Flyover & North Usman Road Arterial",
+        "road_type": "Major Arterial Flyover",
+        "hierarchy_level": "Flyovers",
+        "category": "Arterial Road Corridor",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "GCC Bus Route Roads Directorate",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-101",
+        "source_name": "GCC Town Planning & Bus Route Roads",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 24.0,
+        "buffer_radius_meters": 12.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Usman Road Flyover & North Usman Road Arterial",
+          "road_type": "Major Arterial Flyover",
+          "hierarchy_level": "Flyovers",
+          "authority": "Greater Chennai Corporation (GCC)",
+          "width_m": 24.0,
+          "surface": "Dense Bituminous Macadam",
+          "category": "Major Arterial Flyover",
+          "carriageway_lanes": 4,
+          "jurisdiction": "GCC Zone X Kodambakkam"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.2343074, 13.0530191],
+          [80.2341499, 13.0524634],
+          [80.2339371, 13.0516634],
+          [80.2337797, 13.0508943],
+          [80.2336506, 13.0502901],
+          [80.2335306, 13.049634],
+          [80.2333668, 13.0490026],
+          [80.2331706, 13.0482175],
+          [80.2330821, 13.0474136],
+          [80.2329085, 13.046593],
+          [80.2327277, 13.0456496],
+          [80.2325552, 13.0447298],
+          [80.2324932, 13.0445272],
+          [80.232425, 13.0429694],
+          [80.2322685, 13.0429928],
+          [80.2322524, 13.0422753],
+          [80.2321464, 13.0409814]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-002",
+        "infrastructure_id": "ROAD-MAA-002",
+        "road_id": "MAA-RD-USMAN-S",
+        "road_name": "South Usman Road Commercial Corridor",
+        "road_type": "Major Arterial",
+        "hierarchy_level": "Major Roads",
+        "category": "Commercial Bus Route Arterial",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "GCC Bus Route Roads Directorate",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-102",
+        "source_name": "GCC Town Planning & Bus Route Roads",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 22.0,
+        "buffer_radius_meters": 11.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "South Usman Road Commercial Corridor",
+          "road_type": "Major Arterial",
+          "hierarchy_level": "Major Roads",
+          "authority": "Greater Chennai Corporation (GCC)",
+          "width_m": 22.0,
+          "surface": "Asphalt",
+          "category": "Major Arterial",
+          "carriageway_lanes": 4,
+          "jurisdiction": "GCC Zone X Kodambakkam"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.2321464, 13.0409814],
+          [80.231975, 13.0410175],
+          [80.2315278, 13.0391571],
+          [80.230745, 13.0365063],
+          [80.2307122, 13.0366856],
+          [80.2303139, 13.0347438],
+          [80.2304674, 13.0341723],
+          [80.2307615, 13.030776]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-003",
+        "infrastructure_id": "ROAD-MAA-003",
+        "road_id": "MAA-RD-THYAGARAYA",
+        "road_name": "Sir Theagaraya Road (Pondy Bazaar Pedestrian Corridor)",
+        "road_type": "Commercial Pedestrian & Arterial",
+        "hierarchy_level": "Major Roads",
+        "category": "Commercial Pedestrian Corridor",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "Chennai Smart City Ltd / GCC",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-103",
+        "source_name": "Chennai Smart City Project",
+        "source_date": "2026-02-10",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 20.0,
+        "buffer_radius_meters": 10.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Sir Theagaraya Road (Pondy Bazaar Pedestrian Corridor)",
+          "road_type": "Commercial Pedestrian Corridor",
+          "hierarchy_level": "Major Roads",
+          "authority": "Chennai Smart City Ltd",
+          "width_m": 20.0,
+          "surface": "Pedestrian Pavers / Asphalt",
+          "category": "Pedestrianized Commercial Smart Corridor",
+          "carriageway_lanes": 2,
+          "jurisdiction": "GCC Zone X Kodambakkam"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.2338, 13.0408],
+          [80.2340001, 13.0412393],
+          [80.23512, 13.04108],
+          [80.23654, 13.04091],
+          [80.23812, 13.04068],
+          [80.2399497, 13.0404287],
+          [80.2405137, 13.0404293],
+          [80.24185, 13.04028],
+          [80.2438348, 13.0400245],
+          [80.2452, 13.03988]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-004",
+        "infrastructure_id": "ROAD-MAA-004",
+        "road_id": "MAA-RD-GNCHETTY",
+        "road_name": "Gopathi Narayanaswami Road (G.N. Chetty Road)",
+        "road_type": "Major Arterial",
+        "hierarchy_level": "Major Roads",
+        "category": "Major Secondary Arterial",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "GCC Road Department",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-104",
+        "source_name": "GCC Road Department",
+        "source_date": "2026-01-20",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 20.0,
+        "buffer_radius_meters": 10.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Gopathi Narayanaswami Road (G.N. Chetty Road)",
+          "road_type": "Major Arterial",
+          "hierarchy_level": "Major Roads",
+          "authority": "Greater Chennai Corporation (GCC)",
+          "width_m": 20.0,
+          "surface": "Bituminous Asphalt",
+          "category": "Major Arterial Corridor",
+          "carriageway_lanes": 4,
+          "jurisdiction": "GCC Zone IX Teynampet / Zone X"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.2359683, 13.042662],
+          [80.238357, 13.0439749],
+          [80.2403338, 13.0450146],
+          [80.2423009, 13.0461746],
+          [80.2455078, 13.0480579],
+          [80.2468917, 13.049011]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-005",
+        "infrastructure_id": "ROAD-MAA-005",
+        "road_id": "MAA-RD-VENKATANARAYANA",
+        "road_name": "Venkatanarayana Road Arterial",
+        "road_type": "Secondary Road",
+        "hierarchy_level": "Minor Roads",
+        "category": "Sub-Arterial Collector",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "GCC Road Department",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-105",
+        "source_name": "GCC Road Department",
+        "source_date": "2026-01-20",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 18.0,
+        "buffer_radius_meters": 9.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Venkatanarayana Road Arterial",
+          "road_type": "Secondary Road",
+          "hierarchy_level": "Minor Roads",
+          "authority": "Greater Chennai Corporation (GCC)",
+          "width_m": 18.0,
+          "surface": "Asphalt",
+          "category": "Sub-Arterial Link",
+          "carriageway_lanes": 3,
+          "jurisdiction": "GCC Zone X Kodambakkam"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.2345288, 13.0391816],
+          [80.23595, 13.03712],
+          [80.2370735, 13.0354087],
+          [80.2375933, 13.0343838],
+          [80.2381716, 13.0334551],
+          [80.2390021, 13.032369],
+          [80.2391214, 13.031969]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "ROAD-MAA-006",
+        "infrastructure_id": "ROAD-MAA-006",
+        "road_id": "MAA-RD-DORAISWAMY",
+        "road_name": "Doraiswamy Road & Subway Corridor",
+        "road_type": "Collector Road & Subway",
+        "hierarchy_level": "Minor Roads",
+        "category": "West-East Subway Connector",
+        "jurisdiction": "Greater Chennai Corporation (GCC)",
+        "authority": "GCC Road Department & Southern Railway",
+        "source_dataset_id": "roads_chennai",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-GCC",
+        "source_feature_id": "GCC-RD-106",
+        "source_name": "GCC Road Department",
+        "source_date": "2026-02-01",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32644",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 14.0,
+        "buffer_radius_meters": 7.0,
+        "is_active": true,
+        "metadata": {
+          "road_name": "Doraiswamy Road & Subway Corridor",
+          "road_type": "Collector Road & Subway",
+          "hierarchy_level": "Minor Roads",
+          "authority": "Greater Chennai Corporation (GCC)",
+          "width_m": 14.0,
+          "surface": "Reinforced Concrete / Asphalt",
+          "category": "Subway Link",
+          "carriageway_lanes": 2,
+          "jurisdiction": "GCC Zone X Kodambakkam"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [80.231975, 13.0410175],
+          [80.2310502, 13.0407899],
+          [80.230298, 13.0409604],
+          [80.2285, 13.0411]
+        ]
+      }
+    }
+  ]
+}

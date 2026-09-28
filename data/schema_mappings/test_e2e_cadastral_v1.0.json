@@ -1,0 +1,18 @@
+{
+  "dataset_id": "test_e2e_cadastral",
+  "dataset_version": "v1.0",
+  "confirmed_by": "Auditor Test",
+  "confirmed_at": "2026-09-27 13:41:35 UTC",
+  "mappings": {
+    "parcel_id": "parcel_id",
+    "survey_no": "survey_number",
+    "block_id": null,
+    "owner_name": "owner_reference",
+    "land_use": "area",
+    "area_sqm": "area",
+    "source": "source",
+    "dataset_version": "source"
+  },
+  "notes": null,
+  "applied_to_dataset": true
+}

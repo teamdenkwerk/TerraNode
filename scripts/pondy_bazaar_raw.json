@@ -1,0 +1,324 @@
+{
+  "Pondy Bazaar Chennai": [
+    {
+      "place_id": 415907120,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 1501132747,
+      "lat": "13.0407878",
+      "lon": "80.2377232",
+      "class": "highway",
+      "type": "bus_stop",
+      "place_rank": 30,
+      "importance": 7.28046082245673e-05,
+      "addresstype": "highway",
+      "name": "T. Nagar",
+      "display_name": "T. Nagar, Sir Thyagaraya Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0407679",
+        "13.0408076",
+        "80.2376529",
+        "80.2377934"
+      ],
+      "geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2376529,
+              13.0407766
+            ],
+            [
+              80.2377914,
+              13.0407679
+            ],
+            [
+              80.2377934,
+              13.0407989
+            ],
+            [
+              80.237655,
+              13.0408076
+            ],
+            [
+              80.2376529,
+              13.0407766
+            ]
+          ]
+        ]
+      }
+    }
+  ],
+  "Thyagaraya Road T Nagar Chennai": [
+    {
+      "place_id": 252330128,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209503012,
+      "lat": "13.0408439",
+      "lon": "80.2369741",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Sir Thyagaraya Road",
+      "display_name": "Sir Thyagaraya Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0404287",
+        "13.0412393",
+        "80.2340001",
+        "80.2399497"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2340001,
+            13.0412393
+          ],
+          [
+            80.2340756,
+            13.041203
+          ],
+          [
+            80.2341889,
+            13.0411842
+          ],
+          [
+            80.2361116,
+            13.0409583
+          ],
+          [
+            80.2382752,
+            13.0406713
+          ],
+          [
+            80.2390776,
+            13.0405509
+          ],
+          [
+            80.2396305,
+            13.0404701
+          ],
+          [
+            80.2399497,
+            13.0404287
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252382748,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 845727127,
+      "lat": "13.0402516",
+      "lon": "80.2421773",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Sir Thyagaraya Road",
+      "display_name": "Sir Thyagaraya Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India, CMWSSB Division 117",
+      "boundingbox": [
+        "13.0400245",
+        "13.0404293",
+        "80.2405137",
+        "80.2438348"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2405137,
+            13.0404293
+          ],
+          [
+            80.2421856,
+            13.0402507
+          ],
+          [
+            80.2429959,
+            13.0401396
+          ],
+          [
+            80.243394,
+            13.040085
+          ],
+          [
+            80.2437214,
+            13.0400401
+          ],
+          [
+            80.2438348,
+            13.0400245
+          ]
+        ]
+      }
+    }
+  ],
+  "Sir Theagaraya Road T Nagar": [],
+  "G N Chetty Road T Nagar Chennai": [],
+  "Panagal Park Chennai": [
+    {
+      "place_id": 425521675,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209513246,
+      "lat": "13.0413959",
+      "lon": "80.2329251",
+      "class": "leisure",
+      "type": "park",
+      "place_rank": 24,
+      "importance": 0.45019493128634464,
+      "addresstype": "park",
+      "name": "Panagal Park",
+      "display_name": "Panagal Park, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, India",
+      "boundingbox": [
+        "13.0407614",
+        "13.0420893",
+        "80.2322953",
+        "80.2338324"
+      ],
+      "geojson": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2322953,
+              13.0409607
+            ],
+            [
+              80.2329809,
+              13.0408063
+            ],
+            [
+              80.2332037,
+              13.0407614
+            ],
+            [
+              80.2332999,
+              13.0408603
+            ],
+            [
+              80.2334656,
+              13.0414326
+            ],
+            [
+              80.2337494,
+              13.0413592
+            ],
+            [
+              80.2338324,
+              13.0417629
+            ],
+            [
+              80.2338254,
+              13.0418229
+            ],
+            [
+              80.2332475,
+              13.0419372
+            ],
+            [
+              80.2329533,
+              13.0420068
+            ],
+            [
+              80.2325545,
+              13.0420893
+            ],
+            [
+              80.2322953,
+              13.0409607
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "place_id": 252504699,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "node",
+      "osm_id": 2270331348,
+      "lat": "13.0410311",
+      "lon": "80.2332635",
+      "class": "leisure",
+      "type": "park",
+      "place_rank": 24,
+      "importance": 0.08007280460822458,
+      "addresstype": "park",
+      "name": "Panagal Park",
+      "display_name": "Panagal Park, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0409811",
+        "13.0410811",
+        "80.2332135",
+        "80.2333135"
+      ],
+      "geojson": {
+        "type": "Point",
+        "coordinates": [
+          80.2332635,
+          13.0410311
+        ]
+      }
+    },
+    {
+      "place_id": 252596675,
+      "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+      "osm_type": "way",
+      "osm_id": 209535251,
+      "lat": "13.0417358",
+      "lon": "80.2321595",
+      "class": "highway",
+      "type": "secondary",
+      "place_rank": 26,
+      "importance": 0.053406137941557914,
+      "addresstype": "road",
+      "name": "Panagal Park",
+      "display_name": "Panagal Park, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+      "boundingbox": [
+        "13.0410175",
+        "13.0422311",
+        "80.2319750",
+        "80.2324897"
+      ],
+      "geojson": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.231975,
+            13.0410175
+          ],
+          [
+            80.2321819,
+            13.0418229
+          ],
+          [
+            80.2322548,
+            13.0422311
+          ],
+          [
+            80.2322925,
+            13.0422247
+          ],
+          [
+            80.2323975,
+            13.0422099
+          ],
+          [
+            80.2324329,
+            13.0422049
+          ],
+          [
+            80.2324897,
+            13.0422
+          ]
+        ]
+      }
+    }
+  ]
+}

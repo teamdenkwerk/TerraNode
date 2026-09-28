@@ -1,0 +1,276 @@
+[
+  {
+    "place_id": 252207182,
+    "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 489987389,
+    "lat": "13.0471702",
+    "lon": "80.2438835",
+    "class": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053406137941557914,
+    "addresstype": "road",
+    "name": "Gopathi Narayanaswami Road",
+    "display_name": "Gopathi Narayanaswami Road, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600017, India, CMWSSB Division 117",
+    "boundingbox": [
+      "13.0462446",
+      "13.0480579",
+      "80.2422806",
+      "80.2455078"
+    ],
+    "geojson": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          80.2422806,
+          13.0462446
+        ],
+        [
+          80.2426329,
+          13.0464626
+        ],
+        [
+          80.2428966,
+          13.046613
+        ],
+        [
+          80.2430965,
+          13.0467269
+        ],
+        [
+          80.2435329,
+          13.0469757
+        ],
+        [
+          80.2435712,
+          13.0469967
+        ],
+        [
+          80.2450766,
+          13.0478331
+        ],
+        [
+          80.2453569,
+          13.0479723
+        ],
+        [
+          80.2455078,
+          13.0480579
+        ]
+      ]
+    }
+  },
+  {
+    "place_id": 252701604,
+    "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 157915162,
+    "lat": "13.0432964",
+    "lon": "80.2371739",
+    "class": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053406137941557914,
+    "addresstype": "road",
+    "name": "Gopathi Narayanaswami Road",
+    "display_name": "Gopathi Narayanaswami Road, Ward 136, Zone 10 Kodambakkam, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+    "boundingbox": [
+      "13.0426620",
+      "13.0439749",
+      "80.2359683",
+      "80.2383570"
+    ],
+    "geojson": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          80.238357,
+          13.0439749
+        ],
+        [
+          80.2374176,
+          13.0434293
+        ],
+        [
+          80.2369121,
+          13.0431537
+        ],
+        [
+          80.2365141,
+          13.0429287
+        ],
+        [
+          80.2362422,
+          13.04278
+        ],
+        [
+          80.236032,
+          13.042683
+        ],
+        [
+          80.2359683,
+          13.042662
+        ]
+      ]
+    }
+  },
+  {
+    "place_id": 252254473,
+    "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 1267324816,
+    "lat": "13.0455841",
+    "lon": "80.2413363",
+    "class": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053406137941557914,
+    "addresstype": "road",
+    "name": "Gopathi Narayanaswami Road",
+    "display_name": "Gopathi Narayanaswami Road, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600017, India",
+    "boundingbox": [
+      "13.0450146",
+      "13.0461746",
+      "80.2403338",
+      "80.2423009"
+    ],
+    "geojson": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          80.2423009,
+          13.0461746
+        ],
+        [
+          80.2422856,
+          13.0461054
+        ],
+        [
+          80.2421569,
+          13.0460301
+        ],
+        [
+          80.2416101,
+          13.0457336
+        ],
+        [
+          80.2406957,
+          13.0452344
+        ],
+        [
+          80.240477,
+          13.045115
+        ],
+        [
+          80.2403338,
+          13.0450146
+        ]
+      ]
+    }
+  },
+  {
+    "place_id": 252253003,
+    "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 157911937,
+    "lat": "13.0483889",
+    "lon": "80.2461896",
+    "class": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053406137941557914,
+    "addresstype": "road",
+    "name": "Gopathi Narayanaswami Road",
+    "display_name": "Gopathi Narayanaswami Road, Ward 117, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600086, India, CMWSSB Division 117",
+    "boundingbox": [
+      "13.0478914",
+      "13.0490110",
+      "80.2453961",
+      "80.2468917"
+    ],
+    "geojson": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          80.2468917,
+          13.049011
+        ],
+        [
+          80.246357,
+          13.0485432
+        ],
+        [
+          80.2461914,
+          13.0483902
+        ],
+        [
+          80.2459241,
+          13.0481968
+        ],
+        [
+          80.2458734,
+          13.0481586
+        ],
+        [
+          80.2457737,
+          13.0481012
+        ],
+        [
+          80.2453961,
+          13.0478914
+        ]
+      ]
+    }
+  },
+  {
+    "place_id": 252256803,
+    "licence": "Data \u00a9 OpenStreetMap contributors, ODbL 1.0. http://osm.org/copyright",
+    "osm_type": "way",
+    "osm_id": 102457962,
+    "lat": "13.0485532",
+    "lon": "80.2461894",
+    "class": "highway",
+    "type": "secondary",
+    "place_rank": 26,
+    "importance": 0.053406137941557914,
+    "addresstype": "road",
+    "name": "Gopathi Narayanaswami Road",
+    "display_name": "Gopathi Narayanaswami Road, Gemini, Ward 113, Zone 9 Teynampet, Chennai Corporation, Chennai, Tamil Nadu, 600034, India, CMWSSB Division 117",
+    "boundingbox": [
+      "13.0480579",
+      "13.0490968",
+      "80.2455078",
+      "80.2468333"
+    ],
+    "geojson": {
+      "type": "LineString",
+      "coordinates": [
+        [
+          80.2455078,
+          13.0480579
+        ],
+        [
+          80.2458483,
+          13.0482864
+        ],
+        [
+          80.2461505,
+          13.0485188
+        ],
+        [
+          80.2462767,
+          13.0486304
+        ],
+        [
+          80.2466569,
+          13.0489639
+        ],
+        [
+          80.2468333,
+          13.0490968
+        ]
+      ]
+    }
+  }
+]

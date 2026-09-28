@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "name": "ward_boundary",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Ward 134 - T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "ward_no": "134"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.224,
+              13.034
+            ],
+            [
+              80.246,
+              13.034
+            ],
+            [
+              80.246,
+              13.05
+            ],
+            [
+              80.224,
+              13.05
+            ],
+            [
+              80.224,
+              13.034
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

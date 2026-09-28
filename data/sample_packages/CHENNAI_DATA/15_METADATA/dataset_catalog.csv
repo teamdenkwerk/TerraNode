@@ -1,0 +1,9 @@
+attribute,value
+dataset_id,chennai-tnagar-package
+name,Chennai Metropolitan Cadastre - T. Nagar AOI
+city,Chennai
+aoi,T. Nagar AOI
+authority,Greater Chennai Corporation & Survey Department
+target_crs,EPSG:32644 (UTM Zone 44N)
+display_crs,EPSG:4326
+version,v2026.1-MAA

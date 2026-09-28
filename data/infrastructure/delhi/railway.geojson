@@ -1,0 +1,125 @@
+{
+  "type": "FeatureCollection",
+  "name": "railway_delhi",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "TRANSIT-DEL-001",
+        "infrastructure_id": "TRANSIT-DEL-001",
+        "transit_id": "DMRC-YELLOW-LINE",
+        "name": "Delhi Metro Yellow Line (Patel Chowk \u2013 Central Secretariat \u2013 Udyog Bhawan)",
+        "infrastructure_type": "railway",
+        "type": "METRO",
+        "operator": "Delhi Metro Rail Corporation (DMRC)",
+        "authority": "DMRC",
+        "source_dataset_id": "railway_delhi",
+        "dataset_id": "delhi-urban",
+        "source_name": "DMRC Operations Directorate",
+        "verification_status": "VERIFIED",
+        "is_active": true,
+        "metadata": {
+          "name": "Delhi Metro Yellow Line (Patel Chowk \u2013 Central Secretariat \u2013 Udyog Bhawan)",
+          "transit_type": "METRO",
+          "operator": "DMRC",
+          "gauge": "Broad Gauge (1676 mm)",
+          "electrification": "25 kV AC ROCS",
+          "structure": "Underground Twin Bored Tunnel under Rafi Marg Corridor"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.2135,
+            28.6232
+          ],
+          [
+            77.2128,
+            28.621
+          ],
+          [
+            77.2124,
+            28.6185
+          ],
+          [
+            77.2121,
+            28.6152
+          ],
+          [
+            77.212,
+            28.6136
+          ],
+          [
+            77.2121,
+            28.6118
+          ],
+          [
+            77.2123,
+            28.61
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "TRANSIT-DEL-002",
+        "infrastructure_id": "TRANSIT-DEL-002",
+        "transit_id": "DMRC-VIOLET-LINE",
+        "name": "Delhi Metro Violet Line (Central Secretariat \u2013 Janpath \u2013 Mandi House)",
+        "infrastructure_type": "railway",
+        "type": "METRO",
+        "operator": "Delhi Metro Rail Corporation (DMRC)",
+        "authority": "DMRC",
+        "source_dataset_id": "railway_delhi",
+        "dataset_id": "delhi-urban",
+        "source_name": "DMRC Alignment Register",
+        "verification_status": "VERIFIED",
+        "is_active": true,
+        "metadata": {
+          "name": "Delhi Metro Violet Line (Central Secretariat \u2013 Janpath \u2013 Mandi House)",
+          "transit_type": "METRO",
+          "operator": "DMRC",
+          "gauge": "Standard Gauge (1435 mm)",
+          "structure": "Underground Bored Tunnel"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.2121,
+            28.6152
+          ],
+          [
+            77.2145,
+            28.6168
+          ],
+          [
+            77.217,
+            28.6185
+          ],
+          [
+            77.2188,
+            28.6208
+          ],
+          [
+            77.2191,
+            28.6235
+          ],
+          [
+            77.2193,
+            28.6262
+          ]
+        ]
+      }
+    }
+  ]
+}

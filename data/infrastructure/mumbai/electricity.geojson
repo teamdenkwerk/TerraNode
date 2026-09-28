@@ -1,0 +1,115 @@
+{
+  "type": "FeatureCollection",
+  "name": "electricity_mumbai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "GRID-BOM-001",
+        "infrastructure_id": "GRID-BOM-001",
+        "grid_id": "AEML-33KV-AKR",
+        "line_name": "Adani Electricity 33kV Underground Distribution Feeder Corridor",
+        "infrastructure_type": "electricity",
+        "voltage": "33 kV",
+        "operator": "Adani Electricity Mumbai Limited (AEML)",
+        "authority": "Maharashtra Electricity Regulatory Commission (MERC)",
+        "source": "OpenStreetMap Power & AEML Utility Network (Public Alignment)",
+        "source_dataset_id": "electricity_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "dataset_version": "2026.1-AEML",
+        "source_name": "OpenStreetMap Power / AEML Distribution",
+        "source_date": "2026-01-10",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "REFERENCE_ONLY",
+        "is_active": true,
+        "metadata": {
+          "line_name": "Adani Electricity 33kV Underground Distribution Feeder Corridor",
+          "voltage": "33 kV",
+          "operator": "Adani Electricity (AEML)",
+          "transmission_type": "Underground High Voltage Cable Conduit",
+          "corridor_width_m": 4.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8635,
+            19.112
+          ],
+          [
+            72.867,
+            19.1124
+          ],
+          [
+            72.8705,
+            19.1127
+          ],
+          [
+            72.8745,
+            19.113
+          ],
+          [
+            72.8775,
+            19.1133
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "GRID-BOM-002",
+        "infrastructure_id": "GRID-BOM-002",
+        "grid_id": "TATA-110KV-MIDC",
+        "line_name": "Tata Power 110kV Substation Interconnect Corridor",
+        "infrastructure_type": "electricity",
+        "voltage": "110 kV",
+        "operator": "Tata Power Distribution",
+        "authority": "MERC",
+        "source": "OpenStreetMap Power",
+        "source_dataset_id": "electricity_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "OpenStreetMap Power / Tata Power",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "REFERENCE_ONLY",
+        "is_active": true,
+        "metadata": {
+          "line_name": "Tata Power 110kV Substation Interconnect Corridor",
+          "voltage": "110 kV",
+          "operator": "Tata Power Distribution",
+          "transmission_type": "Substation High-Tension Underground Corridor",
+          "corridor_width_m": 6.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.869,
+            19.1105
+          ],
+          [
+            72.8692,
+            19.1135
+          ],
+          [
+            72.8695,
+            19.1165
+          ],
+          [
+            72.8698,
+            19.1185
+          ]
+        ]
+      }
+    }
+  ]
+}

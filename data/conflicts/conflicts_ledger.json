@@ -1,0 +1,4077 @@
+{
+  "schema_version": "2026.1",
+  "total_conflicts": 98,
+  "updated_at": "2026-09-28T08:45:33.468359+00:00",
+  "conflicts": [
+    {
+      "conflict_id": "CNF-BLR-102",
+      "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+      "source_parcel_id": "BLR-102",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Severe Centroid Drift (2.45m > 2.0m threshold)",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 2.45,
+        "iou": 0.68,
+        "confidence": 0.65
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-27T05:47:58.207202+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-cfec4689",
+          "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 2.45,
+            "iou": 0.68,
+            "confidence": 0.65
+          }
+        },
+        {
+          "transition_id": "TR-aea90dad",
+          "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T05:47:58.207202+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-105",
+      "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+      "source_parcel_id": "BLR-105",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Boundary Offset & IoU Deficit (64.2% < 70% threshold)",
+      "severity": "HIGH",
+      "category": "IOU_DEFICIT",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.88,
+        "iou": 0.642,
+        "confidence": 0.69
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-26T14:00:00Z",
+      "transitions": [
+        {
+          "transition_id": "TR-918bd6fe",
+          "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 1.88,
+            "iou": 0.642,
+            "confidence": 0.69
+          }
+        },
+        {
+          "transition_id": "TR-ce9ec7dd",
+          "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (Review Analyst #402)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Assigned to desk review for cadastral vs municipal boundary comparison",
+          "evidence": {
+            "assigned_at": "2026-09-26T10:00:00Z"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-114",
+      "parcel_uuid": "d054f454-94eb-5718-9ac4-cca0f5b08817",
+      "source_parcel_id": "BLR-114",
+      "current_state": "SURVEY_RECEIVED",
+      "previous_state": null,
+      "title": "Road Widening Encroachment Discrepancy",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OVERLAP",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 2.82,
+        "iou": 0.589,
+        "confidence": 0.61
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-27T05:53:35.385456+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-79baa003",
+          "parcel_uuid": "d054f454-94eb-5718-9ac4-cca0f5b08817",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 2.82,
+            "iou": 0.589,
+            "confidence": 0.61
+          }
+        },
+        {
+          "transition_id": "TR-5b750df0",
+          "parcel_uuid": "d054f454-94eb-5718-9ac4-cca0f5b08817",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (Review Analyst #402)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Desk inspection confirmed multi-meter setback discrepancy",
+          "evidence": {
+            "notes": "Paper cadastral shows 12m road; municipal survey shows 18m road."
+          }
+        },
+        {
+          "transition_id": "TR-498b8005",
+          "parcel_uuid": "d054f454-94eb-5718-9ac4-cca0f5b08817",
+          "previous_state": "UNDER_REVIEW",
+          "new_state": "SURVEY_REQUIRED",
+          "actor": "Senior Surveyor Ramesh K. (Badge #401)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Physical ground boundary pegs required via DGPS rover survey",
+          "evidence": {
+            "dispatch_ticket": "SURV-DISP-2026-0914",
+            "priority": "URGENT"
+          }
+        },
+        {
+          "transition_id": "TR-ad12021e",
+          "parcel_uuid": "d054f454-94eb-5718-9ac4-cca0f5b08817",
+          "previous_state": "SURVEY_REQUIRED",
+          "new_state": "SURVEY_RECEIVED",
+          "actor": "Field Rover Team 4",
+          "timestamp": "2026-09-27T05:53:35.385456+00:00",
+          "reason": "Boundary peg coordinates collected",
+          "evidence": {
+            "pdop": 1.1
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "RECONCILIATION_PENDING",
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-122",
+      "parcel_uuid": "f8487cd1-f0a5-521b-b7a8-ccc0b5985f96",
+      "source_parcel_id": "BLR-122",
+      "current_state": "SURVEY_RECEIVED",
+      "previous_state": null,
+      "title": "North-West Compound Wall Shift",
+      "severity": "MEDIUM",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 2.15,
+        "iou": 0.71,
+        "confidence": 0.72
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-26T14:00:00Z",
+      "transitions": [
+        {
+          "transition_id": "TR-086d275c",
+          "parcel_uuid": "f8487cd1-f0a5-521b-b7a8-ccc0b5985f96",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 2.15,
+            "iou": 0.71,
+            "confidence": 0.72
+          }
+        },
+        {
+          "transition_id": "TR-310de98a",
+          "parcel_uuid": "f8487cd1-f0a5-521b-b7a8-ccc0b5985f96",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (Review Analyst #402)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Initial review flagged ambiguous wall vertex",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-eb866c53",
+          "parcel_uuid": "f8487cd1-f0a5-521b-b7a8-ccc0b5985f96",
+          "previous_state": "UNDER_REVIEW",
+          "new_state": "SURVEY_REQUIRED",
+          "actor": "Officer K. Sharma (Review Analyst #402)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Field RTK GNSS inspection ordered",
+          "evidence": {
+            "dispatch_id": "SURV-DISP-2026-0881"
+          }
+        },
+        {
+          "transition_id": "TR-d6282d87",
+          "parcel_uuid": "f8487cd1-f0a5-521b-b7a8-ccc0b5985f96",
+          "previous_state": "SURVEY_REQUIRED",
+          "new_state": "SURVEY_RECEIVED",
+          "actor": "Field Rover Team Bravo (RTK Rover #12)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Ground RTK rover checkpoint log uploaded (4 corner pegs pinned)",
+          "evidence": {
+            "gnss_fix_type": "RTK_FIXED",
+            "horizontal_accuracy_cm": 1.4,
+            "points_collected": 4
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "RECONCILIATION_PENDING",
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-129",
+      "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+      "source_parcel_id": "BLR-129",
+      "current_state": "RECONCILIATION_PENDING",
+      "previous_state": null,
+      "title": "Subdivision Boundary Alignment",
+      "severity": "MEDIUM",
+      "category": "IOU_DEFICIT",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.42,
+        "iou": 0.695,
+        "confidence": 0.74
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-26T14:00:00Z",
+      "transitions": [
+        {
+          "transition_id": "TR-50607377",
+          "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 1.42,
+            "iou": 0.695,
+            "confidence": 0.74
+          }
+        },
+        {
+          "transition_id": "TR-f57592e3",
+          "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Subdivision plot line review",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-e3b26529",
+          "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+          "previous_state": "UNDER_REVIEW",
+          "new_state": "SURVEY_REQUIRED",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Field measurement required",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-896da1bb",
+          "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+          "previous_state": "SURVEY_REQUIRED",
+          "new_state": "SURVEY_RECEIVED",
+          "actor": "Field Rover Team Alpha",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Boundary stone coordinates submitted",
+          "evidence": {
+            "rover_file": "rover_blr129.csv"
+          }
+        },
+        {
+          "transition_id": "TR-d1649607",
+          "parcel_uuid": "74882bdd-d609-59f8-9963-6b9eb9620b1f",
+          "previous_state": "SURVEY_RECEIVED",
+          "new_state": "RECONCILIATION_PENDING",
+          "actor": "Automated Reconciliation Queue Worker",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Queued for consensus geometry fusion with survey rover points",
+          "evidence": {
+            "queue_position": 1,
+            "algorithm": "WEIGHTED_CENTROID_CONSENSUS"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "RESOLVED",
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-135",
+      "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+      "source_parcel_id": "BLR-135",
+      "current_state": "RESOLVED",
+      "previous_state": null,
+      "title": "Rear Setback Buffer Dispute",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OVERLAP",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 2.1,
+        "iou": 0.66,
+        "confidence": 0.68
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-26T14:00:00Z",
+      "transitions": [
+        {
+          "transition_id": "TR-656cdb0c",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 2.1,
+            "iou": 0.66,
+            "confidence": 0.68
+          }
+        },
+        {
+          "transition_id": "TR-09821e47",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Desk audit initiated",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-cf96917c",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "UNDER_REVIEW",
+          "new_state": "SURVEY_REQUIRED",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Dispatched survey team",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-d7ad60ff",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "SURVEY_REQUIRED",
+          "new_state": "SURVEY_RECEIVED",
+          "actor": "Field Surveyor M. Patel",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "RTK rover data confirmed true property boundary offset",
+          "evidence": {
+            "accuracy_cm": 1.2
+          }
+        },
+        {
+          "transition_id": "TR-c3e4e026",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "SURVEY_RECEIVED",
+          "new_state": "RECONCILIATION_PENDING",
+          "actor": "System Queue",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Consensus calculation queued",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-819689d8",
+          "parcel_uuid": "39ad725f-5765-57f6-a1d4-7bfa749f7422",
+          "previous_state": "RECONCILIATION_PENDING",
+          "new_state": "RESOLVED",
+          "actor": "Senior Surveyor Ramesh K. (Badge #401)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Harmonized boundary consensus computed; area discrepancy resolved to 0.4%",
+          "evidence": {
+            "final_area_m2": 412.5,
+            "delta_from_registered_pct": 0.38
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "APPROVED",
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLR-101-HIST",
+      "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+      "source_parcel_id": "BLR-101",
+      "current_state": "APPROVED",
+      "previous_state": null,
+      "title": "Historical Title Demarcation Conflict",
+      "severity": "LOW",
+      "category": "ATTRIBUTE_MISMATCH",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 0.35,
+        "iou": 0.94,
+        "confidence": 0.95
+      },
+      "assigned_officer": "Officer K. Sharma (#402)",
+      "created_at": "2026-09-26T08:00:00Z",
+      "updated_at": "2026-09-26T14:00:00Z",
+      "transitions": [
+        {
+          "transition_id": "TR-3dc08ea1",
+          "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-26T08:00:00Z",
+          "reason": "Automated policy check flagged spatial discrepancy",
+          "evidence": {
+            "centroid_drift_m": 0.35,
+            "iou": 0.94,
+            "confidence": 0.95
+          }
+        },
+        {
+          "transition_id": "TR-58970bbe",
+          "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Initial survey discrepancy check",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-240920cb",
+          "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+          "previous_state": "UNDER_REVIEW",
+          "new_state": "RESOLVED",
+          "actor": "Officer K. Sharma",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Historical revenue map digitization corrected typo in plot index",
+          "evidence": {
+            "corroboration": "Record of Rights (Pahani) 1982 verified"
+          }
+        },
+        {
+          "transition_id": "TR-dc131b04",
+          "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+          "previous_state": "RESOLVED",
+          "new_state": "APPROVED",
+          "actor": "District Revenue Officer (DRO #10)",
+          "timestamp": "2026-09-26T12:00:00Z",
+          "reason": "Final sign-off and issuance of digital title reconciliation deed",
+          "evidence": {
+            "deed_reference": "DEED-DOM-2026-00441"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REOPENED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-TEST-PARCEL-HERMETIC",
+      "parcel_uuid": "HERMETIC-UUID-001",
+      "source_parcel_id": "TEST-PARCEL-HERMETIC",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:48:40.898321+00:00",
+      "updated_at": "2026-09-27T05:48:40.898323+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-adbe022f",
+          "parcel_uuid": "HERMETIC-UUID-001",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:48:40.898286+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-TEST-TRANS-PARCEL",
+      "parcel_uuid": "HERMETIC-UUID-TRANS",
+      "source_parcel_id": "TEST-TRANS-PARCEL",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:48:40.916916+00:00",
+      "updated_at": "2026-09-27T05:48:40.933486+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-6ff264df",
+          "parcel_uuid": "HERMETIC-UUID-TRANS",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:48:40.916884+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-6bce8a91",
+          "parcel_uuid": "HERMETIC-UUID-TRANS",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T05:48:40.933486+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-TEST-PARCEL-HERMETIC-8CBE",
+      "parcel_uuid": "HERMETIC-UUID-001",
+      "source_parcel_id": "TEST-PARCEL-HERMETIC",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:48:50.810083+00:00",
+      "updated_at": "2026-09-27T05:48:50.810092+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-11c0c656",
+          "parcel_uuid": "HERMETIC-UUID-001",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:48:50.809998+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-TEST-TRANS-PARCEL-0F2E",
+      "parcel_uuid": "HERMETIC-UUID-TRANS",
+      "source_parcel_id": "TEST-TRANS-PARCEL",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:48:50.966611+00:00",
+      "updated_at": "2026-09-27T05:48:50.979287+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5672b2dc",
+          "parcel_uuid": "HERMETIC-UUID-TRANS",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:48:50.966585+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-402ebeba",
+          "parcel_uuid": "HERMETIC-UUID-TRANS",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T05:48:50.979287+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-15287B",
+      "parcel_uuid": "UUID-LKUP-15287B",
+      "source_parcel_id": "SRC-LKUP-15287B",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:49:12.380970+00:00",
+      "updated_at": "2026-09-27T05:49:12.380974+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-6815c393",
+          "parcel_uuid": "UUID-LKUP-15287B",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:49:12.380919+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-ECDCD1",
+      "parcel_uuid": "UUID-TRN-ECDCD1",
+      "source_parcel_id": "SRC-TRN-ECDCD1",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:49:12.404232+00:00",
+      "updated_at": "2026-09-27T05:49:12.423155+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-b9cb925f",
+          "parcel_uuid": "UUID-TRN-ECDCD1",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:49:12.404126+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-57db4d40",
+          "parcel_uuid": "UUID-TRN-ECDCD1",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T05:49:12.423155+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-6E352C",
+      "parcel_uuid": "UUID-LKUP-6E352C",
+      "source_parcel_id": "SRC-LKUP-6E352C",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:55:14.828521+00:00",
+      "updated_at": "2026-09-27T05:55:14.828523+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-6d99cf90",
+          "parcel_uuid": "UUID-LKUP-6E352C",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:55:14.828491+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-19343B",
+      "parcel_uuid": "UUID-TRN-19343B",
+      "source_parcel_id": "SRC-TRN-19343B",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T05:55:14.845852+00:00",
+      "updated_at": "2026-09-27T05:55:14.862732+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-03f70cc2",
+          "parcel_uuid": "UUID-TRN-19343B",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T05:55:14.845794+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-15782577",
+          "parcel_uuid": "UUID-TRN-19343B",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T05:55:14.862732+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-D3723E",
+      "parcel_uuid": "UUID-LKUP-D3723E",
+      "source_parcel_id": "SRC-LKUP-D3723E",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T06:01:15.781142+00:00",
+      "updated_at": "2026-09-27T06:01:15.781150+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-4c05b6c5",
+          "parcel_uuid": "UUID-LKUP-D3723E",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T06:01:15.781044+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-9E1843",
+      "parcel_uuid": "UUID-TRN-9E1843",
+      "source_parcel_id": "SRC-TRN-9E1843",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T06:01:15.802554+00:00",
+      "updated_at": "2026-09-27T06:01:15.815446+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-48a6f002",
+          "parcel_uuid": "UUID-TRN-9E1843",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T06:01:15.802519+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-7b6bca1b",
+          "parcel_uuid": "UUID-TRN-9E1843",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T06:01:15.815446+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-8B2478",
+      "parcel_uuid": "UUID-LKUP-8B2478",
+      "source_parcel_id": "SRC-LKUP-8B2478",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:22:49.203514+00:00",
+      "updated_at": "2026-09-27T08:22:49.203516+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-10dcb52f",
+          "parcel_uuid": "UUID-LKUP-8B2478",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:22:49.203481+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-0F297A",
+      "parcel_uuid": "UUID-TRN-0F297A",
+      "source_parcel_id": "SRC-TRN-0F297A",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:22:49.217298+00:00",
+      "updated_at": "2026-09-27T08:22:49.224927+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-4644c3dc",
+          "parcel_uuid": "UUID-TRN-0F297A",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:22:49.217265+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-d9038f11",
+          "parcel_uuid": "UUID-TRN-0F297A",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T08:22:49.224927+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-0CE155",
+      "parcel_uuid": "UUID-LKUP-0CE155",
+      "source_parcel_id": "SRC-LKUP-0CE155",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:35:29.067708+00:00",
+      "updated_at": "2026-09-27T08:35:29.067709+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-636c4faa",
+          "parcel_uuid": "UUID-LKUP-0CE155",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:35:29.067680+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-C6AFC0",
+      "parcel_uuid": "UUID-TRN-C6AFC0",
+      "source_parcel_id": "SRC-TRN-C6AFC0",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:35:29.080648+00:00",
+      "updated_at": "2026-09-27T08:35:29.089778+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-907830a7",
+          "parcel_uuid": "UUID-TRN-C6AFC0",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:35:29.080613+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-74e4cc52",
+          "parcel_uuid": "UUID-TRN-C6AFC0",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T08:35:29.089778+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-24EBDB",
+      "parcel_uuid": "UUID-LKUP-24EBDB",
+      "source_parcel_id": "SRC-LKUP-24EBDB",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:37:02.334039+00:00",
+      "updated_at": "2026-09-27T08:37:02.334041+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-2027f7aa",
+          "parcel_uuid": "UUID-LKUP-24EBDB",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:37:02.334009+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-BAF449",
+      "parcel_uuid": "UUID-TRN-BAF449",
+      "source_parcel_id": "SRC-TRN-BAF449",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T08:37:02.345789+00:00",
+      "updated_at": "2026-09-27T08:37:02.354279+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-ca77cc70",
+          "parcel_uuid": "UUID-TRN-BAF449",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T08:37:02.345748+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-a288cd64",
+          "parcel_uuid": "UUID-TRN-BAF449",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T08:37:02.354279+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-DF15B6",
+      "parcel_uuid": "UUID-LKUP-DF15B6",
+      "source_parcel_id": "SRC-LKUP-DF15B6",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T09:47:30.756697+00:00",
+      "updated_at": "2026-09-27T09:47:30.756700+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-3cbad2de",
+          "parcel_uuid": "UUID-LKUP-DF15B6",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T09:47:30.756631+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-04DBA6",
+      "parcel_uuid": "UUID-TRN-04DBA6",
+      "source_parcel_id": "SRC-TRN-04DBA6",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T09:47:30.793322+00:00",
+      "updated_at": "2026-09-27T09:47:30.802776+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5fa82da2",
+          "parcel_uuid": "UUID-TRN-04DBA6",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T09:47:30.793294+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-f5198ee5",
+          "parcel_uuid": "UUID-TRN-04DBA6",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T09:47:30.802776+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-987522",
+      "parcel_uuid": "UUID-LKUP-987522",
+      "source_parcel_id": "SRC-LKUP-987522",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T09:54:33.550954+00:00",
+      "updated_at": "2026-09-27T09:54:33.550956+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-354eb807",
+          "parcel_uuid": "UUID-LKUP-987522",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T09:54:33.550920+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-E92C5B",
+      "parcel_uuid": "UUID-TRN-E92C5B",
+      "source_parcel_id": "SRC-TRN-E92C5B",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T09:54:33.568132+00:00",
+      "updated_at": "2026-09-27T09:54:33.577533+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-aba8be11",
+          "parcel_uuid": "UUID-TRN-E92C5B",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T09:54:33.568095+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-e318ba76",
+          "parcel_uuid": "UUID-TRN-E92C5B",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T09:54:33.577533+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-D7875C",
+      "parcel_uuid": "UUID-LKUP-D7875C",
+      "source_parcel_id": "SRC-LKUP-D7875C",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:14:18.289321+00:00",
+      "updated_at": "2026-09-27T10:14:18.289323+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-9ef92bba",
+          "parcel_uuid": "UUID-LKUP-D7875C",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:14:18.289284+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-AC0113",
+      "parcel_uuid": "UUID-TRN-AC0113",
+      "source_parcel_id": "SRC-TRN-AC0113",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:14:18.303181+00:00",
+      "updated_at": "2026-09-27T10:14:18.313717+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-652a9550",
+          "parcel_uuid": "UUID-TRN-AC0113",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:14:18.303153+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-fd38ad2c",
+          "parcel_uuid": "UUID-TRN-AC0113",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:14:18.313717+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-658DC2",
+      "parcel_uuid": "UUID-LKUP-658DC2",
+      "source_parcel_id": "SRC-LKUP-658DC2",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:18:06.809263+00:00",
+      "updated_at": "2026-09-27T10:18:06.809266+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-f6ef4a17",
+          "parcel_uuid": "UUID-LKUP-658DC2",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:18:06.809229+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-B56559",
+      "parcel_uuid": "UUID-TRN-B56559",
+      "source_parcel_id": "SRC-TRN-B56559",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:18:06.826163+00:00",
+      "updated_at": "2026-09-27T10:18:06.836644+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-a8bc39cf",
+          "parcel_uuid": "UUID-TRN-B56559",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:18:06.826106+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-1a5e6c1a",
+          "parcel_uuid": "UUID-TRN-B56559",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:18:06.836644+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-8807C0",
+      "parcel_uuid": "UUID-LKUP-8807C0",
+      "source_parcel_id": "SRC-LKUP-8807C0",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:18:55.308834+00:00",
+      "updated_at": "2026-09-27T10:18:55.308836+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-3e2c49b2",
+          "parcel_uuid": "UUID-LKUP-8807C0",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:18:55.308803+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-97B319",
+      "parcel_uuid": "UUID-TRN-97B319",
+      "source_parcel_id": "SRC-TRN-97B319",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:18:55.322794+00:00",
+      "updated_at": "2026-09-27T10:18:55.332348+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5fa59f0b",
+          "parcel_uuid": "UUID-TRN-97B319",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:18:55.322737+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-808743fd",
+          "parcel_uuid": "UUID-TRN-97B319",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:18:55.332348+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-47B456",
+      "parcel_uuid": "UUID-LKUP-47B456",
+      "source_parcel_id": "SRC-LKUP-47B456",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:21:50.990938+00:00",
+      "updated_at": "2026-09-27T10:21:50.990940+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-7b39f070",
+          "parcel_uuid": "UUID-LKUP-47B456",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:21:50.990907+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-7CD909",
+      "parcel_uuid": "UUID-TRN-7CD909",
+      "source_parcel_id": "SRC-TRN-7CD909",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:21:51.005946+00:00",
+      "updated_at": "2026-09-27T10:21:51.014688+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-45749004",
+          "parcel_uuid": "UUID-TRN-7CD909",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:21:51.005917+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-b4749dd2",
+          "parcel_uuid": "UUID-TRN-7CD909",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:21:51.014688+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-22F33E",
+      "parcel_uuid": "UUID-LKUP-22F33E",
+      "source_parcel_id": "SRC-LKUP-22F33E",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:39:09.399174+00:00",
+      "updated_at": "2026-09-27T10:39:09.399176+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-4ca25e33",
+          "parcel_uuid": "UUID-LKUP-22F33E",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:39:09.399148+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-D85BDF",
+      "parcel_uuid": "UUID-TRN-D85BDF",
+      "source_parcel_id": "SRC-TRN-D85BDF",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:39:09.412717+00:00",
+      "updated_at": "2026-09-27T10:39:09.422912+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-cbe59a3a",
+          "parcel_uuid": "UUID-TRN-D85BDF",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:39:09.412685+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-2b38df9e",
+          "parcel_uuid": "UUID-TRN-D85BDF",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:39:09.422912+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-BAD101",
+      "parcel_uuid": "UUID-LKUP-BAD101",
+      "source_parcel_id": "SRC-LKUP-BAD101",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:48:41.268036+00:00",
+      "updated_at": "2026-09-27T10:48:41.268038+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-aa2e47e8",
+          "parcel_uuid": "UUID-LKUP-BAD101",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:48:41.268010+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-940BC8",
+      "parcel_uuid": "UUID-TRN-940BC8",
+      "source_parcel_id": "SRC-TRN-940BC8",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:48:41.284146+00:00",
+      "updated_at": "2026-09-27T10:48:41.292783+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-fed70e65",
+          "parcel_uuid": "UUID-TRN-940BC8",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:48:41.284116+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-099d3bcf",
+          "parcel_uuid": "UUID-TRN-940BC8",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:48:41.292783+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-6A2218",
+      "parcel_uuid": "UUID-LKUP-6A2218",
+      "source_parcel_id": "SRC-LKUP-6A2218",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:57:07.986742+00:00",
+      "updated_at": "2026-09-27T10:57:07.986748+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-b1f655d2",
+          "parcel_uuid": "UUID-LKUP-6A2218",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:57:07.986662+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-E97805",
+      "parcel_uuid": "UUID-TRN-E97805",
+      "source_parcel_id": "SRC-TRN-E97805",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T10:57:08.018273+00:00",
+      "updated_at": "2026-09-27T10:57:08.028580+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-12f31d3a",
+          "parcel_uuid": "UUID-TRN-E97805",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T10:57:08.018248+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-bb06007b",
+          "parcel_uuid": "UUID-TRN-E97805",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T10:57:08.028580+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-E2B3FA",
+      "parcel_uuid": "UUID-LKUP-E2B3FA",
+      "source_parcel_id": "SRC-LKUP-E2B3FA",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T11:03:04.722429+00:00",
+      "updated_at": "2026-09-27T11:03:04.722436+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-7c89aae3",
+          "parcel_uuid": "UUID-LKUP-E2B3FA",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T11:03:04.722377+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-8CD4DF",
+      "parcel_uuid": "UUID-TRN-8CD4DF",
+      "source_parcel_id": "SRC-TRN-8CD4DF",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T11:03:04.761092+00:00",
+      "updated_at": "2026-09-27T11:03:04.790019+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-76d6fbf0",
+          "parcel_uuid": "UUID-TRN-8CD4DF",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T11:03:04.761028+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-9ddb3750",
+          "parcel_uuid": "UUID-TRN-8CD4DF",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T11:03:04.790019+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-3CF6D0",
+      "parcel_uuid": "UUID-LKUP-3CF6D0",
+      "source_parcel_id": "SRC-LKUP-3CF6D0",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T11:22:12.108608+00:00",
+      "updated_at": "2026-09-27T11:22:12.108611+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5728da08",
+          "parcel_uuid": "UUID-LKUP-3CF6D0",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T11:22:12.108557+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-7CA2D8",
+      "parcel_uuid": "UUID-TRN-7CA2D8",
+      "source_parcel_id": "SRC-TRN-7CA2D8",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T11:22:12.133225+00:00",
+      "updated_at": "2026-09-27T11:22:12.146932+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-9e3bc11b",
+          "parcel_uuid": "UUID-TRN-7CA2D8",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T11:22:12.133187+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-96d93726",
+          "parcel_uuid": "UUID-TRN-7CA2D8",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T11:22:12.146932+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-984ACB",
+      "parcel_uuid": "UUID-LKUP-984ACB",
+      "source_parcel_id": "SRC-LKUP-984ACB",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:17:18.145372+00:00",
+      "updated_at": "2026-09-27T13:17:18.145374+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-e2b1e07b",
+          "parcel_uuid": "UUID-LKUP-984ACB",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:17:18.145343+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-D26F0F",
+      "parcel_uuid": "UUID-TRN-D26F0F",
+      "source_parcel_id": "SRC-TRN-D26F0F",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:17:18.163026+00:00",
+      "updated_at": "2026-09-27T13:17:18.176121+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-a52a9e93",
+          "parcel_uuid": "UUID-TRN-D26F0F",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:17:18.162993+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-dfbedeb7",
+          "parcel_uuid": "UUID-TRN-D26F0F",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T13:17:18.176121+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-66BA46",
+      "parcel_uuid": "UUID-LKUP-66BA46",
+      "source_parcel_id": "SRC-LKUP-66BA46",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:41:16.374847+00:00",
+      "updated_at": "2026-09-27T13:41:16.374849+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-8cc4dd97",
+          "parcel_uuid": "UUID-LKUP-66BA46",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:41:16.374816+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-279E5C",
+      "parcel_uuid": "UUID-TRN-279E5C",
+      "source_parcel_id": "SRC-TRN-279E5C",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:41:16.390819+00:00",
+      "updated_at": "2026-09-27T13:41:16.404142+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-3df7e945",
+          "parcel_uuid": "UUID-TRN-279E5C",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:41:16.390790+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-fe966f9e",
+          "parcel_uuid": "UUID-TRN-279E5C",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T13:41:16.404142+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-LKUP-B31B60",
+      "parcel_uuid": "UUID-LKUP-B31B60",
+      "source_parcel_id": "SRC-LKUP-B31B60",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Hermetic Lookup Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:41:34.816830+00:00",
+      "updated_at": "2026-09-27T13:41:34.816832+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-71f7ddde",
+          "parcel_uuid": "UUID-LKUP-B31B60",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:41:34.816798+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-SRC-TRN-BF49E7",
+      "parcel_uuid": "UUID-TRN-BF49E7",
+      "source_parcel_id": "SRC-TRN-BF49E7",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Hermetic Transition Test",
+      "severity": "HIGH",
+      "category": "CENTROID_DRIFT",
+      "discrepancy_metrics": {},
+      "assigned_officer": null,
+      "created_at": "2026-09-27T13:41:34.830720+00:00",
+      "updated_at": "2026-09-27T13:41:34.840291+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-dcefcf16",
+          "parcel_uuid": "UUID-TRN-BF49E7",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine (v2026.1)",
+          "timestamp": "2026-09-27T13:41:34.830695+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds",
+          "evidence": {}
+        },
+        {
+          "transition_id": "TR-d9d83814",
+          "parcel_uuid": "UUID-TRN-BF49E7",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (#402)",
+          "timestamp": "2026-09-27T13:41:34.840291+00:00",
+          "reason": "Opening conflict investigation ticket",
+          "evidence": {
+            "method": "MANUAL_DISPATCH"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-MUM-202",
+      "parcel_uuid": "PARCEL-UUID-MUM-202",
+      "source_parcel_id": "MUM-202",
+      "current_state": "UNDER_REVIEW",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #MUM-202",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-27T23:02:59.929865+00:00",
+      "updated_at": "2026-09-27T23:03:09.484781+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-e75b2fa3",
+          "parcel_uuid": "PARCEL-UUID-MUM-202",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-27T23:02:59.929765+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for MUM-202",
+          "evidence": {
+            "parcel_id": "MUM-202",
+            "detected_at": "2026-09-27T23:02:59.929673+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        },
+        {
+          "transition_id": "TR-9fc3cb6a",
+          "parcel_uuid": "PARCEL-UUID-MUM-202",
+          "previous_state": "DETECTED",
+          "new_state": "UNDER_REVIEW",
+          "actor": "Officer K. Sharma (Senior Analyst #402)",
+          "timestamp": "2026-09-27T23:03:09.484781+00:00",
+          "reason": "Initiated statutory field review on parcel setback variance",
+          "evidence": {
+            "notes": "Visual verification of drone orthophoto vs CTS cadastre"
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "REJECTED",
+        "RESOLVED",
+        "SURVEY_REQUIRED"
+      ]
+    },
+    {
+      "conflict_id": "CNF-MUM-201",
+      "parcel_uuid": "PARCEL-UUID-MUM-201",
+      "source_parcel_id": "MUM-201",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #MUM-201",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-27T23:04:03.006831+00:00",
+      "updated_at": "2026-09-27T23:04:03.006833+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5dfa43f2",
+          "parcel_uuid": "PARCEL-UUID-MUM-201",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-27T23:04:03.006817+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for MUM-201",
+          "evidence": {
+            "parcel_id": "MUM-201",
+            "detected_at": "2026-09-27T23:04:03.006772+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-MUM-203",
+      "parcel_uuid": "PARCEL-UUID-MUM-203",
+      "source_parcel_id": "MUM-203",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #MUM-203",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-27T23:04:03.018088+00:00",
+      "updated_at": "2026-09-27T23:04:03.018094+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-4e62aa2c",
+          "parcel_uuid": "PARCEL-UUID-MUM-203",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-27T23:04:03.018013+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for MUM-203",
+          "evidence": {
+            "parcel_id": "MUM-203",
+            "detected_at": "2026-09-27T23:04:03.017881+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-CHN-301",
+      "parcel_uuid": "PARCEL-UUID-CHN-301",
+      "source_parcel_id": "CHN-301",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #CHN-301",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-27T23:04:03.041530+00:00",
+      "updated_at": "2026-09-27T23:04:03.041537+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-ad65a42c",
+          "parcel_uuid": "PARCEL-UUID-CHN-301",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-27T23:04:03.041440+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for CHN-301",
+          "evidence": {
+            "parcel_id": "CHN-301",
+            "detected_at": "2026-09-27T23:04:03.041160+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BLD-1028",
+      "parcel_uuid": "PARCEL-UUID-BLD-1028",
+      "source_parcel_id": "BLD-1028",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #BLD-1028",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-27T23:04:03.063553+00:00",
+      "updated_at": "2026-09-27T23:04:03.063559+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-7782db20",
+          "parcel_uuid": "PARCEL-UUID-BLD-1028",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-27T23:04:03.063511+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for BLD-1028",
+          "evidence": {
+            "parcel_id": "BLD-1028",
+            "detected_at": "2026-09-27T23:04:03.063424+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-BB3E5E30-8CE5-534E-AB75-DB9032917293",
+      "parcel_uuid": "PARCEL-UUID-BB3E5E30-8CE5-534E-AB75-DB9032917293",
+      "source_parcel_id": "BB3E5E30-8CE5-534E-AB75-DB9032917293",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #BB3E5E30-8CE5-534E-AB75-DB9032917293",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:18.484893+00:00",
+      "updated_at": "2026-09-28T00:13:18.484900+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-cad4106e",
+          "parcel_uuid": "PARCEL-UUID-BB3E5E30-8CE5-534E-AB75-DB9032917293",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:18.484860+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for BB3E5E30-8CE5-534E-AB75-DB9032917293",
+          "evidence": {
+            "parcel_id": "BB3E5E30-8CE5-534E-AB75-DB9032917293",
+            "detected_at": "2026-09-28T00:13:18.484770+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+      "parcel_uuid": "PARCEL-UUID-1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+      "source_parcel_id": "1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:38.967727+00:00",
+      "updated_at": "2026-09-28T00:13:38.967741+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-24de4e5c",
+          "parcel_uuid": "PARCEL-UUID-1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:38.967659+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+          "evidence": {
+            "parcel_id": "1D2960DF-2BEE-57B4-9DAE-55C1D037F442",
+            "detected_at": "2026-09-28T00:13:38.967460+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-5ABC79D1-6687-55FE-904A-005CE19F1A03",
+      "parcel_uuid": "PARCEL-UUID-5ABC79D1-6687-55FE-904A-005CE19F1A03",
+      "source_parcel_id": "5ABC79D1-6687-55FE-904A-005CE19F1A03",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #5ABC79D1-6687-55FE-904A-005CE19F1A03",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:40.700660+00:00",
+      "updated_at": "2026-09-28T00:13:40.700672+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-71327a23",
+          "parcel_uuid": "PARCEL-UUID-5ABC79D1-6687-55FE-904A-005CE19F1A03",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:40.700593+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 5ABC79D1-6687-55FE-904A-005CE19F1A03",
+          "evidence": {
+            "parcel_id": "5ABC79D1-6687-55FE-904A-005CE19F1A03",
+            "detected_at": "2026-09-28T00:13:40.700372+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+      "parcel_uuid": "PARCEL-UUID-B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+      "source_parcel_id": "B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:42.242810+00:00",
+      "updated_at": "2026-09-28T00:13:42.242822+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-91d55d5f",
+          "parcel_uuid": "PARCEL-UUID-B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:42.242704+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+          "evidence": {
+            "parcel_id": "B8CD2764-1DE4-5B54-85B5-C989417AC4AB",
+            "detected_at": "2026-09-28T00:13:42.242580+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-27F986C5-7825-5037-8D2D-AD45EEF76F71",
+      "parcel_uuid": "PARCEL-UUID-27F986C5-7825-5037-8D2D-AD45EEF76F71",
+      "source_parcel_id": "27F986C5-7825-5037-8D2D-AD45EEF76F71",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #27F986C5-7825-5037-8D2D-AD45EEF76F71",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:45.370713+00:00",
+      "updated_at": "2026-09-28T00:13:45.370726+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-6df4f141",
+          "parcel_uuid": "PARCEL-UUID-27F986C5-7825-5037-8D2D-AD45EEF76F71",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:45.370654+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 27F986C5-7825-5037-8D2D-AD45EEF76F71",
+          "evidence": {
+            "parcel_id": "27F986C5-7825-5037-8D2D-AD45EEF76F71",
+            "detected_at": "2026-09-28T00:13:45.370502+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-305241DD-DEFF-5C46-92C5-314E0DBAA971",
+      "parcel_uuid": "PARCEL-UUID-305241DD-DEFF-5C46-92C5-314E0DBAA971",
+      "source_parcel_id": "305241DD-DEFF-5C46-92C5-314E0DBAA971",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #305241DD-DEFF-5C46-92C5-314E0DBAA971",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:46.751599+00:00",
+      "updated_at": "2026-09-28T00:13:46.751612+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-9cd3d464",
+          "parcel_uuid": "PARCEL-UUID-305241DD-DEFF-5C46-92C5-314E0DBAA971",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:46.751540+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 305241DD-DEFF-5C46-92C5-314E0DBAA971",
+          "evidence": {
+            "parcel_id": "305241DD-DEFF-5C46-92C5-314E0DBAA971",
+            "detected_at": "2026-09-28T00:13:46.751407+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B0F84D13-8DCF-570E-B271-32804A2B34BC",
+      "parcel_uuid": "PARCEL-UUID-B0F84D13-8DCF-570E-B271-32804A2B34BC",
+      "source_parcel_id": "B0F84D13-8DCF-570E-B271-32804A2B34BC",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B0F84D13-8DCF-570E-B271-32804A2B34BC",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:47.990702+00:00",
+      "updated_at": "2026-09-28T00:13:47.990709+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-0aaf2027",
+          "parcel_uuid": "PARCEL-UUID-B0F84D13-8DCF-570E-B271-32804A2B34BC",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:47.990665+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B0F84D13-8DCF-570E-B271-32804A2B34BC",
+          "evidence": {
+            "parcel_id": "B0F84D13-8DCF-570E-B271-32804A2B34BC",
+            "detected_at": "2026-09-28T00:13:47.990578+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+      "parcel_uuid": "PARCEL-UUID-5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+      "source_parcel_id": "5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:49.325137+00:00",
+      "updated_at": "2026-09-28T00:13:49.325147+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5b4a9b41",
+          "parcel_uuid": "PARCEL-UUID-5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:49.325089+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+          "evidence": {
+            "parcel_id": "5C4B2A52-3929-5748-9F0F-3F4798BE3B4B",
+            "detected_at": "2026-09-28T00:13:49.324957+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+      "parcel_uuid": "PARCEL-UUID-B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+      "source_parcel_id": "B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:51.152398+00:00",
+      "updated_at": "2026-09-28T00:13:51.152411+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-dd1b1b56",
+          "parcel_uuid": "PARCEL-UUID-B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:51.152317+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+          "evidence": {
+            "parcel_id": "B3172C0E-E0E7-5ADC-8FF7-35966D52356F",
+            "detected_at": "2026-09-28T00:13:51.152035+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-C4DFB628-955D-5352-8507-C4ACDCF5B051",
+      "parcel_uuid": "PARCEL-UUID-C4DFB628-955D-5352-8507-C4ACDCF5B051",
+      "source_parcel_id": "C4DFB628-955D-5352-8507-C4ACDCF5B051",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #C4DFB628-955D-5352-8507-C4ACDCF5B051",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:53.008628+00:00",
+      "updated_at": "2026-09-28T00:13:53.008635+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-2f4b7258",
+          "parcel_uuid": "PARCEL-UUID-C4DFB628-955D-5352-8507-C4ACDCF5B051",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:53.008594+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for C4DFB628-955D-5352-8507-C4ACDCF5B051",
+          "evidence": {
+            "parcel_id": "C4DFB628-955D-5352-8507-C4ACDCF5B051",
+            "detected_at": "2026-09-28T00:13:53.008509+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-A967B84D-200A-56FD-9D13-AEB017623C99",
+      "parcel_uuid": "PARCEL-UUID-A967B84D-200A-56FD-9D13-AEB017623C99",
+      "source_parcel_id": "A967B84D-200A-56FD-9D13-AEB017623C99",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #A967B84D-200A-56FD-9D13-AEB017623C99",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:13:55.064335+00:00",
+      "updated_at": "2026-09-28T00:13:55.064348+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-1d45b64e",
+          "parcel_uuid": "PARCEL-UUID-A967B84D-200A-56FD-9D13-AEB017623C99",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:13:55.064265+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for A967B84D-200A-56FD-9D13-AEB017623C99",
+          "evidence": {
+            "parcel_id": "A967B84D-200A-56FD-9D13-AEB017623C99",
+            "detected_at": "2026-09-28T00:13:55.064087+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-F2A9E59E-52F0-55C3-98B0-840536025417",
+      "parcel_uuid": "PARCEL-UUID-F2A9E59E-52F0-55C3-98B0-840536025417",
+      "source_parcel_id": "F2A9E59E-52F0-55C3-98B0-840536025417",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #F2A9E59E-52F0-55C3-98B0-840536025417",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:16:35.506628+00:00",
+      "updated_at": "2026-09-28T00:16:35.506641+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-77ba3422",
+          "parcel_uuid": "PARCEL-UUID-F2A9E59E-52F0-55C3-98B0-840536025417",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:16:35.506569+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for F2A9E59E-52F0-55C3-98B0-840536025417",
+          "evidence": {
+            "parcel_id": "F2A9E59E-52F0-55C3-98B0-840536025417",
+            "detected_at": "2026-09-28T00:16:35.506411+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+      "parcel_uuid": "PARCEL-UUID-8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+      "source_parcel_id": "8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:19:47.123563+00:00",
+      "updated_at": "2026-09-28T00:19:47.123570+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-e79ad3fb",
+          "parcel_uuid": "PARCEL-UUID-8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:19:47.123531+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+          "evidence": {
+            "parcel_id": "8AEAB1E7-DC6B-50D3-9B3C-E2B674DE217A",
+            "detected_at": "2026-09-28T00:19:47.123456+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-7E12957A-7606-52E6-9D73-819831C106BD",
+      "parcel_uuid": "PARCEL-UUID-7E12957A-7606-52E6-9D73-819831C106BD",
+      "source_parcel_id": "7E12957A-7606-52E6-9D73-819831C106BD",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #7E12957A-7606-52E6-9D73-819831C106BD",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:19:49.209034+00:00",
+      "updated_at": "2026-09-28T00:19:49.209082+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-82636cec",
+          "parcel_uuid": "PARCEL-UUID-7E12957A-7606-52E6-9D73-819831C106BD",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:19:49.207206+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 7E12957A-7606-52E6-9D73-819831C106BD",
+          "evidence": {
+            "parcel_id": "7E12957A-7606-52E6-9D73-819831C106BD",
+            "detected_at": "2026-09-28T00:19:49.207083+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-799AADA0-A6CC-52DA-956F-413C3498AB91",
+      "parcel_uuid": "PARCEL-UUID-799AADA0-A6CC-52DA-956F-413C3498AB91",
+      "source_parcel_id": "799AADA0-A6CC-52DA-956F-413C3498AB91",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #799AADA0-A6CC-52DA-956F-413C3498AB91",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T00:20:03.642102+00:00",
+      "updated_at": "2026-09-28T00:20:03.642109+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-3ebcdf61",
+          "parcel_uuid": "PARCEL-UUID-799AADA0-A6CC-52DA-956F-413C3498AB91",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T00:20:03.642020+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 799AADA0-A6CC-52DA-956F-413C3498AB91",
+          "evidence": {
+            "parcel_id": "799AADA0-A6CC-52DA-956F-413C3498AB91",
+            "detected_at": "2026-09-28T00:20:03.641807+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-210ECD59-37E5-5340-916D-B9D56EA121D6",
+      "parcel_uuid": "PARCEL-UUID-210ECD59-37E5-5340-916D-B9D56EA121D6",
+      "source_parcel_id": "210ECD59-37E5-5340-916D-B9D56EA121D6",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #210ECD59-37E5-5340-916D-B9D56EA121D6",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T02:51:44.096389+00:00",
+      "updated_at": "2026-09-28T02:51:44.096402+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-30e2cf27",
+          "parcel_uuid": "PARCEL-UUID-210ECD59-37E5-5340-916D-B9D56EA121D6",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T02:51:44.096321+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 210ECD59-37E5-5340-916D-B9D56EA121D6",
+          "evidence": {
+            "parcel_id": "210ECD59-37E5-5340-916D-B9D56EA121D6",
+            "detected_at": "2026-09-28T02:51:44.096056+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+      "parcel_uuid": "PARCEL-UUID-9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+      "source_parcel_id": "9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T02:52:00.223719+00:00",
+      "updated_at": "2026-09-28T02:52:00.223770+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-5df30c63",
+          "parcel_uuid": "PARCEL-UUID-9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T02:52:00.223638+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+          "evidence": {
+            "parcel_id": "9E4DD323-2DC1-5B53-8B27-DA85E606AB18",
+            "detected_at": "2026-09-28T02:52:00.223429+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-MUM-204",
+      "parcel_uuid": "PARCEL-UUID-MUM-204",
+      "source_parcel_id": "MUM-204",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #MUM-204",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T02:57:33.072224+00:00",
+      "updated_at": "2026-09-28T02:57:33.072228+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-22a05b2b",
+          "parcel_uuid": "PARCEL-UUID-MUM-204",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T02:57:33.072187+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for MUM-204",
+          "evidence": {
+            "parcel_id": "MUM-204",
+            "detected_at": "2026-09-28T02:57:33.072052+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-372D03FD-8484-5B11-A69B-93194E6AF8F1",
+      "parcel_uuid": "PARCEL-UUID-372D03FD-8484-5B11-A69B-93194E6AF8F1",
+      "source_parcel_id": "372D03FD-8484-5B11-A69B-93194E6AF8F1",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #372D03FD-8484-5B11-A69B-93194E6AF8F1",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:01:09.227165+00:00",
+      "updated_at": "2026-09-28T03:01:09.227182+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-945cabcc",
+          "parcel_uuid": "PARCEL-UUID-372D03FD-8484-5B11-A69B-93194E6AF8F1",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:01:09.227075+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 372D03FD-8484-5B11-A69B-93194E6AF8F1",
+          "evidence": {
+            "parcel_id": "372D03FD-8484-5B11-A69B-93194E6AF8F1",
+            "detected_at": "2026-09-28T03:01:09.226797+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+      "parcel_uuid": "PARCEL-UUID-D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+      "source_parcel_id": "D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:01:10.586318+00:00",
+      "updated_at": "2026-09-28T03:01:10.586328+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-ed5a012a",
+          "parcel_uuid": "PARCEL-UUID-D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:01:10.586263+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+          "evidence": {
+            "parcel_id": "D308001F-2AC5-55CD-86E7-3E2D40331A3A",
+            "detected_at": "2026-09-28T03:01:10.586119+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-27231253-D704-5005-BBF7-A2D0A1B4FE93",
+      "parcel_uuid": "PARCEL-UUID-27231253-D704-5005-BBF7-A2D0A1B4FE93",
+      "source_parcel_id": "27231253-D704-5005-BBF7-A2D0A1B4FE93",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #27231253-D704-5005-BBF7-A2D0A1B4FE93",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:01:11.564451+00:00",
+      "updated_at": "2026-09-28T03:01:11.564462+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-282e253b",
+          "parcel_uuid": "PARCEL-UUID-27231253-D704-5005-BBF7-A2D0A1B4FE93",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:01:11.564404+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 27231253-D704-5005-BBF7-A2D0A1B4FE93",
+          "evidence": {
+            "parcel_id": "27231253-D704-5005-BBF7-A2D0A1B4FE93",
+            "detected_at": "2026-09-28T03:01:11.564273+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+      "parcel_uuid": "PARCEL-UUID-B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+      "source_parcel_id": "B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:01:12.883948+00:00",
+      "updated_at": "2026-09-28T03:01:12.883960+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-35d448fd",
+          "parcel_uuid": "PARCEL-UUID-B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:01:12.883880+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+          "evidence": {
+            "parcel_id": "B09F2DCE-E23A-5503-B548-72E62DD23F2A",
+            "detected_at": "2026-09-28T03:01:12.883636+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+      "parcel_uuid": "PARCEL-UUID-0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+      "source_parcel_id": "0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:27:25.714256+00:00",
+      "updated_at": "2026-09-28T03:27:25.714263+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-7415fb89",
+          "parcel_uuid": "PARCEL-UUID-0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:27:25.714226+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+          "evidence": {
+            "parcel_id": "0086E5F0-E8EF-557F-9442-4E88AABEEDD7",
+            "detected_at": "2026-09-28T03:27:25.714144+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-918C94A6-3F88-5230-A212-5320D5C66385",
+      "parcel_uuid": "PARCEL-UUID-918C94A6-3F88-5230-A212-5320D5C66385",
+      "source_parcel_id": "918C94A6-3F88-5230-A212-5320D5C66385",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #918C94A6-3F88-5230-A212-5320D5C66385",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:27:30.852379+00:00",
+      "updated_at": "2026-09-28T03:27:30.852386+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-9f732b78",
+          "parcel_uuid": "PARCEL-UUID-918C94A6-3F88-5230-A212-5320D5C66385",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:27:30.852341+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 918C94A6-3F88-5230-A212-5320D5C66385",
+          "evidence": {
+            "parcel_id": "918C94A6-3F88-5230-A212-5320D5C66385",
+            "detected_at": "2026-09-28T03:27:30.852238+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+      "parcel_uuid": "PARCEL-UUID-B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+      "source_parcel_id": "B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:27:46.185263+00:00",
+      "updated_at": "2026-09-28T03:27:46.185272+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-68f0ebfa",
+          "parcel_uuid": "PARCEL-UUID-B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:27:46.185224+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+          "evidence": {
+            "parcel_id": "B5C56E64-8310-5CA2-B39C-31B3FA5AE1F4",
+            "detected_at": "2026-09-28T03:27:46.185111+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+      "parcel_uuid": "PARCEL-UUID-B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+      "source_parcel_id": "B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:27:55.336514+00:00",
+      "updated_at": "2026-09-28T03:27:55.336520+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-d64f139e",
+          "parcel_uuid": "PARCEL-UUID-B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:27:55.336479+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+          "evidence": {
+            "parcel_id": "B0EB72C5-CA8B-5BCF-86FD-A1F4C4759020",
+            "detected_at": "2026-09-28T03:27:55.336374+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+      "parcel_uuid": "PARCEL-UUID-118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+      "source_parcel_id": "118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:33:16.119276+00:00",
+      "updated_at": "2026-09-28T03:33:16.119289+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-e4dcb1d8",
+          "parcel_uuid": "PARCEL-UUID-118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:33:16.119211+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+          "evidence": {
+            "parcel_id": "118AF17B-1B7D-5C1D-8816-B9E0064592AD",
+            "detected_at": "2026-09-28T03:33:16.118993+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+      "parcel_uuid": "PARCEL-UUID-3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+      "source_parcel_id": "3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T03:33:17.702610+00:00",
+      "updated_at": "2026-09-28T03:33:17.702621+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-968e76a4",
+          "parcel_uuid": "PARCEL-UUID-3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T03:33:17.702562+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+          "evidence": {
+            "parcel_id": "3CD62269-C2FC-5B5B-8D0B-C70861AD9EEF",
+            "detected_at": "2026-09-28T03:33:17.702440+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+      "parcel_uuid": "PARCEL-UUID-9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+      "source_parcel_id": "9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:04.337657+00:00",
+      "updated_at": "2026-09-28T04:27:04.337672+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-24fe7c52",
+          "parcel_uuid": "PARCEL-UUID-9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:04.337562+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+          "evidence": {
+            "parcel_id": "9AD33CA6-0FB5-5178-BAF1-1AE91009F1B7",
+            "detected_at": "2026-09-28T04:27:04.337246+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-542EF3DE-C93D-538D-B618-C96534D5BEA8",
+      "parcel_uuid": "PARCEL-UUID-542EF3DE-C93D-538D-B618-C96534D5BEA8",
+      "source_parcel_id": "542EF3DE-C93D-538D-B618-C96534D5BEA8",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #542EF3DE-C93D-538D-B618-C96534D5BEA8",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:05.648207+00:00",
+      "updated_at": "2026-09-28T04:27:05.648214+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-c2391869",
+          "parcel_uuid": "PARCEL-UUID-542EF3DE-C93D-538D-B618-C96534D5BEA8",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:05.648125+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 542EF3DE-C93D-538D-B618-C96534D5BEA8",
+          "evidence": {
+            "parcel_id": "542EF3DE-C93D-538D-B618-C96534D5BEA8",
+            "detected_at": "2026-09-28T04:27:05.647823+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-DF2AE3C5-9104-5560-87C2-0E9959257877",
+      "parcel_uuid": "PARCEL-UUID-DF2AE3C5-9104-5560-87C2-0E9959257877",
+      "source_parcel_id": "DF2AE3C5-9104-5560-87C2-0E9959257877",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #DF2AE3C5-9104-5560-87C2-0E9959257877",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:07.476877+00:00",
+      "updated_at": "2026-09-28T04:27:07.476883+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-55eb300f",
+          "parcel_uuid": "PARCEL-UUID-DF2AE3C5-9104-5560-87C2-0E9959257877",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:07.476844+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for DF2AE3C5-9104-5560-87C2-0E9959257877",
+          "evidence": {
+            "parcel_id": "DF2AE3C5-9104-5560-87C2-0E9959257877",
+            "detected_at": "2026-09-28T04:27:07.476749+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+      "parcel_uuid": "PARCEL-UUID-0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+      "source_parcel_id": "0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:12.374716+00:00",
+      "updated_at": "2026-09-28T04:27:12.374723+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-434a51e0",
+          "parcel_uuid": "PARCEL-UUID-0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:12.374682+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+          "evidence": {
+            "parcel_id": "0F3199DD-00FC-5EC9-AC8E-9F342F8F0F51",
+            "detected_at": "2026-09-28T04:27:12.374591+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-74AA68FF-8483-543E-A38E-FA767823197E",
+      "parcel_uuid": "PARCEL-UUID-74AA68FF-8483-543E-A38E-FA767823197E",
+      "source_parcel_id": "74AA68FF-8483-543E-A38E-FA767823197E",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #74AA68FF-8483-543E-A38E-FA767823197E",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:18.721947+00:00",
+      "updated_at": "2026-09-28T04:27:18.721955+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-cf67ab16",
+          "parcel_uuid": "PARCEL-UUID-74AA68FF-8483-543E-A38E-FA767823197E",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:18.721913+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 74AA68FF-8483-543E-A38E-FA767823197E",
+          "evidence": {
+            "parcel_id": "74AA68FF-8483-543E-A38E-FA767823197E",
+            "detected_at": "2026-09-28T04:27:18.721815+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-43B92277-190F-51A6-8E03-9CB3B8290E6E",
+      "parcel_uuid": "PARCEL-UUID-43B92277-190F-51A6-8E03-9CB3B8290E6E",
+      "source_parcel_id": "43B92277-190F-51A6-8E03-9CB3B8290E6E",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #43B92277-190F-51A6-8E03-9CB3B8290E6E",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:20.052128+00:00",
+      "updated_at": "2026-09-28T04:27:20.052135+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-eaddb6c6",
+          "parcel_uuid": "PARCEL-UUID-43B92277-190F-51A6-8E03-9CB3B8290E6E",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:20.052094+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 43B92277-190F-51A6-8E03-9CB3B8290E6E",
+          "evidence": {
+            "parcel_id": "43B92277-190F-51A6-8E03-9CB3B8290E6E",
+            "detected_at": "2026-09-28T04:27:20.051990+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-B707213E-BBC4-5340-875A-0E5C0409C4E5",
+      "parcel_uuid": "PARCEL-UUID-B707213E-BBC4-5340-875A-0E5C0409C4E5",
+      "source_parcel_id": "B707213E-BBC4-5340-875A-0E5C0409C4E5",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #B707213E-BBC4-5340-875A-0E5C0409C4E5",
+      "severity": "HIGH",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:29.635854+00:00",
+      "updated_at": "2026-09-28T04:27:29.635870+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-93d5ef2c",
+          "parcel_uuid": "PARCEL-UUID-B707213E-BBC4-5340-875A-0E5C0409C4E5",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:29.635813+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for B707213E-BBC4-5340-875A-0E5C0409C4E5",
+          "evidence": {
+            "parcel_id": "B707213E-BBC4-5340-875A-0E5C0409C4E5",
+            "detected_at": "2026-09-28T04:27:29.635700+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+      "parcel_uuid": "PARCEL-UUID-69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+      "source_parcel_id": "69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T04:27:33.130000+00:00",
+      "updated_at": "2026-09-28T04:27:33.130011+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-86c78e90",
+          "parcel_uuid": "PARCEL-UUID-69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T04:27:33.129924+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+          "evidence": {
+            "parcel_id": "69AC0485-6781-5E5E-8917-99F77F5D6F1D",
+            "detected_at": "2026-09-28T04:27:33.129657+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+      "parcel_uuid": "PARCEL-UUID-6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+      "source_parcel_id": "6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T05:02:15.647338+00:00",
+      "updated_at": "2026-09-28T05:02:15.647348+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-1fb6bcbf",
+          "parcel_uuid": "PARCEL-UUID-6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T05:02:15.647225+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+          "evidence": {
+            "parcel_id": "6DA0045D-84A6-5A33-B09A-F3800F9A742A",
+            "detected_at": "2026-09-28T05:02:15.646881+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+      "parcel_uuid": "PARCEL-UUID-F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+      "source_parcel_id": "F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T06:09:00.993031+00:00",
+      "updated_at": "2026-09-28T06:09:00.993042+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-c7c44162",
+          "parcel_uuid": "PARCEL-UUID-F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T06:09:00.992951+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+          "evidence": {
+            "parcel_id": "F9311A9C-2D8D-53F3-9AE8-B52D02C6F8C7",
+            "detected_at": "2026-09-28T06:09:00.992621+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+      "parcel_uuid": "PARCEL-UUID-5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+      "source_parcel_id": "5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T06:19:07.066179+00:00",
+      "updated_at": "2026-09-28T06:19:07.066186+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-19042df4",
+          "parcel_uuid": "PARCEL-UUID-5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T06:19:07.066144+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+          "evidence": {
+            "parcel_id": "5BE3F2D9-457D-58AE-8D41-B2BD2F6F9526",
+            "detected_at": "2026-09-28T06:19:07.066017+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-E57A387E-C2B6-5431-B321-109CD8DA0003",
+      "parcel_uuid": "PARCEL-UUID-E57A387E-C2B6-5431-B321-109CD8DA0003",
+      "source_parcel_id": "E57A387E-C2B6-5431-B321-109CD8DA0003",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #E57A387E-C2B6-5431-B321-109CD8DA0003",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T06:50:59.459416+00:00",
+      "updated_at": "2026-09-28T06:50:59.459428+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-cfaf60bb",
+          "parcel_uuid": "PARCEL-UUID-E57A387E-C2B6-5431-B321-109CD8DA0003",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T06:50:59.459362+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for E57A387E-C2B6-5431-B321-109CD8DA0003",
+          "evidence": {
+            "parcel_id": "E57A387E-C2B6-5431-B321-109CD8DA0003",
+            "detected_at": "2026-09-28T06:50:59.459228+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-6B24EE86-D1B6-587C-96B5-A5788665F47D",
+      "parcel_uuid": "PARCEL-UUID-6B24EE86-D1B6-587C-96B5-A5788665F47D",
+      "source_parcel_id": "6B24EE86-D1B6-587C-96B5-A5788665F47D",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #6B24EE86-D1B6-587C-96B5-A5788665F47D",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T06:51:01.989306+00:00",
+      "updated_at": "2026-09-28T06:51:01.989321+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-68334d92",
+          "parcel_uuid": "PARCEL-UUID-6B24EE86-D1B6-587C-96B5-A5788665F47D",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T06:51:01.989246+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 6B24EE86-D1B6-587C-96B5-A5788665F47D",
+          "evidence": {
+            "parcel_id": "6B24EE86-D1B6-587C-96B5-A5788665F47D",
+            "detected_at": "2026-09-28T06:51:01.989087+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    },
+    {
+      "conflict_id": "CNF-6F65206F-F348-5598-BE54-1D4592F68753",
+      "parcel_uuid": "PARCEL-UUID-6F65206F-F348-5598-BE54-1D4592F68753",
+      "source_parcel_id": "6F65206F-F348-5598-BE54-1D4592F68753",
+      "current_state": "DETECTED",
+      "previous_state": null,
+      "title": "Boundary Dispute & Setback Variance on Parcel #6F65206F-F348-5598-BE54-1D4592F68753",
+      "severity": "MEDIUM",
+      "category": "BOUNDARY_OFFSET",
+      "discrepancy_metrics": {
+        "centroid_drift_m": 1.45,
+        "iou": 0.74,
+        "area_delta_pct": 5.2,
+        "status": "conflict"
+      },
+      "assigned_officer": null,
+      "created_at": "2026-09-28T08:45:33.468321+00:00",
+      "updated_at": "2026-09-28T08:45:33.468328+00:00",
+      "transitions": [
+        {
+          "transition_id": "TR-f337294e",
+          "parcel_uuid": "PARCEL-UUID-6F65206F-F348-5598-BE54-1D4592F68753",
+          "previous_state": "DETECTED",
+          "new_state": "DETECTED",
+          "actor": "TerraNode Automated Reconciliation Engine",
+          "timestamp": "2026-09-28T08:45:33.468288+00:00",
+          "reason": "Automated detection of boundary divergence exceeding policy thresholds for 6F65206F-F348-5598-BE54-1D4592F68753",
+          "evidence": {
+            "parcel_id": "6F65206F-F348-5598-BE54-1D4592F68753",
+            "detected_at": "2026-09-28T08:45:33.468186+00:00",
+            "sources": [
+              "Revenue Cadastral (CTS/Khasra)",
+              "Municipal GIS",
+              "Drone ORI (5cm)"
+            ]
+          }
+        }
+      ],
+      "allowed_transitions": [
+        "UNDER_REVIEW"
+      ]
+    }
+  ]
+}

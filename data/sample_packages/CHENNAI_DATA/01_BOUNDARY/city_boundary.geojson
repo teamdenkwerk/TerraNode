@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "name": "city_boundary",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Greater Chennai Corporation (GCC)",
+        "admin_level": 4,
+        "city": "Chennai"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.21,
+              13.02
+            ],
+            [
+              80.26,
+              13.02
+            ],
+            [
+              80.26,
+              13.06
+            ],
+            [
+              80.21,
+              13.06
+            ],
+            [
+              80.21,
+              13.02
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

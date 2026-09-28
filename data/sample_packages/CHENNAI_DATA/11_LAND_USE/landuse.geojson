@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "name": "cmda_landuse_zoning",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "zone_code": "C-1",
+        "zone_name": "Commercial Core",
+        "masterplan": "CMDA Second Master Plan 2026"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.228,
+              13.037
+            ],
+            [
+              80.242,
+              13.037
+            ],
+            [
+              80.242,
+              13.047
+            ],
+            [
+              80.228,
+              13.047
+            ],
+            [
+              80.228,
+              13.037
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

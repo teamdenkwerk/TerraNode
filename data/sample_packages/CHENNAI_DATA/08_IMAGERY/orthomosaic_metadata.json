@@ -1,0 +1,9 @@
+{
+  "survey_agency": "Survey of India / TIDCO NAKSHA Programme",
+  "gsd_cm": 5.0,
+  "sensor": "RGB Metric Camera 61MP",
+  "flight_altitude_m": 120,
+  "capture_epoch": "2026-02-14",
+  "crs": "EPSG:32644",
+  "orthorectified": true
+}

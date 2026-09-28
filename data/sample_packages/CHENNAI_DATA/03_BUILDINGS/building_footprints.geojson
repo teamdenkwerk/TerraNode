@@ -1,0 +1,1222 @@
+{
+  "type": "FeatureCollection",
+  "name": "building_footprints",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-201",
+        "parcel_id": "PARCEL-MAA-101",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2272,
+              13.03858
+            ],
+            [
+              80.22840000000001,
+              13.03858
+            ],
+            [
+              80.22840000000001,
+              13.03962
+            ],
+            [
+              80.2272,
+              13.03962
+            ],
+            [
+              80.2272,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-202",
+        "parcel_id": "PARCEL-MAA-102",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.229,
+              13.03858
+            ],
+            [
+              80.23020000000001,
+              13.03858
+            ],
+            [
+              80.23020000000001,
+              13.03962
+            ],
+            [
+              80.229,
+              13.03962
+            ],
+            [
+              80.229,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-203",
+        "parcel_id": "PARCEL-MAA-103",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23079999999999,
+              13.03858
+            ],
+            [
+              80.232,
+              13.03858
+            ],
+            [
+              80.232,
+              13.03962
+            ],
+            [
+              80.23079999999999,
+              13.03962
+            ],
+            [
+              80.23079999999999,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-204",
+        "parcel_id": "PARCEL-MAA-104",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23259999999999,
+              13.03858
+            ],
+            [
+              80.2338,
+              13.03858
+            ],
+            [
+              80.2338,
+              13.03962
+            ],
+            [
+              80.23259999999999,
+              13.03962
+            ],
+            [
+              80.23259999999999,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-205",
+        "parcel_id": "PARCEL-MAA-105",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2344,
+              13.03858
+            ],
+            [
+              80.2356,
+              13.03858
+            ],
+            [
+              80.2356,
+              13.03962
+            ],
+            [
+              80.2344,
+              13.03962
+            ],
+            [
+              80.2344,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-206",
+        "parcel_id": "PARCEL-MAA-106",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2362,
+              13.03858
+            ],
+            [
+              80.23740000000001,
+              13.03858
+            ],
+            [
+              80.23740000000001,
+              13.03962
+            ],
+            [
+              80.2362,
+              13.03962
+            ],
+            [
+              80.2362,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-207",
+        "parcel_id": "PARCEL-MAA-107",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23799999999999,
+              13.03858
+            ],
+            [
+              80.2392,
+              13.03858
+            ],
+            [
+              80.2392,
+              13.03962
+            ],
+            [
+              80.23799999999999,
+              13.03962
+            ],
+            [
+              80.23799999999999,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-208",
+        "parcel_id": "PARCEL-MAA-108",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23979999999999,
+              13.03858
+            ],
+            [
+              80.241,
+              13.03858
+            ],
+            [
+              80.241,
+              13.03962
+            ],
+            [
+              80.23979999999999,
+              13.03962
+            ],
+            [
+              80.23979999999999,
+              13.03858
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-209",
+        "parcel_id": "PARCEL-MAA-109",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2272,
+              13.04038
+            ],
+            [
+              80.22840000000001,
+              13.04038
+            ],
+            [
+              80.22840000000001,
+              13.04142
+            ],
+            [
+              80.2272,
+              13.04142
+            ],
+            [
+              80.2272,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-210",
+        "parcel_id": "PARCEL-MAA-110",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.229,
+              13.04038
+            ],
+            [
+              80.23020000000001,
+              13.04038
+            ],
+            [
+              80.23020000000001,
+              13.04142
+            ],
+            [
+              80.229,
+              13.04142
+            ],
+            [
+              80.229,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-211",
+        "parcel_id": "PARCEL-MAA-111",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23079999999999,
+              13.04038
+            ],
+            [
+              80.232,
+              13.04038
+            ],
+            [
+              80.232,
+              13.04142
+            ],
+            [
+              80.23079999999999,
+              13.04142
+            ],
+            [
+              80.23079999999999,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-212",
+        "parcel_id": "PARCEL-MAA-112",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23259999999999,
+              13.04038
+            ],
+            [
+              80.2338,
+              13.04038
+            ],
+            [
+              80.2338,
+              13.04142
+            ],
+            [
+              80.23259999999999,
+              13.04142
+            ],
+            [
+              80.23259999999999,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-213",
+        "parcel_id": "PARCEL-MAA-113",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2344,
+              13.04038
+            ],
+            [
+              80.2356,
+              13.04038
+            ],
+            [
+              80.2356,
+              13.04142
+            ],
+            [
+              80.2344,
+              13.04142
+            ],
+            [
+              80.2344,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-214",
+        "parcel_id": "PARCEL-MAA-114",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2362,
+              13.04038
+            ],
+            [
+              80.23740000000001,
+              13.04038
+            ],
+            [
+              80.23740000000001,
+              13.04142
+            ],
+            [
+              80.2362,
+              13.04142
+            ],
+            [
+              80.2362,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-215",
+        "parcel_id": "PARCEL-MAA-115",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23799999999999,
+              13.04038
+            ],
+            [
+              80.2392,
+              13.04038
+            ],
+            [
+              80.2392,
+              13.04142
+            ],
+            [
+              80.23799999999999,
+              13.04142
+            ],
+            [
+              80.23799999999999,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-216",
+        "parcel_id": "PARCEL-MAA-116",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23979999999999,
+              13.04038
+            ],
+            [
+              80.241,
+              13.04038
+            ],
+            [
+              80.241,
+              13.04142
+            ],
+            [
+              80.23979999999999,
+              13.04142
+            ],
+            [
+              80.23979999999999,
+              13.04038
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-217",
+        "parcel_id": "PARCEL-MAA-117",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2272,
+              13.04218
+            ],
+            [
+              80.22840000000001,
+              13.04218
+            ],
+            [
+              80.22840000000001,
+              13.04322
+            ],
+            [
+              80.2272,
+              13.04322
+            ],
+            [
+              80.2272,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-218",
+        "parcel_id": "PARCEL-MAA-118",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.229,
+              13.04218
+            ],
+            [
+              80.23020000000001,
+              13.04218
+            ],
+            [
+              80.23020000000001,
+              13.04322
+            ],
+            [
+              80.229,
+              13.04322
+            ],
+            [
+              80.229,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-219",
+        "parcel_id": "PARCEL-MAA-119",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23079999999999,
+              13.04218
+            ],
+            [
+              80.232,
+              13.04218
+            ],
+            [
+              80.232,
+              13.04322
+            ],
+            [
+              80.23079999999999,
+              13.04322
+            ],
+            [
+              80.23079999999999,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-220",
+        "parcel_id": "PARCEL-MAA-120",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23259999999999,
+              13.04218
+            ],
+            [
+              80.2338,
+              13.04218
+            ],
+            [
+              80.2338,
+              13.04322
+            ],
+            [
+              80.23259999999999,
+              13.04322
+            ],
+            [
+              80.23259999999999,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-221",
+        "parcel_id": "PARCEL-MAA-121",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2344,
+              13.04218
+            ],
+            [
+              80.2356,
+              13.04218
+            ],
+            [
+              80.2356,
+              13.04322
+            ],
+            [
+              80.2344,
+              13.04322
+            ],
+            [
+              80.2344,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-222",
+        "parcel_id": "PARCEL-MAA-122",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2362,
+              13.04218
+            ],
+            [
+              80.23740000000001,
+              13.04218
+            ],
+            [
+              80.23740000000001,
+              13.04322
+            ],
+            [
+              80.2362,
+              13.04322
+            ],
+            [
+              80.2362,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-223",
+        "parcel_id": "PARCEL-MAA-123",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23799999999999,
+              13.04218
+            ],
+            [
+              80.2392,
+              13.04218
+            ],
+            [
+              80.2392,
+              13.04322
+            ],
+            [
+              80.23799999999999,
+              13.04322
+            ],
+            [
+              80.23799999999999,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-224",
+        "parcel_id": "PARCEL-MAA-124",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23979999999999,
+              13.04218
+            ],
+            [
+              80.241,
+              13.04218
+            ],
+            [
+              80.241,
+              13.04322
+            ],
+            [
+              80.23979999999999,
+              13.04322
+            ],
+            [
+              80.23979999999999,
+              13.04218
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-225",
+        "parcel_id": "PARCEL-MAA-125",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2272,
+              13.043980000000001
+            ],
+            [
+              80.22840000000001,
+              13.043980000000001
+            ],
+            [
+              80.22840000000001,
+              13.045020000000001
+            ],
+            [
+              80.2272,
+              13.045020000000001
+            ],
+            [
+              80.2272,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-226",
+        "parcel_id": "PARCEL-MAA-126",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.229,
+              13.043980000000001
+            ],
+            [
+              80.23020000000001,
+              13.043980000000001
+            ],
+            [
+              80.23020000000001,
+              13.045020000000001
+            ],
+            [
+              80.229,
+              13.045020000000001
+            ],
+            [
+              80.229,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-227",
+        "parcel_id": "PARCEL-MAA-127",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23079999999999,
+              13.043980000000001
+            ],
+            [
+              80.232,
+              13.043980000000001
+            ],
+            [
+              80.232,
+              13.045020000000001
+            ],
+            [
+              80.23079999999999,
+              13.045020000000001
+            ],
+            [
+              80.23079999999999,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-228",
+        "parcel_id": "PARCEL-MAA-128",
+        "height_m": 18.6,
+        "floors": 5,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23259999999999,
+              13.043980000000001
+            ],
+            [
+              80.2338,
+              13.043980000000001
+            ],
+            [
+              80.2338,
+              13.045020000000001
+            ],
+            [
+              80.23259999999999,
+              13.045020000000001
+            ],
+            [
+              80.23259999999999,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-229",
+        "parcel_id": "PARCEL-MAA-129",
+        "height_m": 21.8,
+        "floors": 6,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2344,
+              13.043980000000001
+            ],
+            [
+              80.2356,
+              13.043980000000001
+            ],
+            [
+              80.2356,
+              13.045020000000001
+            ],
+            [
+              80.2344,
+              13.045020000000001
+            ],
+            [
+              80.2344,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-230",
+        "parcel_id": "PARCEL-MAA-130",
+        "height_m": 9.0,
+        "floors": 2,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.2362,
+              13.043980000000001
+            ],
+            [
+              80.23740000000001,
+              13.043980000000001
+            ],
+            [
+              80.23740000000001,
+              13.045020000000001
+            ],
+            [
+              80.2362,
+              13.045020000000001
+            ],
+            [
+              80.2362,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-231",
+        "parcel_id": "PARCEL-MAA-131",
+        "height_m": 12.2,
+        "floors": 3,
+        "use": "Commercial Showroom",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23799999999999,
+              13.043980000000001
+            ],
+            [
+              80.2392,
+              13.043980000000001
+            ],
+            [
+              80.2392,
+              13.045020000000001
+            ],
+            [
+              80.23799999999999,
+              13.045020000000001
+            ],
+            [
+              80.23799999999999,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "building_id": "BLD-MAA-232",
+        "parcel_id": "PARCEL-MAA-132",
+        "height_m": 15.4,
+        "floors": 4,
+        "use": "Residential Apartment",
+        "structure": "RCC Framed"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23979999999999,
+              13.043980000000001
+            ],
+            [
+              80.241,
+              13.043980000000001
+            ],
+            [
+              80.241,
+              13.045020000000001
+            ],
+            [
+              80.23979999999999,
+              13.045020000000001
+            ],
+            [
+              80.23979999999999,
+              13.043980000000001
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

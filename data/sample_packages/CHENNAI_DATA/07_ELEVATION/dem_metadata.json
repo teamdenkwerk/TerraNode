@@ -1,0 +1,11 @@
+{
+  "layer_name": "Chennai Coastal Terrain DEM",
+  "source": "Survey of India Cartosat-1 DTM",
+  "vertical_datum": "EGM2008 (MSL)",
+  "elevation_range_m": [
+    8.2,
+    14.5
+  ],
+  "resolution": "10m GSD",
+  "crs": "EPSG:32644 (UTM 44N)"
+}

@@ -1,0 +1,52 @@
+{
+  "type": "FeatureCollection",
+  "name": "irrigation_canals_cadastral",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "INFRA-DR-CAD-001",
+        "infrastructure_type": "drainage",
+        "source_dataset_id": "irrigation_dept_waterways_2025",
+        "source_feature_id": "WRD-CANAL-B4",
+        "source_name": "Water Resources Department",
+        "source_date": "2025-08-10",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "metadata": {
+          "canal_name": "Branch Feeder Canal B4",
+          "width_m": 4.5,
+          "type": "Irrigation Distributary Canal",
+          "buffer_zone_m": 10.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            79.8935,
+            12.9347
+          ],
+          [
+            79.895,
+            12.9348
+          ],
+          [
+            79.897,
+            12.9349
+          ],
+          [
+            79.8985,
+            12.935
+          ]
+        ]
+      }
+    }
+  ]
+}

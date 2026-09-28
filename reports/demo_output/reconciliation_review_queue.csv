@@ -1,0 +1,38 @@
+Cadastral_ID,Municipal_ID,Survey_No,Status,Conflict_ID,Lifecycle_State,Confidence_Pct,Centroid_Drift_Meters,IoU_Agreement,Reason
+CAD-01-001,MUN-5001,1001,conflict,N/A,N/A,85.8,2.42,65.7,Spatial drift (2.42m) exceeds maximum allowable tolerance (2.0m).
+CAD-01-002,MUN-5002,1002,auto_reconciled,N/A,N/A,91.2,0.96,81.4,"High agreement (Confidence 91.2% >= 85%, Centroid Drift 0.96m < 2.0m)."
+CAD-01-003,MUN-5003,1003,auto_reconciled,N/A,N/A,91.6,0.92,82.5,"High agreement (Confidence 91.6% >= 85%, Centroid Drift 0.92m < 2.0m)."
+CAD-01-004,MUN-5004,1004,auto_reconciled,N/A,N/A,91.8,0.95,83.1,"High agreement (Confidence 91.8% >= 85%, Centroid Drift 0.95m < 2.0m)."
+CAD-01-005,MUN-5005,1005,conflict,N/A,N/A,67.2,0.90,84.1,Low confidence (Confidence 67.2% < 70%). Significant inter-source discrepancy.
+CAD-01-006,MUN-5006,1006,auto_reconciled,N/A,N/A,92.1,0.86,83.9,"High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.86m < 2.0m)."
+CAD-02-001,MUN-5007,1007,auto_reconciled,N/A,N/A,91.0,1.16,80.8,"High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.16m < 2.0m)."
+CAD-02-002,MUN-5008,1008,auto_reconciled,N/A,N/A,90.4,1.20,79.1,"High agreement (Confidence 90.4% >= 85%, Centroid Drift 1.20m < 2.0m)."
+CAD-02-003,MUN-5009,1009,auto_reconciled,N/A,N/A,91.0,1.25,80.7,"High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.25m < 2.0m)."
+CAD-02-004,MUN-5010,1010,conflict,N/A,N/A,79.3,3.69,47.2,Spatial drift (3.69m) exceeds maximum allowable tolerance (2.0m).
+CAD-02-005,MUN-5011,1011,auto_reconciled,N/A,N/A,91.0,1.23,80.7,"High agreement (Confidence 91.0% >= 85%, Centroid Drift 1.23m < 2.0m)."
+CAD-02-006,MUN-5012,1012,conflict,N/A,N/A,82.2,2.96,55.4,Spatial drift (2.96m) exceeds maximum allowable tolerance (2.0m).
+CAD-02-007,MUN-5013,1013,auto_reconciled,N/A,N/A,90.3,1.23,78.7,"High agreement (Confidence 90.3% >= 85%, Centroid Drift 1.23m < 2.0m)."
+CAD-02-008,MUN-5014,1014,auto_reconciled,N/A,N/A,90.0,1.27,77.7,"High agreement (Confidence 90.0% >= 85%, Centroid Drift 1.27m < 2.0m)."
+CAD-02-009,MUN-5015,1015,auto_reconciled,N/A,N/A,90.4,1.31,78.9,"High agreement (Confidence 90.4% >= 85%, Centroid Drift 1.31m < 2.0m)."
+CAD-03-001,MUN-5016,1016,auto_reconciled,N/A,N/A,92.4,0.89,84.6,"High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.89m < 2.0m)."
+CAD-03-002,MUN-5017,1017,auto_reconciled,N/A,N/A,92.5,0.86,85.1,"High agreement (Confidence 92.5% >= 85%, Centroid Drift 0.86m < 2.0m)."
+CAD-03-003,MUN-5018,1018,auto_reconciled,N/A,N/A,92.4,0.83,84.8,"High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.83m < 2.0m)."
+CAD-03-004,MUN-5019,1019,auto_reconciled,N/A,N/A,92.0,0.91,83.6,"High agreement (Confidence 92.0% >= 85%, Centroid Drift 0.91m < 2.0m)."
+CAD-03-005,MUN-5020,1020,conflict,N/A,N/A,79.4,3.85,47.7,Spatial drift (3.85m) exceeds maximum allowable tolerance (2.0m).
+CAD-03-006,MUN-5021,1021,auto_reconciled,N/A,N/A,92.3,0.86,84.3,"High agreement (Confidence 92.3% >= 85%, Centroid Drift 0.86m < 2.0m)."
+CAD-03-007,MUN-5022,1022,auto_reconciled,N/A,N/A,92.0,0.93,83.7,"High agreement (Confidence 92.0% >= 85%, Centroid Drift 0.93m < 2.0m)."
+CAD-04-001,MUN-5023,1023,auto_reconciled,N/A,N/A,91.5,0.99,82.3,"High agreement (Confidence 91.5% >= 85%, Centroid Drift 0.99m < 2.0m)."
+CAD-04-002,MUN-5024,1024,auto_reconciled,N/A,N/A,91.3,1.05,81.5,"High agreement (Confidence 91.3% >= 85%, Centroid Drift 1.05m < 2.0m)."
+CAD-04-003,MUN-5025,1025,auto_reconciled,N/A,N/A,91.4,1.11,81.8,"High agreement (Confidence 91.4% >= 85%, Centroid Drift 1.11m < 2.0m)."
+CAD-04-004,MUN-5026,1026,auto_reconciled,N/A,N/A,91.1,1.07,81.1,"High agreement (Confidence 91.1% >= 85%, Centroid Drift 1.07m < 2.0m)."
+CAD-04-005,MUN-5027,1027,auto_reconciled,N/A,N/A,90.7,1.12,79.8,"High agreement (Confidence 90.7% >= 85%, Centroid Drift 1.12m < 2.0m)."
+CAD-04-006,MUN-5028,1028,auto_reconciled,N/A,N/A,90.8,1.18,80.2,"High agreement (Confidence 90.8% >= 85%, Centroid Drift 1.18m < 2.0m)."
+CAD-04-007,MUN-5029,1029,auto_reconciled,N/A,N/A,90.5,1.14,79.4,"High agreement (Confidence 90.5% >= 85%, Centroid Drift 1.14m < 2.0m)."
+CAD-05-001,MUN-5030,1030,conflict,N/A,N/A,80.2,3.22,49.9,Spatial drift (3.22m) exceeds maximum allowable tolerance (2.0m).
+CAD-05-002,MUN-5031,1031,auto_reconciled,N/A,N/A,92.3,0.80,84.4,"High agreement (Confidence 92.3% >= 85%, Centroid Drift 0.80m < 2.0m)."
+CAD-05-003,MUN-5032,1032,auto_reconciled,N/A,N/A,92.5,0.79,85.0,"High agreement (Confidence 92.5% >= 85%, Centroid Drift 0.79m < 2.0m)."
+CAD-05-004,MUN-5033,1033,auto_reconciled,N/A,N/A,92.1,0.84,83.9,"High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.84m < 2.0m)."
+CAD-05-005,MUN-5034,1034,auto_reconciled,N/A,N/A,92.1,0.83,84.0,"High agreement (Confidence 92.1% >= 85%, Centroid Drift 0.83m < 2.0m)."
+CAD-05-006,MUN-5035,1035,auto_reconciled,N/A,N/A,92.7,0.82,85.5,"High agreement (Confidence 92.7% >= 85%, Centroid Drift 0.82m < 2.0m)."
+CAD-05-007,MUN-5036,1036,auto_reconciled,N/A,N/A,91.9,0.87,83.2,"High agreement (Confidence 91.9% >= 85%, Centroid Drift 0.87m < 2.0m)."
+CAD-05-008,MUN-5037,1037,auto_reconciled,N/A,N/A,92.4,0.86,84.6,"High agreement (Confidence 92.4% >= 85%, Centroid Drift 0.86m < 2.0m)."

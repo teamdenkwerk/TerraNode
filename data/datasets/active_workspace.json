@@ -1,0 +1,50 @@
+{
+  "active_dataset_id": "delhi-urban",
+  "city_name": "Delhi NCR",
+  "area_name": "Urban District",
+  "updated_at": "2026-09-28 08:19:30 UTC",
+  "catalog_summary": [
+    {
+      "dataset_id": "bengaluru-ward112",
+      "city": "Bengaluru",
+      "aoi": "Ward 112 / Domlur",
+      "dataset_status": "ARCHIVED",
+      "features_count": 64
+    },
+    {
+      "dataset_id": "mumbai-andheri",
+      "city": "Mumbai",
+      "aoi": "Andheri East",
+      "dataset_status": "ARCHIVED",
+      "features_count": 72
+    },
+    {
+      "dataset_id": "chennai-tnagar",
+      "city": "Chennai",
+      "aoi": "T. Nagar AOI",
+      "dataset_status": "ARCHIVED",
+      "features_count": 64
+    },
+    {
+      "dataset_id": "delhi-urban",
+      "city": "Delhi NCR",
+      "aoi": "Urban District",
+      "dataset_status": "ACTIVE",
+      "features_count": 72
+    },
+    {
+      "dataset_id": "bengaluru-ward112",
+      "city": "Bengaluru",
+      "aoi": "Ward 112 / Domlur",
+      "dataset_status": "ARCHIVED",
+      "features_count": 64
+    },
+    {
+      "dataset_id": "delhi-urban",
+      "city": "Delhi NCR",
+      "aoi": "Urban District",
+      "dataset_status": "ACTIVE",
+      "features_count": 72
+    }
+  ]
+}

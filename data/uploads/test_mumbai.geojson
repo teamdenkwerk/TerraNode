@@ -1,0 +1,31 @@
+﻿{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "survey_number": "CTS-502/A",
+        "land_use": "Commercial",
+        "area_m2": 620
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [72.8685, 19.1140],
+            [72.8690, 19.1140],
+            [72.8690, 19.1145],
+            [72.8685, 19.1145],
+            [72.8685, 19.1140]
+          ]
+        ]
+      }
+    }
+  ]
+}

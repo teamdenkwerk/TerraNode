@@ -1,0 +1,1286 @@
+{
+  "type": "FeatureCollection",
+  "name": "cadastral_parcels",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-101",
+        "survey_number": "T.S. No. 50/1",
+        "municipal_id": "GCC-W134-P001",
+        "area_m2": 240,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22705,
+              13.03845
+            ],
+            [
+              80.22855,
+              13.03845
+            ],
+            [
+              80.22855,
+              13.03975
+            ],
+            [
+              80.22705,
+              13.03975
+            ],
+            [
+              80.22705,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-102",
+        "survey_number": "T.S. No. 50/2",
+        "municipal_id": "GCC-W134-P002",
+        "area_m2": 265,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22885000000001,
+              13.03845
+            ],
+            [
+              80.23035,
+              13.03845
+            ],
+            [
+              80.23035,
+              13.03975
+            ],
+            [
+              80.22885000000001,
+              13.03975
+            ],
+            [
+              80.22885000000001,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-103",
+        "survey_number": "T.S. No. 50/3",
+        "municipal_id": "GCC-W134-P003",
+        "area_m2": 290,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23065,
+              13.03845
+            ],
+            [
+              80.23214999999999,
+              13.03845
+            ],
+            [
+              80.23214999999999,
+              13.03975
+            ],
+            [
+              80.23065,
+              13.03975
+            ],
+            [
+              80.23065,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-104",
+        "survey_number": "T.S. No. 50/4",
+        "municipal_id": "GCC-W134-P004",
+        "area_m2": 315,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23245,
+              13.03845
+            ],
+            [
+              80.23395,
+              13.03845
+            ],
+            [
+              80.23395,
+              13.03975
+            ],
+            [
+              80.23245,
+              13.03975
+            ],
+            [
+              80.23245,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-105",
+        "survey_number": "T.S. No. 50/5",
+        "municipal_id": "GCC-W134-P005",
+        "area_m2": 340,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23425,
+              13.03845
+            ],
+            [
+              80.23575,
+              13.03845
+            ],
+            [
+              80.23575,
+              13.03975
+            ],
+            [
+              80.23425,
+              13.03975
+            ],
+            [
+              80.23425,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-106",
+        "survey_number": "T.S. No. 50/6",
+        "municipal_id": "GCC-W134-P006",
+        "area_m2": 365,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23605,
+              13.03845
+            ],
+            [
+              80.23755,
+              13.03845
+            ],
+            [
+              80.23755,
+              13.03975
+            ],
+            [
+              80.23605,
+              13.03975
+            ],
+            [
+              80.23605,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-107",
+        "survey_number": "T.S. No. 50/7",
+        "municipal_id": "GCC-W134-P007",
+        "area_m2": 390,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23785,
+              13.03845
+            ],
+            [
+              80.23934999999999,
+              13.03845
+            ],
+            [
+              80.23934999999999,
+              13.03975
+            ],
+            [
+              80.23785,
+              13.03975
+            ],
+            [
+              80.23785,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-108",
+        "survey_number": "T.S. No. 50/8",
+        "municipal_id": "GCC-W134-P008",
+        "area_m2": 415,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23965,
+              13.03845
+            ],
+            [
+              80.24114999999999,
+              13.03845
+            ],
+            [
+              80.24114999999999,
+              13.03975
+            ],
+            [
+              80.23965,
+              13.03975
+            ],
+            [
+              80.23965,
+              13.03845
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-109",
+        "survey_number": "T.S. No. 51/1",
+        "municipal_id": "GCC-W134-P009",
+        "area_m2": 255,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22705,
+              13.04025
+            ],
+            [
+              80.22855,
+              13.04025
+            ],
+            [
+              80.22855,
+              13.04155
+            ],
+            [
+              80.22705,
+              13.04155
+            ],
+            [
+              80.22705,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-110",
+        "survey_number": "T.S. No. 51/2",
+        "municipal_id": "GCC-W134-P010",
+        "area_m2": 280,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22885000000001,
+              13.04025
+            ],
+            [
+              80.23035,
+              13.04025
+            ],
+            [
+              80.23035,
+              13.04155
+            ],
+            [
+              80.22885000000001,
+              13.04155
+            ],
+            [
+              80.22885000000001,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-111",
+        "survey_number": "T.S. No. 51/3",
+        "municipal_id": "GCC-W134-P011",
+        "area_m2": 305,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23065,
+              13.04025
+            ],
+            [
+              80.23214999999999,
+              13.04025
+            ],
+            [
+              80.23214999999999,
+              13.04155
+            ],
+            [
+              80.23065,
+              13.04155
+            ],
+            [
+              80.23065,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-112",
+        "survey_number": "T.S. No. 51/4",
+        "municipal_id": "GCC-W134-P012",
+        "area_m2": 330,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23245,
+              13.04025
+            ],
+            [
+              80.23395,
+              13.04025
+            ],
+            [
+              80.23395,
+              13.04155
+            ],
+            [
+              80.23245,
+              13.04155
+            ],
+            [
+              80.23245,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-113",
+        "survey_number": "T.S. No. 51/5",
+        "municipal_id": "GCC-W134-P013",
+        "area_m2": 355,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23425,
+              13.04025
+            ],
+            [
+              80.23575,
+              13.04025
+            ],
+            [
+              80.23575,
+              13.04155
+            ],
+            [
+              80.23425,
+              13.04155
+            ],
+            [
+              80.23425,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-114",
+        "survey_number": "T.S. No. 51/6",
+        "municipal_id": "GCC-W134-P014",
+        "area_m2": 380,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23605,
+              13.04025
+            ],
+            [
+              80.23755,
+              13.04025
+            ],
+            [
+              80.23755,
+              13.04155
+            ],
+            [
+              80.23605,
+              13.04155
+            ],
+            [
+              80.23605,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-115",
+        "survey_number": "T.S. No. 51/7",
+        "municipal_id": "GCC-W134-P015",
+        "area_m2": 405,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23785,
+              13.04025
+            ],
+            [
+              80.23934999999999,
+              13.04025
+            ],
+            [
+              80.23934999999999,
+              13.04155
+            ],
+            [
+              80.23785,
+              13.04155
+            ],
+            [
+              80.23785,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-116",
+        "survey_number": "T.S. No. 51/8",
+        "municipal_id": "GCC-W134-P016",
+        "area_m2": 430,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23965,
+              13.04025
+            ],
+            [
+              80.24114999999999,
+              13.04025
+            ],
+            [
+              80.24114999999999,
+              13.04155
+            ],
+            [
+              80.23965,
+              13.04155
+            ],
+            [
+              80.23965,
+              13.04025
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-117",
+        "survey_number": "T.S. No. 52/1",
+        "municipal_id": "GCC-W134-P017",
+        "area_m2": 270,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22705,
+              13.04205
+            ],
+            [
+              80.22855,
+              13.04205
+            ],
+            [
+              80.22855,
+              13.04335
+            ],
+            [
+              80.22705,
+              13.04335
+            ],
+            [
+              80.22705,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-118",
+        "survey_number": "T.S. No. 52/2",
+        "municipal_id": "GCC-W134-P018",
+        "area_m2": 295,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22885000000001,
+              13.04205
+            ],
+            [
+              80.23035,
+              13.04205
+            ],
+            [
+              80.23035,
+              13.04335
+            ],
+            [
+              80.22885000000001,
+              13.04335
+            ],
+            [
+              80.22885000000001,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-119",
+        "survey_number": "T.S. No. 52/3",
+        "municipal_id": "GCC-W134-P019",
+        "area_m2": 320,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23065,
+              13.04205
+            ],
+            [
+              80.23214999999999,
+              13.04205
+            ],
+            [
+              80.23214999999999,
+              13.04335
+            ],
+            [
+              80.23065,
+              13.04335
+            ],
+            [
+              80.23065,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-120",
+        "survey_number": "T.S. No. 52/4",
+        "municipal_id": "GCC-W134-P020",
+        "area_m2": 345,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23245,
+              13.04205
+            ],
+            [
+              80.23395,
+              13.04205
+            ],
+            [
+              80.23395,
+              13.04335
+            ],
+            [
+              80.23245,
+              13.04335
+            ],
+            [
+              80.23245,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-121",
+        "survey_number": "T.S. No. 52/5",
+        "municipal_id": "GCC-W134-P021",
+        "area_m2": 370,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23425,
+              13.04205
+            ],
+            [
+              80.23575,
+              13.04205
+            ],
+            [
+              80.23575,
+              13.04335
+            ],
+            [
+              80.23425,
+              13.04335
+            ],
+            [
+              80.23425,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-122",
+        "survey_number": "T.S. No. 52/6",
+        "municipal_id": "GCC-W134-P022",
+        "area_m2": 395,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23605,
+              13.04205
+            ],
+            [
+              80.23755,
+              13.04205
+            ],
+            [
+              80.23755,
+              13.04335
+            ],
+            [
+              80.23605,
+              13.04335
+            ],
+            [
+              80.23605,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-123",
+        "survey_number": "T.S. No. 52/7",
+        "municipal_id": "GCC-W134-P023",
+        "area_m2": 420,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23785,
+              13.04205
+            ],
+            [
+              80.23934999999999,
+              13.04205
+            ],
+            [
+              80.23934999999999,
+              13.04335
+            ],
+            [
+              80.23785,
+              13.04335
+            ],
+            [
+              80.23785,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-124",
+        "survey_number": "T.S. No. 52/8",
+        "municipal_id": "GCC-W134-P024",
+        "area_m2": 445,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23965,
+              13.04205
+            ],
+            [
+              80.24114999999999,
+              13.04205
+            ],
+            [
+              80.24114999999999,
+              13.04335
+            ],
+            [
+              80.23965,
+              13.04335
+            ],
+            [
+              80.23965,
+              13.04205
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-125",
+        "survey_number": "T.S. No. 53/1",
+        "municipal_id": "GCC-W134-P025",
+        "area_m2": 285,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22705,
+              13.04385
+            ],
+            [
+              80.22855,
+              13.04385
+            ],
+            [
+              80.22855,
+              13.045150000000001
+            ],
+            [
+              80.22705,
+              13.045150000000001
+            ],
+            [
+              80.22705,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-126",
+        "survey_number": "T.S. No. 53/2",
+        "municipal_id": "GCC-W134-P026",
+        "area_m2": 310,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.22885000000001,
+              13.04385
+            ],
+            [
+              80.23035,
+              13.04385
+            ],
+            [
+              80.23035,
+              13.045150000000001
+            ],
+            [
+              80.22885000000001,
+              13.045150000000001
+            ],
+            [
+              80.22885000000001,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-127",
+        "survey_number": "T.S. No. 53/3",
+        "municipal_id": "GCC-W134-P027",
+        "area_m2": 335,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23065,
+              13.04385
+            ],
+            [
+              80.23214999999999,
+              13.04385
+            ],
+            [
+              80.23214999999999,
+              13.045150000000001
+            ],
+            [
+              80.23065,
+              13.045150000000001
+            ],
+            [
+              80.23065,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-128",
+        "survey_number": "T.S. No. 53/4",
+        "municipal_id": "GCC-W134-P028",
+        "area_m2": 360,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23245,
+              13.04385
+            ],
+            [
+              80.23395,
+              13.04385
+            ],
+            [
+              80.23395,
+              13.045150000000001
+            ],
+            [
+              80.23245,
+              13.045150000000001
+            ],
+            [
+              80.23245,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-129",
+        "survey_number": "T.S. No. 53/5",
+        "municipal_id": "GCC-W134-P029",
+        "area_m2": 385,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23425,
+              13.04385
+            ],
+            [
+              80.23575,
+              13.04385
+            ],
+            [
+              80.23575,
+              13.045150000000001
+            ],
+            [
+              80.23425,
+              13.045150000000001
+            ],
+            [
+              80.23425,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-130",
+        "survey_number": "T.S. No. 53/6",
+        "municipal_id": "GCC-W134-P030",
+        "area_m2": 410,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23605,
+              13.04385
+            ],
+            [
+              80.23755,
+              13.04385
+            ],
+            [
+              80.23755,
+              13.045150000000001
+            ],
+            [
+              80.23605,
+              13.045150000000001
+            ],
+            [
+              80.23605,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-131",
+        "survey_number": "T.S. No. 53/7",
+        "municipal_id": "GCC-W134-P031",
+        "area_m2": 435,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23785,
+              13.04385
+            ],
+            [
+              80.23934999999999,
+              13.04385
+            ],
+            [
+              80.23934999999999,
+              13.045150000000001
+            ],
+            [
+              80.23785,
+              13.045150000000001
+            ],
+            [
+              80.23785,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "parcel_id": "PARCEL-MAA-132",
+        "survey_number": "T.S. No. 53/8",
+        "municipal_id": "GCC-W134-P032",
+        "area_m2": 460,
+        "locality": "T. Nagar",
+        "zone": "Zone X Kodambakkam",
+        "city": "Chennai",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.23965,
+              13.04385
+            ],
+            [
+              80.24114999999999,
+              13.04385
+            ],
+            [
+              80.24114999999999,
+              13.045150000000001
+            ],
+            [
+              80.23965,
+              13.045150000000001
+            ],
+            [
+              80.23965,
+              13.04385
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

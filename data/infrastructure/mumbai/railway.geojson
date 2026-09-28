@@ -1,0 +1,128 @@
+{
+  "type": "FeatureCollection",
+  "name": "railway_mumbai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "TRANSIT-BOM-001",
+        "infrastructure_id": "TRANSIT-BOM-001",
+        "transit_id": "MMOPL-LINE1",
+        "name": "Mumbai Metro Line 1 (Versova \u2013 Andheri \u2013 Ghatkopar Elevated Metro Corridor)",
+        "infrastructure_type": "railway",
+        "type": "METRO",
+        "operator": "Mumbai Metro One Pvt Ltd (MMOPL) / MMRDA",
+        "authority": "Mumbai Metropolitan Region Development Authority (MMRDA)",
+        "status": "Operational",
+        "source": "MMRDA Transit GIS & OpenRailwayMap",
+        "source_dataset_id": "railway_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "dataset_version": "2026.1-MMRDA",
+        "source_name": "MMRDA Metro Rail Directorate",
+        "source_date": "2026-01-10",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32643",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "is_active": true,
+        "metadata": {
+          "name": "Mumbai Metro Line 1 (Versova \u2013 Andheri \u2013 Ghatkopar Elevated Metro Corridor)",
+          "transit_type": "METRO",
+          "operator": "MMOPL / MMRDA",
+          "gauge": "Standard Gauge (1435 mm)",
+          "electrification": "25 kV AC Overhead Catenary",
+          "structure": "Elevated Viaduct Corridor above MV Road"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8615,
+            19.1125
+          ],
+          [
+            72.865,
+            19.1129
+          ],
+          [
+            72.868,
+            19.1132
+          ],
+          [
+            72.8715,
+            19.1135
+          ],
+          [
+            72.875,
+            19.1138
+          ],
+          [
+            72.8785,
+            19.1141
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "TRANSIT-BOM-002",
+        "infrastructure_id": "TRANSIT-BOM-002",
+        "transit_id": "MMMOCL-LINE7",
+        "name": "Mumbai Metro Line 7 (Andheri East \u2013 Dahisar East Red Line Corridor)",
+        "infrastructure_type": "railway",
+        "type": "METRO",
+        "operator": "Maha Mumbai Metro Operation Corp Ltd (MMMOCL)",
+        "authority": "MMRDA",
+        "status": "Operational",
+        "source_dataset_id": "railway_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MMMOCL Alignment GIS",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "is_active": true,
+        "metadata": {
+          "name": "Mumbai Metro Line 7 (Andheri East \u2013 Dahisar East Red Line Corridor)",
+          "transit_type": "METRO",
+          "operator": "MMMOCL",
+          "gauge": "Standard Gauge (1435 mm)",
+          "electrification": "25 kV AC Overhead Catenary",
+          "structure": "Elevated Viaduct Corridor along WEH"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8627,
+            19.1085
+          ],
+          [
+            72.863,
+            19.1115
+          ],
+          [
+            72.8633,
+            19.1145
+          ],
+          [
+            72.8635,
+            19.1175
+          ],
+          [
+            72.8638,
+            19.1205
+          ]
+        ]
+      }
+    }
+  ]
+}

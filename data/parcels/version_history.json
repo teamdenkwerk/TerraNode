@@ -1,0 +1,4880 @@
+[
+  {
+    "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638092,
+            12.976035
+          ],
+          [
+            77.638258,
+            12.976035
+          ],
+          [
+            77.638258,
+            12.976215
+          ],
+          [
+            77.638092,
+            12.976215
+          ],
+          [
+            77.638092,
+            12.976035
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 360.0,
+    "centroid": [
+      12.976125,
+      77.638175
+    ],
+    "properties": {
+      "survey_number": "123-100/1",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638097,
+            12.976039
+          ],
+          [
+            77.638263,
+            12.976039
+          ],
+          [
+            77.638263,
+            12.976219
+          ],
+          [
+            77.638097,
+            12.976219
+          ],
+          [
+            77.638097,
+            12.976039
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 365.4,
+    "centroid": [
+      12.976129,
+      77.63818
+    ],
+    "properties": {
+      "survey_number": "123-100/1",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "58039d15-328e-5d1d-a453-a06e4f3cbfa3",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638094,
+            12.976037
+          ],
+          [
+            77.63826,
+            12.976037
+          ],
+          [
+            77.63826,
+            12.976217
+          ],
+          [
+            77.638094,
+            12.976217
+          ],
+          [
+            77.638094,
+            12.976037
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 361.8,
+    "centroid": [
+      12.976127,
+      77.638177
+    ],
+    "properties": {
+      "survey_number": "123-100/1",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.63881,
+            12.976101
+          ],
+          [
+            77.63904,
+            12.976101
+          ],
+          [
+            77.63904,
+            12.976309
+          ],
+          [
+            77.63881,
+            12.976309
+          ],
+          [
+            77.63881,
+            12.976101
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 575.0,
+    "centroid": [
+      12.976205,
+      77.638925
+    ],
+    "properties": {
+      "survey_number": "123-100/2",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638815,
+            12.976105
+          ],
+          [
+            77.639045,
+            12.976105
+          ],
+          [
+            77.639045,
+            12.976313
+          ],
+          [
+            77.638815,
+            12.976313
+          ],
+          [
+            77.638815,
+            12.976105
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 583.62,
+    "centroid": [
+      12.976209,
+      77.63893
+    ],
+    "properties": {
+      "survey_number": "123-100/2",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "dda4b3e5-3ab0-598e-9fa0-83e2e0dcacda",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638812,
+            12.976103
+          ],
+          [
+            77.639042,
+            12.976103
+          ],
+          [
+            77.639042,
+            12.976311
+          ],
+          [
+            77.638812,
+            12.976311
+          ],
+          [
+            77.638812,
+            12.976103
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 577.87,
+    "centroid": [
+      12.976207,
+      77.638927
+    ],
+    "properties": {
+      "survey_number": "123-100/2",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "a51261dd-07d2-5b57-814a-81718c283a50",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.639583,
+            12.976007
+          ],
+          [
+            77.639767,
+            12.976007
+          ],
+          [
+            77.639767,
+            12.976243
+          ],
+          [
+            77.639583,
+            12.976243
+          ],
+          [
+            77.639583,
+            12.976007
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 520.0,
+    "centroid": [
+      12.976125,
+      77.639675
+    ],
+    "properties": {
+      "survey_number": "123-100/3",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "a51261dd-07d2-5b57-814a-81718c283a50",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.639588,
+            12.976011
+          ],
+          [
+            77.639772,
+            12.976011
+          ],
+          [
+            77.639772,
+            12.976247
+          ],
+          [
+            77.639588,
+            12.976247
+          ],
+          [
+            77.639588,
+            12.976011
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 527.8,
+    "centroid": [
+      12.976129,
+      77.63968
+    ],
+    "properties": {
+      "survey_number": "123-100/3",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "a51261dd-07d2-5b57-814a-81718c283a50",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.639585,
+            12.976009
+          ],
+          [
+            77.639769,
+            12.976009
+          ],
+          [
+            77.639769,
+            12.976245
+          ],
+          [
+            77.639585,
+            12.976245
+          ],
+          [
+            77.639585,
+            12.976009
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 522.6,
+    "centroid": [
+      12.976127,
+      77.639677
+    ],
+    "properties": {
+      "survey_number": "123-100/3",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "81356fe3-eaa4-5945-9790-761beaf115cd",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.640301,
+            12.976074
+          ],
+          [
+            77.640549,
+            12.976074
+          ],
+          [
+            77.640549,
+            12.976336
+          ],
+          [
+            77.640301,
+            12.976336
+          ],
+          [
+            77.640301,
+            12.976074
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 783.0,
+    "centroid": [
+      12.976205,
+      77.640425
+    ],
+    "properties": {
+      "survey_number": "123-100/4",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "81356fe3-eaa4-5945-9790-761beaf115cd",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.640306,
+            12.976078
+          ],
+          [
+            77.640554,
+            12.976078
+          ],
+          [
+            77.640554,
+            12.97634
+          ],
+          [
+            77.640306,
+            12.97634
+          ],
+          [
+            77.640306,
+            12.976078
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 794.74,
+    "centroid": [
+      12.976209,
+      77.64043
+    ],
+    "properties": {
+      "survey_number": "123-100/4",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "81356fe3-eaa4-5945-9790-761beaf115cd",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.640303,
+            12.976076
+          ],
+          [
+            77.640551,
+            12.976076
+          ],
+          [
+            77.640551,
+            12.976338
+          ],
+          [
+            77.640303,
+            12.976338
+          ],
+          [
+            77.640303,
+            12.976076
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 786.91,
+    "centroid": [
+      12.976207,
+      77.640427
+    ],
+    "properties": {
+      "survey_number": "123-100/4",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641074,
+            12.97598
+          ],
+          [
+            77.641276,
+            12.97598
+          ],
+          [
+            77.641276,
+            12.97627
+          ],
+          [
+            77.641074,
+            12.97627
+          ],
+          [
+            77.641074,
+            12.97598
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 704.0,
+    "centroid": [
+      12.976125,
+      77.641175
+    ],
+    "properties": {
+      "survey_number": "123-100/5",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641079,
+            12.975984
+          ],
+          [
+            77.641281,
+            12.975984
+          ],
+          [
+            77.641281,
+            12.976274
+          ],
+          [
+            77.641079,
+            12.976274
+          ],
+          [
+            77.641079,
+            12.975984
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 714.56,
+    "centroid": [
+      12.976129,
+      77.64118
+    ],
+    "properties": {
+      "survey_number": "123-100/5",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "e246e21e-2b78-5fbc-aa18-318791c0c352",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641076,
+            12.975982
+          ],
+          [
+            77.641278,
+            12.975982
+          ],
+          [
+            77.641278,
+            12.976272
+          ],
+          [
+            77.641076,
+            12.976272
+          ],
+          [
+            77.641076,
+            12.975982
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 707.52,
+    "centroid": [
+      12.976127,
+      77.641177
+    ],
+    "properties": {
+      "survey_number": "123-100/5",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "fd719edd-fe8d-5265-a477-062fcc7d1ebd",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641791,
+            12.97611
+          ],
+          [
+            77.642059,
+            12.97611
+          ],
+          [
+            77.642059,
+            12.9763
+          ],
+          [
+            77.641791,
+            12.9763
+          ],
+          [
+            77.641791,
+            12.97611
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 609.0,
+    "centroid": [
+      12.976205,
+      77.641925
+    ],
+    "properties": {
+      "survey_number": "123-100/6",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "fd719edd-fe8d-5265-a477-062fcc7d1ebd",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641796,
+            12.976114
+          ],
+          [
+            77.642064,
+            12.976114
+          ],
+          [
+            77.642064,
+            12.976304
+          ],
+          [
+            77.641796,
+            12.976304
+          ],
+          [
+            77.641796,
+            12.976114
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 618.13,
+    "centroid": [
+      12.976209,
+      77.64193
+    ],
+    "properties": {
+      "survey_number": "123-100/6",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "fd719edd-fe8d-5265-a477-062fcc7d1ebd",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.641793,
+            12.976112
+          ],
+          [
+            77.642061,
+            12.976112
+          ],
+          [
+            77.642061,
+            12.976302
+          ],
+          [
+            77.641793,
+            12.976302
+          ],
+          [
+            77.641793,
+            12.976112
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 612.04,
+    "centroid": [
+      12.976207,
+      77.641927
+    ],
+    "properties": {
+      "survey_number": "123-100/6",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "78194d78-d006-52f4-baaf-d21b0d85f6cc",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.642564,
+            12.976016
+          ],
+          [
+            77.642786,
+            12.976016
+          ],
+          [
+            77.642786,
+            12.976234
+          ],
+          [
+            77.642564,
+            12.976234
+          ],
+          [
+            77.642564,
+            12.976016
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 576.0,
+    "centroid": [
+      12.976125,
+      77.642675
+    ],
+    "properties": {
+      "survey_number": "123-100/7",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "78194d78-d006-52f4-baaf-d21b0d85f6cc",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.642569,
+            12.97602
+          ],
+          [
+            77.642791,
+            12.97602
+          ],
+          [
+            77.642791,
+            12.976238
+          ],
+          [
+            77.642569,
+            12.976238
+          ],
+          [
+            77.642569,
+            12.97602
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 584.64,
+    "centroid": [
+      12.976129,
+      77.64268
+    ],
+    "properties": {
+      "survey_number": "123-100/7",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "78194d78-d006-52f4-baaf-d21b0d85f6cc",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.642566,
+            12.976018
+          ],
+          [
+            77.642788,
+            12.976018
+          ],
+          [
+            77.642788,
+            12.976236
+          ],
+          [
+            77.642566,
+            12.976236
+          ],
+          [
+            77.642566,
+            12.976018
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 578.88,
+    "centroid": [
+      12.976127,
+      77.642677
+    ],
+    "properties": {
+      "survey_number": "123-100/7",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "bcd7c6fd-4d18-57c3-a03e-97de827e90ce",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.643337,
+            12.976083
+          ],
+          [
+            77.643513,
+            12.976083
+          ],
+          [
+            77.643513,
+            12.976327
+          ],
+          [
+            77.643337,
+            12.976327
+          ],
+          [
+            77.643337,
+            12.976083
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 513.0,
+    "centroid": [
+      12.976205,
+      77.643425
+    ],
+    "properties": {
+      "survey_number": "123-100/8",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "bcd7c6fd-4d18-57c3-a03e-97de827e90ce",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.643342,
+            12.976087
+          ],
+          [
+            77.643518,
+            12.976087
+          ],
+          [
+            77.643518,
+            12.976331
+          ],
+          [
+            77.643342,
+            12.976331
+          ],
+          [
+            77.643342,
+            12.976087
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 520.69,
+    "centroid": [
+      12.976209,
+      77.64343
+    ],
+    "properties": {
+      "survey_number": "123-100/8",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "bcd7c6fd-4d18-57c3-a03e-97de827e90ce",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.643339,
+            12.976085
+          ],
+          [
+            77.643515,
+            12.976085
+          ],
+          [
+            77.643515,
+            12.976329
+          ],
+          [
+            77.643339,
+            12.976329
+          ],
+          [
+            77.643339,
+            12.976085
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 515.56,
+    "centroid": [
+      12.976207,
+      77.643427
+    ],
+    "properties": {
+      "survey_number": "123-100/8",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "1dd5a242-8d90-5f9f-bf3e-2728cd3fb26b",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638129,
+            12.976635
+          ],
+          [
+            77.638341,
+            12.976635
+          ],
+          [
+            77.638341,
+            12.976915
+          ],
+          [
+            77.638129,
+            12.976915
+          ],
+          [
+            77.638129,
+            12.976635
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 713.0,
+    "centroid": [
+      12.976775,
+      77.638235
+    ],
+    "properties": {
+      "survey_number": "123-101/1",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "1dd5a242-8d90-5f9f-bf3e-2728cd3fb26b",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638134,
+            12.976639
+          ],
+          [
+            77.638346,
+            12.976639
+          ],
+          [
+            77.638346,
+            12.976919
+          ],
+          [
+            77.638134,
+            12.976919
+          ],
+          [
+            77.638134,
+            12.976639
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 723.69,
+    "centroid": [
+      12.976779,
+      77.63824
+    ],
+    "properties": {
+      "survey_number": "123-101/1",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "1dd5a242-8d90-5f9f-bf3e-2728cd3fb26b",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638131,
+            12.976637
+          ],
+          [
+            77.638343,
+            12.976637
+          ],
+          [
+            77.638343,
+            12.976917
+          ],
+          [
+            77.638131,
+            12.976917
+          ],
+          [
+            77.638131,
+            12.976637
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 716.56,
+    "centroid": [
+      12.976777,
+      77.638237
+    ],
+    "properties": {
+      "survey_number": "123-101/1",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "bd5d121b-ab20-58a3-9f25-18b86fb1876e",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638902,
+            12.976765
+          ],
+          [
+            77.639068,
+            12.976765
+          ],
+          [
+            77.639068,
+            12.976945
+          ],
+          [
+            77.638902,
+            12.976945
+          ],
+          [
+            77.638902,
+            12.976765
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map (1998)"
+    ],
+    "confidence": 0.88,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "State Cadastral Revenue Authority",
+    "created_at": "2024-03-12T09:00:00Z",
+    "change_reason": "Original cadastral paper map digitization and vectorization",
+    "area_m2": 360.0,
+    "centroid": [
+      12.976855,
+      77.638985
+    ],
+    "properties": {
+      "survey_number": "123-101/2",
+      "source": "cadastral"
+    }
+  },
+  {
+    "parcel_uuid": "bd5d121b-ab20-58a3-9f25-18b86fb1876e",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638907,
+            12.976769
+          ],
+          [
+            77.639073,
+            12.976769
+          ],
+          [
+            77.639073,
+            12.976949
+          ],
+          [
+            77.638907,
+            12.976949
+          ],
+          [
+            77.638907,
+            12.976769
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "High-Resolution Drone Orthophoto (2025)"
+    ],
+    "confidence": 0.92,
+    "IoU": 0.942,
+    "centroid_drift": 0.58,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "TerraNode Automated Spatial Consensus Engine",
+    "created_at": "2025-08-18T14:30:00Z",
+    "change_reason": "High-resolution drone orthophoto boundary reconciliation",
+    "area_m2": 365.4,
+    "centroid": [
+      12.976859,
+      77.63899
+    ],
+    "properties": {
+      "survey_number": "123-101/2",
+      "source": "drone_reconciled"
+    }
+  },
+  {
+    "parcel_uuid": "bd5d121b-ab20-58a3-9f25-18b86fb1876e",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.638904,
+            12.976767
+          ],
+          [
+            77.63907,
+            12.976767
+          ],
+          [
+            77.63907,
+            12.976947
+          ],
+          [
+            77.638904,
+            12.976947
+          ],
+          [
+            77.638904,
+            12.976767
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Survey of India Cadastral Map",
+      "Drone Orthophoto",
+      "CORS RTK Field Rover Checkpoint"
+    ],
+    "confidence": 0.98,
+    "IoU": 0.981,
+    "centroid_drift": 0.22,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor Ramesh K. (Badge #401)",
+    "created_at": "2026-09-26T11:15:00Z",
+    "change_reason": "Surveyor-approved correction following joint physical boundary verification",
+    "area_m2": 361.8,
+    "centroid": [
+      12.976857,
+      77.638987
+    ],
+    "properties": {
+      "survey_number": "123-101/2",
+      "source": "rtk_verified"
+    }
+  },
+  {
+    "parcel_uuid": "2dec5c4d-cc5b-525f-b9f4-d90d447a455e",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.64,
+            12.978
+          ],
+          [
+            77.6405,
+            12.978
+          ],
+          [
+            77.6405,
+            12.9784
+          ],
+          [
+            77.64,
+            12.9784
+          ],
+          [
+            77.64,
+            12.978
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "API-CAD-99",
+      "LIN-01",
+      "LIN-02",
+      "LIVE-001",
+      "API-HIST-01"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:25:53Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 2403.5,
+    "centroid": [
+      12.9782,
+      77.64025
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "2dec5c4d-cc5b-525f-b9f4-d90d447a455e",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.64,
+            12.978
+          ],
+          [
+            77.64051,
+            12.978
+          ],
+          [
+            77.64051,
+            12.97841
+          ],
+          [
+            77.64,
+            12.97841
+          ],
+          [
+            77.64,
+            12.978
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 0.9565,
+    "centroid_drift": 0.775,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:33:58Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.86,
+    "centroid": [
+      12.978205,
+      77.640255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "2dec5c4d-cc5b-525f-b9f4-d90d447a455e",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.64,
+            12.978
+          ],
+          [
+            77.64051,
+            12.978
+          ],
+          [
+            77.64051,
+            12.97841
+          ],
+          [
+            77.64,
+            12.97841
+          ],
+          [
+            77.64,
+            12.978
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:34:17Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.86,
+    "centroid": [
+      12.978205,
+      77.640255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.6455,
+            12.985
+          ],
+          [
+            77.6455,
+            12.9854
+          ],
+          [
+            77.645,
+            12.9854
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "API-HIST-c0217e"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:34:59Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 2403.46,
+    "centroid": [
+      12.9852,
+      77.64525
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 0.9565,
+    "centroid_drift": 0.775,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:34:59Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:35:13Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 4,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:37:39Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 5,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:42:16Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 6,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:43:39Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 7,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:48:52Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 8,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:49:13Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 9,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T05:55:15Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 10,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T06:01:16Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 11,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T08:22:49Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 12,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T08:35:29Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 13,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T08:37:03Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 14,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T09:47:31Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 15,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T09:54:34Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 16,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:14:19Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 17,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:18:07Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 18,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:18:56Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 19,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:21:51Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 20,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:39:10Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 21,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:48:42Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 22,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T10:57:09Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 23,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T11:03:07Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 24,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T11:22:14Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 25,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T13:17:19Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 26,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T13:41:17Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "78f67aba-c373-5403-a696-d2fc2d28faea",
+    "version_number": 27,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            77.645,
+            12.985
+          ],
+          [
+            77.64551,
+            12.985
+          ],
+          [
+            77.64551,
+            12.98541
+          ],
+          [
+            77.645,
+            12.98541
+          ],
+          [
+            77.645,
+            12.985
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "Drone Aerial Survey 2025"
+    ],
+    "confidence": 0.94,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Processing Engine",
+    "created_at": "2026-09-27T13:41:35Z",
+    "change_reason": "High-resolution drone orthophoto alignment",
+    "area_m2": 2512.81,
+    "centroid": [
+      12.985205,
+      77.645255
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "068f3adf-6a9e-5ea6-b569-807fd5a85d16",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.8937060386418,
+            12.933051268008517
+          ],
+          [
+            79.89381989147917,
+            12.933061763458488
+          ],
+          [
+            79.89382676321634,
+            12.933209831082866
+          ],
+          [
+            79.8937064146567,
+            12.93319911679812
+          ],
+          [
+            79.8937060386418,
+            12.933051268008517
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-001"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 207.44,
+    "centroid": [
+      12.933131,
+      79.893765
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "53309fcb-39ee-5891-ac76-f4c0a7aaf450",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89383511455054,
+            12.93305016189389
+          ],
+          [
+            79.89395603218253,
+            12.933058184514282
+          ],
+          [
+            79.89394826565284,
+            12.933203773176679
+          ],
+          [
+            79.89384748483755,
+            12.933190700560296
+          ],
+          [
+            79.89383511455054,
+            12.93305016189389
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-002"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 190.0,
+    "centroid": [
+      12.933124,
+      79.893897
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "655ba2a8-62e7-5406-8717-4e0c014293cc",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89396723596701,
+            12.93306297436719
+          ],
+          [
+            79.89407600466973,
+            12.933055112339598
+          ],
+          [
+            79.89407963104554,
+            12.933199006958196
+          ],
+          [
+            79.89396748394746,
+            12.9331920110043
+          ],
+          [
+            79.89396723596701,
+            12.93306297436719
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-003"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 180.89,
+    "centroid": [
+      12.933128,
+      79.894024
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "b9d38179-331f-5ffe-ac7b-952a9cd301e4",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.8937062122592,
+            12.933214404810695
+          ],
+          [
+            79.8938258868192,
+            12.933227763854168
+          ],
+          [
+            79.89382088578263,
+            12.933357361513458
+          ],
+          [
+            79.89370538626251,
+            12.933367048152135
+          ],
+          [
+            79.8937062122592,
+            12.933214404810695
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-004"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 199.18,
+    "centroid": [
+      12.933291,
+      79.893763
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "49a6c873-1404-5d0b-8b4f-d64fd032f46c",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89384023973349,
+            12.933218449841583
+          ],
+          [
+            79.89395840835114,
+            12.933212641608359
+          ],
+          [
+            79.89394977799004,
+            12.933368277501808
+          ],
+          [
+            79.89384491771831,
+            12.933368123198509
+          ],
+          [
+            79.89384023973349,
+            12.933218449841583
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-005"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 204.2,
+    "centroid": [
+      12.93329,
+      79.893899
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "04aaef6f-b393-570d-8bff-459361ecabb8",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89396703724272,
+            12.93321917932485
+          ],
+          [
+            79.89407801867365,
+            12.933229699149601
+          ],
+          [
+            79.89408438764882,
+            12.93335907132416
+          ],
+          [
+            79.89396768926251,
+            12.933370482920434
+          ],
+          [
+            79.89396703724272,
+            12.93321917932485
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-01-006"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 191.72,
+    "centroid": [
+      12.933295,
+      79.894023
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "ccdd588e-6c44-5528-8f40-f37d29fa4977",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89503737496308,
+            12.933055518869425
+          ],
+          [
+            79.89515912196323,
+            12.933070472516873
+          ],
+          [
+            79.89514808330348,
+            12.933210291692456
+          ],
+          [
+            79.89503879301297,
+            12.933215451346902
+          ],
+          [
+            79.89503737496308,
+            12.933055518869425
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-001"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 208.04,
+    "centroid": [
+      12.933136,
+      79.895095
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "0e1eff7f-3fdb-5ebd-a48e-4fee740e1e71",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89517128505658,
+            12.933057208955788
+          ],
+          [
+            79.89528221825366,
+            12.933071459208259
+          ],
+          [
+            79.89527857406532,
+            12.933201380828253
+          ],
+          [
+            79.89517786154828,
+            12.93320725161884
+          ],
+          [
+            79.89517128505658,
+            12.933057208955788
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-002"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 177.68,
+    "centroid": [
+      12.933133,
+      79.895226
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "d901ca38-f068-5d3c-852b-b4888ec1e26b",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.8953013742239,
+            12.933069245774533
+          ],
+          [
+            79.8954086464393,
+            12.933053891034822
+          ],
+          [
+            79.89540724836019,
+            12.933218781301782
+          ],
+          [
+            79.89529908919393,
+            12.933217780047107
+          ],
+          [
+            79.8953013742239,
+            12.933069245774533
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-003"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 202.4,
+    "centroid": [
+      12.93314,
+      79.895355
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "a62222c0-005f-56e1-be8d-864ea67194c4",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89504112027635,
+            12.933219488768339
+          ],
+          [
+            79.89515346914025,
+            12.93321659519553
+          ],
+          [
+            79.89514937881368,
+            12.933368662491546
+          ],
+          [
+            79.89504734148447,
+            12.933377390226264
+          ],
+          [
+            79.89504112027635,
+            12.933219488768339
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-004"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 199.43,
+    "centroid": [
+      12.933294,
+      79.895097
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "9d895be7-718c-5160-b102-1b2a73d2045d",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89516298596824,
+            12.9332277832944
+          ],
+          [
+            79.89528580478917,
+            12.933225750648743
+          ],
+          [
+            79.89527451684947,
+            12.933367460492992
+          ],
+          [
+            79.89516323286779,
+            12.933379565776495
+          ],
+          [
+            79.89516298596824,
+            12.9332277832944
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-005"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:12Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 205.65,
+    "centroid": [
+      12.933299,
+      79.895221
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "1623024d-eae4-5a22-86da-ff7938785c94",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89530565471064,
+            12.93323388628037
+          ],
+          [
+            79.89541470139815,
+            12.933221953257503
+          ],
+          [
+            79.89540117313398,
+            12.933378935015647
+          ],
+          [
+            79.89530539010225,
+            12.933361336235167
+          ],
+          [
+            79.89530565471064,
+            12.93323388628037
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-006"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 175.01,
+    "centroid": [
+      12.933298,
+      79.895359
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "5a6b46a4-4e5d-5eba-bb00-8b2c6e45d67e",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89504421442412,
+            12.933379240316636
+          ],
+          [
+            79.89514996229798,
+            12.933388832277274
+          ],
+          [
+            79.89514580697404,
+            12.933540475252498
+          ],
+          [
+            79.89503788401782,
+            12.933525683187694
+          ],
+          [
+            79.89504421442412,
+            12.933379240316636
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-007"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 191.84,
+    "centroid": [
+      12.933459,
+      79.895095
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "1e633604-d66f-525c-8471-9380fbcfb7bc",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89517130452931,
+            12.933386498785842
+          ],
+          [
+            79.8952797484989,
+            12.933380077240802
+          ],
+          [
+            79.89527423201271,
+            12.933529424176385
+          ],
+          [
+            79.89516966629223,
+            12.933526638621691
+          ],
+          [
+            79.89517130452931,
+            12.933386498785842
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-008"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 184.9,
+    "centroid": [
+      12.933455,
+      79.895224
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "b78592a9-5e4a-596a-a30f-0a43eb3b3e26",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89529331958126,
+            12.933397155713342
+          ],
+          [
+            79.89541447206145,
+            12.933379559411787
+          ],
+          [
+            79.89540346484286,
+            12.93353715127228
+          ],
+          [
+            79.89529251290982,
+            12.933525036488582
+          ],
+          [
+            79.89529331958126,
+            12.933397155713342
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-02-009"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 198.58,
+    "centroid": [
+      12.933459,
+      79.895353
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "38742e10-da0c-562a-8415-58c65f55d0e5",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89636175867079,
+            12.933070844420527
+          ],
+          [
+            79.89647670424861,
+            12.933065951765492
+          ],
+          [
+            79.89648455640014,
+            12.933202899830011
+          ],
+          [
+            79.89637040070724,
+            12.933215263054345
+          ],
+          [
+            79.89636175867079,
+            12.933070844420527
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-001"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 194.23,
+    "centroid": [
+      12.933139,
+      79.896423
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "80e78680-61ce-506d-a91a-0affa2d07c03",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89649109461946,
+            12.933061249426009
+          ],
+          [
+            79.89660879295249,
+            12.93306063161111
+          ],
+          [
+            79.8966022730917,
+            12.933212260697525
+          ],
+          [
+            79.89650316584931,
+            12.933203438839755
+          ],
+          [
+            79.89649109461946,
+            12.933061249426009
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-002"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 190.96,
+    "centroid": [
+      12.933132,
+      79.896552
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "769c2257-90a5-5814-ab31-347d41ec5f04",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89661857937897,
+            12.933059654884104
+          ],
+          [
+            79.89674143218531,
+            12.933063279787703
+          ],
+          [
+            79.8967350134697,
+            12.933213228359111
+          ],
+          [
+            79.89663196731719,
+            12.933221929787054
+          ],
+          [
+            79.89661857937897,
+            12.933059654884104
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-003"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 211.69,
+    "centroid": [
+      12.933137,
+      79.896681
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "b69efc5f-0679-5312-ad9c-c20ac3d72532",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89637483843553,
+            12.933236379374703
+          ],
+          [
+            79.89647481612934,
+            12.933234880997261
+          ],
+          [
+            79.89648155941883,
+            12.933381452235086
+          ],
+          [
+            79.89636984018483,
+            12.93337454189747
+          ],
+          [
+            79.89637483843553,
+            12.933236379374703
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-004"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 180.8,
+    "centroid": [
+      12.933308,
+      79.896426
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "e9a7219d-96b3-5e35-9623-a8a2d9386fd1",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89650078572619,
+            12.933221198204638
+          ],
+          [
+            79.89660439176691,
+            12.933221401622143
+          ],
+          [
+            79.89660638056063,
+            12.933384931667877
+          ],
+          [
+            79.89649675554186,
+            12.933365752575222
+          ],
+          [
+            79.89650078572619,
+            12.933221198204638
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-005"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:13Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 197.19,
+    "centroid": [
+      12.933299,
+      79.896553
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "99835b47-e854-5447-95d5-5963bc19637c",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89662880845637,
+            12.933225520510064
+          ],
+          [
+            79.89673014115333,
+            12.933240163591714
+          ],
+          [
+            79.89673162964127,
+            12.933378411926846
+          ],
+          [
+            79.89662722886484,
+            12.93337416680776
+          ],
+          [
+            79.89662880845637,
+            12.933225520510064
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-006"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 177.07,
+    "centroid": [
+      12.933305,
+      79.896679
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "bdf79e52-9728-5688-b658-f06373b9cc9b",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89636274816391,
+            12.933390622265907
+          ],
+          [
+            79.89648055022101,
+            12.933389041936936
+          ],
+          [
+            79.89647397286369,
+            12.933543479084964
+          ],
+          [
+            79.89635934977757,
+            12.933536623966088
+          ],
+          [
+            79.89636274816391,
+            12.933390622265907
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-03-007"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 209.64,
+    "centroid": [
+      12.933465,
+      79.89642
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "c91ef385-a426-53a5-84d9-83c8bd45049d",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89371531285575,
+            12.934366391282609
+          ],
+          [
+            79.89382507513002,
+            12.934355761134338
+          ],
+          [
+            79.8938124222707,
+            12.934510440313145
+          ],
+          [
+            79.89371088976388,
+            12.934505191229741
+          ],
+          [
+            79.89371531285575,
+            12.934366391282609
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-001"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 185.75,
+    "centroid": [
+      12.934434,
+      79.893767
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "f69c0bf1-6390-524d-aaa3-bb2113a30706",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89383987377568,
+            12.934368179324123
+          ],
+          [
+            79.89394178319188,
+            12.934350742194557
+          ],
+          [
+            79.8939406518,
+            12.934504896873621
+          ],
+          [
+            79.89383278041993,
+            12.934505559396927
+          ],
+          [
+            79.89383987377568,
+            12.934368179324123
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-002"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 183.02,
+    "centroid": [
+      12.934433,
+      79.89389
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "26b9c796-d9cb-590e-abff-aed81b5cea40",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89396636243185,
+            12.934353790769729
+          ],
+          [
+            79.89408367289788,
+            12.934349941204577
+          ],
+          [
+            79.89407841726297,
+            12.934511472425704
+          ],
+          [
+            79.89395806325346,
+            12.934500204129247
+          ],
+          [
+            79.89396636243185,
+            12.934353790769729
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-003"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 219.85,
+    "centroid": [
+      12.934429,
+      79.894023
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "7c166363-b636-51c0-97be-f453bf5ef238",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89370645905441,
+            12.934525294393923
+          ],
+          [
+            79.89381910059511,
+            12.934512887240778
+          ],
+          [
+            79.89382478128906,
+            12.934670137956312
+          ],
+          [
+            79.8937010279576,
+            12.934655400651607
+          ],
+          [
+            79.89370645905441,
+            12.934525294393923
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-004"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 203.78,
+    "centroid": [
+      12.934592,
+      79.893765
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "eea17fff-9171-51da-b6da-6d1655327541",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89382889907345,
+            12.934518413793084
+          ],
+          [
+            79.89395423742317,
+            12.934532128206184
+          ],
+          [
+            79.89393883950274,
+            12.934663391147401
+          ],
+          [
+            79.89383885519653,
+            12.934669674974778
+          ],
+          [
+            79.89382889907345,
+            12.934518413793084
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-005"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 191.09,
+    "centroid": [
+      12.934593,
+      79.893889
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "7ca0d254-8f01-5254-bdd6-99a50708ea1f",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89397336966711,
+            12.934527376539572
+          ],
+          [
+            79.89408323029824,
+            12.934516716256375
+          ],
+          [
+            79.89406987562121,
+            12.934673539201368
+          ],
+          [
+            79.89395954480696,
+            12.934664661187332
+          ],
+          [
+            79.89397336966711,
+            12.934527376539572
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-006"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 194.13,
+    "centroid": [
+      12.934596,
+      79.894023
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "07ca4fd9-6a30-5506-8124-934b710fd323",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89370524553422,
+            12.934687255521677
+          ],
+          [
+            79.89382125987136,
+            12.934678596060227
+          ],
+          [
+            79.89381102480391,
+            12.934833044475319
+          ],
+          [
+            79.89370418440421,
+            12.93481821477815
+          ],
+          [
+            79.89370524553422,
+            12.934687255521677
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-04-007"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 191.01,
+    "centroid": [
+      12.934753,
+      79.893762
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "07ca4fd9-6a30-5506-8124-934b710fd323",
+    "version_number": 2,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89370524553422,
+            12.934687255521677
+          ],
+          [
+            79.89382125987136,
+            12.934678596060227
+          ],
+          [
+            79.89381102480391,
+            12.934833044475319
+          ],
+          [
+            79.89370418440421,
+            12.93481821477815
+          ],
+          [
+            79.89370524553422,
+            12.934687255521677
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "drone_ori_5cm_gsd"
+    ],
+    "confidence": 0.96,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "DRONE_RECONCILIATION",
+    "review_status": "AUTO_VALIDATED",
+    "reviewer": "Drone Photogrammetry Subsystem",
+    "created_at": "2026-09-27T08:35:04Z",
+    "change_reason": "Updated to 5cm GSD Orthorectified Aerial Footprint",
+    "area_m2": 191.01,
+    "centroid": [
+      12.934753,
+      79.893762
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "07ca4fd9-6a30-5506-8124-934b710fd323",
+    "version_number": 3,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89370524553422,
+            12.934687255521677
+          ],
+          [
+            79.89382125987136,
+            12.934678596060227
+          ],
+          [
+            79.89381102480391,
+            12.934833044475319
+          ],
+          [
+            79.89370418440421,
+            12.93481821477815
+          ],
+          [
+            79.89370524553422,
+            12.934687255521677
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "drone_ori_5cm_gsd",
+      "karnataka_cadastral",
+      "cors_rtk_ground_truth"
+    ],
+    "confidence": 0.99,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "SURVEYOR_APPROVED_CORRECTION",
+    "review_status": "APPROVED",
+    "reviewer": "Senior Surveyor / Assistant Director of Land Records",
+    "created_at": "2026-09-27T08:35:04Z",
+    "change_reason": "Surveyor field-verified corner pins aligned with CORS RTK benchmark",
+    "area_m2": 191.01,
+    "centroid": [
+      12.934753,
+      79.893762
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "ab8dce1e-b074-53ff-8757-f173913fc8eb",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89503221045621,
+            12.934370115562517
+          ],
+          [
+            79.89514160592468,
+            12.934353834105286
+          ],
+          [
+            79.89514036835591,
+            12.934505098148234
+          ],
+          [
+            79.89504083463699,
+            12.93451853422794
+          ],
+          [
+            79.89503221045621,
+            12.934370115562517
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-001"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:14Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 188.49,
+    "centroid": [
+      12.934436,
+      79.895089
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "677a126b-ffed-56ed-b1c2-2561d3b4842b",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89517249434586,
+            12.934365086730216
+          ],
+          [
+            79.89528244833879,
+            12.934356419732206
+          ],
+          [
+            79.89528232278123,
+            12.934502450977106
+          ],
+          [
+            79.89517157471678,
+            12.934503867683404
+          ],
+          [
+            79.89517249434586,
+            12.934365086730216
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-002"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 188.54,
+    "centroid": [
+      12.934432,
+      79.895228
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "dc4bc7c9-f21e-55e2-8d83-2a8b94f8e50b",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89529045743426,
+            12.934367104953441
+          ],
+          [
+            79.89540436860841,
+            12.93436279142673
+          ],
+          [
+            79.89540482574719,
+            12.934504622073991
+          ],
+          [
+            79.8952964339846,
+            12.934498672680387
+          ],
+          [
+            79.89529045743426,
+            12.934367104953441
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-003"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 182.29,
+    "centroid": [
+      12.934433,
+      79.89535
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "76d168fb-bf27-53ad-8ab2-1fd23f82d210",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89504172392861,
+            12.934529161803454
+          ],
+          [
+            79.89514811044936,
+            12.934518794702901
+          ],
+          [
+            79.89515136378002,
+            12.934671768103106
+          ],
+          [
+            79.89503690338849,
+            12.934667357214499
+          ],
+          [
+            79.89504172392861,
+            12.934529161803454
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-004"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 192.87,
+    "centroid": [
+      12.934598,
+      79.895095
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "262ce46c-fb2f-58fa-8e82-9d54fd1d2767",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89517108796595,
+            12.934530884858127
+          ],
+          [
+            79.89528107999176,
+            12.93453000949906
+          ],
+          [
+            79.89527046424136,
+            12.9346731580207
+          ],
+          [
+            79.89515489339612,
+            12.934667004743774
+          ],
+          [
+            79.89517108796595,
+            12.934530884858127
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-005"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 189.39,
+    "centroid": [
+      12.934601,
+      79.89522
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "4d32db5f-83c0-5bc0-9ed0-f99f2c1697d6",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89529226742393,
+            12.934526295235365
+          ],
+          [
+            79.89539870453292,
+            12.934527419079224
+          ],
+          [
+            79.89540944344859,
+            12.934679129646035
+          ],
+          [
+            79.89528676559159,
+            12.934663177337956
+          ],
+          [
+            79.89529226742393,
+            12.934526295235365
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-006"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 198.09,
+    "centroid": [
+      12.934601,
+      79.895348
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "ff552f43-6276-54bc-9707-e1fb218170ce",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89503693143179,
+            12.934683236448699
+          ],
+          [
+            79.89513970110278,
+            12.9346793271657
+          ],
+          [
+            79.89513977983209,
+            12.93483376729023
+          ],
+          [
+            79.89503924492487,
+            12.934824611893223
+          ],
+          [
+            79.89503693143179,
+            12.934683236448699
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-007"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 180.38,
+    "centroid": [
+      12.934755,
+      79.89509
+    ],
+    "properties": {}
+  },
+  {
+    "parcel_uuid": "7f3d6a5f-6edc-5709-b7a0-4c79f2b4df25",
+    "version_number": 1,
+    "geometry": {
+      "type": "Polygon",
+      "coordinates": [
+        [
+          [
+            79.89516116705352,
+            12.934687560110445
+          ],
+          [
+            79.89526782656527,
+            12.934694260357853
+          ],
+          [
+            79.89527953554078,
+            12.93484271974045
+          ],
+          [
+            79.8951688146015,
+            12.934840471186318
+          ],
+          [
+            79.89516116705352,
+            12.934687560110445
+          ]
+        ]
+      ]
+    },
+    "source_datasets": [
+      "CAD-05-008"
+    ],
+    "confidence": 1.0,
+    "IoU": 1.0,
+    "centroid_drift": 0.0,
+    "decision": "ORIGINAL_INGESTION",
+    "review_status": "APPROVED",
+    "reviewer": "System (Ingestion Engine)",
+    "created_at": "2026-09-27T05:28:15Z",
+    "change_reason": "Original parcel cadastral boundary",
+    "area_m2": 196.01,
+    "centroid": [
+      12.934767,
+      79.895219
+    ],
+    "properties": {}
+  }
+]

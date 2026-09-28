@@ -1,0 +1,75 @@
+{
+  "type": "FeatureCollection",
+  "name": "electricity_domlur",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "ELEC-BLR-001",
+        "infrastructure_type": "electricity",
+        "line_id": "KPTCL-66KV-HAL-DOMLUR",
+        "name": "KPTCL 66kV HAL-Domlur Substation Grid Transmission Corridor",
+        "line_type": "High Voltage Overhead Transmission Corridor",
+        "voltage": "66 kV",
+        "circuit": "Double Circuit",
+        "corridor_width": 16.0,
+        "authority": "Karnataka Power Transmission Corporation Limited (KPTCL)",
+        "status": "Operational Transmission Grid Corridor",
+        "source": "OpenStreetMap Power & KPTCL Substation Atlas",
+        "source_type": "SUPPORTING_OPEN_DATA",
+        "source_url": "https://kptcl.karnataka.gov.in/",
+        "source_date": "2026-01-10",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "SUPPORTING",
+        "license": "ODbL / OSM Attribution",
+        "dataset_id": "bengaluru-ward112",
+        "dataset_version": "2026.1-OSM",
+        "original_crs": "EPSG:4326",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "width_meters": 16.0,
+        "buffer_radius_meters": 8.0,
+        "is_active": true,
+        "metadata": {
+          "line_name": "KPTCL 66kV HAL-Domlur Transmission Corridor",
+          "line_type": "High Voltage Overhead Transmission",
+          "voltage": "66 kV",
+          "circuit": "Double Circuit",
+          "corridor_width_m": 16.0,
+          "authority": "KPTCL Transmission Zone"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.6365,
+            12.9752
+          ],
+          [
+            77.6385,
+            12.9753
+          ],
+          [
+            77.641,
+            12.9754
+          ],
+          [
+            77.6435,
+            12.9755
+          ],
+          [
+            77.6465,
+            12.9756
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,176 @@
+{
+  "type": "FeatureCollection",
+  "name": "bbmp_roads_domlur",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "INFRA-RD-BLR-001",
+        "infrastructure_type": "road",
+        "source_dataset_id": "bbmp_road_network_2026",
+        "source_feature_id": "BBMP-RD-112-01",
+        "source_name": "BBMP Major Roads Directorate",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "metadata": {
+          "road_name": "Old Airport Road Arterial",
+          "width_m": 24.0,
+          "surface": "Asphalt",
+          "category": "Arterial"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.6365,
+            12.9756
+          ],
+          [
+            77.6385,
+            12.9758
+          ],
+          [
+            77.641,
+            12.9759
+          ],
+          [
+            77.6435,
+            12.976
+          ],
+          [
+            77.646,
+            12.9761
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "INFRA-RD-BLR-002",
+        "infrastructure_type": "road",
+        "source_dataset_id": "bbmp_road_network_2026",
+        "source_feature_id": "BBMP-RD-112-02",
+        "source_name": "BBMP Major Roads Directorate",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "metadata": {
+          "road_name": "Domlur 100 Feet Intermediate Link",
+          "width_m": 18.0,
+          "surface": "Asphalt",
+          "category": "Sub-Arterial"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.6382,
+            12.975
+          ],
+          [
+            77.6382,
+            12.977
+          ],
+          [
+            77.6383,
+            12.979
+          ],
+          [
+            77.6383,
+            12.9815
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "INFRA-RD-BLR-003",
+        "infrastructure_type": "road",
+        "source_dataset_id": "bbmp_road_network_2026",
+        "source_feature_id": "BBMP-RD-112-03",
+        "source_name": "BBMP Ward 112 Engineering Dept",
+        "source_date": "2026-02-10",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "metadata": {
+          "road_name": "Domlur Inner Ring Ward Cross 4",
+          "width_m": 12.0,
+          "surface": "Concrete",
+          "category": "Collector"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.637,
+            12.9782
+          ],
+          [
+            77.6395,
+            12.9783
+          ],
+          [
+            77.642,
+            12.9784
+          ],
+          [
+            77.645,
+            12.9785
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "INFRA-RD-BLR-004",
+        "infrastructure_type": "road",
+        "source_dataset_id": "bbmp_road_network_2026",
+        "source_feature_id": "BBMP-RD-112-04",
+        "source_name": "BBMP Ward 112 Engineering Dept",
+        "source_date": "2026-02-10",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "metadata": {
+          "road_name": "HAL 2nd Stage Service Crossway",
+          "width_m": 9.0,
+          "surface": "Bituminous",
+          "category": "Local"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            77.6415,
+            12.9752
+          ],
+          [
+            77.6416,
+            12.9775
+          ],
+          [
+            77.6417,
+            12.9798
+          ],
+          [
+            77.6418,
+            12.982
+          ]
+        ]
+      }
+    }
+  ]
+}

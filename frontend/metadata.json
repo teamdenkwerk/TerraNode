@@ -1,0 +1,7 @@
+{
+  "name": "LandLens - Urban Land Data Console",
+  "description": "AI-powered geospatial land-record reconciliation platform harmonizing drone, cadastral, municipal, and survey data under the NAKSHA ecosystem.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

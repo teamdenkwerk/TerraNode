@@ -1,0 +1,126 @@
+{
+  "type": "FeatureCollection",
+  "name": "rtk_benchmark_points",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-1",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.23,
+          13.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-2",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2325,
+          13.040000000000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-3",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.235,
+          13.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-4",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2375,
+          13.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-5",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.24000000000001,
+          13.040000000000001
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-6",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2425,
+          13.042
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-7",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.245,
+          13.038
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "point_id": "CORS-MAA-8",
+        "accuracy_m": 0.015,
+        "station": "CORS-CHENNAI-CENTRAL"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          80.2475,
+          13.040000000000001
+        ]
+      }
+    }
+  ]
+}

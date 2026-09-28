@@ -1,0 +1,233 @@
+{
+  "type": "FeatureCollection",
+  "name": "railway_chennai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-MAA-001",
+        "infrastructure_type": "railway",
+        "transit_id": "SR-SUBURBAN-MAIN",
+        "name": "Southern Railway Chennai Beach \u2013 Tambaram Suburban Line",
+        "type": "RAILWAY",
+        "operator": "Southern Railway",
+        "authority": "Ministry of Railways / Southern Railway",
+        "status": "Operational",
+        "source": "Southern Railway GIS & OpenStreetMap Transit Alignment",
+        "source_type": "OFFICIAL_RAILWAY_GIS",
+        "source_url": "https://sr.indianrailways.gov.in/",
+        "source_date": "2026-01-10",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "Open Railway Map Data License / Indian Railways Public Alignment",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-SR",
+        "original_crs": "EPSG:32644",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "Southern Railway Chennai Beach \u2013 Tambaram Suburban Line",
+          "transit_type": "RAILWAY",
+          "gauge": "Broad Gauge (1676 mm)",
+          "electrification": "25 kV AC Overhead Catenary",
+          "tracks": 4,
+          "authority": "Southern Railway"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2268,
+            13.0305
+          ],
+          [
+            80.2272,
+            13.034
+          ],
+          [
+            80.2276,
+            13.038
+          ],
+          [
+            80.2285,
+            13.0425
+          ],
+          [
+            80.229,
+            13.0465
+          ],
+          [
+            80.2295,
+            13.0505
+          ],
+          [
+            80.2298,
+            13.053
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-MAA-002",
+        "infrastructure_type": "railway",
+        "transit_id": "SR-STA-MAMBALAM",
+        "name": "Mambalam Suburban Railway Station",
+        "type": "TRANSIT_STATION",
+        "operator": "Southern Railway",
+        "authority": "Southern Railway Chennai Division",
+        "status": "Operational Station",
+        "source": "Southern Railway GIS",
+        "source_type": "OFFICIAL_RAILWAY_GIS",
+        "source_url": "https://sr.indianrailways.gov.in/",
+        "source_date": "2026-01-10",
+        "acquisition_date": "2026-02-15",
+        "verification_status": "VERIFIED",
+        "license": "Indian Railways Public Schedule",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.1-SR",
+        "original_crs": "EPSG:4326",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "Mambalam Suburban Railway Station",
+          "transit_type": "TRANSIT_STATION",
+          "station_code": "MBM",
+          "platforms": 4,
+          "authority": "Southern Railway"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2283,
+            13.042
+          ],
+          [
+            80.2285,
+            13.0425
+          ],
+          [
+            80.2287,
+            13.043
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-MAA-003",
+        "infrastructure_type": "railway",
+        "transit_id": "CMRL-LINE-CORR4",
+        "name": "CMRL Phase 2 Corridor 4 Metro Line (Underground Viaduct Alignment)",
+        "type": "METRO",
+        "operator": "Chennai Metro Rail Limited (CMRL)",
+        "authority": "Chennai Metro Rail Limited (CMRL)",
+        "status": "Approved Alignment / Under Construction",
+        "source": "CMRL Phase 2 Master Alignment Plan",
+        "source_type": "OFFICIAL_METRO_GIS",
+        "source_url": "https://chennaimetrorail.org/phase-2-project/",
+        "source_date": "2026-01-25",
+        "acquisition_date": "2026-02-20",
+        "verification_status": "VERIFIED",
+        "license": "CMRL Statutory Alignment Notification",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.2-CMRL",
+        "original_crs": "EPSG:32644",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "CMRL Phase 2 Corridor 4 Metro Line",
+          "transit_type": "METRO",
+          "tunnel_depth_m": 19.5,
+          "corridor": "Poonamallee to Light House via Kodambakkam / Panagal Park",
+          "authority": "Chennai Metro Rail Limited (CMRL)"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.222,
+            13.047
+          ],
+          [
+            80.228,
+            13.044
+          ],
+          [
+            80.2335,
+            13.0405
+          ],
+          [
+            80.241,
+            13.037
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "infrastructure_id": "TRANSIT-MAA-004",
+        "infrastructure_type": "railway",
+        "transit_id": "CMRL-STA-PANAGAL",
+        "name": "Panagal Park Underground Metro Station",
+        "type": "TRANSIT_STATION",
+        "operator": "Chennai Metro Rail Limited (CMRL)",
+        "authority": "Chennai Metro Rail Limited (CMRL)",
+        "status": "Station Under Construction",
+        "source": "CMRL Phase 2 Master Alignment Plan",
+        "source_type": "OFFICIAL_METRO_GIS",
+        "source_url": "https://chennaimetrorail.org/phase-2-project/",
+        "source_date": "2026-01-25",
+        "acquisition_date": "2026-02-20",
+        "verification_status": "VERIFIED",
+        "license": "CMRL Statutory Alignment Notification",
+        "dataset_id": "chennai-tnagar",
+        "dataset_version": "2026.2-CMRL",
+        "original_crs": "EPSG:4326",
+        "processing_crs": "EPSG:4326",
+        "geometry_crs": "EPSG:4326",
+        "is_active": true,
+        "metadata": {
+          "name": "Panagal Park Underground Metro Station",
+          "transit_type": "TRANSIT_STATION",
+          "station_type": "Underground Box Station",
+          "depth_m": 21.0,
+          "authority": "Chennai Metro Rail Limited (CMRL)"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.2332,
+            13.0403
+          ],
+          [
+            80.2335,
+            13.0405
+          ],
+          [
+            80.2338,
+            13.0407
+          ]
+        ]
+      }
+    }
+  ]
+}

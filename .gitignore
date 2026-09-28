@@ -1,0 +1,60 @@
+# Dependencies
+node_modules/
+
+# Nx
+.nx/cache
+.nx/workspace-data
+tmp/
+dist/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Credentials / certificates
+*.pem
+*.key
+*.p12
+*.pfx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Editor
+.vscode/
+.idea/
+
+.next/
+venv/
+
+# Python bytecode
+__pycache__/
+*.pyc
+
+# Project cache and scratch files
+cache/
+scratch/
+
+# Environment files
+.venv/
+
+# Unit test / coverage reports
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Type checking
+.mypy_cache/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+wheels/

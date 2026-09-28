@@ -1,0 +1,164 @@
+{
+  "delhi-urban": [
+    {
+      "dataset_id": "delhi-urban",
+      "version_id": "v1-delhi-ur-base",
+      "version_number": 1,
+      "parent_version_id": null,
+      "version_label": "v1.0 (2024 Baseline Cadastre)",
+      "created_at": "2024-04-15T09:00:00Z",
+      "created_by": "Delhi NCR Revenue & Municipal Cadastral Survey",
+      "source": "State Revenue Cadastre & Town Planning Masterplan",
+      "status": "ARCHIVED",
+      "features_count": 72,
+      "reconciled_count": 54,
+      "review_count": 18,
+      "change_summary": {
+        "boundary_changes": 0,
+        "new_buildings": 0
+      },
+      "notes": "Initial municipal baseline registration"
+    },
+    {
+      "dataset_id": "delhi-urban",
+      "version_id": "v2-delhi-ur-recon",
+      "version_number": 2,
+      "parent_version_id": "v1-delhi-ur-base",
+      "version_label": "v2.0 (2026 Reconciled Survey)",
+      "created_at": "2026-09-28T04:12:15Z",
+      "created_by": "TERRANODE Consensus Engine",
+      "source": "Survey of India Drone ORI + Municipal GIS + AI Boundary Snapping",
+      "status": "ARCHIVED",
+      "features_count": 72,
+      "reconciled_count": 63,
+      "review_count": 8,
+      "change_summary": {
+        "boundary_changes": 14,
+        "new_buildings": 6
+      },
+      "notes": "Multi-source harmonized consensus boundaries with sub-meter accuracy"
+    },
+    {
+      "dataset_id": "delhi-urban",
+      "version_id": "v3-delhi-ur-1790568924",
+      "version_number": 3,
+      "parent_version_id": "v2-delhi-ur-recon",
+      "version_label": "v3.0 (Continuous Sync \u2014 Sep 2026)",
+      "created_at": "2026-09-28T04:15:24Z",
+      "created_by": "Officer Sharma",
+      "source": "Drone Survey 2026",
+      "status": "ARCHIVED",
+      "features_count": 72,
+      "reconciled_count": 69,
+      "review_count": 0,
+      "change_summary": {
+        "records_compared": 72,
+        "changed_records": 7,
+        "no_change_records": 65,
+        "needs_verification": 0
+      },
+      "notes": "Continuous synchronization pass executed in incremental mode."
+    },
+    {
+      "dataset_id": "delhi-urban",
+      "version_id": "v4-delhi-ur-1790569682",
+      "version_number": 4,
+      "parent_version_id": "v3-delhi-ur-1790568924",
+      "version_label": "v4.0 (Continuous Sync \u2014 Sep 2026)",
+      "created_at": "2026-09-28T04:28:02Z",
+      "created_by": "Officer Sharma",
+      "source": "Drone Survey 2026",
+      "status": "ACTIVE",
+      "features_count": 72,
+      "reconciled_count": 69,
+      "review_count": 0,
+      "change_summary": {
+        "records_compared": 72,
+        "changed_records": 7,
+        "no_change_records": 65,
+        "needs_verification": 0
+      },
+      "notes": "Continuous synchronization pass executed in incremental mode."
+    }
+  ],
+  "mumbai-andheri": [
+    {
+      "dataset_id": "mumbai-andheri",
+      "version_id": "v1-mumbai-a-base",
+      "version_number": 1,
+      "parent_version_id": null,
+      "version_label": "v1.0 (2024 Baseline Cadastre)",
+      "created_at": "2024-04-15T09:00:00Z",
+      "created_by": "Mumbai Revenue & Municipal Cadastral Survey",
+      "source": "State Revenue Cadastre & Town Planning Masterplan",
+      "status": "ARCHIVED",
+      "features_count": 72,
+      "reconciled_count": 54,
+      "review_count": 18,
+      "change_summary": {
+        "boundary_changes": 0,
+        "new_buildings": 0
+      },
+      "notes": "Initial municipal baseline registration"
+    },
+    {
+      "dataset_id": "mumbai-andheri",
+      "version_id": "v2-mumbai-a-recon",
+      "version_number": 2,
+      "parent_version_id": "v1-mumbai-a-base",
+      "version_label": "v2.0 (2026 Reconciled Survey)",
+      "created_at": "2026-09-28T04:29:11Z",
+      "created_by": "TERRANODE Consensus Engine",
+      "source": "Survey of India Drone ORI + Municipal GIS + AI Boundary Snapping",
+      "status": "ACTIVE",
+      "features_count": 72,
+      "reconciled_count": 63,
+      "review_count": 8,
+      "change_summary": {
+        "boundary_changes": 14,
+        "new_buildings": 6
+      },
+      "notes": "Multi-source harmonized consensus boundaries with sub-meter accuracy"
+    }
+  ],
+  "bengaluru-domlur": [
+    {
+      "dataset_id": "bengaluru-domlur",
+      "version_id": "v1-bengalur-base",
+      "version_number": 1,
+      "parent_version_id": null,
+      "version_label": "v1.0 (2024 Baseline Cadastre)",
+      "created_at": "2024-04-15T09:00:00Z",
+      "created_by": "Bengaluru Revenue & Municipal Cadastral Survey",
+      "source": "State Revenue Cadastre & Town Planning Masterplan",
+      "status": "ARCHIVED",
+      "features_count": 64,
+      "reconciled_count": 48,
+      "review_count": 16,
+      "change_summary": {
+        "boundary_changes": 0,
+        "new_buildings": 0
+      },
+      "notes": "Initial municipal baseline registration"
+    },
+    {
+      "dataset_id": "bengaluru-domlur",
+      "version_id": "v2-bengalur-recon",
+      "version_number": 2,
+      "parent_version_id": "v1-bengalur-base",
+      "version_label": "v2.0 (2026 Reconciled Survey)",
+      "created_at": "2026-09-28T04:43:31Z",
+      "created_by": "TERRANODE Consensus Engine",
+      "source": "Survey of India Drone ORI + Municipal GIS + AI Boundary Snapping",
+      "status": "ACTIVE",
+      "features_count": 64,
+      "reconciled_count": 56,
+      "review_count": 7,
+      "change_summary": {
+        "boundary_changes": 14,
+        "new_buildings": 6
+      },
+      "notes": "Multi-source harmonized consensus boundaries with sub-meter accuracy"
+    }
+  ]
+}

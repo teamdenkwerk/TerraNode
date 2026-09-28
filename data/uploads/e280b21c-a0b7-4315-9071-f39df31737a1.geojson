@@ -1,0 +1,49 @@
+{
+  "type": "FeatureCollection",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "EPSG:4326"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "city_id": "CHN",
+        "city_name": "Chennai",
+        "administrative_level": "city",
+        "source": "Survey of India (sample)",
+        "source_date": "2026-01-15",
+        "crs": "EPSG:4326"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              80.16170043020891,
+              12.998277071938316
+            ],
+            [
+              80.34170043020892,
+              12.998277071938316
+            ],
+            [
+              80.34170043020892,
+              13.178277071938316
+            ],
+            [
+              80.16170043020891,
+              13.178277071938316
+            ],
+            [
+              80.16170043020891,
+              12.998277071938316
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

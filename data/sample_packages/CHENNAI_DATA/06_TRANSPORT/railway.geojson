@@ -1,0 +1,38 @@
+{
+  "type": "FeatureCollection",
+  "name": "railway_alignment",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Southern Railway Suburban Corridor (Mambalam)",
+        "type": "Rail"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            80.226,
+            13.033
+          ],
+          [
+            80.2275,
+            13.037
+          ],
+          [
+            80.229,
+            13.042
+          ],
+          [
+            80.231,
+            13.047
+          ],
+          [
+            80.233,
+            13.052
+          ]
+        ]
+      }
+    }
+  ]
+}

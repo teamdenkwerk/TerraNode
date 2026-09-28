@@ -1,0 +1,170 @@
+{
+  "type": "FeatureCollection",
+  "name": "drainage_mumbai",
+  "crs": {
+    "type": "name",
+    "properties": {
+      "name": "urn:ogc:def:crs:OGC:1.3:CRS84"
+    }
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "SWD-BOM-001",
+        "infrastructure_id": "SWD-BOM-001",
+        "drain_id": "BOM-SWD-MOGRA",
+        "drain_name": "Mogra Nullah Primary Stormwater Trunk Drain",
+        "infrastructure_type": "drainage",
+        "category": "Primary Stormwater Canal",
+        "jurisdiction": "MCGM Stormwater Drains (SWD) Department",
+        "authority": "MCGM Chief Engineer (SWD)",
+        "source_dataset_id": "drainage_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "dataset_version": "2026.1-MCGM",
+        "source_feature_id": "MCGM-SWD-MOG-01",
+        "source_name": "MCGM Stormwater Master Plan GIS",
+        "source_date": "2026-01-10",
+        "geometry_crs": "EPSG:4326",
+        "original_crs": "EPSG:32643",
+        "normalized_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 8.0,
+        "buffer_radius_meters": 15.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Mogra Nullah Primary Stormwater Trunk Drain",
+          "category": "Primary Stormwater Canal",
+          "buffer_m": 15.0,
+          "width_m": 8.0,
+          "flow_direction": "North-East to South-West toward Mithi River",
+          "cross_section": "Open Reinforced Concrete Canal"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8765,
+            19.1175
+          ],
+          [
+            72.874,
+            19.116
+          ],
+          [
+            72.8715,
+            19.1145
+          ],
+          [
+            72.869,
+            19.1125
+          ],
+          [
+            72.866,
+            19.111
+          ],
+          [
+            72.8635,
+            19.1095
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "SWD-BOM-002",
+        "infrastructure_id": "SWD-BOM-002",
+        "drain_id": "BOM-SWD-MIDC",
+        "drain_name": "Marol-MIDC Box Drain Secondary SWD",
+        "infrastructure_type": "drainage",
+        "category": "Secondary Stormwater Drain",
+        "jurisdiction": "MCGM & MIDC",
+        "authority": "MCGM SWD Division",
+        "source_dataset_id": "drainage_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MCGM SWD Underground Network",
+        "source_date": "2026-01-12",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 4.5,
+        "buffer_radius_meters": 10.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Marol-MIDC Box Drain Secondary SWD",
+          "category": "Secondary Stormwater Drain",
+          "buffer_m": 10.0,
+          "width_m": 4.5,
+          "cross_section": "Underground RCC Box Culvert"
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8738,
+            19.118
+          ],
+          [
+            72.8736,
+            19.115
+          ],
+          [
+            72.8734,
+            19.112
+          ],
+          [
+            72.8715,
+            19.111
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "feature_id": "SWD-BOM-003",
+        "infrastructure_id": "SWD-BOM-003",
+        "drain_id": "BOM-SWD-CHAKALA",
+        "drain_name": "Chakala East Roadside Covered SWD Channel",
+        "infrastructure_type": "drainage",
+        "category": "Tertiary Stormwater Drain",
+        "jurisdiction": "MCGM K/East Ward",
+        "authority": "MCGM SWD Ward Division",
+        "source_dataset_id": "drainage_mumbai",
+        "dataset_id": "mumbai-andheri",
+        "source_name": "MCGM Ward Drainage Asset Register",
+        "source_date": "2026-01-15",
+        "geometry_crs": "EPSG:4326",
+        "verification_status": "VERIFIED",
+        "width_meters": 3.0,
+        "buffer_radius_meters": 6.0,
+        "is_active": true,
+        "metadata": {
+          "drain_name": "Chakala East Roadside Covered SWD Channel",
+          "category": "Tertiary Stormwater Drain",
+          "buffer_m": 6.0,
+          "width_m": 3.0
+        }
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            72.8675,
+            19.1105
+          ],
+          [
+            72.8677,
+            19.113
+          ],
+          [
+            72.8679,
+            19.1165
+          ]
+        ]
+      }
+    }
+  ]
+}
