@@ -1,6 +1,4 @@
-Yes — you want **one single continuous copy-paste block**, not multiple separate code blocks. Here is the complete README as one piece:
 
-````markdown
 <div align="center">
 
 # 🌍 TERRANODE
@@ -54,9 +52,6 @@ RECONCILE
 VERIFY
        ↓
 UNIFIED DIGITAL LAND ENTITY
-````
-
----
 
 # 🚀 Key Features
 
