@@ -110,32 +110,56 @@ export default function App() {
     });
   }, []);
 
-  const handleSelectDataset = async (datasetId: string) => {
-    setActiveDatasetId(datasetId);
-    try {
-      await switchActiveDataset(datasetId);
-    } catch (e) {
-      console.warn('Backend active dataset switch note:', e);
-    }
-    const target = sanitizedDatasets.find(d => d.id === datasetId);
-    if (target) {
-      logActivity({
-        type: 'info',
-        title: `Switched active workspace to ${target.city} — ${target.aoi}`,
-      });
-    }
-  };
-
   // Navigation & Localization - starts on Upload Document page after login
   const [activeTab, setActiveTab] = useState<ActiveTab>('upload');
   const [validationSubTab, setValidationSubTab] = useState<'production' | 'visual'>('visual');
   const [language, setLanguage] = useState<Language>('en');
   const t = translations[language] || translations.en;
 
+  // Real session activity log
+  const [activityLog, setActivityLog] = useState<ActivityEntry[]>([]);
+  const logActivity = (entry: Omit<ActivityEntry, 'id' | 'timestamp'>) => {
+    setActivityLog(prev => [
+      { id: `act-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, timestamp: Date.now(), ...entry },
+      ...prev,
+    ].slice(0, 20));
+  };
+
   // Core Data State — pulls from the Geo-Reconciliation API when reachable
   const { buildings: liveBuildings, source: dataSource, refetch: refetchBuildings } = useLiveBuildings();
   const [buildings, setBuildings] = useState<BuildingEntity[]>(() => bengaluruDataset.buildings);
   const [isResolving, setIsResolving] = useState(false);
+
+  // Selection & Modal States
+  const [selectedBuilding, setSelectedBuilding] = useState<BuildingEntity | null>(() => {
+    return bengaluruDataset.buildings.find(b => b.id === 'BLD-1028') || bengaluruDataset.buildings[0];
+  });
+
+  const handleSelectDataset = async (datasetId: string) => {
+    setActiveDatasetId(datasetId);
+
+    // Synchronously update buildings and selectedBuilding so that activeDataset,
+    // buildings, and selectedBuilding are all updated in the exact same render cycle!
+    const target = sanitizedDatasets.find(d => d.id === datasetId);
+    if (target) {
+      const bldgSet = datasetId.startsWith('bengaluru')
+        ? (liveBuildings.length > 0 ? liveBuildings : bengaluruDataset.buildings)
+        : target.buildings;
+      setBuildings(bldgSet);
+      setSelectedBuilding(bldgSet[0] || null);
+
+      logActivity({
+        type: 'info',
+        title: `Switched active workspace to ${target.city} — ${target.aoi}`,
+      });
+    }
+
+    try {
+      await switchActiveDataset(datasetId);
+    } catch (e) {
+      console.warn('Backend active dataset switch note:', e);
+    }
+  };
 
   // Synchronize buildings with the active dataset.
   // NEVER mixes geometries between cities:
@@ -188,20 +212,6 @@ export default function App() {
       totalAreaM2: buildings.reduce((acc, b) => acc + b.area, 0),
     };
   }, [buildings, activeDatasetId]);
-
-  // Real session activity log
-  const [activityLog, setActivityLog] = useState<ActivityEntry[]>([]);
-  const logActivity = (entry: Omit<ActivityEntry, 'id' | 'timestamp'>) => {
-    setActivityLog(prev => [
-      { id: `act-${Date.now()}-${Math.random().toString(36).slice(2, 7)}`, timestamp: Date.now(), ...entry },
-      ...prev,
-    ].slice(0, 20));
-  };
-
-  // Selection & Modal States
-  const [selectedBuilding, setSelectedBuilding] = useState<BuildingEntity | null>(() => {
-    return bengaluruDataset.buildings.find(b => b.id === 'BLD-1028') || bengaluruDataset.buildings[0];
-  });
 
   const [showSourcesModal, setShowSourcesModal] = useState(false);
   const [showReconcileModal, setShowReconcileModal] = useState(false);
@@ -291,6 +301,7 @@ const handleReject = async (id: string) => {
   const handleDatasetCreated = (newDataset: DatasetMeta) => {
     setDatasets(prev => [newDataset, ...prev.filter(d => d.id !== newDataset.id)]);
     setActiveDatasetId(newDataset.id);
+    setBuildings(newDataset.buildings);
     setSelectedBuilding(newDataset.buildings[0] || null);
     logActivity({
       type: 'verified',

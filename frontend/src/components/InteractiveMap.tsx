@@ -33,7 +33,13 @@ import { getFallbackInfrastructureFeatures } from '../data/fallbackInfrastructur
 // we use those for the street basemap. Satellite mode stays on Esri, which
 // has remained keyless throughout.
 const STREET_TILE_URL = 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-const STREET_TILE_OPTIONS = { maxZoom: 19, subdomains: 'abc' };
+const STREET_TILE_OPTIONS = {
+  maxZoom: 19,
+  subdomains: 'abc',
+  keepBuffer: 6,
+  updateWhenIdle: false,
+  updateWhenZooming: true,
+};
 
 interface InteractiveMapProps {
   buildings: BuildingEntity[];
@@ -174,6 +180,8 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
       zoom: initialZoom,
       zoomControl: false,
       attributionControl: true,
+      fadeAnimation: false,
+      markerZoomAnimation: true,
     });
     map.attributionControl.setPrefix(false);
 
@@ -205,22 +213,59 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
 
     // Initial fit bounds to active dataset if available
     if (activeDataset?.bounds) {
-      map.fitBounds(L.latLngBounds(activeDataset.bounds[0], activeDataset.bounds[1]), { padding: [40, 40] });
+      map.fitBounds(L.latLngBounds(activeDataset.bounds[0], activeDataset.bounds[1]), { padding: [30, 30], maxZoom: 17, animate: false });
+    }
+
+    // Auto-invalidate map size on container dimensions resize (tab switch, sidebar, layout shifts)
+    const resizeObserver = new ResizeObserver(() => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.invalidateSize({ animate: false });
+      }
+    });
+    if (mapContainerRef.current) {
+      resizeObserver.observe(mapContainerRef.current);
     }
 
     return () => {
+      resizeObserver.disconnect();
       map.remove();
       mapInstanceRef.current = null;
     };
   }, []);
 
-  // Clear selected road and highlight on dataset switch
+  // Dedicated Instant Dataset / City Viewport & State Synchronization
+  const prevDatasetIdRef = useRef<string | null>(null);
   useEffect(() => {
     setSelectedRoad(null);
     if (roadHighlightGroupRef.current) {
       roadHighlightGroupRef.current.clearLayers();
     }
-  }, [activeDataset?.id, activeDataset?.city]);
+
+    if (!activeDataset || !mapInstanceRef.current) return;
+    if (prevDatasetIdRef.current === activeDataset.id) return;
+    prevDatasetIdRef.current = activeDataset.id;
+
+    const map = mapInstanceRef.current;
+    map.stop(); // Stop any pending pan/zoom animations immediately
+
+    // Instantly snap to active dataset bounds without slow animation stutter or blank tiles
+    if (activeDataset.bounds) {
+      map.fitBounds(
+        L.latLngBounds(activeDataset.bounds[0] as L.LatLngTuple, activeDataset.bounds[1] as L.LatLngTuple),
+        { padding: [30, 30], maxZoom: 17, animate: false }
+      );
+    } else if (activeDataset.center) {
+      map.setView(activeDataset.center, activeDataset.defaultZoom || 16, { animate: false });
+    }
+
+    // Force Leaflet to immediately request and render tiles for new city
+    map.invalidateSize({ animate: false });
+    requestAnimationFrame(() => {
+      if (mapInstanceRef.current) {
+        mapInstanceRef.current.invalidateSize({ animate: false });
+      }
+    });
+  }, [activeDataset?.id, activeDataset?.city, activeDataset?.bounds, activeDataset?.center, activeDataset?.defaultZoom]);
 
   // Load verified infrastructure features for overlay, scoped to active city
   useEffect(() => {
@@ -617,6 +662,9 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
     if (mapMode === 'satellite') {
       const sat = L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}', {
         maxZoom: 19,
+        keepBuffer: 6,
+        updateWhenIdle: false,
+        updateWhenZooming: true,
         attribution: 'Tiles &copy; Esri',
       });
       sat.addTo(mapInstanceRef.current);
@@ -629,6 +677,7 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
       streets.addTo(mapInstanceRef.current);
       tileLayerRef.current = streets;
     }
+    mapInstanceRef.current.invalidateSize({ animate: false });
   }, [mapMode]);
 
   // Render Building Polygons and Cadastral / Municipal Overlays
@@ -791,54 +840,79 @@ export const InteractiveMap: React.FC<InteractiveMapProps> = ({
     });
 
     // Auto-fit the map to the real loaded data scoped to the active dataset.
-    // Automatically re-fits when the dataset is switched (e.g. from Bengaluru to Mumbai or Chennai),
-    // NEVER forcing another dataset onto fixed Bengaluru coordinates!
-    const fitKey = `${activeDataset?.id || 'default'}:${dataSource}:${buildings.length}`;
+    // Guard against coordinate cross-contamination: verify building coordinates actually match activeDataset center!
+    const isBuildingsMatchingCity = buildings.length > 0 && activeDataset?.center && (
+      Math.abs(buildings[0].centroid[0] - activeDataset.center[0]) < 1.0 &&
+      Math.abs(buildings[0].centroid[1] - activeDataset.center[1]) < 1.0
+    );
+
+    const fitKey = `${activeDataset?.id || 'default'}:${dataSource}:${buildings[0]?.id || 'none'}:${buildings.length}`;
     if (
       mapInstanceRef.current &&
       (buildings.length > 0 || activeDataset?.bounds) &&
       fitKey !== lastFitKeyRef.current
     ) {
-      const allCoords = buildings.flatMap((b) => b.coordinates);
-      if (allCoords.length > 0) {
-        const bounds = L.latLngBounds(allCoords as L.LatLngExpression[]);
-        mapInstanceRef.current.fitBounds(bounds, { padding: [40, 40], maxZoom: 18, animate: true });
+      if (isBuildingsMatchingCity) {
+        const allCoords = buildings.flatMap((b) => b.coordinates);
+        if (allCoords.length > 0) {
+          const bounds = L.latLngBounds(allCoords as L.LatLngExpression[]);
+          mapInstanceRef.current.fitBounds(bounds, { padding: [30, 30], maxZoom: 17, animate: false });
+          mapInstanceRef.current.invalidateSize({ animate: false });
+        }
       } else if (activeDataset?.bounds) {
         mapInstanceRef.current.fitBounds(
           L.latLngBounds(activeDataset.bounds[0] as L.LatLngTuple, activeDataset.bounds[1] as L.LatLngTuple),
-          { padding: [40, 40], maxZoom: 18, animate: true }
+          { padding: [30, 30], maxZoom: 17, animate: false }
         );
+        mapInstanceRef.current.invalidateSize({ animate: false });
       }
       lastFitKeyRef.current = fitKey;
     }
-  }, [buildings, selectedBuilding, activeLayers, statusFilter, searchQuery, dataSource, activeDataset?.id]);
+  }, [buildings, selectedBuilding, activeLayers, statusFilter, searchQuery, dataSource, activeDataset]);
 
-  // Pan to selected building
+  // Pan to selected building (ONLY if building is in the current active city)
   useEffect(() => {
-    if (selectedBuilding && mapInstanceRef.current) {
-      mapInstanceRef.current.panTo(selectedBuilding.centroid, { animate: true, duration: 0.8 });
+    if (selectedBuilding && mapInstanceRef.current && activeDataset?.center) {
+      const isSameCity = (
+        Math.abs(selectedBuilding.centroid[0] - activeDataset.center[0]) < 1.0 &&
+        Math.abs(selectedBuilding.centroid[1] - activeDataset.center[1]) < 1.0
+      );
+      if (isSameCity) {
+        mapInstanceRef.current.panTo(selectedBuilding.centroid, { animate: true, duration: 0.4 });
+      }
     }
-  }, [selectedBuilding]);
+  }, [selectedBuilding, activeDataset?.center]);
 
   const toggleLayer = (layerKey: keyof typeof activeLayers) => {
     setActiveLayers(prev => ({ ...prev, [layerKey]: !prev[layerKey] }));
   };
 
-  // Recenters on the real loaded dataset bounds (Bengaluru, Mumbai, Chennai, or uploaded)
+  // Recenters on the real loaded dataset bounds (Bengaluru, Mumbai, Chennai, Delhi, or uploaded)
   const resetView = () => {
-    if (!mapInstanceRef.current) return;
-    const allCoords = buildings.flatMap((b) => b.coordinates);
-    if (allCoords.length > 0) {
-      const bounds = L.latLngBounds(allCoords as L.LatLngExpression[]);
-      mapInstanceRef.current.fitBounds(bounds, { padding: [40, 40], maxZoom: 18, animate: true });
+    const map = mapInstanceRef.current;
+    if (!map) return;
+    map.stop();
+
+    const isBuildingsMatchingCity = buildings.length > 0 && activeDataset?.center && (
+      Math.abs(buildings[0].centroid[0] - activeDataset.center[0]) < 1.0 &&
+      Math.abs(buildings[0].centroid[1] - activeDataset.center[1]) < 1.0
+    );
+
+    if (isBuildingsMatchingCity) {
+      const allCoords = buildings.flatMap((b) => b.coordinates);
+      if (allCoords.length > 0) {
+        const bounds = L.latLngBounds(allCoords as L.LatLngExpression[]);
+        map.fitBounds(bounds, { padding: [30, 30], maxZoom: 17, animate: false });
+      }
     } else if (activeDataset?.bounds) {
-      mapInstanceRef.current.fitBounds(
+      map.fitBounds(
         L.latLngBounds(activeDataset.bounds[0] as L.LatLngTuple, activeDataset.bounds[1] as L.LatLngTuple),
-        { padding: [40, 40], maxZoom: 18, animate: true }
+        { padding: [30, 30], maxZoom: 17, animate: false }
       );
     } else {
-      mapInstanceRef.current.setView([12.9784, 77.6408], 17, { animate: true });
+      map.setView([12.9784, 77.6408], 17, { animate: false });
     }
+    map.invalidateSize({ animate: false });
   };
 
   return (
